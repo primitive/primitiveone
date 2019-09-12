@@ -39,10 +39,11 @@ dwsync.xml
 intermediate
 publish
 .idea
+img
+node_modules
+build
 
 # build script local files
-node_modules/
-build/
 build/buildinfo.properties
 build/config/buildinfo.properties
 /inc/.DS_Store

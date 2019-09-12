@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
+      "name": "@frontity/primitiveone",
       "state": {
         "theme": {
           "menu": [
@@ -19,19 +19,19 @@ const settings = {
             ],
             [
               "Design",
-              "/category/nature/"
+              "/"
             ],
             [
               "Development",
-              "/category/travel/"
+              "/"
             ],
             [
               "Data",
-              "/tag/japan/"
+              "/"
             ],
             [
               "Marketing",
-              "/about-us/"
+              "/"
             ],
             [
               "Blog",
