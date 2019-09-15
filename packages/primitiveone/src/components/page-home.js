@@ -5,6 +5,7 @@ import Hero from './animation/timeline';
 import Post from './post';
 import { Tabs, Tab, Image } from "react-bootstrap";
 import Work from './widgets/widget';
+import DataMap from './animation/datamap';
 
 const PageHome = ({ state }) => {
   // Get the data of the current list.
@@ -32,7 +33,6 @@ const PageHome = ({ state }) => {
       </div>
 
       <div className="services container-fluid">
-
         <div className="row">
           <div className="col-lg-12">
             <Tabs defaultActiveKey="hp-design">
@@ -85,6 +85,7 @@ const PageHome = ({ state }) => {
                 </div>
               </Tab>
               <Tab eventKey="hp-data" className="hp-data" title="Data">
+              <div className="txt-area">
                 <div className="txt-wrap">
                   <h3>Analytics and Reporting</h3>
                   <p>Infomation is beautiful so...</p>
@@ -101,6 +102,8 @@ const PageHome = ({ state }) => {
                   <h3>A/B Testing and Research</h3>
                   <p>and improve with qualitative insights.</p>
                 </div>
+                </div>
+                <DataMap />
               </Tab>
 
               <Tab eventKey="hp-marketing" className="hp-marketing" title="Marketing">

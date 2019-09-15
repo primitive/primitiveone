@@ -41,7 +41,7 @@ publish
 .idea
 img
 node_modules
-build
+
 
 # build script local files
 build/buildinfo.properties

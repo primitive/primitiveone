@@ -37,6 +37,9 @@ Installing and beginning development
 
 https://docs.frontity.org/getting-started/quick-start-guide
 
+npx frontity dev
+npx frontity build
+
 1. `git clone https://github.com/primitiveshaun/nice2bone`
 2. `cd nice2bone`
 3. `npm install`

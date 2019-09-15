@@ -4,7 +4,7 @@ const settings = {
     "frontity": {
       "url": "https://primitivedigital.uk",
       "title": "Want a Website?",
-      "description": "WordPress Web Site Design &amp; Development"
+      "description": "We Make Fast and Efficient WordPress Web Sites and Apps"
     }
   },
   "packages": [
@@ -49,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://primitivedigital.uk/wp-json/",
+          "api": "https://staging.primitivedigital.uk/wp-json/",
           "homepage": "/home",
           "postsPage": "/blog"
         }
