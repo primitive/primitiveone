@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled, fetch } from "frontity";
-import { Image } from "react-bootstrap";
+import { Container, Row, Image } from "react-bootstrap";
 
 const Widget = ({ state }) => {
   // const acfRest = "https://primitivedigital.uk/wp-json/acf/v3/posts/"
@@ -10,14 +10,15 @@ const Widget = ({ state }) => {
   // console.log("widget", data);
 
   return (
-    <Container id="work-recent" className="post-strip">
+    <Ele id="work-recent">
+    <Container className="post-strip">
 
-      <header className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <header>
         <h3>Some Recent Projects</h3>
         <p>We Made This.</p>
       </header>
 
-      <div className="row">
+      <Row>
 
         <div className="col-lg-4 col-sm-12">
           <a href="https://nice2b.me/">
@@ -83,13 +84,12 @@ const Widget = ({ state }) => {
         </div>
 
 
-      </div>
+      </Row>
     </Container>
+    </Ele>
   );
 };
 
 export default connect(Widget);
 
-const Container = styled.section``;
-
-const Header = styled.h3``;
+const Ele = styled.section``;

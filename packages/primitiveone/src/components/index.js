@@ -7,6 +7,7 @@ import Post from "./post";
 import Page404 from "./page404.js";
 import Loading from "./loading";
 import Nav from "./main-nav";
+import Silver from './silver';
 import Footer from "./footer";
 import globalStyles from '../style.css';
 
@@ -33,15 +34,10 @@ const Theme = ({ state }) => {
       </Head>
       <Global styles={globalStyles} />
       <HeadWrapper className="wrap-header">
-        <div className={"container"}>
-          <Header />
-        </div>
-        <div className={"container"}>
-          <Nav />
-        </div>
+        <Header />
+
       </HeadWrapper>
-      <BodyWrapper>
-        <Content className={"container-fluid"}>
+      <BodyWrapper className="wrap-body">
           <Body>
             {data.isFetching && <Loading />}
             {data.isHome && <Home />}
@@ -49,8 +45,8 @@ const Theme = ({ state }) => {
             {data.isPostType && <Post />}
             {data.is404 && <Page404 />}
           </Body>
-        </Content>
       </BodyWrapper>
+      <Silver />
       <Footer />
     </>
   );
@@ -58,7 +54,10 @@ const Theme = ({ state }) => {
 
 export default connect(Theme);
 
-const HeadWrapper = styled.div``;
+const HeadWrapper = styled.div`
+margin:0;
+padding: 0;
+`;
 const BodyWrapper = styled.div`
   background-image: linear-gradient(
     180deg,

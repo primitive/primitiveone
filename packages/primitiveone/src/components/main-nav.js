@@ -1,30 +1,33 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
-import { Nav, Navbar, Image, NavDropdown, Form, FormControl, Button} from "react-bootstrap";
+import { Container, Nav, Navbar, Image, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
 const MainNav = ({ state }) => (
 
-<Navbar bg="dark" expand="lg">
-  <Navbar.Brand href="/"><Image src={"https://primitivedigital.uk/img/punky_logo_smgreen.png"} alt="Primitive Digital - Web Design &amp; Development" /></Navbar.Brand>
+  <Container>
+    <Navbar bg="dark" expand="lg">
+      <Navbar.Brand href="/">
+        <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/punky_logo_smgreen.png"} alt="Primitive Digital - Web Design &amp; Development" />
+      </Navbar.Brand>
 
-  <Navbar.Toggle aria-controls="site-nav" />
+      <Navbar.Toggle aria-controls="site-nav" />
 
-  <Navbar.Collapse id="site-nav">
-    <Nav className="mr-auto">
+      <Navbar.Collapse id="site-nav">
+        <Nav className="mr-auto">
 
+          <ul className="navbar-nav mr-auto">
+            {state.theme.menu.map(([name, link]) => (
+              <Item className="nav-item" key={name} isSelected={state.router.link === link}>
+                <Link link={link}>{name}</Link>
+              </Item>
+            ))}
+          </ul>
+        </Nav>
 
-      <ul className="navbar-nav mr-auto">
-        {state.theme.menu.map(([name, link]) => (
-          <Item className="nav-item" key={name} isSelected={state.router.link === link}>
-            <Link link={link}>{name}</Link>
-          </Item>
-        ))}
-      </ul>
-    </Nav>
-
-  </Navbar.Collapse>
-</Navbar>
+      </Navbar.Collapse>
+    </Navbar>
+  </Container>
 );
 
 export default connect(MainNav);

@@ -1,0 +1,4923 @@
+
+/* DataMap */
+
+#datamap {
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1;
+margin: 0;
+display: grid;
+height: 100%;
+place-items: center;
+background-color: #000;
+font-size: 12px;
+}
+.mapgrid {
+display: grid;
+grid-template-columns: repeat(55, 1fr);
+grid-template-rows: repeat(35, 1fr);
+}
+.cell {
+width: 1em;
+height: 1em;
+}
+.cell:nth-child(19) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2475ms;
+}
+.cell:nth-child(20) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1004ms;
+}
+.cell:nth-child(21) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1562ms;
+}
+.cell:nth-child(73) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2488ms;
+}
+.cell:nth-child(74) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2724ms;
+}
+.cell:nth-child(75) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3084ms;
+}
+.cell:nth-child(76) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1988ms;
+}
+.cell:nth-child(77) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2113ms;
+}
+.cell:nth-child(123) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1204ms;
+}
+.cell:nth-child(124) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2238ms;
+}
+.cell:nth-child(127) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3086ms;
+}
+.cell:nth-child(128) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1516ms;
+}
+.cell:nth-child(129) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -50ms;
+}
+.cell:nth-child(130) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3950ms;
+}
+.cell:nth-child(131) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3697ms;
+}
+.cell:nth-child(132) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3423ms;
+}
+.cell:nth-child(177) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -187ms;
+}
+.cell:nth-child(178) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1779ms;
+}
+.cell:nth-child(179) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -166ms;
+}
+.cell:nth-child(181) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3378ms;
+}
+.cell:nth-child(182) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3686ms;
+}
+.cell:nth-child(183) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2623ms;
+}
+.cell:nth-child(184) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3070ms;
+}
+.cell:nth-child(185) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2858ms;
+}
+.cell:nth-child(186) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -320ms;
+}
+.cell:nth-child(187) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1556ms;
+}
+.cell:nth-child(188) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3772ms;
+}
+.cell:nth-child(228) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3857ms;
+}
+.cell:nth-child(229) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -261ms;
+}
+.cell:nth-child(230) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2332ms;
+}
+.cell:nth-child(231) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3962ms;
+}
+.cell:nth-child(232) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2222ms;
+}
+.cell:nth-child(233) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1512ms;
+}
+.cell:nth-child(234) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1786ms;
+}
+.cell:nth-child(237) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2153ms;
+}
+.cell:nth-child(238) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -8ms;
+}
+.cell:nth-child(239) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1854ms;
+}
+.cell:nth-child(240) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -414ms;
+}
+.cell:nth-child(241) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2882ms;
+}
+.cell:nth-child(242) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1033ms;
+}
+.cell:nth-child(243) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3436ms;
+}
+.cell:nth-child(283) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3386ms;
+}
+.cell:nth-child(284) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3887ms;
+}
+.cell:nth-child(285) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3579ms;
+}
+.cell:nth-child(286) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2972ms;
+}
+.cell:nth-child(287) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2916ms;
+}
+.cell:nth-child(288) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3038ms;
+}
+.cell:nth-child(289) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3616ms;
+}
+.cell:nth-child(293) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3387ms;
+}
+.cell:nth-child(294) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3431ms;
+}
+.cell:nth-child(295) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2779ms;
+}
+.cell:nth-child(296) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2438ms;
+}
+.cell:nth-child(297) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2349ms;
+}
+.cell:nth-child(332) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -547ms;
+}
+.cell:nth-child(333) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1327ms;
+}
+.cell:nth-child(334) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -513ms;
+}
+.cell:nth-child(337) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3593ms;
+}
+.cell:nth-child(339) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -176ms;
+}
+.cell:nth-child(340) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3783ms;
+}
+.cell:nth-child(341) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2608ms;
+}
+.cell:nth-child(342) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2170ms;
+}
+.cell:nth-child(343) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3701ms;
+}
+.cell:nth-child(348) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2726ms;
+}
+.cell:nth-child(349) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -593ms;
+}
+.cell:nth-child(350) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2081ms;
+}
+.cell:nth-child(351) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1077ms;
+}
+.cell:nth-child(352) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2586ms;
+}
+.cell:nth-child(387) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3701ms;
+}
+.cell:nth-child(388) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -612ms;
+}
+.cell:nth-child(389) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2388ms;
+}
+.cell:nth-child(390) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1053ms;
+}
+.cell:nth-child(391) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1030ms;
+}
+.cell:nth-child(392) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -942ms;
+}
+.cell:nth-child(393) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -275ms;
+}
+.cell:nth-child(394) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2832ms;
+}
+.cell:nth-child(395) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3520ms;
+}
+.cell:nth-child(396) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -29ms;
+}
+.cell:nth-child(397) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1558ms;
+}
+.cell:nth-child(398) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2876ms;
+}
+.cell:nth-child(399) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -302ms;
+}
+.cell:nth-child(404) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3720ms;
+}
+.cell:nth-child(405) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -989ms;
+}
+.cell:nth-child(406) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1500ms;
+}
+.cell:nth-child(407) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -444ms;
+}
+.cell:nth-child(441) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -49ms;
+}
+.cell:nth-child(442) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3323ms;
+}
+.cell:nth-child(443) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3373ms;
+}
+.cell:nth-child(444) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2565ms;
+}
+.cell:nth-child(445) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3948ms;
+}
+.cell:nth-child(446) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -715ms;
+}
+.cell:nth-child(447) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -536ms;
+}
+.cell:nth-child(448) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -180ms;
+}
+.cell:nth-child(449) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1014ms;
+}
+.cell:nth-child(450) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3378ms;
+}
+.cell:nth-child(451) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2820ms;
+}
+.cell:nth-child(452) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -848ms;
+}
+.cell:nth-child(453) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1064ms;
+}
+.cell:nth-child(454) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2553ms;
+}
+.cell:nth-child(455) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1538ms;
+}
+.cell:nth-child(459) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -150ms;
+}
+.cell:nth-child(460) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -276ms;
+}
+.cell:nth-child(497) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1148ms;
+}
+.cell:nth-child(498) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2070ms;
+}
+.cell:nth-child(499) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1614ms;
+}
+.cell:nth-child(500) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2909ms;
+}
+.cell:nth-child(501) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1384ms;
+}
+.cell:nth-child(502) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1458ms;
+}
+.cell:nth-child(503) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -312ms;
+}
+.cell:nth-child(504) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1128ms;
+}
+.cell:nth-child(505) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2020ms;
+}
+.cell:nth-child(506) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3748ms;
+}
+.cell:nth-child(507) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2719ms;
+}
+.cell:nth-child(509) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2868ms;
+}
+.cell:nth-child(510) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1691ms;
+}
+.cell:nth-child(511) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2205ms;
+}
+.cell:nth-child(514) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -301ms;
+}
+.cell:nth-child(552) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3567ms;
+}
+.cell:nth-child(553) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3072ms;
+}
+.cell:nth-child(554) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3325ms;
+}
+.cell:nth-child(555) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2793ms;
+}
+.cell:nth-child(556) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1575ms;
+}
+.cell:nth-child(557) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -784ms;
+}
+.cell:nth-child(558) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -233ms;
+}
+.cell:nth-child(559) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3469ms;
+}
+.cell:nth-child(560) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3341ms;
+}
+.cell:nth-child(561) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1681ms;
+}
+.cell:nth-child(562) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2229ms;
+}
+.cell:nth-child(564) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2059ms;
+}
+.cell:nth-child(565) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1156ms;
+}
+.cell:nth-child(566) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3241ms;
+}
+.cell:nth-child(607) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -517ms;
+}
+.cell:nth-child(610) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2960ms;
+}
+.cell:nth-child(611) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -956ms;
+}
+.cell:nth-child(612) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2017ms;
+}
+.cell:nth-child(613) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2852ms;
+}
+.cell:nth-child(614) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -354ms;
+}
+.cell:nth-child(615) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3220ms;
+}
+.cell:nth-child(616) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1291ms;
+}
+.cell:nth-child(619) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3382ms;
+}
+.cell:nth-child(620) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2635ms;
+}
+.cell:nth-child(621) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3502ms;
+}
+.cell:nth-child(622) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1298ms;
+}
+.cell:nth-child(666) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2344ms;
+}
+.cell:nth-child(667) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1599ms;
+}
+.cell:nth-child(668) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -156ms;
+}
+.cell:nth-child(669) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3866ms;
+}
+.cell:nth-child(670) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2501ms;
+}
+.cell:nth-child(671) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -802ms;
+}
+.cell:nth-child(672) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1108ms;
+}
+.cell:nth-child(674) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2736ms;
+}
+.cell:nth-child(675) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2693ms;
+}
+.cell:nth-child(676) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2320ms;
+}
+.cell:nth-child(722) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3946ms;
+}
+.cell:nth-child(723) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -835ms;
+}
+.cell:nth-child(724) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -883ms;
+}
+.cell:nth-child(725) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -476ms;
+}
+.cell:nth-child(726) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -460ms;
+}
+.cell:nth-child(727) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2208ms;
+}
+.cell:nth-child(728) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3550ms;
+}
+.cell:nth-child(729) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2017ms;
+}
+.cell:nth-child(730) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -742ms;
+}
+.cell:nth-child(731) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3174ms;
+}
+.cell:nth-child(778) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3889ms;
+}
+.cell:nth-child(779) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -587ms;
+}
+.cell:nth-child(780) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2443ms;
+}
+.cell:nth-child(781) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3725ms;
+}
+.cell:nth-child(782) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3714ms;
+}
+.cell:nth-child(783) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1915ms;
+}
+.cell:nth-child(784) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -306ms;
+}
+.cell:nth-child(785) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2766ms;
+}
+.cell:nth-child(786) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -276ms;
+}
+.cell:nth-child(834) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3271ms;
+}
+.cell:nth-child(835) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -112ms;
+}
+.cell:nth-child(836) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3967ms;
+}
+.cell:nth-child(837) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1025ms;
+}
+.cell:nth-child(838) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3377ms;
+}
+.cell:nth-child(839) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1422ms;
+}
+.cell:nth-child(889) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -99ms;
+}
+.cell:nth-child(890) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2182ms;
+}
+.cell:nth-child(891) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2481ms;
+}
+.cell:nth-child(892) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2085ms;
+}
+.cell:nth-child(893) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2238ms;
+}
+.cell:nth-child(894) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1750ms;
+}
+.cell:nth-child(944) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2990ms;
+}
+.cell:nth-child(945) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3607ms;
+}
+.cell:nth-child(946) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -507ms;
+}
+.cell:nth-child(947) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3798ms;
+}
+.cell:nth-child(948) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -29ms;
+}
+.cell:nth-child(949) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2778ms;
+}
+.cell:nth-child(1000) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3463ms;
+}
+.cell:nth-child(1001) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3926ms;
+}
+.cell:nth-child(1002) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3679ms;
+}
+.cell:nth-child(1005) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2327ms;
+}
+.cell:nth-child(1056) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3784ms;
+}
+.cell:nth-child(1057) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -2415ms;
+}
+.cell:nth-child(1112) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -507ms;
+}
+.cell:nth-child(1113) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3247ms;
+}
+.cell:nth-child(1114) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -1305ms;
+}
+.cell:nth-child(1169) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: north-america 4s linear infinite;
+  animation-delay: -3314ms;
+}
+.cell:nth-child(1225) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -852ms;
+}
+.cell:nth-child(1226) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -966ms;
+}
+.cell:nth-child(1227) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1676ms;
+}
+.cell:nth-child(1228) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2560ms;
+}
+.cell:nth-child(1229) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1128ms;
+}
+.cell:nth-child(1281) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2522ms;
+}
+.cell:nth-child(1282) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1142ms;
+}
+.cell:nth-child(1283) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -636ms;
+}
+.cell:nth-child(1284) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1569ms;
+}
+.cell:nth-child(1285) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2912ms;
+}
+.cell:nth-child(1335) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2021ms;
+}
+.cell:nth-child(1336) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -77ms;
+}
+.cell:nth-child(1337) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2740ms;
+}
+.cell:nth-child(1338) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2466ms;
+}
+.cell:nth-child(1339) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -938ms;
+}
+.cell:nth-child(1340) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2365ms;
+}
+.cell:nth-child(1341) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2243ms;
+}
+.cell:nth-child(1342) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -638ms;
+}
+.cell:nth-child(1390) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1917ms;
+}
+.cell:nth-child(1391) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -925ms;
+}
+.cell:nth-child(1392) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -765ms;
+}
+.cell:nth-child(1393) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2289ms;
+}
+.cell:nth-child(1394) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2197ms;
+}
+.cell:nth-child(1395) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1529ms;
+}
+.cell:nth-child(1396) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2555ms;
+}
+.cell:nth-child(1397) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1333ms;
+}
+.cell:nth-child(1446) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2915ms;
+}
+.cell:nth-child(1447) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2065ms;
+}
+.cell:nth-child(1448) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1218ms;
+}
+.cell:nth-child(1449) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2202ms;
+}
+.cell:nth-child(1450) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2932ms;
+}
+.cell:nth-child(1451) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2184ms;
+}
+.cell:nth-child(1502) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -93ms;
+}
+.cell:nth-child(1503) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2535ms;
+}
+.cell:nth-child(1504) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -933ms;
+}
+.cell:nth-child(1505) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2720ms;
+}
+.cell:nth-child(1506) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2686ms;
+}
+.cell:nth-child(1557) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1977ms;
+}
+.cell:nth-child(1558) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -237ms;
+}
+.cell:nth-child(1559) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1787ms;
+}
+.cell:nth-child(1560) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -989ms;
+}
+.cell:nth-child(1612) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1818ms;
+}
+.cell:nth-child(1613) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -968ms;
+}
+.cell:nth-child(1614) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1406ms;
+}
+.cell:nth-child(1666) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1239ms;
+}
+.cell:nth-child(1667) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -1445ms;
+}
+.cell:nth-child(1668) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2806ms;
+}
+.cell:nth-child(1721) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -167ms;
+}
+.cell:nth-child(1722) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -881ms;
+}
+.cell:nth-child(1776) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -658ms;
+}
+.cell:nth-child(1777) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2709ms;
+}
+.cell:nth-child(1831) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2460ms;
+}
+.cell:nth-child(1832) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -2234ms;
+}
+.cell:nth-child(1887) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: south-america 3s linear infinite;
+  animation-delay: -479ms;
+}
+.cell:nth-child(361) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2506ms;
+}
+.cell:nth-child(362) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -268ms;
+}
+.cell:nth-child(415) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -169ms;
+}
+.cell:nth-child(416) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1395ms;
+}
+.cell:nth-child(417) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -880ms;
+}
+.cell:nth-child(469) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1298ms;
+}
+.cell:nth-child(470) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1860ms;
+}
+.cell:nth-child(471) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -842ms;
+}
+.cell:nth-child(472) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2159ms;
+}
+.cell:nth-child(523) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -922ms;
+}
+.cell:nth-child(524) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1342ms;
+}
+.cell:nth-child(525) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2539ms;
+}
+.cell:nth-child(527) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -494ms;
+}
+.cell:nth-child(582) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -187ms;
+}
+.cell:nth-child(580) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2483ms;
+}
+.cell:nth-child(579) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1671ms;
+}
+.cell:nth-child(578) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2714ms;
+}
+.cell:nth-child(632) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2971ms;
+}
+.cell:nth-child(634) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -657ms;
+}
+.cell:nth-child(636) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -244ms;
+}
+.cell:nth-child(631) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1560ms;
+}
+.cell:nth-child(311) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2457ms;
+}
+.cell:nth-child(312) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2046ms;
+}
+.cell:nth-child(251) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1994ms;
+}
+.cell:nth-child(519) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -82ms;
+}
+.cell:nth-child(520) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1820ms;
+}
+.cell:nth-child(686) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2073ms;
+}
+.cell:nth-child(687) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -111ms;
+}
+.cell:nth-child(689) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -75ms;
+}
+.cell:nth-child(688) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1283ms;
+}
+.cell:nth-child(690) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2782ms;
+}
+.cell:nth-child(691) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1969ms;
+}
+.cell:nth-child(692) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -456ms;
+}
+.cell:nth-child(637) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -618ms;
+}
+.cell:nth-child(638) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2086ms;
+}
+.cell:nth-child(583) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1257ms;
+}
+.cell:nth-child(528) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1325ms;
+}
+.cell:nth-child(473) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1185ms;
+}
+.cell:nth-child(418) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2057ms;
+}
+.cell:nth-child(474) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1002ms;
+}
+.cell:nth-child(475) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1991ms;
+}
+.cell:nth-child(365) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2170ms;
+}
+.cell:nth-child(421) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1585ms;
+}
+.cell:nth-child(476) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -715ms;
+}
+.cell:nth-child(477) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -937ms;
+}
+.cell:nth-child(531) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1401ms;
+}
+.cell:nth-child(530) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1455ms;
+}
+.cell:nth-child(529) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -228ms;
+}
+.cell:nth-child(584) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2756ms;
+}
+.cell:nth-child(585) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -171ms;
+}
+.cell:nth-child(586) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2039ms;
+}
+.cell:nth-child(639) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2445ms;
+}
+.cell:nth-child(640) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1927ms;
+}
+.cell:nth-child(641) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -425ms;
+}
+.cell:nth-child(693) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1235ms;
+}
+.cell:nth-child(694) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -747ms;
+}
+.cell:nth-child(695) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2823ms;
+}
+.cell:nth-child(696) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2652ms;
+}
+.cell:nth-child(795) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -73ms;
+}
+.cell:nth-child(796) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1727ms;
+}
+.cell:nth-child(850) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1784ms;
+}
+.cell:nth-child(851) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -507ms;
+}
+.cell:nth-child(797) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -555ms;
+}
+.cell:nth-child(742) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -253ms;
+}
+.cell:nth-child(743) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2045ms;
+}
+.cell:nth-child(744) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -277ms;
+}
+.cell:nth-child(745) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2194ms;
+}
+.cell:nth-child(746) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -317ms;
+}
+.cell:nth-child(747) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2570ms;
+}
+.cell:nth-child(748) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2360ms;
+}
+.cell:nth-child(749) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2971ms;
+}
+.cell:nth-child(750) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1704ms;
+}
+.cell:nth-child(751) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2602ms;
+}
+.cell:nth-child(805) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1460ms;
+}
+.cell:nth-child(804) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1033ms;
+}
+.cell:nth-child(803) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -415ms;
+}
+.cell:nth-child(802) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1405ms;
+}
+.cell:nth-child(801) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2230ms;
+}
+.cell:nth-child(799) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2975ms;
+}
+.cell:nth-child(798) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -294ms;
+}
+.cell:nth-child(800) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2525ms;
+}
+.cell:nth-child(854) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2991ms;
+}
+.cell:nth-child(856) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -1826ms;
+}
+.cell:nth-child(857) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -623ms;
+}
+.cell:nth-child(911) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: europe 3s linear infinite;
+  animation-delay: -2118ms;
+}
+.cell:nth-child(961) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1577ms;
+}
+.cell:nth-child(962) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1886ms;
+}
+.cell:nth-child(963) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3714ms;
+}
+.cell:nth-child(965) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2907ms;
+}
+.cell:nth-child(1020) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2237ms;
+}
+.cell:nth-child(1021) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3792ms;
+}
+.cell:nth-child(1019) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3734ms;
+}
+.cell:nth-child(1018) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1195ms;
+}
+.cell:nth-child(1017) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2027ms;
+}
+.cell:nth-child(1016) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3528ms;
+}
+.cell:nth-child(1015) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2951ms;
+}
+.cell:nth-child(1069) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -833ms;
+}
+.cell:nth-child(1070) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2379ms;
+}
+.cell:nth-child(1071) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1813ms;
+}
+.cell:nth-child(1072) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3101ms;
+}
+.cell:nth-child(1073) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1846ms;
+}
+.cell:nth-child(1074) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -348ms;
+}
+.cell:nth-child(1075) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3173ms;
+}
+.cell:nth-child(1076) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2764ms;
+}
+.cell:nth-child(1077) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1295ms;
+}
+.cell:nth-child(1124) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -242ms;
+}
+.cell:nth-child(1125) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2350ms;
+}
+.cell:nth-child(1126) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -474ms;
+}
+.cell:nth-child(1127) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1510ms;
+}
+.cell:nth-child(1128) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3007ms;
+}
+.cell:nth-child(1129) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1417ms;
+}
+.cell:nth-child(1130) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -356ms;
+}
+.cell:nth-child(1131) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1373ms;
+}
+.cell:nth-child(1132) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3136ms;
+}
+.cell:nth-child(1133) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2281ms;
+}
+.cell:nth-child(1179) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -222ms;
+}
+.cell:nth-child(1180) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -514ms;
+}
+.cell:nth-child(1181) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -903ms;
+}
+.cell:nth-child(1182) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1600ms;
+}
+.cell:nth-child(1183) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2743ms;
+}
+.cell:nth-child(1184) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1610ms;
+}
+.cell:nth-child(1185) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -182ms;
+}
+.cell:nth-child(1186) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2888ms;
+}
+.cell:nth-child(1187) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3025ms;
+}
+.cell:nth-child(1188) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2851ms;
+}
+.cell:nth-child(1189) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3969ms;
+}
+.cell:nth-child(1235) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -314ms;
+}
+.cell:nth-child(1236) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -249ms;
+}
+.cell:nth-child(1237) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2555ms;
+}
+.cell:nth-child(1238) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2632ms;
+}
+.cell:nth-child(1239) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3338ms;
+}
+.cell:nth-child(1240) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2471ms;
+}
+.cell:nth-child(1241) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3144ms;
+}
+.cell:nth-child(1242) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -121ms;
+}
+.cell:nth-child(1243) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -532ms;
+}
+.cell:nth-child(1244) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -283ms;
+}
+.cell:nth-child(1293) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2039ms;
+}
+.cell:nth-child(1294) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1853ms;
+}
+.cell:nth-child(1295) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -436ms;
+}
+.cell:nth-child(1296) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1596ms;
+}
+.cell:nth-child(1297) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1136ms;
+}
+.cell:nth-child(1298) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1581ms;
+}
+.cell:nth-child(1348) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1631ms;
+}
+.cell:nth-child(1349) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -900ms;
+}
+.cell:nth-child(1350) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2031ms;
+}
+.cell:nth-child(1351) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -582ms;
+}
+.cell:nth-child(1352) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2423ms;
+}
+.cell:nth-child(1404) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -325ms;
+}
+.cell:nth-child(1405) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1549ms;
+}
+.cell:nth-child(1406) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1775ms;
+}
+.cell:nth-child(1407) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2921ms;
+}
+.cell:nth-child(1459) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1303ms;
+}
+.cell:nth-child(1460) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1396ms;
+}
+.cell:nth-child(1461) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3566ms;
+}
+.cell:nth-child(1462) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1727ms;
+}
+.cell:nth-child(1514) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1446ms;
+}
+.cell:nth-child(1515) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2022ms;
+}
+.cell:nth-child(1516) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1717ms;
+}
+.cell:nth-child(1518) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1371ms;
+}
+.cell:nth-child(1573) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -1796ms;
+}
+.cell:nth-child(1569) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3016ms;
+}
+.cell:nth-child(1570) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3913ms;
+}
+.cell:nth-child(1571) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -790ms;
+}
+.cell:nth-child(1624) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -3281ms;
+}
+.cell:nth-child(1625) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: africa 4s linear infinite;
+  animation-delay: -2073ms;
+}
+.cell:nth-child(154) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -646ms;
+}
+.cell:nth-child(208) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2063ms;
+}
+.cell:nth-child(209) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1838ms;
+}
+.cell:nth-child(210) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4341ms;
+}
+.cell:nth-child(262) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4536ms;
+}
+.cell:nth-child(263) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3976ms;
+}
+.cell:nth-child(264) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4015ms;
+}
+.cell:nth-child(265) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2756ms;
+}
+.cell:nth-child(314) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1821ms;
+}
+.cell:nth-child(315) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -865ms;
+}
+.cell:nth-child(316) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2031ms;
+}
+.cell:nth-child(317) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -91ms;
+}
+.cell:nth-child(318) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1880ms;
+}
+.cell:nth-child(319) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -823ms;
+}
+.cell:nth-child(320) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1522ms;
+}
+.cell:nth-child(321) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4242ms;
+}
+.cell:nth-child(322) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1338ms;
+}
+.cell:nth-child(323) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3876ms;
+}
+.cell:nth-child(325) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1640ms;
+}
+.cell:nth-child(326) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4409ms;
+}
+.cell:nth-child(369) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2143ms;
+}
+.cell:nth-child(370) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3356ms;
+}
+.cell:nth-child(371) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -571ms;
+}
+.cell:nth-child(372) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1080ms;
+}
+.cell:nth-child(373) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2166ms;
+}
+.cell:nth-child(374) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -843ms;
+}
+.cell:nth-child(375) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -486ms;
+}
+.cell:nth-child(376) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4604ms;
+}
+.cell:nth-child(377) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4461ms;
+}
+.cell:nth-child(378) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1638ms;
+}
+.cell:nth-child(379) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -933ms;
+}
+.cell:nth-child(380) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1780ms;
+}
+.cell:nth-child(381) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4083ms;
+}
+.cell:nth-child(382) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1317ms;
+}
+.cell:nth-child(423) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3625ms;
+}
+.cell:nth-child(424) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2359ms;
+}
+.cell:nth-child(425) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1800ms;
+}
+.cell:nth-child(426) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2244ms;
+}
+.cell:nth-child(427) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -172ms;
+}
+.cell:nth-child(428) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1799ms;
+}
+.cell:nth-child(429) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3928ms;
+}
+.cell:nth-child(430) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1855ms;
+}
+.cell:nth-child(431) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -845ms;
+}
+.cell:nth-child(432) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2837ms;
+}
+.cell:nth-child(433) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2059ms;
+}
+.cell:nth-child(434) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4081ms;
+}
+.cell:nth-child(435) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2789ms;
+}
+.cell:nth-child(436) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -239ms;
+}
+.cell:nth-child(437) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3336ms;
+}
+.cell:nth-child(438) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1163ms;
+}
+.cell:nth-child(439) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1287ms;
+}
+.cell:nth-child(440) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -986ms;
+}
+.cell:nth-child(478) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -898ms;
+}
+.cell:nth-child(479) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3916ms;
+}
+.cell:nth-child(480) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3783ms;
+}
+.cell:nth-child(481) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3281ms;
+}
+.cell:nth-child(482) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -39ms;
+}
+.cell:nth-child(483) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2411ms;
+}
+.cell:nth-child(484) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3538ms;
+}
+.cell:nth-child(485) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1288ms;
+}
+.cell:nth-child(486) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3889ms;
+}
+.cell:nth-child(487) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2188ms;
+}
+.cell:nth-child(488) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2676ms;
+}
+.cell:nth-child(489) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3629ms;
+}
+.cell:nth-child(490) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -195ms;
+}
+.cell:nth-child(491) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3188ms;
+}
+.cell:nth-child(492) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -962ms;
+}
+.cell:nth-child(493) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4480ms;
+}
+.cell:nth-child(494) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1535ms;
+}
+.cell:nth-child(495) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1149ms;
+}
+.cell:nth-child(532) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3661ms;
+}
+.cell:nth-child(533) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1572ms;
+}
+.cell:nth-child(534) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4933ms;
+}
+.cell:nth-child(535) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1347ms;
+}
+.cell:nth-child(536) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3335ms;
+}
+.cell:nth-child(537) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -772ms;
+}
+.cell:nth-child(538) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4242ms;
+}
+.cell:nth-child(539) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1705ms;
+}
+.cell:nth-child(540) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4165ms;
+}
+.cell:nth-child(541) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1016ms;
+}
+.cell:nth-child(542) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2853ms;
+}
+.cell:nth-child(543) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3707ms;
+}
+.cell:nth-child(544) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1679ms;
+}
+.cell:nth-child(545) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -645ms;
+}
+.cell:nth-child(546) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4250ms;
+}
+.cell:nth-child(547) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1888ms;
+}
+.cell:nth-child(548) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1412ms;
+}
+.cell:nth-child(549) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2749ms;
+}
+.cell:nth-child(550) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3377ms;
+}
+.cell:nth-child(587) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3957ms;
+}
+.cell:nth-child(588) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4164ms;
+}
+.cell:nth-child(589) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -512ms;
+}
+.cell:nth-child(590) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3230ms;
+}
+.cell:nth-child(591) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -719ms;
+}
+.cell:nth-child(592) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2607ms;
+}
+.cell:nth-child(593) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -815ms;
+}
+.cell:nth-child(594) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2887ms;
+}
+.cell:nth-child(595) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2703ms;
+}
+.cell:nth-child(596) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2059ms;
+}
+.cell:nth-child(597) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2339ms;
+}
+.cell:nth-child(598) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3068ms;
+}
+.cell:nth-child(599) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4819ms;
+}
+.cell:nth-child(600) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1395ms;
+}
+.cell:nth-child(601) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -32ms;
+}
+.cell:nth-child(603) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3996ms;
+}
+.cell:nth-child(642) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -632ms;
+}
+.cell:nth-child(643) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1296ms;
+}
+.cell:nth-child(644) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1923ms;
+}
+.cell:nth-child(645) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -71ms;
+}
+.cell:nth-child(646) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3073ms;
+}
+.cell:nth-child(647) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2947ms;
+}
+.cell:nth-child(648) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2237ms;
+}
+.cell:nth-child(649) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4412ms;
+}
+.cell:nth-child(650) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2094ms;
+}
+.cell:nth-child(651) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3185ms;
+}
+.cell:nth-child(652) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2600ms;
+}
+.cell:nth-child(653) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2958ms;
+}
+.cell:nth-child(654) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3526ms;
+}
+.cell:nth-child(657) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2132ms;
+}
+.cell:nth-child(658) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1698ms;
+}
+.cell:nth-child(697) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1578ms;
+}
+.cell:nth-child(698) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1278ms;
+}
+.cell:nth-child(699) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2237ms;
+}
+.cell:nth-child(700) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3118ms;
+}
+.cell:nth-child(701) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2030ms;
+}
+.cell:nth-child(702) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1086ms;
+}
+.cell:nth-child(703) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4115ms;
+}
+.cell:nth-child(704) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4366ms;
+}
+.cell:nth-child(705) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4229ms;
+}
+.cell:nth-child(706) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -399ms;
+}
+.cell:nth-child(707) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4280ms;
+}
+.cell:nth-child(708) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1571ms;
+}
+.cell:nth-child(709) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4422ms;
+}
+.cell:nth-child(712) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -293ms;
+}
+.cell:nth-child(752) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2541ms;
+}
+.cell:nth-child(753) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1729ms;
+}
+.cell:nth-child(754) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1398ms;
+}
+.cell:nth-child(755) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2449ms;
+}
+.cell:nth-child(756) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2617ms;
+}
+.cell:nth-child(757) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2556ms;
+}
+.cell:nth-child(758) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2923ms;
+}
+.cell:nth-child(759) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2167ms;
+}
+.cell:nth-child(760) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3348ms;
+}
+.cell:nth-child(761) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -859ms;
+}
+.cell:nth-child(762) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -724ms;
+}
+.cell:nth-child(763) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1864ms;
+}
+.cell:nth-child(764) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3557ms;
+}
+.cell:nth-child(807) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2576ms;
+}
+.cell:nth-child(808) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3826ms;
+}
+.cell:nth-child(809) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2971ms;
+}
+.cell:nth-child(810) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2857ms;
+}
+.cell:nth-child(811) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4923ms;
+}
+.cell:nth-child(812) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -902ms;
+}
+.cell:nth-child(813) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4419ms;
+}
+.cell:nth-child(814) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1283ms;
+}
+.cell:nth-child(815) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2746ms;
+}
+.cell:nth-child(816) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3092ms;
+}
+.cell:nth-child(817) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1769ms;
+}
+.cell:nth-child(818) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4110ms;
+}
+.cell:nth-child(819) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4461ms;
+}
+.cell:nth-child(821) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3293ms;
+}
+.cell:nth-child(859) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -83ms;
+}
+.cell:nth-child(860) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3684ms;
+}
+.cell:nth-child(861) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -603ms;
+}
+.cell:nth-child(862) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -224ms;
+}
+.cell:nth-child(863) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2657ms;
+}
+.cell:nth-child(864) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -284ms;
+}
+.cell:nth-child(865) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1204ms;
+}
+.cell:nth-child(866) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4741ms;
+}
+.cell:nth-child(867) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4095ms;
+}
+.cell:nth-child(868) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -699ms;
+}
+.cell:nth-child(869) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2868ms;
+}
+.cell:nth-child(870) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1825ms;
+}
+.cell:nth-child(871) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3777ms;
+}
+.cell:nth-child(872) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2232ms;
+}
+.cell:nth-child(873) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1587ms;
+}
+.cell:nth-child(876) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2851ms;
+}
+.cell:nth-child(913) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3559ms;
+}
+.cell:nth-child(914) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4018ms;
+}
+.cell:nth-child(916) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3916ms;
+}
+.cell:nth-child(917) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2162ms;
+}
+.cell:nth-child(918) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2120ms;
+}
+.cell:nth-child(919) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1304ms;
+}
+.cell:nth-child(920) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3609ms;
+}
+.cell:nth-child(921) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3587ms;
+}
+.cell:nth-child(922) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -98ms;
+}
+.cell:nth-child(923) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -300ms;
+}
+.cell:nth-child(924) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -116ms;
+}
+.cell:nth-child(925) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1628ms;
+}
+.cell:nth-child(926) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1580ms;
+}
+.cell:nth-child(928) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2469ms;
+}
+.cell:nth-child(930) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1304ms;
+}
+.cell:nth-child(967) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1995ms;
+}
+.cell:nth-child(968) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -790ms;
+}
+.cell:nth-child(969) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3059ms;
+}
+.cell:nth-child(970) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4980ms;
+}
+.cell:nth-child(972) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3306ms;
+}
+.cell:nth-child(973) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3579ms;
+}
+.cell:nth-child(974) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2311ms;
+}
+.cell:nth-child(975) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -183ms;
+}
+.cell:nth-child(976) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2480ms;
+}
+.cell:nth-child(977) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -843ms;
+}
+.cell:nth-child(978) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1181ms;
+}
+.cell:nth-child(979) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1421ms;
+}
+.cell:nth-child(980) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4570ms;
+}
+.cell:nth-child(981) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2826ms;
+}
+.cell:nth-child(982) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1848ms;
+}
+.cell:nth-child(1022) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2584ms;
+}
+.cell:nth-child(1023) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2680ms;
+}
+.cell:nth-child(1024) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4122ms;
+}
+.cell:nth-child(1025) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3198ms;
+}
+.cell:nth-child(1026) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2132ms;
+}
+.cell:nth-child(1027) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2461ms;
+}
+.cell:nth-child(1029) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1609ms;
+}
+.cell:nth-child(1030) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -920ms;
+}
+.cell:nth-child(1031) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3621ms;
+}
+.cell:nth-child(1034) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2209ms;
+}
+.cell:nth-child(1035) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4640ms;
+}
+.cell:nth-child(1036) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1777ms;
+}
+.cell:nth-child(1037) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1289ms;
+}
+.cell:nth-child(1079) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -925ms;
+}
+.cell:nth-child(1080) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2875ms;
+}
+.cell:nth-child(1081) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2187ms;
+}
+.cell:nth-child(1085) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3479ms;
+}
+.cell:nth-child(1089) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -704ms;
+}
+.cell:nth-child(1090) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -2821ms;
+}
+.cell:nth-child(1135) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -27ms;
+}
+.cell:nth-child(1144) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1312ms;
+}
+.cell:nth-child(1145) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3275ms;
+}
+.cell:nth-child(1200) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4802ms;
+}
+.cell:nth-child(1202) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -912ms;
+}
+.cell:nth-child(1203) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -4984ms;
+}
+.cell:nth-child(1255) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1001ms;
+}
+.cell:nth-child(1256) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -583ms;
+}
+.cell:nth-child(1257) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -1262ms;
+}
+.cell:nth-child(1311) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: asia 5s linear infinite;
+  animation-delay: -3133ms;
+}
+.cell:nth-child(1206) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -405ms;
+}
+.cell:nth-child(1262) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -940ms;
+}
+.cell:nth-child(1263) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -669ms;
+}
+.cell:nth-child(1317) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -420ms;
+}
+.cell:nth-child(1369) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1535ms;
+}
+.cell:nth-child(1370) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -990ms;
+}
+.cell:nth-child(1372) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1541ms;
+}
+.cell:nth-child(1422) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1907ms;
+}
+.cell:nth-child(1423) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -137ms;
+}
+.cell:nth-child(1424) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1112ms;
+}
+.cell:nth-child(1425) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -34ms;
+}
+.cell:nth-child(1426) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1222ms;
+}
+.cell:nth-child(1427) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -546ms;
+}
+.cell:nth-child(1428) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1135ms;
+}
+.cell:nth-child(1476) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1079ms;
+}
+.cell:nth-child(1477) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -410ms;
+}
+.cell:nth-child(1478) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -103ms;
+}
+.cell:nth-child(1479) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -207ms;
+}
+.cell:nth-child(1480) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1450ms;
+}
+.cell:nth-child(1481) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -186ms;
+}
+.cell:nth-child(1482) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -337ms;
+}
+.cell:nth-child(1483) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -983ms;
+}
+.cell:nth-child(1531) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -212ms;
+}
+.cell:nth-child(1532) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1110ms;
+}
+.cell:nth-child(1533) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -486ms;
+}
+.cell:nth-child(1534) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -439ms;
+}
+.cell:nth-child(1535) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -925ms;
+}
+.cell:nth-child(1536) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -723ms;
+}
+.cell:nth-child(1537) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1525ms;
+}
+.cell:nth-child(1538) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1120ms;
+}
+.cell:nth-child(1586) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -57ms;
+}
+.cell:nth-child(1587) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -715ms;
+}
+.cell:nth-child(1590) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1663ms;
+}
+.cell:nth-child(1591) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -659ms;
+}
+.cell:nth-child(1592) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -267ms;
+}
+.cell:nth-child(1645) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -669ms;
+}
+.cell:nth-child(1646) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -189ms;
+}
+.cell:nth-child(1650) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -1804ms;
+}
+.cell:nth-child(1705) {
+  background-color: #222;
+  font-size: 0.5em;
+  border-radius: 50%;
+  animation: australia 2s linear infinite;
+  animation-delay: -295ms;
+}
+@keyframes north-america {
+  0% {
+    background-color: #11f801;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+@keyframes south-america {
+  0% {
+    background-color: cyan;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+@keyframes africa {
+  0% {
+    background-color: #eaf803;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+@keyframes europe {
+  0% {
+    background-color: #f80001;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+@keyframes asia {
+  0% {
+    background-color: orange;
+  }
+  100% {
+    background-color: #222;
+  }
+}
+@keyframes australia {
+  0% {
+    background-color: #9503c4;
+  }
+  100% {
+    background-color: #222;
+  }
+}

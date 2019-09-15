@@ -1,20 +1,22 @@
 import React from "react";
 import { connect, styled } from "frontity";
+import { Container, Row, Col, Tabs, Tab} from "react-bootstrap";
 import Link from "./link";
 
 const Header = ({ state }) => (
-    <Container>
+    <Ele>
+      <Container>
       <StyledLink link="/">
         <Title>{state.frontity.title}</Title>
       </StyledLink>
       <Description>{state.frontity.description}</Description>
-    </Container>
+      </Container>
+    </Ele>
 );
 
 export default connect(Header);
 
-const Container = styled.header``;
-
+const Ele = styled.header``;
 const Title = styled.h2`
   margin: 0 0 0 30%;
   margin-bottom: 16px;

@@ -1,0 +1,112 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.40.0",
+  "hash": "30775bb15fd8697be5ca",
+  "publicPath": "/static/",
+  "outputPath": "C:\\wamp64\\www\\wp\\wp-content\\themes\\primitiveone\\build\\static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "primitiveone": [
+      "primitiveone.module.js",
+      "primitiveone.32c4e345ad13fdbdf070.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "32c4e345ad13fdbdf070.hot-update.json",
+      "size": 54,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 43973,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "primitiveone.32c4e345ad13fdbdf070.hot-update.js",
+      "size": 25997,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "primitiveone.module.js",
+      "size": 6525655,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js",
+        "primitiveone.32c4e345ad13fdbdf070.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js",
+        "primitiveone.32c4e345ad13fdbdf070.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}

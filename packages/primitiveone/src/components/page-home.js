@@ -1,28 +1,25 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Item from "./list/list-item";
-import Hero from './animation/timeline';
-import Post from './post';
-import { Tabs, Tab, Image } from "react-bootstrap";
+import { Container, Row, Col, Tabs, Tab} from "react-bootstrap";
+import Hero from './animation/jungle';
 import Work from './widgets/widget';
 import DataMap from './animation/datamap';
 
 const PageHome = ({ state }) => {
-  // Get the data of the current list.
+  // Get the data of the current link?
   const data = state.source.get(state.router.link);
   console.log("home", state);
 
   return (
-    <Container className="home">
-
-      <div className="row">
-        <div className="col-lg-12">
+    <Section className="home">
+      <Row>
+        <Col lg="12">
           <Hero />
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div className="container">
-        <div className="row intro">
+      <Container>
+        <div className="intro">
           <div className="col-lg-12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>
@@ -30,9 +27,9 @@ const PageHome = ({ state }) => {
             </p>
           </div>
         </div>
-      </div>
+      </Container>
 
-      <div className="services container-fluid">
+      <Container fluid="true" className="services">
         <div className="row">
           <div className="col-lg-12">
             <Tabs defaultActiveKey="hp-design">
@@ -127,16 +124,14 @@ const PageHome = ({ state }) => {
             </Tabs>
           </div>
         </div>
-      </div >
+      </Container>
 
-      <div className="container">
-        <Work />
-      </div>
-
-    </Container >
+      <Work />
+ 
+    </Section>
   );
 };
 
 export default connect(PageHome);
 
-const Container = styled.div``;
+const Section = styled.main``;
