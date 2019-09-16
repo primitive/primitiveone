@@ -81,14 +81,19 @@ const TweenComponent = () => (
           <Tween
             staggerFrom={{
               css: {
-                width: '160%',
-                height: '160%',
                 opacity: '0',
+              },
+            }}
+            staggerTo={{
+              css: {
+                opacity: '1',
+                width: '60%',
+                height: '60%'
               },
             }}
           >
             <div className="jungle-logo a-layer">
-            <Image className="img-responsive" src={"https://primitivedigital.uk/img/jungle/1x/logo-day.png"} alt="Primitive Digital - Web Design &amp; Development" />
+
             </div>
           </Tween>
 
@@ -101,7 +106,7 @@ const TweenComponent = () => (
             ease="Expo.easeInOut"
           >
             <div className="jungle-scene a-layer">
-              test
+              
             </div>
           </Tween>
 
@@ -126,35 +131,38 @@ const TweenStyled = styled.div`
 
 
   #hero {
-  height: 100vh;
-  width: 100vw;
+    width: 100vw;
+    height: 60vw;
+  
   max-height: 1400px;
   max-height: 2600px;
-margin: 0 auto;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
   background-color: #b7ebde;
   background: url(https://primitivedigital.uk/img/jungle/1x/PD_BGNight_2560x1440px.png);
   background-position: bottom center;
   background-size: cover;
+  border-bottom: solid 3px #343a40;
   }
   
   .a-layer {
-    height: 100vh;
+    width: 100vw;
+    height: 60vw;
     max-width: 100%;
     max-height: 100%;
     position: absolute;
     margin: 0 !important;
   }
   .a-layer img {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
     overflow:hidden;
   }
 
   .jungle-trees {
-    width: 100%;
     bottom: 0;
     background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleTreeline_2560x1440px.png);
     background-position: bottom center;
@@ -162,7 +170,6 @@ margin: 0 auto;
     z-index: 50;
   }
   .jungle-right {
-    width: 100%;
     bottom: 0;
     background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleRight_2560x1440px.png);
     background-position: top right;
@@ -170,7 +177,6 @@ margin: 0 auto;
     z-index: 60;
   }
   .jungle-left {
-    width: 100%;
     top: 0;
     background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleLeft_2560x1440px.png);
     background-position: top left;
@@ -178,7 +184,6 @@ margin: 0 auto;
     z-index: 70;
   }
   .jungle-bottom {
-    width: 100%;
     bottom: 0;
     background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleBottom_2560x1440px.png);
     background-position: bottom center;
@@ -187,38 +192,18 @@ margin: 0 auto;
   }
   .jungle-logo {
     position: relative;
-    padding-left: 10%;
-    max-width: 60%;
-    max-height: 60%;
-    width: auto;
-    height: auto;
     margin: auto !important;
     z-index: 90;
+    background: url(https://primitivedigital.uk/img/jungle/1x/logo-day.png);
+    background-position: top center;
+    background-size: cover;
   }
   .jungle-scene {
-    height: 100vh;
-    width: 100%;
+    height: 60vw;
     top:0;
     z-index: 10;
     background: url(https://primitivedigital.uk/img/jungle/1x/PD_BGDay_2560x1440px.png);
     background-position: top center;
     background-size: cover;
-  }
-
-
-  .tween {
-	  width: 100px;
-    height: 100px;
-    background-color: red;
-    margin: 0 !important;
-    position: relative;
-    left: calc(50% - 50px);
-  }
-  .stagger {
-    width: 50px;
-    height: 50px;
-    left: 100%;
-    background-color: green;
-    position: relative;
   }
 `;

@@ -3,7 +3,7 @@ import { styled } from "frontity";
 import Loader from "react-spinners/ScaleLoader";
 
 const Loading = () => (
-  <Container>
+  <Container className="post">
     <Loader
       color="rgba(12, 17, 43, 0.3)"
       radius={0}
@@ -17,10 +17,7 @@ const Loading = () => (
 export default Loading;
 
 const Container = styled.div`
-  width: 800px;
-  margin: 0;
-  padding: 24px;
-  display: flex;
+  padding: 4rem;
   justify-content: center;
   align-items: center;
 

@@ -6,10 +6,11 @@ import Link from "./link";
 const Header = ({ state }) => (
     <Ele>
       <Container>
-      <StyledLink link="/">
+      <StyledLink link="/web-design/">
         <Title>{state.frontity.title}</Title>
+        <p className="subslab"><span className="slab">We Make </span>Fast and Efficient</p>
+        <Description>{state.frontity.description}</Description>
       </StyledLink>
-      <Description>{state.frontity.description}</Description>
       </Container>
     </Ele>
 );
@@ -17,16 +18,8 @@ const Header = ({ state }) => (
 export default connect(Header);
 
 const Ele = styled.header``;
-const Title = styled.h2`
-  margin: 0 0 0 30%;
-  margin-bottom: 16px;
-`;
-
-const Description = styled.h4`
-  margin: 0 0 0 30%;
-  color: rgba(255, 255, 255, 0.7);
-`;
-
+const Title = styled.h2``;
+const Description = styled.h4``;
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;

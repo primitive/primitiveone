@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "frontity";
 
 const Page404 = () => (
-  <Container>
+  <Container className="post">
     <Title>Oops! 404</Title>
     <Description>
       That page can’t be found{" "}
@@ -16,9 +16,7 @@ const Page404 = () => (
 export default Page404;
 
 const Container = styled.div`
-  width: 800px;
-  margin: 0;
-  padding: 24px;
+  padding: 4rem;
   text-align: center;
 `;
 

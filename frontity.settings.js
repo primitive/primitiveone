@@ -4,7 +4,7 @@ const settings = {
     "frontity": {
       "url": "https://primitivedigital.uk",
       "title": "Want a Website?",
-      "description": "We Make Fast and Efficient WordPress Web Sites and Apps"
+      "description": "WordPress Web Sites and Apps"
     }
   },
   "packages": [
@@ -19,19 +19,19 @@ const settings = {
             ],
             [
               "Design",
-              "/"
+              "/web-design"
             ],
             [
               "Development",
-              "/"
+              "/web-development"
             ],
             [
               "Data",
-              "/"
+              "/data-isights"
             ],
             [
               "Marketing",
-              "/"
+              "/marketing-services"
             ],
             [
               "Blog",
@@ -50,8 +50,8 @@ const settings = {
       "state": {
         "source": {
           "api": "https://staging.primitivedigital.uk/wp-json/",
-          "homepage": "/home",
-          "postsPage": "/blog"
+          "homepage": "/home/",
+          "postsPage": "/blog/"
         }
       }
     },

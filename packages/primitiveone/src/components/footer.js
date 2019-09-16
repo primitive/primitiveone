@@ -10,7 +10,7 @@ const Footer = ({ state }) => (
       <Container>
         <Row>
           <Col lg="12">
-            <h2 className="subslab"><span>- Top Banana - </span>Web Design <span>&amp;</span> Development</h2>
+            <h2 className="subslab"><span>- Top Banana -</span> Web Design <span>&amp;</span> Development </h2>
           </Col>
           <Col lg="12">
             <Image src={"https://primitivedigital.uk/img/promo/topbanana1.png"} className="img-fluid" alt="Top Banana Web Design and Development" />

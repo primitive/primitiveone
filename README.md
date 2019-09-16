@@ -1,10 +1,10 @@
 # Primitive One Theme
 A WordPress REST API Theme
 
-Built with NPM, React 16 and Frontity.
-And a little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
+Built with Node.js, React 16 and Frontity.
+With a little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 
-1st Release (September 12, 2019):
+1st Release (September 16, 2019):
 Static
 
 To Do >>>>>>
@@ -28,9 +28,10 @@ The following pre-requisites should be in place for the theme to work:
 
 1. WordPress version 5.0 or later
 2. Posts permalink set set to: Custom Structure - `/posts/%postname%/`
-
 3. ACF Plugin Installed
-4. ACF Category permalink to be set as: Custom base - `/jokes/`
+4. CPT UI Plugin Installed
+
+5. ACF Category permalink to be set as: Custom base - `/jokes/`
 
 Installing and beginning development
 ------------------------------------
@@ -40,12 +41,18 @@ https://docs.frontity.org/getting-started/quick-start-guide
 npx frontity dev
 npx frontity build
 
-1. `git clone https://github.com/primitiveshaun/nice2bone`
+1. `git clone https://github.com/primitiveshaun/primitiveone`
 2. `cd nice2bone`
 3. `npm install`
 
+Deployment
+------------------------------------
 
-The code is opensource so continue to play like you mean business.
+npx now
+npx now --prod
+
+
+The code is opensource so play like you mean business.
 
 Enjoy!
 
