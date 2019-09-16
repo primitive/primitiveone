@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import { Container, Row, Col, Tabs, Tab} from "react-bootstrap";
+import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import Hero from './animation/jungle';
 import Work from './widgets/widget';
 import DataMap from './animation/datamap';
@@ -12,53 +12,51 @@ const PageHome = ({ state }) => {
 
   return (
     <Section className="home">
-      <Row>
-        <Col lg="12">
-          <Hero />
-        </Col>
-      </Row>
+      <div>
+        <Hero />
+      </div>
 
       <Container>
-        <div className="intro">
-          <div className="col-lg-12">
+        <Row className="intro">
+          <Col lg="12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>
               - Pretty, Sexy, Webby, Tecchie Stuff -
             </p>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
 
       <Container fluid="true" className="services">
-        <div className="row">
-          <div className="col-lg-12">
+
+   
+
             <Tabs defaultActiveKey="hp-design">
               <Tab eventKey="hp-design" className="hp-design" title="Design">
-                <div className="row">
-                  <div className="col-lg-10">
+                <Row>
+                  <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Web Design</h3>
-                      <p>We want to help you connect with your audience and...</p>
+                      <p>Find your audience and...</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>App &amp; UI Design</h3>
-                      <p>to speak to your users...</p>
+                      <p>speak to your users...</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>Brand &amp; Logo Design</h3>
-                      <p>creatively, beautifully and consistently...</p>
+                      <p>in creative, beautiful and consistent ways...</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>Print Design</h3>
                       <p>across all platforms.</p>
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </Tab>
               <Tab eventKey="hp-dev" className="hp-dev" title="Development">
-                <div className="row">
-                  <div className="col-lg-10 img-wrap">
-
+                <Row>
+                  <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Rapid Web Development</h3>
                       <p>Want to get online or...</p>
@@ -78,56 +76,64 @@ const PageHome = ({ state }) => {
                       <h3>Integration &amp; Automation</h3>
                       <p>and, get more done by doing less.</p>
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </Tab>
               <Tab eventKey="hp-data" className="hp-data" title="Data">
-              <div className="txt-area">
-                <div className="txt-wrap">
-                  <h3>Analytics and Reporting</h3>
-                  <p>Infomation is beautiful so...</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>Search Engine Optimisation</h3>
-                  <p>have a good Goole and...</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>Data Visualisation &amp; Dashboards</h3>
-                  <p>make communication a joy...</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>A/B Testing and Research</h3>
-                  <p>and improve with qualitative insights.</p>
-                </div>
-                </div>
-                <DataMap />
+                <Row>
+                  <Col lg="12" className="txt-area">
+                    <div className="txt-wrap">
+                      <h3>Analytics and Reporting</h3>
+                      <p>Infomation is beautiful so...</p>
+                    </div>
+                    <div className="txt-wrap">
+                      <h3>Search Engine Optimisation</h3>
+                      <p>have a good Goole and...</p>
+                    </div>
+                    <div className="txt-wrap">
+                      <h3>Data Visualisation &amp; Dashboards</h3>
+                      <p>make communication a joy...</p>
+                    </div>
+                    <div className="txt-wrap">
+                      <h3>A/B Testing and Research</h3>
+                      <p>and improve with qualitative insights.</p>
+                    </div>
+
+                    <DataMap />
+                  </Col>
+                </Row>
               </Tab>
 
               <Tab eventKey="hp-marketing" className="hp-marketing" title="Marketing">
-              <div className="txt-wrap">
-                  <h3>Social Media &amp; PPC Banners</h3>
-                  <p>Some content in menu 2.</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>eMail Design &amp; Marketing</h3>
-                  <p>Some content in menu 2.</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>Strategy &amp; Campaigns</h3>
-                  <p>Some content.</p>
-                </div>
-                <div className="txt-wrap">
-                  <h3>Triggers &amp; Automation</h3>
-                  <p>Some content.</p>
-                </div>
+              <Row>
+                  <Col lg="12" className="txt-area">
+                  <div className="txt-wrap">
+                    <h3>Social Media &amp; PPC Banners</h3>
+                    <p>Some content in menu 2.</p>
+                  </div>
+                  <div className="txt-wrap">
+                    <h3>eMail Design &amp; Marketing</h3>
+                    <p>Some content in menu 2.</p>
+                  </div>
+                  <div className="txt-wrap">
+                    <h3>Strategy &amp; Campaigns</h3>
+                    <p>Some content.</p>
+                  </div>
+                  <div className="txt-wrap">
+                    <h3>Triggers &amp; Automation</h3>
+                    <p>Some content.</p>
+                  </div>
+                </Col>
+                </Row>
               </Tab>
+
             </Tabs>
-          </div>
-        </div>
+
+
       </Container>
 
       <Work />
- 
+
     </Section>
   );
 };

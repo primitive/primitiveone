@@ -41,24 +41,23 @@ a {
 
 
 
-
-
-
-
-
-
   .wrap-header {
     background-color: #87af4e;
-  }
-  .wrap-header header {
     background: url(https://staging.primitivedigital.uk/wp-content/uploads/header/tinymonkey_header.png) #87af4e;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+  .wrap-header header {
     padding: 2rem;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  .wrap-header header h2 {
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: 1px;
   }
 
   nav.navbar {
@@ -83,11 +82,18 @@ a {
   nav a.navbar-brand img {
       max-height: 60px;
   }
-  .navbar-light .navbar-toggler {
-    color: #87af4e;
-    border-color: #87af4e;
+  nav .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.2);
+    background-color: #87af4e;
   }
 
+
+
+
+  .home .post h1 {
+    padding: 1rem 2rem 2rem 0;
+  }
   .home, .post {
     display: block;
     width: 100%;

@@ -35,7 +35,7 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles} />
       <HeadWrapper className="wrap-header">
         <Header />
-
+        <Nav />
       </HeadWrapper>
       <BodyWrapper className="wrap-body">
           <Body>
@@ -59,11 +59,12 @@ margin:0;
 padding: 0;
 `;
 const BodyWrapper = styled.div`
+margin:0;
+padding: 0;
   background-image: linear-gradient(
     180deg,
     rgba(66, 174, 228, 0.1),
     rgba(66, 174, 228, 0)
   );
 `;
-const Content = styled.div``;
 const Body = styled.div``;
