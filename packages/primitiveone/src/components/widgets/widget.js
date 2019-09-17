@@ -21,7 +21,7 @@ const Widget = ({ state }) => {
       <Row>
 
         <div className="col-lg-4 col-sm-12">
-          <a href="https://nice2b.me/">
+          <a href="https://nice2b.me/" aria-label="Nice2B.me">
             <article className="card">
               <div className="img-holder">
                 <Image className="card-img-top" src={"https://primitivedigital.uk/img/work/n2b.jpg"} alt="Nice2b.me React Theme for WordPress" />
@@ -42,7 +42,7 @@ const Widget = ({ state }) => {
         </div>
 
         <div className="col-lg-4 col-sm-12">
-          <a href="http://bungalowcaravansite.co.uk">
+          <a href="http://bungalowcaravansite.co.uk" aria-label="The Bungalow Carvan Site">
             <article className="card">
               <div className="img-holder">
                 <Image className="card-img-top" src={"https://primitivedigital.uk/img/work/bungalowcs.jpg"} alt="Website and Branding for The Bungalow Carvan Site York" />
@@ -63,7 +63,7 @@ const Widget = ({ state }) => {
         </div>
 
         <div className="col-lg-4 col-sm-12">
-          <a href="https://primitivehosting.uk/">
+          <a href="https://primitivehosting.uk/" aria-label="Nice2B.me">
             <article className="card">
               <div className="img-holder">
                 <Image className="card-img-top" src={"https://primitivedigital.uk/img/work/primitivehosting.jpg"} alt="Nice2b.me React Theme for WordPress" />

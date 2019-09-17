@@ -18,10 +18,10 @@ export default Loading;
 
 const Container = styled.div`
   padding: 4rem;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 
   & > * {
     margin-top: 24px;
   }
+
 `;

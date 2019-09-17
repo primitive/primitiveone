@@ -29,27 +29,26 @@ const PageHome = ({ state }) => {
 
       <Container fluid="true" className="services">
 
-   
-
-            <Tabs defaultActiveKey="hp-design">
+  
+            <Tabs defaultActiveKey="hp-design" role="tablist">
               <Tab eventKey="hp-design" className="hp-design" title="Design">
                 <Row>
                   <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Web Design</h3>
-                      <p>Find your audience and...</p>
+                      <p>Helps you find your audience</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>App &amp; UI Design</h3>
-                      <p>speak to your users...</p>
+                      <p>Lets you connect with your users</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>Brand &amp; Logo Design</h3>
-                      <p>in creative, beautiful and consistent ways...</p>
+                      <p>Done in creative, beautiful and consistent ways</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>Print Design</h3>
-                      <p>across all platforms.</p>
+                      <p>Across all platforms</p>
                     </div>
                   </Col>
                 </Row>
@@ -59,22 +58,22 @@ const PageHome = ({ state }) => {
                   <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Rapid Web Development</h3>
-                      <p>Want to get online or...</p>
+                      <p>Get online fast...</p>
                     </div>
 
                     <div className="txt-wrap">
                       <h3>Application Development</h3>
-                      <p>to get in their hands?</p>
+                      <p>Meet the needs of your users</p>
                     </div>
 
                     <div className="txt-wrap">
-                      <h3>WordPress Development</h3>
-                      <p>Why not do it in style...</p>
+                      <h3>WordPress</h3>
+                      <p>Built on the most popular core</p>
                     </div>
 
                     <div className="txt-wrap">
-                      <h3>Integration &amp; Automation</h3>
-                      <p>and, get more done by doing less.</p>
+                      <h3>REST API + Custom Posts</h3>
+                      <p>The possibilities are endless</p>
                     </div>
                   </Col>
                 </Row>
@@ -84,19 +83,19 @@ const PageHome = ({ state }) => {
                   <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Analytics and Reporting</h3>
-                      <p>Infomation is beautiful so...</p>
+                      <p>Infomation is beautiful</p>
                     </div>
                     <div className="txt-wrap">
                       <h3>Search Engine Optimisation</h3>
-                      <p>have a good Goole and...</p>
+                      <p>Especially climbing the ranks</p>
                     </div>
                     <div className="txt-wrap">
-                      <h3>Data Visualisation &amp; Dashboards</h3>
-                      <p>make communication a joy...</p>
+                      <h3>Data Visualisation</h3>
+                      <p>Make communication a simple joy</p>
                     </div>
                     <div className="txt-wrap">
-                      <h3>A/B Testing and Research</h3>
-                      <p>and improve with qualitative insights.</p>
+                      <h3>A/B Testing/Research</h3>
+                      <p>You can always A/B better</p>
                     </div>
 
                     <DataMap />
@@ -108,20 +107,20 @@ const PageHome = ({ state }) => {
               <Row>
                   <Col lg="12" className="txt-area">
                   <div className="txt-wrap">
-                    <h3>Social Media &amp; PPC Banners</h3>
-                    <p>Some content in menu 2.</p>
+                    <h3>Social Media</h3>
+                    <p>Graphics, Banners and Promos</p>
                   </div>
                   <div className="txt-wrap">
-                    <h3>eMail Design &amp; Marketing</h3>
-                    <p>Some content in menu 2.</p>
+                    <h3>eMail &amp; eCommerce</h3>
+                    <p>Sell, sell, sell</p>
                   </div>
                   <div className="txt-wrap">
                     <h3>Strategy &amp; Campaigns</h3>
-                    <p>Some content.</p>
+                    <p>And do it well, well, well</p>
                   </div>
                   <div className="txt-wrap">
                     <h3>Triggers &amp; Automation</h3>
-                    <p>Some content.</p>
+                    <p>Systems intergration and magic buttons</p>
                   </div>
                 </Col>
                 </Row>
