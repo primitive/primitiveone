@@ -129,7 +129,6 @@ const TweenStyled = styled.div`
   position: relative;
   border-top: solid 3px #343a40;
 
-
   #hero {
     width: 100vw;
     height: 60vw;
@@ -140,7 +139,7 @@ const TweenStyled = styled.div`
   overflow: hidden;
   position: relative;
   background-color: #b7ebde;
-  background: url(https://primitivedigital.uk/img/jungle/1x/PD_BGNight_2560x1440px.png);
+  background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_BGNight_2560x1440px.png);
   background-position: bottom center;
   background-size: cover;
   border-bottom: solid 3px #343a40;
@@ -164,28 +163,28 @@ const TweenStyled = styled.div`
 
   .jungle-trees {
     bottom: 0;
-    background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleTreeline_2560x1440px.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_JungleTreeline_2560x1440px.png);
     background-position: bottom center;
     background-size: cover;
     z-index: 50;
   }
   .jungle-right {
     bottom: 0;
-    background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleRight_2560x1440px.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_JungleRight_2560x1440px.png);
     background-position: top right;
     background-size: cover;
     z-index: 60;
   }
   .jungle-left {
     top: 0;
-    background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleLeft_2560x1440px.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_JungleLeft_2560x1440px.png);
     background-position: top left;
     background-size: cover;
     z-index: 70;
   }
   .jungle-bottom {
     bottom: 0;
-    background: url(https://primitivedigital.uk/img/jungle/1x/PD_JungleBottom_2560x1440px.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_JungleBottom_2560x1440px.png);
     background-position: bottom center;
     background-size: cover;
     z-index: 80;
@@ -194,7 +193,7 @@ const TweenStyled = styled.div`
     position: relative;
     margin: auto !important;
     z-index: 90;
-    background: url(https://primitivedigital.uk/img/jungle/1x/logo-day.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/logo-day.png);
     background-position: top center;
     background-size: cover;
   }
@@ -202,7 +201,7 @@ const TweenStyled = styled.div`
     height: 60vw;
     top:0;
     z-index: 10;
-    background: url(https://primitivedigital.uk/img/jungle/1x/PD_BGDay_2560x1440px.png);
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/jungle/1x/PD_BGDay_2560x1440px.png);
     background-position: top center;
     background-size: cover;
   }

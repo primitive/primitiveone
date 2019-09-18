@@ -1,6 +1,3 @@
-
-
-
 html { margin: 0; padding: 0; font-size: 14px; }
 body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -38,16 +35,13 @@ a {
   margin: 0;
 }
 
-
-
-
   .wrap-header {
     background-color: #87af4e;
-    background: url(https://primitivedigital.uk/img/header/website_header.jpg) #87af4e;
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/header/website_header.jpg) #87af4e;
     background-position-x: 10%;
     background-position-x: top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
   }
   .wrap-header .container {
     background: none;
@@ -88,7 +82,7 @@ a {
   }
   .wrap-header h4 {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px #477C16;
   }
@@ -140,15 +134,16 @@ a {
     margin-top: 3.5rem;
     margin-bottom: 8px;
     color: rgba(12, 17, 43);
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: center;
+    letter-spacing: 0;
   }
-  .intro span {
+  .intro h1 span {
     display: block;
     font-size: 2rem;
     color: #87af4e;
   }
-  .intro span:nth-of-type(2) {
+  .intro h1 span:nth-of-type(2) {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
   }
@@ -157,6 +152,9 @@ a {
     font-family: 'Amatic SC', cursive;
     font-size: 3rem;
     text-align: center;
+  }
+  .intro p span {
+    display: none;
   }
 
   /* SERVICES */
@@ -215,191 +213,19 @@ a {
     background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
   }
 
-
-/* --- RESPONSIVE --- */
-
-  /*
- Extra small devices (portrait phones, less than 576px)
- No media query for `xs` since this is the default in Bootstrap
- */
-
-/* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width: 576px) {
-  html { font-size: 14px; }
-  .container { max-width: 540px; }
-  .wrap-header .container {
-    background-position-x: 0;
-  }
-  .wrap-header {
-    background: none;
-    background-color: #87af4e;
-  }
-  .wrap-header .container {
-    background: url(https://primitivedigital.uk/img/header/website_header.jpg) #87af4e;
-    background-position-x: 10%;
-    background-position-x: top;
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-.wrap-header header a {
-  margin-left: 1rem;
-}
-.footer-cta h2 {
-  font-size: 5rem;
-}
-.footer-cta h2 span:nth-of-type(1) {
-  font-size: 8rem;
-}
-.footer-cta h2 span:nth-of-type(2) {
-  display: block;
-  font-size: 6rem;
-}
-.footer-cta h3 strong, .footer-cta h3 a {
-  font-size: 4rem;
-}
-
-}
-/* Medium devices (tablets, 768px and up)  */
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 14px;
-  }
-.container {
-    max-width: 720px;
-}
-.wrap-header .container {
-  background-position-x: 5%;
-}
-.wrap-header header a {
-  margin-left: 20%;
-}
-.frame {
-  padding-bottom: 2.5rem;
-}
-.intro h1 {
-  font-size: 4rem;
-}
-}
-/* Large devices (desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-  html {
-    font-size: 15px;
-  }
-.container {
-    max-width: 960px;
-}
-.wrap-header .container {
-  background-position-x: 10%;
-}
-.wrap-header header a {
-  margin-left: 30%;
-}
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-  .container {
-      max-width: 1140px;
-  }
-  .wrap-header .container {
-    background-position-x: 20%;
-  }
-  .wrap-header header a {
-    margin-left: 35%;
-  }
-}
-
-  /* --- ANIMATION --- */
-  
-
-  @keyframes underline-gradient {
-    0% {
-      transform: translate3d(0%, 0%, 0);
-    }
-    100% {
-      transform: translate3d(-75%, 0%, 0);
-    }
-  }
-
-  @keyframes animatedgradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-
-  @keyframes north-america {
-    0% {
-      background-color: #87af4e;
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-  @keyframes south-america {
-    0% {
-      background-color: rgb(1, 255, 137);
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-  @keyframes africa {
-    0% {
-      background-color: #eaf803;
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-  @keyframes europe {
-    0% {
-      background-color: pink;
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-  @keyframes asia {
-    0% {
-      background-color: orange;
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-  @keyframes australia {
-    0% {
-      background-color: rgb(122, 95, 255);
-    }
-    100% {
-      background-color: #222;
-    }
-  }
-
-
-  
-
   .services .tab-pane {
-    max-height: 600px;
+    max-height: 700px;
     background-color: black;
   }
   .services .hp-design {
     background-size: contain;
-    background-image: url(https://primitivedigital.uk/img/m/monkey-happy.jpg);
+    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-happy.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
   .services .hp-dev {
     background-size: contain;
-    background-image: url(https://primitivedigital.uk/img/m/monkey-eh.jpg);
+    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-eh.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -407,10 +233,11 @@ a {
   .services .hp-data .txt-area { position: relative; z-index: 10; }
   .services .hp-marketing {
     background-size: contain;
-    background-image: url(https://primitivedigital.uk/img/m/monkey-smile.jpg);
+    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-smile.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
+
 
   .post-strip { margin-bottom: 3rem; }
   .post-strip .card {
@@ -484,9 +311,14 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   transition:         1s ease-in-out;
 }
 .frame {
-  padding-top: 0;
+  padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.frame ul {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-promo1 .fancy-frame { background: #fff; }
 .footer-promo1 h5 { color: #fff; }
 .footer-promo2 h5 { color: #87af4e; }
@@ -535,27 +367,25 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   text-align: center;
 }
 
-
 .footer-cta h2 {
   padding: 2rem 0 1rem;;
   text-align: center;
   line-height: 5rem;
   color: #3B2622;
-  font-size: 4rem;
+  font-size: 3rem;
 }
-
-.footer-cta h2 span:nth-of-type(1) {
+.footer-cta h2 span {
   display: block;
   font-family: 'Amatic SC',cursive;
   color:  #87635C;
-  font-size: 6rem;
+  font-size: 5rem;
 }
-.footer-cta h2 span:nth-of-type(2) {
-  display: inline-block;
+.footer-cta h2 strong {
+  display: block;
   font-family: 'Playfair Display',serif;
   color: #E5D7B7;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 .footer-cta h3 {
   padding: 1rem 0;
@@ -563,7 +393,7 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
 }
 .footer-cta h3 strong, .footer-cta h3 a {
   display: block;
-  font-size: 5rem;
+  font-size: 4rem;
   color: #3B2622;
 }
 .footer-cta img {
@@ -595,6 +425,152 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
 #colophon img {
   padding-top: 1rem;
 }
+
+
+
+
+
+
+/* --- RESPONSIVE --- */
+
+  /*
+ Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  html { font-size: 15px; }
+  .container { max-width: 540px; }
+  .wrap-header .container { background-position-x: 0; }
+  .wrap-header { background: none; background-color: #87af4e; }
+  .wrap-header .container {
+    background: url(https://staging.primitivedigital.uk/wp-content/uploads/header/website_header.jpg) #87af4e;
+    background-position-x: 10%;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .wrap-header header a { margin-left: 1rem; }
+
+  .footer-cta h2 { font-size: 5rem; }
+  .footer-cta h2 span { font-size: 8rem; }
+  .footer-cta h2 strong {font-size: 6rem; display: block; }
+  .footer-cta h3 strong, .footer-cta h3 a { font-size: 4rem; }
+
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+  html { font-size: 14px; }
+  .container { max-width: 720px; }
+  .wrap-header .container { background-position-x: 5%; }
+  .wrap-header header a { margin-left: 20%; }
+  .wrap-header h4 { font-size: 2rem; }
+
+  .intro h1 { font-size: 4rem; }
+  .intro p { font-size: 3.5rem; }
+  .intro p span {display: inline-block; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  html { font-size: 15px; }
+  .container { max-width: 960px; }
+  .wrap-header .container { background-position-x: 10%; }
+  .wrap-header header a { margin-left: 30%; }
+
+  .intro h1 { font-size: 5rem; }
+  .intro p { font-size: 4rem;}
+  
+  .frame { padding-top: 2rem; padding-bottom: 2.5rem; }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  html { font-size: 16px; }
+  .container { max-width: 1140px; }
+  .wrap-header .container { background-position-x: 20%; }
+  .wrap-header header a { margin-left: 35%; }
+}
+
+
+/* --- ANIMATION --- */
+  
+  @keyframes underline-gradient {
+    0% {
+      transform: translate3d(0%, 0%, 0);
+    }
+    100% {
+      transform: translate3d(-75%, 0%, 0);
+    }
+  }
+
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes north-america {
+    0% {
+      background-color: #87af4e;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+  @keyframes south-america {
+    0% {
+      background-color: rgb(1, 255, 137);
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+  @keyframes africa {
+    0% {
+      background-color: #eaf803;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+  @keyframes europe {
+    0% {
+      background-color: pink;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+  @keyframes asia {
+    0% {
+      background-color: orange;
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+  @keyframes australia {
+    0% {
+      background-color: rgb(122, 95, 255);
+    }
+    100% {
+      background-color: #222;
+    }
+  }
+
+
+  
+
+
 
 
 

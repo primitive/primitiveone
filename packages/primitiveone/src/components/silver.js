@@ -9,7 +9,7 @@ const Silver = ({ state }) => (
         <Row>
           <Col>
             <div className="fancy-frame">
-              <Image src={"https://primitivedigital.uk/img/promo/wantawebsite_square.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
+              <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/promo/wantawebsite_square.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
             </div>
           </Col>
           <Col lg="6">
@@ -38,7 +38,7 @@ const Silver = ({ state }) => (
         <Row>
           <Col lg="6">
             <div className="fancy-frame">
-              <Image src={"https://primitivedigital.uk/img/promo/selfiemonkey_square.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
+              <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/promo/selfiemonkey_square.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
             </div>
           </Col>
           <Col lg="6">

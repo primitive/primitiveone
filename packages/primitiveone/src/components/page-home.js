@@ -21,7 +21,7 @@ const PageHome = ({ state }) => {
           <Col lg="12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>
-              - Pretty, Sexy, Webby, Tecchie Stuff -
+              <span>- </span>Pretty, Sexy, Webby, Tecchie Stuff<span> -</span>
             </p>
           </Col>
         </Row>

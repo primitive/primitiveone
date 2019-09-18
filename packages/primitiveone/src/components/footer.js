@@ -10,10 +10,10 @@ const Footer = ({ state }) => (
       <Container>
         <Row>
           <Col lg="12">
-            <h2 className="subslab"><span>- Top Banana -</span> Web Design <span>&amp;</span> Development </h2>
+            <h2 className="subslab"><span><span className="lf">- </span>Top Banana<span className="lf"> -</span></span> Web Design <strong>&amp;</strong> Development</h2>
           </Col>
           <Col lg="12">
-            <Image src={"https://primitivedigital.uk/img/promo/topbanana1.png"} className="img-fluid" alt="Top Banana Web Design and Development" />
+            <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/promo/topbanana1.png"} className="img-fluid" alt="Top Banana Web Design and Development" />
           </Col>
         </Row>
         <Row id="contact">
@@ -34,7 +34,7 @@ const Footer = ({ state }) => (
           </Row>
           <Row>
           <Col lg="12">
-            <Image src={"https://primitivehosting.uk/images/ph-logo-footer.png"} alt="Primitive Digital - Web Design &amp; Development" />
+            <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/ph-logo-footer.png"} alt="Primitive Digital - Web Design &amp; Development" />
           </Col>
         </Row>
       </Container>
