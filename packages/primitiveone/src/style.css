@@ -18,7 +18,7 @@ a {
   -o-transition:      all .5s ease-in-out;
   transition:         all .5s ease-in-out;
 }
-:focus {
+button:focus {
   outline: none;
 }
 
@@ -118,15 +118,107 @@ a {
 
 
 
-  .home .post h1 {
-    padding: 1rem 2rem 2rem 0;
-  }
+
   .home, .post {
+    position : relative; 
     display: block;
     width: 100%;
   }
+  .post h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  #page-2 h1 {
+    padding: 2rem 2rem 2rem 1rem;
+    font-size: 4rem;
+    text-align: left;
+  }
+  #page-8 h1, #page-1904 h1, #page-2102 h1, #page-2128 h1 {
+    padding: 2rem 2rem 2rem 1rem;
+    margin: 0 15% 1.5rem;
+    font-size: 4rem;
+  }
+  #page-8 h1:after, #page-1904 h1:after, #page-2102 h1:after, #page-2128 h1:after {
+    content: " ";
+    margin-top: .6rem;
+    width: 600%;
+    height: 9px;
+    display: block;
+    will-change: transform;
+    transition: 1s;
+    animation: underline-gradient 6s linear infinite;
+    background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+   
+  }
 
-  .intro {
+
+  .post h3 {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: rgba(12, 17, 43, 0.9);
+  }
+  .post h3:after {
+    content: " ";
+    margin: 1.2rem auto 0 0;
+    width: 5rem;
+    height: 3px;
+    display: block;
+    background: rgba(135, 175,	78, .8) !important;
+  }
+  .post h3:nth-of-type(even):after {
+    background: rgba(235, 150, 108, 0.8) !important;
+  }
+  .post .intro {
+    font-family: 'Comfortaa', cursive;
+    padding: 3px 5%;
+    font-size: 1.3rem;
+  }
+  .post .motto {
+    font-family: 'Hepta Slab',serif;
+    padding: 1.5rem 5%;
+    font-size: 2.3rem;
+    color: #87af4e;
+  }
+  .post .panache {
+    font-family : Baskerville, Georgia, serif; 
+    padding: .5rem 5% .1rem;
+    font-size: 1.6rem;
+    color:  rgba(12,17,43, .7);
+  }
+  .post .panache strong, .post .panache a {
+    font-style: italic;
+    color: #87af4e;
+    text-decoration: none;
+  }
+  .post .thinglist {
+    margin: 0;
+    padding: 1rem 5% 1rem 0;
+    width: 100%;
+    list-style-type: none;
+    display: block;
+    column-count: 1;
+  }
+  .post .thinglist li {
+    margin: 0 0 3px 0;
+    padding: .2rem .3rem .6rem;
+    display: block;
+    font-size: 1.3rem;
+    border-bottom: solid 3px rgba(135, 175,	78, .8);
+    font-family: 'Pacifico', cursive;
+  }
+  .post .thinglist li:nth-of-type(odd) {
+    border-bottom: solid 3px rgba(235, 150, 108, 0.8);
+  }
+  .post figure.wp-block-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  
+  .home .intro {
     padding: 2rem 0;
   }
   .intro h1 {
@@ -143,11 +235,11 @@ a {
     font-size: 2rem;
     color: #87af4e;
   }
-  .intro h1 span:nth-of-type(2) {
+  .home .intro h1 span:nth-of-type(2) {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
   }
-  .intro p {
+  .home .intro p {
     padding: 3rem;
     font-family: 'Amatic SC', cursive;
     font-size: 3rem;
@@ -288,6 +380,92 @@ a {
     text-decoration: none;
   }
 
+
+  .q-wrap {
+    margin : 20px auto; 
+    padding : 20px; 
+    position : relative; 
+    width : 60%; 
+  } 
+  .q-wrap p {
+    margin : 0; 
+    padding : 0; 
+  }
+  .q-wrap blockquote {
+    margin : 0; 
+    padding : 0; 
+    padding-top : 150px; 
+    position : relative; 
+    padding-left: 1.5rem;
+    background-color: transparent !important;
+  } 
+  .q-wrap cite {
+    padding: 3px 6px 3px 20px;
+    font-size : 1.5rem; 
+    font-style : normal;
+    font-family: 'Amatic SC', cursive;
+  } 
+  .q-style-1 blockquote {
+    border-left: 4px solid rgba(135, 175,	78, .8);
+  }
+  .q-style-2 blockquote {
+    /* 
+    background-color: rgba(235, 150, 108, 0.1);
+    border-left: 4px solid rgba(12,17,43); */
+    border-left: 4px solid rgba(235, 150, 108, 0.8);
+  } 
+  
+  .q-style-1 blockquote:after, .q-style-2 blockquote:after {
+      background: none repeat scroll 0 0 rgba(135, 175,	78, 0.8);
+      border-radius: 50% 50% 50% 50%;
+      color: rgba(255, 255, 255, 0.5);
+      content: "❞";
+      font-family: 'icons';
+      font-size: 70px;
+      height: 130px;
+      left: 50%;
+      line-height: 130px;
+      margin-left: -65px;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+      top: 0;
+      width: 130px;
+  }
+  .q-style-1 blockquote:before, .q-style-2 blockquote:before {
+      border-left: 5px solid rgba(135, 175,	78, .1) !important;
+      border-radius: 50% 50% 50% 50%;
+      content: "";
+      height: 500px;
+      left: -50px;
+      position: absolute;
+      top: 0;
+      width: 500px;
+      z-index: -1;
+  }
+  .q-style-2 blockquote:after {
+    background: none repeat scroll 0 0 rgba(235, 150, 108, 0.8);
+  }
+  .q-style-2 blockquote:before {
+    border-left: 5px solid rgba(235, 150, 108, 0.1) !important;
+  }
+  
+  .q-style-1 blockquote p, .q-style-2 blockquote p {
+    background : none repeat scroll 0 0 rgba(255, 255, 255, 0.5); 
+    box-shadow : 0 -6px 0 rgba(135, 175,	78, 0.2); 
+    color : rgba(135, 175,	78, 0.8); 
+    display : inline; 
+    font-family : Baskerville, Georgia, serif; 
+    font-style : italic; 
+    font-size : 28px; 
+    line-height : 46px; 
+    text-shadow : 0 1px 1px rgba(255, 255, 255, 0.5);  
+  } 
+  .q-style-2 blockquote p {
+    box-shadow : 0 -6px 0 rgba(235, 150, 108, 0.2); 
+    color : rgba(235, 150, 108, 0.8); 
+  }
+
   
 
 /* *** FOOTER *** */
@@ -393,6 +571,7 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
 }
 .footer-cta h3 strong, .footer-cta h3 a {
   display: block;
+  padding-bottom: 1.5rem;
   font-size: 4rem;
   color: #3B2622;
 }
@@ -421,6 +600,10 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
 }
 #colophon p {
   margin-bottom:.2rem;
+}
+#colophon a:hover {
+  text-decoration: none;
+  color: pink;
 }
 #colophon img {
   padding-top: 1rem;
@@ -454,9 +637,13 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .wrap-header header a { margin-left: 1rem; }
 
   .footer-cta h2 { font-size: 5rem; }
-  .footer-cta h2 span { font-size: 8rem; }
-  .footer-cta h2 strong {font-size: 6rem; display: block; }
-  .footer-cta h3 strong, .footer-cta h3 a { font-size: 4rem; }
+  .footer-cta h2 span { font-size: 4rem; line-height: 1.4;}
+  .footer-cta h2 strong {font-size: 6rem; line-height: .7;}
+  .footer-cta h3 strong, .footer-cta h3 a { font-size: 3rem; }
+
+  .post .thinglist {
+    column-count: 2;
+  }
 
 }
 
@@ -469,8 +656,25 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .wrap-header h4 { font-size: 2rem; }
 
   .intro h1 { font-size: 4rem; }
-  .intro p { font-size: 3.5rem; }
+  .intro h1 span { font-size: 3rem; }
+  .intro h1 span:nth-of-type(2) { font-size: 5rem; }
+  .intro p { font-size: 3rem; }
   .intro p span {display: inline-block; }
+
+  .footer-cta h2 { font-size: 6rem; }
+  .footer-cta h2 span { font-size: 5rem; line-height: 1.6;}
+  .footer-cta h2 strong {font-size: 7rem; line-height: .8;}
+  .footer-cta h3 strong, .footer-cta h3 a { font-size: 4rem; }
+
+  .post .thinglist {
+    width: 60%;
+    display: inline-block;
+    column-count: 2;
+  }
+  .post figure.wp-block-image {
+    width: 40%;
+    display: inline-block;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -481,7 +685,14 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .wrap-header header a { margin-left: 30%; }
 
   .intro h1 { font-size: 5rem; }
-  .intro p { font-size: 4rem;}
+  .intro h1 span { font-size: 3.5rem; }
+  .intro h1 span:nth-of-type(2) { font-size: 6rem; }
+  .intro p { font-size: 3.5rem; }
+
+  .footer-cta h2 { font-size: 7rem; }
+  .footer-cta h2 span { font-size: 6rem; line-height: 1.9;}
+  .footer-cta h2 strong {font-size: 7rem; line-height: .9;}
+  .footer-cta h3 strong, .footer-cta h3 a { font-size: 5rem; }
   
   .frame { padding-top: 2rem; padding-bottom: 2.5rem; }
 }

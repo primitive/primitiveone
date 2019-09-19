@@ -8,7 +8,7 @@ import DataMap from './animation/datamap';
 const PageHome = ({ state }) => {
   // Get the data of the current link?
   const data = state.source.get(state.router.link);
-  console.log("home", state);
+  //console.log("home", state);
 
   return (
     <Section className="home">
@@ -21,7 +21,7 @@ const PageHome = ({ state }) => {
           <Col lg="12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>
-              <span>- </span>Pretty, Sexy, Webby, Tecchie Stuff<span> -</span>
+              <span>- </span> Pretty, Sexy, Webby, Tecchie Stuff <span> -</span>
             </p>
           </Col>
         </Row>
@@ -58,7 +58,7 @@ const PageHome = ({ state }) => {
                   <Col lg="12" className="txt-area">
                     <div className="txt-wrap">
                       <h3>Rapid Web Development</h3>
-                      <p>Get online fast...</p>
+                      <p>Get online fast</p>
                     </div>
 
                     <div className="txt-wrap">
@@ -72,7 +72,7 @@ const PageHome = ({ state }) => {
                     </div>
 
                     <div className="txt-wrap">
-                      <h3>REST API + Custom Posts</h3>
+                      <h3>REST API + CPT</h3>
                       <p>The possibilities are endless</p>
                     </div>
                   </Col>

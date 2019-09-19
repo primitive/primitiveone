@@ -1,31 +1,37 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "./link";
+import { Container, Nav, Navbar, Image, NavDropdown, Form, FormControl, Button } from "react-bootstrap";
 
-const Nav = ({ state }) => (
+const MainNav = ({ state }) => (
 
-  <Container className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="/">Navbar</a>
+  <Container>
+    <Navbar bg="dark" expand="lg">
+      <Navbar.Brand href="/">
+        <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/punky_logo_smgreen.png"} alt="Primitive Digital - Web Design &amp; Development" />
+      </Navbar.Brand>
 
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
+      <Navbar.Toggle aria-controls="site-nav" />
 
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav mr-auto">
-        {state.theme.menu.map(([name, link]) => (
-          <Item className="nav-item" key={name} isSelected={state.router.link === link}>
-            <Link link={link}>{name}</Link>
-          </Item>
-        ))}
-      </ul>
-    </div>
+      <Navbar.Collapse id="site-nav">
+        <Nav className="mr-auto">
+
+          <ul className="navbar-nav mr-auto">
+            {state.theme.menu.map(([name, link]) => (
+              <Item className="nav-item" key={name} isSelected={state.router.link === link}>
+                <Link link={link}>{name}</Link>
+              </Item>
+            ))}
+          </ul>
+        </Nav>
+
+      </Navbar.Collapse>
+    </Navbar>
   </Container>
 );
 
-export default connect(Nav);
+export default connect(MainNav);
 
-const Container = styled.nav``;
 const Item = styled.li`
   padding: 0;
   margin: 0 16px;
@@ -58,3 +64,4 @@ const Item = styled.li`
     }
   }
 `;
+

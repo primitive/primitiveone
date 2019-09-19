@@ -27,11 +27,11 @@ const settings = {
             ],
             [
               "Data",
-              "/data-isights"
+              "/data-insights"
             ],
             [
               "Marketing",
-              "/marketing-services"
+              "/marketing"
             ],
             [
               "Blog",

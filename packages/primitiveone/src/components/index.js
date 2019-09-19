@@ -6,14 +6,14 @@ import List from "./list";
 import Post from "./post";
 import Page404 from "./page404.js";
 import Loading from "./loading";
-import Nav from "./main-nav";
+import Nav from "./nav";
 import Silver from './silver';
 import Footer from "./footer";
 import globalStyles from '../style.css';
 
 const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
-  console.log("index", data);
+  //console.log("index", data);
 
   return (
     <>

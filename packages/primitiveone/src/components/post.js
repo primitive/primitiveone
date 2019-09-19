@@ -14,6 +14,9 @@ const Post = ({ state, actions, libraries }) => {
   // Get a date for humans.
   const date = new Date(post.date);
 
+  const postType = data.type;
+  const postId = data.id;
+
   // Prefetch home posts and the list component.
   useEffect(() => {
     actions.source.fetch("/");
@@ -21,7 +24,7 @@ const Post = ({ state, actions, libraries }) => {
   }, []);
 
   return data.isReady ? (
-    <Container className="post">
+    <Container className={"post "+postType} id={postType+"-"+postId}>
       <div>
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
         {data.isPost && (
@@ -57,8 +60,7 @@ const Container = styled.div`
 
 const Title = styled.h1`
   margin: 0;
-  padding-top: 24px;
-  margin-bottom: 8px;
+
   color: rgba(12, 17, 43);
 `;
 
@@ -98,9 +100,9 @@ const Body = styled.div`
 
   figure {
     margin: 24px auto;
-    /* next line overrides an inline style of the figure element. */
+    /* next line overrides an inline style of the figure element. 
     width: 100% !important;
-
+    */
     figcaption {
       font-size: 0.7em;
     }
