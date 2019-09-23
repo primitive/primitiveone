@@ -4,16 +4,23 @@ import Header from "./header";
 import Home from './page-home';
 import List from "./list";
 import Post from "./post";
-import Page404 from "./page404.js";
+import Page404 from "./page404";
 import Loading from "./loading";
 import Nav from "./nav";
 import Silver from './silver';
 import Footer from "./footer";
 import globalStyles from '../style.css';
+import ReactGA from 'react-ga';
 
 const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
   //console.log("index", data);
+
+  function initializeReactGA() {
+    ReactGA.initialize('UA-61815763-1');
+    ReactGA.pageview(state.router.link);
+  }
+  initializeReactGA();
 
   return (
     <>

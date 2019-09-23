@@ -28,9 +28,11 @@ const Item = ({ state, item }) => {
         <FeaturedMedia id={item.featured_media} />
       )}
       <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-      <Button variant="flat" size="xxl">
-        flat button
-      </Button>
+      <Link link={item.link}>
+        <Button variant="success" size="xl">
+          Read it!
+        </Button>
+      </Link>
     </article>
   );
 };
@@ -38,7 +40,6 @@ const Item = ({ state, item }) => {
 export default connect(Item);
 
 const Title = styled.h1`
-  font-size: 2rem;
   color: rgba(12, 17, 43);
   margin: 0;
   padding-top: 24px;
@@ -61,6 +62,9 @@ const Fecha = styled.span`
 `;
 
 const Excerpt = styled.div`
-  line-height: 1.6em;
-  color: rgba(12, 17, 43, 0.8);
+  padding: 2rem 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: Baskerville,Georgia,serif;
+  color: rgba(12,17,43,.7);
 `;

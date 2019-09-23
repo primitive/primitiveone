@@ -83,6 +83,7 @@ const Fecha = styled.p`
 const Body = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
+  padding-top: 2rem;
 
   * {
     max-width: 100%;

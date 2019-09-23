@@ -35,7 +35,7 @@ export default connect(FeaturedMedia);
 
 const Container = styled.div`
   margin-top: 16px;
-  height: 300px;
+  height: 400px;
 `;
 
 const StyledImage = styled(Image)`

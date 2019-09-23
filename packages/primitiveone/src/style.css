@@ -116,13 +116,13 @@ button:focus {
   }
 
 
-
-
-
   .home, .post {
     position : relative; 
     display: block;
     width: 100%;
+  }
+  .post {
+    overflow: hidden;
   }
   .post h1 {
     padding: 2rem;
@@ -136,21 +136,20 @@ button:focus {
     text-align: left;
   }
   #page-8 h1, #page-1904 h1, #page-2102 h1, #page-2128 h1 {
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem 0 2rem;
     margin: 0 15% 1.5rem;
     font-size: 4rem;
   }
   #page-8 h1:after, #page-1904 h1:after, #page-2102 h1:after, #page-2128 h1:after {
     content: " ";
     margin-top: .6rem;
-    width: 600%;
-    height: 9px;
+    width: 100%;
+    height: 6px;
     display: block;
-    will-change: transform;
-    transition: 1s;
-    animation: underline-gradient 6s linear infinite;
+    /* 
+    this has issues on chrome iOS
+    animation: underline-gradient 6s linear infinite; */
     background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
-   
   }
 
 
@@ -194,7 +193,7 @@ button:focus {
   }
   .post .thinglist {
     margin: 0;
-    padding: 1rem 5% 1rem 0;
+    padding: 1rem 5% 2rem 0;
     width: 100%;
     list-style-type: none;
     display: block;
@@ -216,6 +215,18 @@ button:focus {
     padding: 0;
     width: 100%;
     display: block;
+  }
+  main article a:hover {
+    color: plum;
+  }
+  #post-1 a {
+    color: #87af4e;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #post-1 a:hover {
+    color: plum;
+    text-decoration: underline;
   }
   
   .home .intro {
@@ -385,7 +396,7 @@ button:focus {
     margin : 20px auto; 
     padding : 20px; 
     position : relative; 
-    width : 60%; 
+    width : 80%; 
   } 
   .q-wrap p {
     margin : 0; 
@@ -666,10 +677,14 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .footer-cta h2 strong {font-size: 7rem; line-height: .8;}
   .footer-cta h3 strong, .footer-cta h3 a { font-size: 4rem; }
 
+  .q-wrap {
+    width : 60%; 
+  } 
+
   .post .thinglist {
     width: 60%;
     display: inline-block;
-    column-count: 2;
+    column-count: 1;
   }
   .post figure.wp-block-image {
     width: 40%;
@@ -695,6 +710,10 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .footer-cta h3 strong, .footer-cta h3 a { font-size: 5rem; }
   
   .frame { padding-top: 2rem; padding-bottom: 2.5rem; }
+
+  .post .thinglist {
+    column-count: 2;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

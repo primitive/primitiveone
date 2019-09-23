@@ -16,7 +16,7 @@ const MainNav = ({ state }) => (
       <Navbar.Collapse id="site-nav">
         <Nav className="mr-auto">
 
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mr-auto" role="tablist">
             {state.theme.menu.map(([name, link]) => (
               <Item className="nav-item" key={name} isSelected={state.router.link === link}>
                 <Link link={link}>{name}</Link>
