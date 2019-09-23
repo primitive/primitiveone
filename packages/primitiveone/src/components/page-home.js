@@ -29,8 +29,7 @@ const PageHome = ({ state }) => {
 
       <Container fluid="true" className="services">
 
-  
-            <Tabs defaultActiveKey="hp-design" role="tablist">
+            <Tabs defaultActiveKey="hp-design">
               <Tab eventKey="hp-design" className="hp-design" title="Design">
                 <Row>
                   <Col lg="12" className="txt-area">

@@ -6,7 +6,8 @@ import { Container, Nav, Navbar, Image, NavDropdown, Form, FormControl, Button }
 const MainNav = ({ state }) => (
 
   <Container>
-    <Navbar bg="dark" expand="lg">
+    <Navbar bg="dark" expand="lg" aria-label="Main">
+      
       <Navbar.Brand href="/">
         <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/punky_logo_smgreen.png"} alt="Primitive Digital - Web Design &amp; Development" />
       </Navbar.Brand>
@@ -15,8 +16,7 @@ const MainNav = ({ state }) => (
 
       <Navbar.Collapse id="site-nav">
         <Nav className="mr-auto">
-
-          <ul className="navbar-nav mr-auto" role="tablist">
+          <ul className="navbar-nav mr-auto">
             {state.theme.menu.map(([name, link]) => (
               <Item className="nav-item" key={name} isSelected={state.router.link === link}>
                 <Link link={link}>{name}</Link>
