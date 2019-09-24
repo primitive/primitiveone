@@ -84,7 +84,7 @@ button:focus {
   }
   .post {
     overflow: hidden;
-    
+    font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   .post h1 {
     padding: 2rem;
