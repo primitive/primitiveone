@@ -6,8 +6,8 @@ const before = ({ libraries }) => {
   libraries.html2react.processors.push(image);
 };
 
-const marsTheme = {
-  name: "@frontity/mars-theme",
+const primitiveOne = {
+  name: "@frontity/primitiveone",
   roots: {
     theme: Theme
   },
@@ -28,4 +28,4 @@ const marsTheme = {
   }
 };
 
-export default marsTheme;
+export default primitiveOne;

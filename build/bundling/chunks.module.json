@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.40.0",
+  "hash": "c458a46a071c87d1ffff",
+  "publicPath": "/static/",
+  "outputPath": "C:\\wamp64\\www\\wp\\wp-content\\themes\\primitiveone\\build\\static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "primitiveone": "primitiveone.module.js"
+  },
+  "assets": [
+    {
+      "name": "list.module.js",
+      "size": 44323,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "primitiveone.module.js",
+      "size": 6986839,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
