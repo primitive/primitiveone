@@ -9,6 +9,7 @@ import Loading from "./loading";
 import Nav from "./nav";
 import Silver from './silver';
 import Footer from "./footer";
+//import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import globalStyles from '../style.css';
 import ReactGA from 'react-ga';
 

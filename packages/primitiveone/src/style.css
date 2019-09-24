@@ -6,7 +6,7 @@ h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow
 h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; font-size: 3rem; }
 h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; }
-h6 { font-family: 'Pacifico', cursive; }
+h6 { font-family: 'Pacifico', Georgia, cursive; }
 p { font-size: 1rem;}
 
 a, a:visited { text-decoration: none; }
@@ -84,6 +84,7 @@ button:focus {
   }
   .post {
     overflow: hidden;
+    
   }
   .post h1 {
     padding: 2rem;
@@ -131,12 +132,12 @@ button:focus {
     background: rgba(235, 150, 108, 0.8) !important;
   }
   .post .intro {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     padding: 3px 5%;
     font-size: 1.3rem;
   }
   .post .motto {
-    font-family: 'Hepta Slab',serif;
+    font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
     padding: 1.5rem 5%;
     font-size: 2.3rem;
     color: #87af4e;
@@ -166,7 +167,7 @@ button:focus {
     display: block;
     font-size: 1.3rem;
     border-bottom: solid 3px rgba(135, 175,	78, .8);
-    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico', Georgia, cursive; 
   }
   .post .thinglist li:nth-of-type(odd) {
     border-bottom: solid 3px rgba(235, 150, 108, 0.8);
@@ -208,12 +209,12 @@ button:focus {
     color: #87af4e;
   }
   .intro h1 span:nth-of-type(2) {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
   }
   .intro p {
     padding: 3rem;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     text-align: center;
   }
@@ -226,7 +227,7 @@ button:focus {
     margin-bottom: 2rem;
   }
   .services .nav-tabs {
-    font-family: 'Hepta Slab', serif;
+    font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -310,7 +311,7 @@ button:focus {
     border-radius: 0;
     box-shadow: 3px 3px 9px 6px #efefef;
   }
-  .post-strip .card h5 { font-family: 'Hepta Slab',serif; }
+  .post-strip .card h5 { font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; }
   .post-strip .card-body { text-align: center; }
   .post-strip a { color: rgba(12, 17, 43, 0.9); }
   .post-strip h3 {
@@ -332,7 +333,7 @@ button:focus {
     padding-bottom: 2rem;
   }
   .post-strip header p {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgba(12,17,43,0.8);
     font-size: 2rem;
     text-align: center;
@@ -375,7 +376,7 @@ button:focus {
     padding: 3px 6px 3px 20px;
     font-size : 1.5rem; 
     font-style : normal;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   } 
   .q-style-1 blockquote {
     border-left: 4px solid rgba(135, 175,	78, .8);
@@ -449,7 +450,7 @@ footer {
   background: #fff;
 }
 footer h5, .footer-promo1 h5, .footer-promo2 h5 {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 4rem;
 }
 
@@ -499,13 +500,13 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   text-align: center;
 }
 .footer-promo1 li {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
   font-size: 1.5rem;
   line-height: 1.5;
   list-style: none;
 }
 .footer-promo2 li {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   line-height: 2;
   list-style: none;
@@ -526,13 +527,13 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
 }
 .footer-cta h2 span {
   display: block;
-  font-family: 'Amatic SC',cursive;
+  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color:  #87635C;
   font-size: 5rem;
 }
 .footer-cta h2 strong {
   display: block;
-  font-family: 'Playfair Display',serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
   color: #E5D7B7;
   font-size: 4rem;
   line-height: 4rem;
@@ -564,7 +565,7 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   margin-top: 0;
   padding: 1.5rem 0 1rem;
   color: #FFE6E0;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
   text-align: center;
   letter-spacing: 1px;
   /* background-color: #019573; */
