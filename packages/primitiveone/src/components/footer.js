@@ -13,7 +13,7 @@ const Footer = ({ state }) => (
             <h2 className="subslab"><span>- Top Banana -</span> Web Design <strong>&amp;</strong> Development</h2>
           </Col>
           <Col lg="12">
-            <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/promo/topbanana1.png"} className="img-fluid" alt="Top Banana Web Design and Development" />
+            <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/v1569317885/promo/topbanana1_zhjui2.png"} className="img-fluid" alt="Top Banana Web Design and Development" />
           </Col>
         </Row>
         <Row id="contact">
@@ -34,7 +34,7 @@ const Footer = ({ state }) => (
           </Row>
           <Row>
           <Col lg="12">
-            <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/ph-logo-footer.png"} alt="Primitive Digital - Web Design &amp; Development" />
+            <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/v1569317124/img/ph-logo-footer_thxexg.png"} alt="Primitive Digital - Web Design &amp; Development" />
           </Col>
         </Row>
       </Container>

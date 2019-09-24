@@ -9,7 +9,7 @@ const MainNav = ({ state }) => (
     <Navbar bg="dark" expand="lg" aria-label="Main">
       
       <Navbar.Brand href="/">
-        <Image src={"https://staging.primitivedigital.uk/wp-content/uploads/img/punky_logo_smgreen.png"} alt="Primitive Digital - Web Design &amp; Development" />
+        <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/v1569317125/img/punky_logo_smgreen_o5eehj.png"} alt="Primitive Digital - Web Design &amp; Development" />
       </Navbar.Brand>
 
       <Navbar.Toggle aria-controls="site-nav" />

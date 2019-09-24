@@ -7,7 +7,7 @@ h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, 
 h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; }
 h6 { font-family: 'Pacifico', cursive; }
-p { font-size: 1.2rem;}
+p { font-size: 1rem;}
 
 a, a:visited { text-decoration: none; }
 a {
@@ -37,7 +37,7 @@ button:focus {
 
   .wrap-header {
     background-color: #87af4e;
-    background: url(./img/header/website_header.jpg) #87af4e;
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
     background-position-x: 10%;
     background-position-x: top;
     background-repeat: no-repeat;
@@ -283,13 +283,13 @@ button:focus {
   }
   .services .hp-design {
     background-size: contain;
-    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-happy.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317718/m/monkey-happy_hiofsx.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
   .services .hp-dev {
     background-size: contain;
-    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-eh.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317716/m/monkey-eh_sqeten.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -297,7 +297,7 @@ button:focus {
   .services .hp-data .txt-area { position: relative; z-index: 10; }
   .services .hp-marketing {
     background-size: contain;
-    background-image: url(https://staging.primitivedigital.uk/wp-content/uploads/m/monkey-smile.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317718/m/monkey-smile_aagvmp.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -600,7 +600,7 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .wrap-header .container { background-position-x: 0; }
   .wrap-header { background: none; background-color: #87af4e; }
   .wrap-header .container {
-    background: url(https://staging.primitivedigital.uk/wp-content/uploads/header/website_header.jpg) #87af4e;
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
     background-position-x: 10%;
     background-position-y: top;
     background-repeat: no-repeat;

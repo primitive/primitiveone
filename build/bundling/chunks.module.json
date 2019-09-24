@@ -2,19 +2,19 @@
   "errors": [],
   "warnings": [],
   "version": "4.40.0",
-  "hash": "b30babb497202296ecab",
+  "hash": "141d3664bf2714411cb0",
   "publicPath": "/static/",
   "outputPath": "C:\\wamp64\\www\\wp\\wp-content\\themes\\primitiveone\\build\\static",
   "assetsByChunkName": {
     "list": "list.module.js",
     "primitiveone": [
       "primitiveone.module.js",
-      "primitiveone.b1f9853adcdb7e8abf6f.hot-update.js"
+      "primitiveone.aa024dfc26fa19768fb7.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "b1f9853adcdb7e8abf6f.hot-update.json",
+      "name": "aa024dfc26fa19768fb7.hot-update.json",
       "size": 54,
       "chunks": [],
       "chunkNames": [],
@@ -37,8 +37,8 @@
       "emitted": false
     },
     {
-      "name": "primitiveone.b1f9853adcdb7e8abf6f.hot-update.js",
-      "size": 396024,
+      "name": "primitiveone.aa024dfc26fa19768fb7.hot-update.js",
+      "size": 9738,
       "chunks": [
         "primitiveone"
       ],
@@ -53,7 +53,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 6986182,
+      "size": 6987224,
       "chunks": [
         "primitiveone"
       ],
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.b1f9853adcdb7e8abf6f.hot-update.js"
+        "primitiveone.aa024dfc26fa19768fb7.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -85,7 +85,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.b1f9853adcdb7e8abf6f.hot-update.js"
+        "primitiveone.aa024dfc26fa19768fb7.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
