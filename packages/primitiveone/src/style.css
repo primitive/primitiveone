@@ -37,7 +37,7 @@ button:focus {
 
   .wrap-header {
     background-color: #87af4e;
-    background: url(https://staging.primitivedigital.uk/wp-content/uploads/header/website_header.jpg) #87af4e;
+    background: url(./img/header/website_header.jpg) #87af4e;
     background-position-x: 10%;
     background-position-x: top;
     background-repeat: no-repeat;
@@ -46,46 +46,7 @@ button:focus {
   .wrap-header .container {
     background: none;
   }
-  .wrap-header header {
-    padding: 0 1rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .wrap-header header a {
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-  }
-  .wrap-header header h2 {
-    color: #fff;
-    font-size: 5rem;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #477C16;
-    margin-bottom: .5rem;
-  }
-  .wrap-header header p {
-    color: #fff;
-    font-size: 1.8rem;
-    font-style: italic;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #477C16;
-    margin-bottom: .5rem;
-  }
-  .wrap-header header p span {
-    color: #fff;
-    font-size: 1.5rem;
-    font-style: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-  .wrap-header h4 {
-    color: #fff;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px #477C16;
-  }
+
 
   nav.navbar {
     border-top-left-radius: .5rem;
@@ -246,11 +207,11 @@ button:focus {
     font-size: 2rem;
     color: #87af4e;
   }
-  .home .intro h1 span:nth-of-type(2) {
+  .intro h1 span:nth-of-type(2) {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
   }
-  .home .intro p {
+  .intro p {
     padding: 3rem;
     font-family: 'Amatic SC', cursive;
     font-size: 3rem;

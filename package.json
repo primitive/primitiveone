@@ -1,22 +1,25 @@
 {
   "name": "primitiveone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
-  "description": "Primitive One - Built with Frontity",
+  "description": "Primitive One Theme - Built with Frontity",
   "keywords": [
     "frontity"
   ],
   "scripts": {
     "dev": "frontity dev",
+    "dev:inspect": "node --inspect -r ts-node/register/transpile-only ./node_modules/.bin/frontity dev",
     "build": "frontity build",
-    "serve": "frontity serve"
+    "build:inspect": "node --inspect -r ts-node/register/transpile-only ./node_modules/.bin/frontity build",
+    "serve": "frontity serve",
+    "serve:inspect": "node --inspect -r ts-node/register/transpile-only ./node_modules/.bin/frontity serve"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/primitiveshaun/primitiveone.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Shaun Knowles",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/primitiveshaun/primitiveone/issues"
   },
