@@ -1,6 +1,8 @@
 # Primitive One
 A Headless WordPress (REST API) Theme
 
+![screenshot](punky.png)
+
 Created with a little Node.js and React magic.
 
 Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/
@@ -10,8 +12,8 @@ With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 Live demo site: https://primitivedigital.co.uk
 Domain and PHP server provided by: https://primitivehosting.uk/
 
-N.B. 
 
+N.B. This is only my second React based website 
 
 
 ## Performance Comparrison Testing (WIP)
@@ -50,7 +52,7 @@ Static: TBC
 ## Created by Primitive Digital
 ### https://primitivedigital.uk
 
-![screenshot](punky.png)
+![screenshot](webby.png)
 
 Setup
 -----
@@ -101,13 +103,13 @@ The code is opensource so play like you mean business.
 Enjoy!
 
 
-Need Support
+#### Need Support
 -------
 
 If you find any problems with this theme, please report an issue at:
 (https://github.com/primitiveshaun/primitiveone/issues).
 
-## Created by Primitive Digital
-### https://primitivedigital.uk
+#### Primitive One created by Primitive Digital
+##### https://primitivedigital.uk
 
 ![screenshot](haveyouseenit.jpg)
