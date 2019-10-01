@@ -37,7 +37,7 @@ button:focus {
 
   .wrap-header {
     background-color: #87af4e;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
     background-position-x: 10%;
     background-position-x: top;
     background-repeat: no-repeat;
@@ -284,13 +284,13 @@ button:focus {
   }
   .services .hp-design {
     background-size: contain;
-    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317718/m/monkey-happy_hiofsx.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317718/m/monkey-happy_hiofsx.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
   .services .hp-dev {
     background-size: contain;
-    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317716/m/monkey-eh_sqeten.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317716/m/monkey-eh_sqeten.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -298,7 +298,7 @@ button:focus {
   .services .hp-data .txt-area { position: relative; z-index: 10; }
   .services .hp-marketing {
     background-size: contain;
-    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317718/m/monkey-smile_aagvmp.jpg);
+    background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317718/m/monkey-smile_aagvmp.jpg);
     background-position: bottom right;
     background-repeat: no-repeat;
   }
@@ -601,7 +601,7 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .wrap-header .container { background-position-x: 0; }
   .wrap-header { background: none; background-color: #87af4e; }
   .wrap-header .container {
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569316857/header/website_header_n1jxds.jpg) #87af4e;
     background-position-x: 10%;
     background-position-y: top;
     background-repeat: no-repeat;

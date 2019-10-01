@@ -1,7 +1,7 @@
 {
   "name": "primitiveone",
-  "version": "1.0.1",
-  "private": true,
+  "version": "1.0.2",
+  "private": false,
   "description": "Primitive One Theme - Built with Frontity",
   "keywords": [
     "frontity"

@@ -9,7 +9,7 @@ const Silver = ({ state }) => (
         <Row>
           <Col>
             <div className="fancy-frame">
-              <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/v1569317886/promo/wantawebsite_square_q9szc7.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
+              <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317886/promo/wantawebsite_square_q9szc7.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
             </div>
           </Col>
           <Col lg="6">
@@ -38,7 +38,7 @@ const Silver = ({ state }) => (
         <Row>
           <Col lg="6">
             <div className="fancy-frame">
-              <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/v1569317885/promo/selfiemonkey_square_b6ivxg.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
+              <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317885/promo/selfiemonkey_square_b6ivxg.jpg"} className="img-fluid" alt="Want a Website? We make Websites." />
             </div>
           </Col>
           <Col lg="6">

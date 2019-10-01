@@ -3,7 +3,6 @@ import React from 'react';
 import { connect, styled } from "frontity";
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
-import { Image } from "react-bootstrap";
 
 const TweenComponent = () => (
   <TweenStyled>
@@ -139,7 +138,7 @@ const TweenStyled = styled.div`
   overflow: hidden;
   position: relative;
   background-color: #b7ebde;
-  background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317290/jungle/PD_BGNight_2560x1440px_bskivq.png);
+  background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317290/jungle/PD_BGNight_2560x1440px_bskivq.png);
   background-position: bottom center;
   background-size: cover;
   border-bottom: solid 3px #343a40;
@@ -163,28 +162,28 @@ const TweenStyled = styled.div`
 
   .jungle-trees {
     bottom: 0;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317307/jungle/PD_JungleTreeline_2560x1440px_qfp9x8.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317307/jungle/PD_JungleTreeline_2560x1440px_qfp9x8.png);
     background-position: bottom center;
     background-size: cover;
     z-index: 50;
   }
   .jungle-right {
     bottom: 0;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317293/jungle/PD_JungleRight_2560x1440px_xp9ocs.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317293/jungle/PD_JungleRight_2560x1440px_xp9ocs.png);
     background-position: top right;
     background-size: cover;
     z-index: 60;
   }
   .jungle-left {
     top: 0;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317301/jungle/PD_JungleLeft_2560x1440px_jow9k6.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317301/jungle/PD_JungleLeft_2560x1440px_jow9k6.png);
     background-position: top left;
     background-size: cover;
     z-index: 70;
   }
   .jungle-bottom {
     bottom: 0;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317309/jungle/PD_JungleBottom_2560x1440px_geyhrc.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317309/jungle/PD_JungleBottom_2560x1440px_geyhrc.png);
     background-position: bottom center;
     background-size: cover;
     z-index: 80;
@@ -193,7 +192,7 @@ const TweenStyled = styled.div`
     position: relative;
     margin: auto !important;
     z-index: 90;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317281/jungle/logo-day_j5sq08.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317281/jungle/logo-day_j5sq08.png);
     background-position: top center;
     background-size: cover;
   }
@@ -201,7 +200,7 @@ const TweenStyled = styled.div`
     height: 60vw;
     top:0;
     z-index: 10;
-    background: url(https://res.cloudinary.com/primitivedigital/image/upload/v1569317284/jungle/PD_BGDay_2560x1440px_cvia8b.png);
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317284/jungle/PD_BGDay_2560x1440px_cvia8b.png);
     background-position: top center;
     background-size: cover;
   }
