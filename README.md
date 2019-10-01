@@ -1,32 +1,54 @@
-# Primitive One Theme
-A Headless WordPress (REST) Theme
+# Primitive One
+A Headless WordPress (REST API) Theme
 
-Created with a little magic borrowed from Node.js, React 16 and Frontity.
-With a little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
+Created with a little Node.js and React magic.
 
-1st Release (September 16, 2019):
-Deployed to Zeit Now
-Google analytics
+Built on the awsome new Frontity framework: https://frontity.org/
+
+With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
+
+Live demo site: https://primitivedigital.co.uk
+Currently using PHP server hosted with: https://primitivehosting.uk/
+
+
+N.B. 
+
+
+
+## Performance Comparrison Testing (WIP)
+Now: https://now.primitivedigital.uk
+Google:
+AWS:
+Static: 
+
+
+1st Release (September 16, 2019): 
+Deployed to Zeit Now with Google analytics
 
 
 2nd Release (October 01, 2019):
 
 
+
+
 To Do >>>>>>
 
-4. Add: WP theme support and user configurables
-1. Add: Widget blocks
+1. Add: WP theme support and user configurables
 2. Test: title/meta sync / helmet / Yoast SEO??
-3. Content: load WP pages and cpt/acf
-4. 
+3. Content: load WP pages and create cpt/acf
+4. Add: Widget blocks
+5: Merge with Boostrap branding kit.
+6. Refine: Animation, use scale and overlap tweens
+7. Add: Create/Extend animations to pass user configuration
 5. AMP
 
-To Check ??????
+
+To Check / Review ??????
 - ACF / Custom post type support
 - ACF / Custom taxonomies support
 
 
-![screenshot](screenshot.png)
+![screenshot](punky.png)
 
 Setup
 -----
