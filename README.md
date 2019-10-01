@@ -1,12 +1,12 @@
 # Primitive One Theme
-A WordPress REST API Theme
+A Headless WordPress (REST) Theme
 
-Built with Node.js, React 16 and Frontity.
+Created with a little magic borrowed from Node.js, React 16 and Frontity.
 With a little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 
 1st Release (September 16, 2019):
 Deployed to Zeit Now
-Include Google analytics
+Google analytics
 
 
 2nd Release (October 01, 2019):
@@ -26,7 +26,7 @@ To Check ??????
 - ACF / Custom taxonomies support
 
 
-![screenshot](screenshot.jpg)
+![screenshot](screenshot.png)
 
 Setup
 -----
