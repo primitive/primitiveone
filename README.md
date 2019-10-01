@@ -1,48 +1,52 @@
-# Primitive One
-A Headless WordPress (REST API) Theme
+# Primitive One Frontity Theme
+A Headless WordPress (REST API) Theme for Frontity
 
 ![screenshot](punky.png)
 
-Created with a little Node.js and React magic.
+Created with a little Node.js and React magic. 
 
-Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/
+Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/ 
 
-With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
+With little help from our friends: Bootstrap 4, GSAP and ScrollMagic. 
 
-Live demo site: https://primitivedigital.co.uk
-Domain and PHP server provided by: https://primitivehosting.uk/
+Live demo site: https://primitivedigital.co.uk  
+
+Domain and PHP server provided by: https://primitivehosting.uk/  
 
 
-N.B. This is only my second React based website 
+N.B. This is only my second React based website.  
+It may be messy and it may be downright wrong in places.
 
 
 ## Performance Comparrison Testing (WIP)
-Now: https://now.primitivedigital.uk
-Google: TBC
-AWS: TBC
-Static: TBC
+I will be creating links to compare the performance of various deployments.  
 
+Now: https://now.primitivedigital.uk  
+Google: TBC  
+AWS: TBC  
+Static: TBC  
 
-1st Release (September 16, 2019): 
-- Deployed to Zeit Now with Google analytics
+## Performance Comparrison Testing (WIP)
+1st Draft Release (September 16, 2019):  
+- Deployed to Zeit Now with Google analytics  
 
-
-2nd Release (October 01, 2019):
-- Performance enhancements and docs
+1st Release (October 01, 2019):  
+- Performance enhancements and docs update  
 
 
 
 ### To Do >>>>>>
 
-0. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
-1. Add: WP theme support and user configurables
-2. Test: title/meta sync / helmet / Yoast SEO??
-3. Content: load WP pages and create cpt/acf
-4. Add: Widget blocks
-5. Merge with Boostrap branding kit.
-6. Refine: Animation, use scale and overlap tweens
-7. Add: Create/Extend animations to pass user configuration
-5. AMP
+1. Amend Nameservers/DNS/Install location
+2. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
+3. Add: WP theme support and user configurables
+4. Test: title/meta sync / helmet / Yoast SEO??
+5. Content: load WP pages and create cpt/acf
+6. Add: Widget blocks
+7. Merge with Boostrap branding kit.
+8. Refine: Animation, use scale and overlap tweens
+9. Add: Create/Extend animations to pass user configuration
+10. AMP
 
 
 ### To Check / Review ??????
@@ -79,17 +83,16 @@ Installing and beginning development
 https://docs.frontity.org/getting-started/quick-start-guide
 
 
-
-
-* Quick Ref: Commands *
-
-npx frontity dev
-
-npx frontity build
-
 1. `git clone https://github.com/primitiveshaun/primitiveone`
-2. `cd nice2bone`
-3. `npm install`
+2. `cd primitiveone`
+3. `npm install && npx frontity dev (from the project's root directory)`
+
+** Quick Ref: Commands **
+
+npx frontity dev  
+
+npx frontity build  
+
 
 Deployment
 ------------------------------------
@@ -97,6 +100,8 @@ Deployment
 npx now
 npx now --prod
 
+
+------------------------------------
 
 The code is opensource so play like you mean business.
 
