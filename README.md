@@ -97,8 +97,8 @@ npx frontity build
 Deployment
 ------------------------------------
 
-npx now
-npx now --prod
+npx now  
+npx now --prod  
 
 
 ------------------------------------
