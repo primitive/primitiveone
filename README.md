@@ -14,8 +14,9 @@ Live demo site: https://primitivedigital.co.uk
 Domain and PHP server provided by: https://primitivehosting.uk/  
 
 
-N.B. This is only my second React based website.  
+N.B. This is only my second attempt at React based website so do be kind.  
 It may be messy and it may be downright wrong in places.
+
 
 
 ## Performance Comparrison Testing (WIP)
@@ -64,21 +65,20 @@ Setup
 The following pre-requisites should be in place for the theme to work:
 
 1. WordPress install of version 5.0 or later
-2. Optional but highly recommended
-2. If deploying to Now install WordPress to a sub directory e.g. - wp.example.com
-2. Posts permalink set set to: Custom Structure e.g. - `/posts/%postname%/`
-3. Set homepage to a static page
+2. Optional but highly recommended: register a domain
+3. If deploying to Now install WordPress to a sub directory e.g. - wp.example.com
+4. Posts permalink set set to: Custom Structure e.g. - `/posts/%postname%/`
+5. Set homepage to a static page
 
 To be added in next release(s) (WIP)
-4. ACF Plugin vs Register custom fields
-5. CPT UI Plugin vs Register custom post types
-6. ACF Category permalink to be set as: Custom base - `/products/`
-7. 
+6. ACF Plugin vs Register custom fields
+7. CPT UI Plugin vs Register custom post types
+8. ACF Category permalink to be set as: Custom base - `/products/`
 
 Installing and beginning development
 ------------------------------------
 
-* Follow the Frontity setup outlined in their Docs *
+*** Follow the Frontity setup outlined in their Docs ***
 
 https://docs.frontity.org/getting-started/quick-start-guide
 
@@ -97,6 +97,10 @@ npx frontity build
 Deployment
 ------------------------------------
 
+*** Follow the Frontity deployment outlined in their Docs ***
+
+https://docs.frontity.org/installation-and-deploy
+
 npx now  
 npx now --prod  
 
@@ -111,8 +115,8 @@ Enjoy!
 #### Need Support
 -------
 
-If you find any problems with this theme, please report an issue at:
-(https://github.com/primitiveshaun/primitiveone/issues).
+If you find any problems with this theme, please report an issue at:  
+https://github.com/primitiveshaun/primitiveone/issues
 
 #### Primitive One created by Primitive Digital
 ##### https://primitivedigital.uk
