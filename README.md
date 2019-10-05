@@ -11,7 +11,7 @@ With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 
 Live demo site: https://primitivedigital.co.uk  
 
-Domain and PHP server provided by: https://primitivehosting.uk/  
+Domain and PHP server provided by: https://primitivehosting.uk/headlesswp
 
 
 N.B. This is only my second attempt at React based website so do be kind.  
@@ -20,7 +20,7 @@ It may be messy and it may be downright wrong in places.
 
 
 ## Performance Comparrison Testing (WIP)
-I will be creating links to compare the performance of various deployments.  
+Check back for links to compare the performance of various deployments.  
 
 Now: https://now.primitivedigital.uk  
 Google: TBC  

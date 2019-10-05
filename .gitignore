@@ -1,5 +1,9 @@
-#.gitignore
-# Numerous always-ignore extensions
+# .gitignore
+# *** HOUSEKEEPING! Ignorance is bliss ***
+# Master File: Maintained by Primitive Digital's Housekeeping Department
+# https://primitivedigital.uk/housekeeping-department/
+
+# Always-ignore these extensions
 *.diff
 *.err
 *.orig
@@ -10,9 +14,13 @@
 *.vi
 *~
 *.sass-cache
+.hg
+.svn
+.CVS
+.idea
+.DS_Store
 
 # OS or Editor folders
-.DS_Store
 Thumbs.db
 .cache
 .project
@@ -20,31 +28,34 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
-*.sublime-project
-*.sublime-workspace
 sftp-config.json
+npm-debug.log
+yarn-error.log
 
-# Dreamweaver added files
+# Dreamweaver
 _notes
 dwsync.xml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
 
 # Komodo
 *.komodoproject
 .komodotools
 
-# Folders to ignore
-.hg
-.svn
-.CVS
+# Folders
+node_modules
 intermediate
 publish
-.idea
-img
-node_modules
-
 build
+dist
 
-# build script local files
-build/buildinfo.properties
-build/config/buildinfo.properties
-/inc/.DS_Store
+# Unoptimised / Optimised Image Folders
+images
+img
+
+## build script local files
+# build/buildinfo.properties
+# build/config/buildinfo.properties
+# /inc/.DS_Store
