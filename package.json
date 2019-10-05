@@ -23,7 +23,7 @@
   "dependencies": {
     "@frontity/core": "^1.3.0",
     "@frontity/html2react": "^1.1.12",
-    "@frontity/primitiveone": "./packages/primitiveone",
+    "@frontity/primitiveone": "file:packages/primitiveone",
     "@frontity/tiny-router": "^1.0.15",
     "@frontity/wp-source": "^1.4.0",
     "frontity": "^1.4.0"
