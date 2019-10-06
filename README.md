@@ -1,7 +1,7 @@
 # Primitive One Frontity Theme
 A Headless WordPress (REST API) Theme for Frontity
 
-![screenshot](punky.png)
+![screenshot](img/punky.png)
 
 Created with a little Node.js and React magic. 
 
@@ -15,25 +15,20 @@ Domain and PHP server provided by: https://primitivehosting.uk/headlesswp
 
 
 N.B. This is only my second attempt at React based website so do be kind.  
-It may be messy and it may be downright wrong in places.
+It may be messy and it may be downright wrong in places.											
 
 
 
-## Performance Comparrison Testing (WIP)
-Check back for links to compare the performance of various deployments.  
-
-Now: https://now.primitivedigital.uk  
-Google: TBC  
-AWS: TBC  
-Static: TBC  
-
-## Performance Comparrison Testing (WIP)
+## History
 1st Draft Release (September 16, 2019):  
 - Deployed to Zeit Now with Google analytics  
 
-1st Release (October 01, 2019):  
+1st Release Candidate (October 01, 2019):  
 - Performance enhancements and docs update  
 
+1st Release (October 06, 2019):  
+- Settings, read.me and project structure updated
+- CSS code splitting
 
 
 ### To Do >>>>>>
@@ -54,10 +49,20 @@ Static: TBC
 - ACF / Custom post type support
 - ACF / Custom taxonomies support
 
+
+## Performance Comparrison Testing (WIP)
+Check back for links to compare the performance of various deployments.  
+
+Now: https://now.primitivedigital.uk  
+Google: TBC  
+AWS: TBC  
+Static: TBC  
+
+
 ## Created by Primitive Digital
 ### https://primitivedigital.uk
 
-![screenshot](webby.png)
+![screenshot](img/webby.png)
 
 Setup
 -----
@@ -121,4 +126,4 @@ https://github.com/primitiveshaun/primitiveone/issues
 #### Primitive One created by Primitive Digital
 ##### https://primitivedigital.uk
 
-![screenshot](haveyouseenit.jpg)
+![screenshot](img/haveyouseenit.jpg)

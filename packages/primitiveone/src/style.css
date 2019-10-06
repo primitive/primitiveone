@@ -325,7 +325,7 @@ button:focus {
 
 
   .q-wrap {
-    margin : 20px auto; 
+    margin : 20px auto 40px; 
     padding : 20px; 
     position : relative; 
     width : 80%; 
@@ -412,148 +412,7 @@ button:focus {
   
 
 /* *** FOOTER *** */
-
-footer {
-  margin: 0;
-  padding: 1rem 0 0;
-  color: #2d2d2d;
-  background: #fff;
-}
-footer h5, .footer-promo1 h5, .footer-promo2 h5 {
-  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 4rem;
-}
-
-.fancy-frame {
-  padding: 12px;
-  display: inline-block;
-  position: relative;
-  -webkit-transition: 1s ease-in-out;
-  transition:         1s ease-in-out;
-}
-.frame {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-.frame ul {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-promo1 .fancy-frame { background: #fff; }
-.footer-promo1 h5 { color: #fff; }
-.footer-promo2 h5 { color: #87af4e; }
-.footer-promo2 .fancy-frame { background: #87af4e; }
-.footer-promo1:hover .fancy-frame,
-.footer-promo2:hover .fancy-frame {
-  -webkit-transition: 1s ease-in-out;
-  transition:         1s ease-in-out;
-  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  -webkit-animation: animatedgradient 3s ease alternate infinite;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
-}
-
-
-.footer-promo1 {
-  height: 100%;
-  margin-top: 4rem;
-  padding: 3rem 1rem;
-  background-color: #87af4e;
-  text-align: center;
-}
-
-.footer-promo2 {
-  height: 100%;
-  padding: 4rem 1rem;
-  background-color: ivory;
-  text-align: center;
-}
-.footer-promo1 li {
-  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  list-style: none;
-}
-.footer-promo2 li {
-  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-  font-size: 2rem;
-  line-height: 2;
-  list-style: none;
-}
-
-.footer-cta {
-  padding: 2rem 1rem;
-  background-color: #D4AEA6;
-  text-align: center;
-}
-
-.footer-cta h2 {
-  padding: 2rem 0 1rem;;
-  text-align: center;
-  line-height: 5rem;
-  color: #3B2622;
-  font-size: 3rem;
-}
-.footer-cta h2 span {
-  display: block;
-  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color:  #87635C;
-  font-size: 5rem;
-}
-.footer-cta h2 strong {
-  display: block;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
-  color: #E5D7B7;
-  font-size: 4rem;
-  line-height: 4rem;
-}
-.footer-cta h3 {
-  padding: 1rem 0;
-  color: #87635C;
-}
-.footer-cta h3 strong, .footer-cta h3 a {
-  display: block;
-  padding-bottom: 1.5rem;
-  font-size: 4rem;
-  color: #3B2622;
-}
-.footer-cta img {
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 50%;
-  -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition:         transform .8s ease-in-out;
-}
-.footer-cta img:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-#colophon {
-  margin-top: 0;
-  padding: 1.5rem 0 1rem;
-  color: #FFE6E0;
-  font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-  text-align: center;
-  letter-spacing: 1px;
-  /* background-color: #019573; */
-  background-color: #87635C;
-}
-#colophon p {
-  margin-bottom:.2rem;
-}
-#colophon a:hover {
-  text-decoration: none;
-  color: pink;
-}
-#colophon img {
-  padding-top: 1rem;
-}
-
-
-
+/* CODE SPLIT */
 
 
 
@@ -579,11 +438,6 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   }
   .wrap-header header a { margin-left: 1rem; }
 
-  .footer-cta h2 { font-size: 5rem; }
-  .footer-cta h2 span { font-size: 4rem; line-height: 1.4;}
-  .footer-cta h2 strong {font-size: 6rem; line-height: .7;}
-  .footer-cta h3 strong, .footer-cta h3 a { font-size: 3rem; }
-
   .post .thinglist {
     column-count: 2;
   }
@@ -604,15 +458,9 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .intro p { font-size: 3rem; }
   .intro p span {display: inline-block; }
 
-  .footer-cta h2 { font-size: 6rem; }
-  .footer-cta h2 span { font-size: 5rem; line-height: 1.6;}
-  .footer-cta h2 strong {font-size: 7rem; line-height: .8;}
-  .footer-cta h3 strong, .footer-cta h3 a { font-size: 4rem; }
-
   .q-wrap {
     width : 60%; 
   } 
-
   .post .thinglist {
     width: 60%;
     display: inline-block;
@@ -636,11 +484,6 @@ footer h5, .footer-promo1 h5, .footer-promo2 h5 {
   .intro h1 span:nth-of-type(2) { font-size: 6rem; }
   .intro p { font-size: 3.5rem; }
 
-  .footer-cta h2 { font-size: 7rem; }
-  .footer-cta h2 span { font-size: 6rem; line-height: 1.9;}
-  .footer-cta h2 strong {font-size: 7rem; line-height: .9;}
-  .footer-cta h3 strong, .footer-cta h3 a { font-size: 5rem; }
-  
   .frame { padding-top: 2rem; padding-bottom: 2.5rem; }
 
   .post .thinglist {

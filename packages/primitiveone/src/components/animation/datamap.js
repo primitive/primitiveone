@@ -1,6 +1,10 @@
 // @datamap
 // based on codepen by Dave Quah
 // https://codepen.io/Milleus/pen/pozRbKa
+
+// this creates a massive amount of DIVs
+// to be used for some of the pre/post optimisation benchmarking
+
 import React from 'react';
 
 const DataMapComponent = () => (

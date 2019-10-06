@@ -49,7 +49,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://staging.primitivedigital.uk/wp-json/",
+          "api": "https://wp.primitivedigital.uk/wp-json/",
           "homepage": "/home/",
           "postsPage": "/blog/"
         }

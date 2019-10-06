@@ -62,4 +62,69 @@ const Silver = ({ state }) => (
 
 export default connect(Silver);
 
-const Section = styled.section``;
+const Section = styled.section`
+
+.footer-promo1 h5, .footer-promo2 h5 {
+  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 4rem;
+}
+
+.fancy-frame {
+  padding: 12px;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 1s ease-in-out;
+  transition:         1s ease-in-out;
+}
+.frame {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.frame ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-promo1 .fancy-frame { background: #fff; }
+.footer-promo1 h5 { color: #fff; }
+.footer-promo2 h5 { color: #87af4e; }
+.footer-promo2 .fancy-frame { background: #87af4e; }
+.footer-promo1:hover .fancy-frame,
+.footer-promo2:hover .fancy-frame {
+  -webkit-transition: 1s ease-in-out;
+  transition:         1s ease-in-out;
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  -webkit-animation: animatedgradient 3s ease alternate infinite;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+.footer-promo1 {
+  height: 100%;
+  margin-top: 4rem;
+  padding: 3rem 1rem;
+  background-color: #87af4e;
+  text-align: center;
+}
+
+.footer-promo2 {
+  height: 100%;
+  padding: 4rem 1rem;
+  background-color: ivory;
+  text-align: center;
+}
+.footer-promo1 li {
+  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  list-style: none;
+}
+.footer-promo2 li {
+  font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  line-height: 2;
+  list-style: none;
+}
+
+`;
