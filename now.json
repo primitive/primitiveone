@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "primitivedigital.co.uk",
     "builds": [
       {
         "src": "package.json",

@@ -10,6 +10,7 @@ import Nav from "./nav";
 import Silver from './silver';
 import Footer from "./footer";
 //import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+//import '.bootstrap/dist/css/bootstrap.min.css';
 import globalStyles from '../style.css';
 import ReactGA from 'react-ga';
 
@@ -36,6 +37,7 @@ const Theme = ({ state }) => {
           crossorigin="anonymous"
         />
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
+        <link rel="canonical" href="https://primitivedigital.co.uk" />
       </Head>
       <Global styles={globalStyles} />
       <HeadWrapper className="wrap-header">

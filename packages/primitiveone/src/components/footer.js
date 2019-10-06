@@ -27,12 +27,17 @@ const Footer = ({ state }) => (
     <Container fluid="true" id="colophon">
       <Container>
         <Row>
-        <Col lg="12">
-            <p>Website design and build by <a href="https://primitivedigital.uk/">Primitive Digital</a> &copy; 2019.</p>
-            <p>Web Hosting and Domains provided by <a href="https://primitivehosting.uk/">Primitive Hosting</a>.</p>
+          <Col lg="12">
+            <p>Website design and build by <a title="Website design and build by Primitive Digital" href="https://primitivedigital.uk/">Primitive Digital</a> &copy; 2019.</p>
+            <p>Web Hosting and Domains provided by <a title="Web Hosting and Domains from Primitive Hosting" href="https://primitivehosting.uk/">Primitive Hosting</a>.</p>
           </Col>
-          </Row>
-          <Row>
+        </Row>
+        <Row>
+          <Col lg="12">
+            <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317124/img/ph-logo-footer_thxexg.png"} alt="Primitive Digital - Web Design &amp; Development" />
+          </Col>
+        </Row>
+        <Row>
           <Col lg="12">
             <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317124/img/ph-logo-footer_thxexg.png"} alt="Primitive Digital - Web Design &amp; Development" />
           </Col>
@@ -45,4 +50,9 @@ const Footer = ({ state }) => (
 
 export default connect(Footer);
 
-const Section = styled.footer``;
+const Section = styled.footer`
+
+
+
+
+`;
