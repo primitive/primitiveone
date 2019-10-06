@@ -23,31 +23,77 @@ It may be messy and it may be downright wrong in places.
 1st Draft Release (September 16, 2019):  
 - Deployed to Zeit Now with Google analytics  
 
-1st Release Candidate (October 01, 2019):  
+1st Release/RC (October 01, 2019):  
 - Performance enhancements and docs update  
+- Moved static images to cloudinary and set format to auto
 
-1st Release (October 06, 2019):  
-- Settings, read.me and project structure updated
-- CSS code splitting
-
-
-### To Do >>>>>>
-
-1. Amend Nameservers/DNS/Install location
-2. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
-3. Add: WP theme support and user configurables
-4. Test: title/meta sync / helmet / Yoast SEO??
-5. Content: load WP pages and create cpt/acf
-6. Add: Widget blocks
-7. Merge with Boostrap branding kit.
-8. Refine: Animation, use scale and overlap tweens
-9. Add: Create/Extend animations to pass user configuration
-10. AMP
+Update (October 06, 2019):  
+- Frontity core and package updated
+- Clean wp install done to new subdomain
+- Settings, read.me and project structure updated, unused modules removed
+- Began CSS code splitting
 
 
-### To Check / Review ??????
+### Issue, Fix and Refine ###
+1. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
+2. Having issues importing the boostrap CSS via import
+3. Better webfont usage (yes, I know these are bad but they're oh so pretty)
+4. Improve Google analytics implementation
+5. Content positioning / Roots and Fills
+6. How to set the loaction of page content when a static is set as the homepage
+
+note: The two package.json / readme file locations are a bit confusing
+
+
+### WIP: SEO bits and bobs ###
+
+1) For Now deployment 
+
+Now recommends setting domains to point at their nameservers.
+Or setting CNAME/ANAME DNS records
+
+- You can not set CNAME records on the root
+- Not all domain registrars support ANAME
+- Current deployment is using their Nameservers
+- You can set DNS records via the Now cli
+
+Duplicated Content
+
+- Do add canonical links to your index
+- Self referncing canonical links are OK
+<link rel="canonical" href="https://example.com/" />
+
+robots.txt
+
+- You can create a robots text via now.json
+- You DO NOT need to do this manually for Frontity
+
+www/non-www redirects
+
+- Also possible via now.json (routes)
+- To Do: https://zeit.co/guides/redirect-from-www/
+
+Sitemaps
+- TBC
+
+To Test/Implement: title/meta / Frontity Yoast module
+- TBC
+
+
+### To Do: Features >>>>>>
+- Content: load WP pages and create cpt/acf
 - ACF / Custom post type support
 - ACF / Custom taxonomies support
+- Widget blocks (CPT, facebook, twitter, instagram, pinterest)
+
+
+### To Do: Later >>>>>>
+
+1. Merge with Boostrap branding kit.
+2. Add: WP theme support and user configurables
+3. Refine: Animation, use scale and overlap tweens
+4. Add: Create/Extend animations to pass user configuration
+5. AMP
 
 
 ## Performance Comparrison Testing (WIP)
