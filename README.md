@@ -34,18 +34,21 @@ Update (October 06, 2019):
 - Began CSS code splitting
 
 
-### Issue, Fix and Refine ###
+## Issues, Fix and Refine ###
 1. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
-2. Having issues importing the boostrap CSS via import
+2. Having issues importing the bootstrap CSS correctly
 3. Better webfont usage (yes, I know these are bad but they're oh so pretty)
 4. Improve Google analytics implementation
 5. Content positioning / Roots and Fills
-6. How to set the loaction of page content when a static is set as the homepage
+6. How to set the location of page content when a static is set as the homepage
+7. Best practice: creating custom post/cpt blocks with filters (WP_Query)
+8. Best practice: chooing the right component (Image can be imported from various modules)
+9. Best practice: applying 'styled' to components imported from other modules 
 
 note: The two package.json / readme file locations are a bit confusing
 
 
-### WIP: SEO bits and bobs ###
+## WIP: SEO bits and bobs ###
 
 1) For Now deployment 
 
@@ -80,14 +83,14 @@ To Test/Implement: title/meta / Frontity Yoast module
 - TBC
 
 
-### To Do: Features >>>>>>
+## To Do: Features >>>>>>
 - Content: load WP pages and create cpt/acf
 - ACF / Custom post type support
 - ACF / Custom taxonomies support
 - Widget blocks (CPT, facebook, twitter, instagram, pinterest)
 
 
-### To Do: Later >>>>>>
+## To Do: Later >>>>>>
 
 1. Merge with Boostrap branding kit.
 2. Add: WP theme support and user configurables
