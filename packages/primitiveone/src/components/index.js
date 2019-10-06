@@ -7,7 +7,7 @@ import Post from "./post";
 import Page404 from "./page404";
 import Loading from "./loading";
 import Nav from "./nav";
-import Silver from './silver';
+import Silver from "./silver";
 import Footer from "./footer";
 //import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import globalStyles from '../style.css';

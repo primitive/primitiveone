@@ -53,7 +53,7 @@ dist
 
 # Unoptimised / Optimised Image Folders
 images
-img
+#img
 
 ## build script local files
 # build/buildinfo.properties
