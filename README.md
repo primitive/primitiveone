@@ -18,22 +18,6 @@ N.B. This is only my second attempt at React based website so do be kind.
 It may be messy and it may be downright wrong in places.											
 
 
-
-## History
-1st Draft Release (September 16, 2019):  
-- Deployed to Zeit Now with Google analytics  
-
-1st Release/RC (October 01, 2019):  
-- Performance enhancements and docs update  
-- Moved static images to cloudinary and set format to auto
-
-Update (October 06, 2019):  
-- Frontity core and package updated
-- Clean wp install done to new subdomain
-- Settings, read.me and project structure updated, unused modules removed
-- Began CSS code splitting
-
-
 ## Issues, Fix and Refine ###
 1. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
 2. Having issues importing the bootstrap CSS correctly
@@ -41,9 +25,12 @@ Update (October 06, 2019):
 4. Improve Google analytics implementation
 5. Content positioning / Roots and Fills
 6. How to set the location of page content when a static is set as the homepage
+
 7. Best practice: creating custom post/cpt blocks with filters (WP_Query)
 8. Best practice: chooing the right component (Image can be imported from various modules)
 9. Best practice: applying 'styled' to components imported from other modules 
+10. Best practice: installing a theme or plugin to pervent access to WP frontend
+
 
 note: The two package.json / readme file locations are a bit confusing
 
@@ -55,7 +42,7 @@ note: The two package.json / readme file locations are a bit confusing
 Now recommends setting domains to point at their nameservers.
 Or setting CNAME/ANAME DNS records
 
-- You can not set CNAME records on the root
+- You can not set CNAME records on the root i.e. example.com
 - Not all domain registrars support ANAME
 - Current deployment is using their Nameservers
 - You can set DNS records via the Now cli
