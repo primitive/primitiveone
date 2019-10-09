@@ -31,6 +31,9 @@ const Footer = ({ state }) => (
           </Col>
         </Row>
         <Row className="kissesto">
+          <Col lg="12" className="loveit">
+            <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/w_103,h_90,c_scale/f_auto/v1570609982/img/foot-heart_kpx4kb.svg"} />
+          </Col>
           <Col lg="12">
             <Image src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1570379780/img/foot-wordpress_hnwztw.svg"} alt="WordPress Open source software used to create a beautiful websites, blogs and apps." title="WordPress Open source software used to create a beautiful websites, blogs and apps." />
             <span className="slab">+</span>
