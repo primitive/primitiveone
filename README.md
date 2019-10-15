@@ -37,15 +37,16 @@ note: The two package.json / readme file locations are a bit confusing
 
 ## WIP: SEO bits and bobs ###
 
-1) For Now deployment 
+1) Zeit Now deployment 
 
 Now recommends setting domains to point at their nameservers.
-Or setting CNAME/ANAME DNS records
+Or, alternatively setting CNAME/ANAME DNS records
 
-- You can not set CNAME records on the root i.e. example.com
-- Not all domain registrars support ANAME
-- Current deployment is using their Nameservers
+- CNAME works for subdomains (www.) but you can not set CNAME records on the root i.e. example.com
+- Not all domain registrars support ANAME records.
+- My current deployment is set to use Zeit Nameservers
 - You can set DNS records via the Now cli
+- https://zeit.co/blog/now-dns / https://zeit.co/docs/v2/advanced/domains/dns/
 
 Duplicated Content
 
@@ -55,7 +56,7 @@ Duplicated Content
 
 robots.txt
 
-- You can create a robots text via now.json
+- You can create a robots text via now.json (routes)
 - You DO NOT need to do this manually for Frontity
 
 www/non-www redirects

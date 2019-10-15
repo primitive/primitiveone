@@ -37,6 +37,8 @@ const Theme = ({ state }) => {
         />
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
         <link rel="canonical" href="https://primitivedigital.co.uk" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
       </Head>
       <Global styles={globalStyles} />
       <HeadWrapper className="wrap-header">
@@ -45,11 +47,11 @@ const Theme = ({ state }) => {
       </HeadWrapper>
       <BodyWrapper className="wrap-body">
           <Body>
-            {data.isFetching && <Loading />}
-            {data.isHome && <Home />}
-            {data.isArchive && <List />}
-            {data.isPostType && <Post />}
-            {data.is404 && <Page404 />}
+          {(data.isFetching && <Loading />) ||
+            (data.isHome && <Home />) ||
+            (data.isArchive && <List />) ||
+            (data.isPostType && <Post />) ||
+            (data.is404 && <Page404 />)}
           </Body>
       </BodyWrapper>
       <Silver />

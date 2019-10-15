@@ -6,6 +6,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## History
 
+Update (October 09, 2019):  
+- Footer updated
+- Test, preload/preconnect: https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect
+
+
 Update (October 06, 2019):  
 - Frontity core and package updated
 - Clean wp install done to new subdomain

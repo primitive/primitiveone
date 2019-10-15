@@ -1,6 +1,6 @@
 {
-  "name": "@frontity/primitiveone",
-  "version": "1.0.4",
+  "name": "primitiveone",
+  "version": "1.0.5",
   "description": "Primitive One - Built with Frontity",
   "private": false,
   "keywords": [

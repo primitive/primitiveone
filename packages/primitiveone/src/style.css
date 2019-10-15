@@ -193,32 +193,20 @@ button:focus {
   }
 
   /* SERVICES */
-  .services {
-    margin-bottom: 2rem;
-  }
+  .services { margin-bottom: 2rem; }
   .services .nav-tabs {
     font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     letter-spacing: 1px;
   }
-  .services .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: white;
-    background-color: #87af4e;
-    border-bottom: 0;
-  }
-  .services .tab-content {
-    border-top: 6px solid #87af4e;
-      background-color: black;
-    }
-  .services .tab-content .tab-pane {
-    max-width: 1140px;
-    padding: 2rem 1rem;
-  }
+  .services .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { border-bottom: 0; color: #111; background-color: #87af4e; }
+  .services .tab-content { border-top: 6px solid #87af4e; background-color: black; }
+  .services .tab-content .tab-pane { padding: 2rem 1rem; max-width: 1140px; }
   .services .txt-wrap {
-    overflow: hidden;
     display: block;
     position: relative;
     z-index: 20;
+    overflow: hidden;
   }
  .services h3 {
     color: ivory;
@@ -248,10 +236,7 @@ button:focus {
     background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
   }
 
-  .services .tab-pane {
-    max-height: 700px;
-    background-color: black;
-  }
+  .services .tab-pane { max-height: 700px; background-color: black; }
   .services .hp-design {
     background-size: contain;
     background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317718/m/monkey-happy_hiofsx.jpg);

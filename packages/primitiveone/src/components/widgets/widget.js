@@ -24,7 +24,7 @@ const Widget = ({ state }) => {
           <a href="https://nice2b.me/" aria-label="Nice2B.me">
             <article className="card">
               <div className="img-holder">
-                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317848/work/n2b_hlwqjc.jpg"} alt="Nice2b.me React Theme for WordPress" />
+                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/w_350,h_220,c_scale/f_auto/v1569317848/work/n2b_hlwqjc.jpg"} alt="Nice2b.me React Theme for WordPress" />
               </div>
               <h4 className="card-title">
                 Nice 2B
@@ -45,7 +45,7 @@ const Widget = ({ state }) => {
           <a href="http://bungalowcaravansite.co.uk" aria-label="The Bungalow Carvan Site">
             <article className="card">
               <div className="img-holder">
-                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317854/work/bungalowcs_fqbyy7.jpg"} alt="Website and Branding for The Bungalow Carvan Site York" />
+                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/w_350,h_220,c_scale/f_auto/v1569317854/work/bungalowcs_fqbyy7.jpg"} alt="Website and Branding for The Bungalow Carvan Site York" />
               </div>
               <h4 className="card-title">
                 Bungalow Caravan Site
@@ -66,7 +66,7 @@ const Widget = ({ state }) => {
           <a href="https://primitivehosting.uk/" aria-label="Nice2B.me">
             <article className="card">
               <div className="img-holder">
-                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317850/work/primitivehosting_zaheay.jpg"} alt="Nice2b.me React Theme for WordPress" />
+                <Image className="card-img-top" src={"https://res.cloudinary.com/primitivedigital/image/upload/w_350,h_220,c_scale/f_auto/v1569317850/work/primitivehosting_zaheay.jpg"} alt="Nice2b.me React Theme for WordPress" />
               </div>
               <h4 className="card-title">
                 Primitive Hosting
