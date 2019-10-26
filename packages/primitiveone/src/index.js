@@ -7,7 +7,7 @@ const before = ({ libraries }) => {
 };
 
 const primitiveOne = {
-  name: "@frontity/primitiveone",
+  name: "primitiveone",
   roots: {
     theme: Theme
   },

@@ -17,7 +17,7 @@ const PageHome = ({ state }) => {
       </div>
 
       <Container>
-        <Row className="intro">
+        <Row className="intro SPANKS">
           <Col lg="12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>

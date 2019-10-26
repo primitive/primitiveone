@@ -14,6 +14,8 @@ import globalStyles from '../style.css';
 import ReactGA from 'react-ga';
 
 const Theme = ({ state }) => {
+
+  debugger;
   const data = state.source.get(state.router.link);
   //console.log("index", data);
 
@@ -47,11 +49,11 @@ const Theme = ({ state }) => {
       </HeadWrapper>
       <BodyWrapper className="wrap-body">
           <Body>
-          {(data.isFetching && <Loading />) ||
-            (data.isHome && <Home />) ||
-            (data.isArchive && <List />) ||
-            (data.isPostType && <Post />) ||
-            (data.is404 && <Page404 />)}
+          {data.isFetching && <Loading />}
+            {data.isHome && <Home />}
+            {data.isArchive && <List />}
+            {data.isPostType && <Post />}
+            {data.is404 && <Page404 />}
           </Body>
       </BodyWrapper>
       <Silver />

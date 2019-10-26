@@ -9,7 +9,7 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/primitiveone",
+      "name": "primitiveone",
       "state": {
         "theme": {
           "menu": [

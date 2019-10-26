@@ -8,7 +8,7 @@ const Header = ({ state }) => (
     <Container>
       <StyledLink link="/web-design/">
         <Title>{state.frontity.title}</Title>
-        <Intro className="subslab"><span className="slab">We Make </span>Fast and Efficient</Intro>
+        <Intro className="subslab SPANKS"><span className="slab">We Make </span>Fast and Efficient</Intro>
         <Description>{state.frontity.description}</Description>
       </StyledLink>
     </Container>
