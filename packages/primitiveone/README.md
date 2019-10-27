@@ -98,7 +98,7 @@ Static: TBC
 ## Created by Primitive Digital
 ### https://primitivedigital.uk
 
-![screenshot](img/webby.png)
+![screenshot](../../img/webby.png)
 
 Setup
 -----
@@ -162,4 +162,4 @@ https://github.com/primitiveshaun/primitiveone/issues
 #### Primitive One created by Primitive Digital
 ##### https://primitivedigital.uk
 
-![screenshot](img/haveyouseenit.jpg)
+![screenshot](../../img/haveyouseenit.jpg)
