@@ -79,13 +79,13 @@ const Section = styled.footer`
       padding: 2rem 0 1rem;;
       text-align: center;
       line-height: 5rem;
-      color: #3B2622;
+      color: #765751;
       font-size: 3rem;
     }
     h2 span {
       display: block;
       font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color:  #87635C;
+      color:  #765751;
       font-size: 5rem;
     }
     h2 strong {
@@ -98,7 +98,7 @@ const Section = styled.footer`
     }
     h3 {
       padding: 1rem 0;
-      color: #87635C;
+      color: #765751;
     }
     strong, h3 a {
       display: block;
@@ -125,7 +125,7 @@ const Section = styled.footer`
 
     margin-top: 0;
     padding: 1.5rem 0 1rem;
-    color: #FFE6E0;
+    color: #ededed;
     font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     text-align: center;
     letter-spacing: 1px;
@@ -134,6 +134,10 @@ const Section = styled.footer`
 
     p {
       margin-bottom:.2rem;
+      letter-spacing:1px;
+    }
+    a {
+      color: #ededed;
     }
     a:hover {
       text-decoration: none;

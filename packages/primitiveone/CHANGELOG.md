@@ -7,12 +7,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ## History
 
 Update (October 27, 2019):  
-- Images need responsive sizes setting 
+- Resolved: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
+- Test: Images URLs modified for auto responsive sizing in mock-widget block
+- Installed redirect plugin to prevent access to WP (rest server) frontend
 - Config files updated
-- Deployment and update issues resolved
+- Previous now deployment failed, adding mars-theme config/files back resolved this
 
 Update (October 09, 2019):  
 - Footer updated
+- Clean install performed
+- Published as npm package
 - Test, preload/preconnect: https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect
 
 

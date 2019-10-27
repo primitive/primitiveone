@@ -17,7 +17,7 @@ const PageHome = ({ state }) => {
       </div>
 
       <Container>
-        <Row className="intro SPANKS">
+        <Row className="intro">
           <Col lg="12">
             <h1><span>Integrated </span>Digital Design, Development <span>&amp;</span> Marketing</h1>
             <p>
@@ -138,4 +138,6 @@ const PageHome = ({ state }) => {
 
 export default connect(PageHome);
 
-const Section = styled.main``;
+const Section = styled.main`
+
+`;

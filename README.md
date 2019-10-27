@@ -19,17 +19,19 @@ It may be messy and it may be downright wrong in places.
 
 
 ## Issues, Fix and Refine ###
-1. Fix: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
-2. Having issues importing the bootstrap CSS correctly
-3. Better webfont usage (yes, I know these are bad but they're oh so pretty)
-4. Improve Google analytics implementation
-5. Content positioning / Roots and Fills
-6. How to set the location of page content when a static is set as the homepage
 
-7. Best practice: creating custom post/cpt blocks with filters (WP_Query)
-8. Best practice: chooing the right component (Image can be imported from various modules)
-9. Best practice: applying 'styled' to components imported from other modules 
-10. Best practice: installing a theme or plugin to pervent access to WP frontend
+1. Query strings break routing / 404s
+2. Having issues importing the bootstrap CSS correctly
+3. Content positioning / Roots and Fills
+4. How to set the location of page content when a static is set as the homepage
+
+
+1. Implement: custom post/cpt blocks ( ??? test with filters vs WP_Query)
+2. Implement: Better webfont loading
+3. Improve Google analytics implementation
+
+a. Best practice: choosing the right component (Image can be imported from various modules)
+b. Best practice: applying 'styled' to components imported from other modules 
 
 
 note: The two package.json / readme file locations are a bit confusing

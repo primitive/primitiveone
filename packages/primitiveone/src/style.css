@@ -199,6 +199,13 @@ button:focus {
     font-weight: bold;
     letter-spacing: 1px;
   }
+  .services .nav-tabs a {
+    color: #87af4e;
+  }
+  .services .nav-tabs a:hover {
+    color: #111;
+  }
+
   .services .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { border-bottom: 0; color: #111; background-color: #87af4e; }
   .services .tab-content { border-top: 6px solid #87af4e; background-color: black; }
   .services .tab-content .tab-pane { padding: 2rem 1rem; max-width: 1140px; }
@@ -300,8 +307,10 @@ button:focus {
     margin: 1rem 1rem 0;
     font-family: courier;
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
-    color: #019573;
+    /* color: #019573; */
+    color: #015642;
     border-top: 2px solid #019573;
   }
   .post-strip a {

@@ -86,8 +86,8 @@ const Section = styled.section`
 }
 
 .footer-promo1 .fancy-frame { background: #fff; }
-.footer-promo1 h5 { color: #fff; }
-.footer-promo2 h5 { color: #87af4e; }
+.footer-promo1 h5 { color: #fff;}
+.footer-promo2 h5 { color: #7A9E47; }
 .footer-promo2 .fancy-frame { background: #87af4e; }
 .footer-promo1:hover .fancy-frame,
 .footer-promo2:hover .fancy-frame {
@@ -104,7 +104,7 @@ const Section = styled.section`
   height: 100%;
   margin-top: 4rem;
   padding: 3rem 1rem;
-  background-color: #87af4e;
+  background-color: #7A9E47;
   text-align: center;
 }
 
