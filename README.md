@@ -15,26 +15,15 @@ Domain and PHP server provided by: https://primitivehosting.uk/headlesswp
 
 
 N.B. This is only my second attempt at React based website so do be kind.  
-It may be messy and it may be downright wrong in places.											
+It may be messy and it may be downright wrong in places.	
+
+See ![a relative link](packages/primitiveone/CHANGELOG.md)
 
 
 ## Issues, Fix and Refine ###
 
 1. Query strings break routing / 404s
 2. Having issues importing the bootstrap CSS correctly
-3. Content positioning / Roots and Fills
-4. How to set the location of page content when a static is set as the homepage
-
-
-1. Implement: custom post/cpt blocks ( ??? test with filters vs WP_Query)
-2. Implement: Better webfont loading
-3. Improve Google analytics implementation
-
-a. Best practice: choosing the right component (Image can be imported from various modules)
-b. Best practice: applying 'styled' to components imported from other modules 
-
-
-note: The two package.json / readme file locations are a bit confusing
 
 
 ## WIP: SEO bits and bobs ###
@@ -75,9 +64,13 @@ To Test/Implement: title/meta / Frontity Yoast module
 
 ## To Do: Features >>>>>>
 - Content: load WP pages and create cpt/acf
-- ACF / Custom post type support
-- ACF / Custom taxonomies support
+- Feat: custom post/cpt blocks ( ??? test with filters vs WP_Query)
+- Feat: Better webfont loading
+- Refine: Google analytics implementation / package
 - Widget blocks (CPT, facebook, twitter, instagram, pinterest)
+- Best practice: choosing the right component (Image can be imported from various modules)
+- Best practice: applying 'styled' to components imported from other modules 
+- How to set the location of page content when a static is set as the homepage / Content positioning / Roots and Fills
 
 
 ## To Do: Later >>>>>>
