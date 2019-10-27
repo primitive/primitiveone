@@ -16,7 +16,7 @@ Update (October 27, 2019):
 Update (October 09, 2019):  
 - Footer updated
 - Clean install performed
-- Published as npm package
+- Published as npm package: https://www.npmjs.com/package/primitiveone
 - Test, preload/preconnect: https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect
 
 

@@ -1,7 +1,7 @@
 # Primitive One Frontity Theme
 A Headless WordPress (REST API) Theme for Frontity
 
-![screenshot](img/punky.png)
+![screenshot](../../img/punky.png)
 
 Created with a little Node.js and React magic. 
 
@@ -12,15 +12,15 @@ With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 Live demo site: https://primitivedigital.co.uk  
 
 GitHub: https://github.com/primitiveshaun/primitiveone
+
 NPM: https://www.npmjs.com/package/primitiveone
 
 Domain and WordPress hosting from: https://primitivehosting.uk/headlesswp
 
-
 N.B. This is only my second attempt at React based website so do be kind.  
 It may be messy and it may be downright wrong in places.	
 
-See [changelog](packages/primitiveone/CHANGELOG.md) for release notes.
+See [changelog](CHANGELOG.md) for release notes.
 
 
 ## Issues, Fix and Refine ###
@@ -41,6 +41,7 @@ Or, alternatively setting CNAME/ANAME DNS records
 - My current deployment is set to use Zeit Nameservers
 - You can set DNS records via the Now cli
 - https://zeit.co/blog/now-dns / https://zeit.co/docs/v2/advanced/domains/dns/
+
 
 Duplicated Content
 
