@@ -6,6 +6,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## History
 
+Update (October 27, 2019):  
+- Images need responsive sizes setting 
+- Config files updated
+- Deployment and update issues resolved
+
 Update (October 09, 2019):  
 - Footer updated
 - Test, preload/preconnect: https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect

@@ -15,10 +15,8 @@ import ReactGA from 'react-ga';
 
 const Theme = ({ state }) => {
 
-  debugger;
   const data = state.source.get(state.router.link);
-  //console.log("index", data);
-
+  
   function initializeReactGA() {
     ReactGA.initialize('UA-61815763-1');
     ReactGA.pageview(state.router.link);
