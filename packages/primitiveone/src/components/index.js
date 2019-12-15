@@ -1,5 +1,7 @@
 import React from "react";
 import { Global, css, connect, styled, Head } from "frontity";
+import ReactGA from 'react-ga';
+
 import Header from "./header";
 import Home from './page-home';
 import List from "./list";
@@ -11,7 +13,7 @@ import Silver from "./silver";
 import Footer from "./footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import globalStyles from '../style.css';
-import ReactGA from 'react-ga';
+
 
 const Theme = ({ state }) => {
 
@@ -40,11 +42,14 @@ const Theme = ({ state }) => {
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://stats.g.doubleclick.net" />
       </Head>
+
       <Global styles={globalStyles} />
+
       <HeadWrapper className="wrap-header">
         <Header />
         <Nav />
       </HeadWrapper>
+
       <BodyWrapper className="wrap-body">
           <Body>
           {data.isFetching && <Loading />}
@@ -54,7 +59,9 @@ const Theme = ({ state }) => {
             {data.is404 && <Page404 />}
           </Body>
       </BodyWrapper>
+
       <Silver />
+      
       <Footer />
     </>
   );

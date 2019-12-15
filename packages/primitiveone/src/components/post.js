@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
+import { Row, Col } from "react-bootstrap";
+
 import Link from "./link";
 import List from "./list";
 import FeaturedMedia from "./featured-media";
 
 const Post = ({ state, actions, libraries }) => {
+
   // Get info of current post.
   const data = state.source.get(state.router.link);
   // Get the the post.
@@ -23,74 +26,91 @@ const Post = ({ state, actions, libraries }) => {
     List.preload();
   }, []);
 
+  /*
+  let titleTag = ['h1','h2','h3'];
+  let titleTagClose = ['</h1>','</h2>','</h3>'];
+  console.log(state.source);
+  */
+
   return data.isReady ? (
-    <Container className={"post "+postType} id={postType+"-"+postId}>
-      <div>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+    <StyledContent className={"post " + postType} id={postType + "-" + postId}>
+
+      <PostHead className="row">
+        <Col>
+          <PostTitle dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+        </Col>
+      </PostHead>
+
         {data.isPost && (
-          <div>
-            <StyledLink link={author.link}>
-              <Author>
-                By <b>{author.name}</b>
-              </Author>
-            </StyledLink>
-            <Fecha>
-              {" "}
-              on <b>{date.toDateString()}</b>
-            </Fecha>
-          </div>
+          <Row className="postMeta">
+            <Col>
+              <StyledLink link={author.link}>
+                <PostAuthor> By <b>{author.name}</b></PostAuthor>
+              </StyledLink>
+
+              <PostDate> {" "} on <b>{date.toDateString()}</b></PostDate>
+            </Col>
+          </Row>
         )}
-      </div>
-      {state.theme.featured.showOnPost && (
-        <FeaturedMedia id={post.featured_media} />
-      )}
-      <Body>
+
+      <Row>
+        <Col>
+
+          { state.theme.featured.showOnPost && ( <FeaturedMedia id={post.featured_media} /> ) }
+
+        </Col>
+      </Row>
+
+      <PostBody className="row">
         <libraries.html2react.Component html={post.content.rendered} />
-      </Body>
-    </Container>
+      </PostBody>
+
+    </StyledContent>
   ) : null;
 };
 
 export default connect(Post);
 
-const Container = styled.div`
-  display: flex;
-  flex: 1;
-`;
-
-const Title = styled.h1`
-  margin: 0;
-
-  color: rgba(12, 17, 43);
+const StyledContent = styled.section`
+  padding: 5px;
 `;
 
 const StyledLink = styled(Link)`
   padding: 15px 0;
 `;
 
-const Author = styled.p`
+const PostHead = styled.header`
+
+`;
+
+const PostTitle = styled.h1`
+  color: rgba(12, 17, 43);
+`;
+
+const PostAuthor = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
 `;
 
-const Fecha = styled.p`
+const PostDate = styled.p`
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
   display: inline;
 `;
 
-const Body = styled.div`
+const PostBody = styled.div`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
   padding-top: 2rem;
 
-  * {
-    max-width: 100%;
-  }
-
   p {
     line-height: 1.6em;
+  }
+
+  a {
+    color: rgb(31, 56, 197);
+    text-decoration: underline;
   }
 
   img {
@@ -114,17 +134,12 @@ const Body = styled.div`
     margin: auto;
   }
 
-  blockquote {
-    margin: 16px 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-left: 4px solid rgba(12, 17, 43);
-    padding: 4px 16px;
-  }
 
-  a {
-    color: rgb(31, 56, 197);
-    text-decoration: underline;
-  }
+
+
+
+
+
 
   /* WordPress Core Align Classes */
 

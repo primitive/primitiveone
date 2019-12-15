@@ -25,8 +25,7 @@ See [changelog](CHANGELOG.md) for release notes.
 
 ## Issues, Fix and Refine ###
 
-1. Query strings break routing / 404s
-2. Having issues importing the bootstrap CSS correctly
+1. Having issues importing the bootstrap CSS correctly
 
 
 ## WIP: SEO bits and bobs ###

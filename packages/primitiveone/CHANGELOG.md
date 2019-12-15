@@ -6,12 +6,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## History
 
+1.0.10 > Update (December 15, 2019): 
+- Confirmed "Query strings break routing / 404s" as resolved: https://github.com/frontity/frontity/issues/229
+- replace :nth-child with :nth-of-type in datamap css
+- Frontity and all dependencies updated.
+
 Update (October 27, 2019):  
 - Resolved: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
 - Test: Images URLs modified for auto responsive sizing in mock-widget block
 - Installed redirect plugin to prevent access to WP (rest server) frontend
 - Config files updated
 - Previous now deployment failed, adding mars-theme config/files back resolved this
+
 
 Update (October 09, 2019):  
 - Footer updated
