@@ -1,19 +1,26 @@
 import React from "react";
-import { Global, css, connect, styled, Head } from "frontity";
+import { Global, connect, styled, Head, loadable } from "frontity";
 import ReactGA from 'react-ga';
 
-import Header from "./header";
-import Home from './page-home';
-import List from "./list";
-import Post from "./post";
-import Page404 from "./page404";
 import Loading from "./loading";
+
+import Header from "./header";
 import Nav from "./nav";
 import Silver from "./silver";
 import Footer from "./footer";
+
+import Home from './page-home';
+import List from "./list";
+import Post from "./post";
+import Timeline from "./timeline";
+import Page404 from "./page404";
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import globalStyles from '../style.css';
 
+// Thanks to loadable we prevent comments from loading until it's needed.
+//const Silver = loadable(() => import('./silver'));
 
 const Theme = ({ state }) => {
 
@@ -24,6 +31,8 @@ const Theme = ({ state }) => {
     ReactGA.pageview(state.router.link);
   }
   initializeReactGA();
+
+  console.log("INDEX", data)
 
   return (
     <>
@@ -52,15 +61,20 @@ const Theme = ({ state }) => {
 
       <BodyWrapper className="wrap-body">
           <Body>
-          {data.isFetching && <Loading />}
+            {data.isFetching && <Loading />}
             {data.isHome && <Home />}
-            {data.isArchive && <List />}
+            {data.isArchive && data.type === "post" && <List />}
+            {data.isArchive && data.isTemporalEventsArchive && <Timeline />}
             {data.isPostType && <Post />}
             {data.is404 && <Page404 />}
+
+            { /* data.isPostTypeArchive && <Page404/> */ }
+            
           </Body>
       </BodyWrapper>
 
-      <Silver />
+      
+      {data.isHome && <Silver />}
       
       <Footer />
     </>

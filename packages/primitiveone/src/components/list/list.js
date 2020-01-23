@@ -1,15 +1,18 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Item from "./list-item";
-import Pagination from "./pagination";
+import Pagination from "../pagination";
 
-const List = ({ state }) => {
+const PostList = ({ state }) => {
+  
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
-  console.log("list", data);
+
+  console.log("POSTLIST", data);
 
   return (
     <Container className="container">
+
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
@@ -22,21 +25,21 @@ const List = ({ state }) => {
         <Header>Author: {state.source.author[data.id].name}</Header>
       )}
 
-
-
       {/* Iterate over the items of the list. */}
       {data.items.map(({ type, id }) => {
         const item = state.source[type][id];
         // Render one Item component for each one.
         return <Item key={item.id} item={item} />;
       })}
+
       <Pagination />
+      
     </Container>
 
   );
 };
 
-export default connect(List);
+export default connect(PostList);
 
 const Container = styled.main`
 background-color: transparent;

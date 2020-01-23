@@ -6,10 +6,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## History
 
+1.0.12 > 
+// https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
+// https://wp.primitivedigital.uk/wp-json/wp/v2/timelines
+// https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
+
+1.0.11 > Update (January 15, 2020): 
+- housekeeping: tidy up frontity.settings.js
+- Refine: update webfont useage method
+- Feat: add custom post types / taxonomies content to wp
+
 1.0.10 > Update (December 15, 2019): 
 - Confirmed "Query strings break routing / 404s" as resolved: https://github.com/frontity/frontity/issues/229
-- replace :nth-child with :nth-of-type in datamap css
-- Frontity and all dependencies updated.
+- Refine: replace :nth-child with :nth-of-type in datamap css
+- Update: Frontity and all dependencies updated.
 
 Update (October 27, 2019):  
 - Resolved: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331

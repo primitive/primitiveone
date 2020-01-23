@@ -20,7 +20,7 @@
 .idea
 .DS_Store
 
-# OS or Editor folders
+# OS or Editor files
 Thumbs.db
 .cache
 .project
@@ -31,6 +31,7 @@ nbproject
 sftp-config.json
 npm-debug.log
 yarn-error.log
+package-lock.json
 
 # Dreamweaver
 _notes
@@ -50,16 +51,12 @@ intermediate
 publish
 build
 dist
-packages/mars-theme
 
 # Unoptimised / Optimised Image Folders
 images
-#img
+img
 
 ## build script local files
-build/server.js
 # build/buildinfo.properties
 # build/config/buildinfo.properties
 # /inc/.DS_Store
-
-primitive_zone_file.txt

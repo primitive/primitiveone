@@ -21,8 +21,8 @@
     "@frontity/core": "^1.4.1",
     "@frontity/html2react": "^1.1.15",
     "@frontity/tiny-router": "^1.0.18",
-    "@frontity/wp-source": "^1.4.3",
-    "eslint": "^6.7.2",
+    "@frontity/wp-source": "^1.5.0",
+    "eslint": "^6.8.0",
     "frontity": "^1.4.4",
     "npm-check-updates": "^4.0.1",
     "primitiveone": "./packages/primitiveone"
