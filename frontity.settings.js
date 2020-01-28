@@ -2,7 +2,7 @@ const settings = {
   name: "primitiveone",
   state: {
     frontity: {
-      url: "https://primitivedigital.uk", // required: 
+      url: "https://primitivedigital.uk",
       title: "Want a Website?",
       description: "WordPress Web Sites and Apps"
     }
@@ -18,11 +18,28 @@ const settings = {
             [ "Development", "/web-development" ],
             [ "Data", "/data-insights" ],
             [ "Marketing", "/marketing" ],
-            [ "Blog", "/blog/" ]
+            [ "A Log", "/blog/" ]
           ],
           featured: {
             showOnList: true,
             showOnPost: true
+          },
+          config: {
+            homepage: {
+              showHero: true,
+              showIntro: true,
+              showGold: true,
+              showSilver: true,
+              showBronze: true,
+              showPromo: false
+            },
+            page: {
+              showBanner: true,
+              showGold: true,
+              showSilver: true,
+              showBronze: true,
+              page: false
+            }
           }
         }
       }
@@ -44,7 +61,7 @@ const settings = {
           taxonomies: [
             {
               taxonomy: "timelines", // custom taxonomy slug
-              endpoint: "timeline", // REST API endpoint
+              endpoint: "timelines", // REST API endpoint
               postTypeEndpoint: "/temporal_events", // endpoint from which posts from this taxonomy are fetched
             }
           ]
