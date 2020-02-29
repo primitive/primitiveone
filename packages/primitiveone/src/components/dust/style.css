@@ -1,0 +1,322 @@
+html { margin: 0; padding: 0; font-size: 14px; }
+body { margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1, .slab {  font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; font-size: 3.3rem; }
+h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3rem; }
+h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; font-size: 3rem; }
+h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; }
+h6, .scribe { font-family: 'Pacifico', Georgia, cursive; }
+p { font-size: 1rem;}
+
+a, a:visited { text-decoration: none; }
+a {
+  color:              pink;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition:    all .5s ease-in-out;
+  -ms-transition:     all .5s ease-in-out;
+  -o-transition:      all .5s ease-in-out;
+  transition:         all .5s ease-in-out;
+}
+button:focus {
+  outline: none;
+}
+
+
+
+
+.scroll {
+  /* scrollbar show only when more content to see */
+  overflow: auto !important;
+}
+.scroll::-webkit-scrollbar {
+  width:1rem; /* scrollbar width */
+  position: absolute;
+}
+.scroll::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* scrollbar track */
+  border-radius: 0
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: blue ; /* scrollbar thumb background color */
+  border-radius: 0;
+}	
+
+
+.container {
+  max-width: 1140px;
+}
+
+
+
+  .page-home, .post {
+    position : relative; 
+    display: block;
+    width: 100%;
+  }
+  .post {
+    overflow: hidden;
+    font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .post h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  #page-2 h1 {
+    padding: 2rem 2rem 2rem 1rem;
+    font-size: 4rem;
+    text-align: left;
+  }
+  #page-8 h1, #page-1904 h1, #page-2102 h1, #page-2128 h1 {
+    padding: 2rem 0 2rem;
+    margin: 0 15% 1.5rem;
+    font-size: 4rem;
+  }
+  #page-8 h1:after, #page-1904 h1:after, #page-2102 h1:after, #page-2128 h1:after {
+    content: " ";
+    margin-top: .6rem;
+    width: 100%;
+    height: 6px;
+    display: block;
+    /* 
+    this has issues on chrome iOS
+    animation: underline-gradient 6s linear infinite; */
+    background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+  }
+
+
+  .post h3 {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: rgba(12, 17, 43, 0.9);
+  }
+  .post h3:after {
+    content: " ";
+    margin: 1.2rem auto 0 0;
+    width: 5rem;
+    height: 3px;
+    display: block;
+    background: rgba(135, 175,	78, .8) !important;
+  }
+  .post h3:nth-of-type(even):after {
+    background: rgba(235, 150, 108, 0.8) !important;
+  }
+  .post .intro {
+    font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding: 3px 5%;
+    font-size: 1.3rem;
+  }
+  .post .motto {
+    font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
+    padding: 1.5rem 5% 3rem;
+    font-size: 2.3rem;
+    color: #87af4e;
+  }
+  .post .panache {
+    font-family : Baskerville, Georgia, serif; 
+    padding: .5rem 5% .1rem;
+    font-size: 1.6rem;
+    color:  rgba(12,17,43, .7);
+  }
+  .post .panache strong, .post .panache a {
+    font-style: italic;
+    color: #87af4e;
+    text-decoration: none;
+  }
+  .post .thinglist {
+    margin: 0;
+    padding: 1rem 5% 2rem 0;
+    width: 100%;
+    list-style-type: none;
+    display: block;
+    column-count: 1;
+  }
+  .post .thinglist li {
+    margin: 0 0 3px 0;
+    padding: .2rem .3rem .6rem;
+    display: block;
+    font-size: 1.3rem;
+    border-bottom: solid 3px rgba(135, 175,	78, .8);
+    font-family: 'Pacifico', Georgia, cursive; 
+  }
+  .post .thinglist li:nth-of-type(odd) {
+    border-bottom: solid 3px rgba(235, 150, 108, 0.8);
+  }
+  .post figure.wp-block-image {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+  }
+  main article a:hover {
+    color: plum;
+  }
+
+  #post-1 a {
+    color: #87af4e;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  #post-1 a:hover {
+    color: plum;
+    text-decoration: underline;
+  }
+  
+  .q-wrap {
+    margin : 5px 0 40px auto; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width : 80%; 
+  } 
+  .q-wrap p {
+    margin : 0; 
+    padding : 0; 
+  }
+  .q-wrap blockquote {
+    margin : 0; 
+    padding : 0; 
+    padding-top : 150px; 
+    position : relative; 
+    padding-left: 1.5rem;
+    background-color: transparent !important;
+  } 
+  .q-wrap cite {
+    padding: 3px 6px 3px 20px;
+    font-size : 1.5rem; 
+    font-style : normal;
+    font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  } 
+  .q-style-1 blockquote {
+    border-left: 4px solid rgba(135, 175,	78, .8) !important;
+  }
+  .q-style-2 blockquote {
+    border-left: 4px solid rgba(235, 150, 108, 0.8) !important;
+  } 
+  
+  .q-style-1 blockquote:after, .q-style-2 blockquote:after {
+      background: none repeat scroll 0 0 rgba(135, 175,	78, 0.8);
+      border-radius: 50% 50% 50% 50%;
+      color: rgba(255, 255, 255, 0.5);
+      content: "❞";
+      font-family: 'icons';
+      font-size: 70px;
+      height: 130px;
+      left: 50%;
+      line-height: 130px;
+      margin-left: -65px;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+      top: 0;
+      width: 130px;
+  }
+  .q-style-1 blockquote:before, .q-style-2 blockquote:before {
+      border-left: 5px solid rgba(135, 175,	78, .1) !important;
+      border-radius: 50% 50% 50% 50%;
+      content: "";
+      height: 500px;
+      left: -50px;
+      position: absolute;
+      top: 0;
+      width: 500px;
+      z-index: -1;
+  }
+  .q-style-2 blockquote:after {
+    background: none repeat scroll 0 0 rgba(235, 150, 108, 0.8);
+  }
+  .q-style-2 blockquote:before {
+    border-left: 5px solid rgba(235, 150, 108, 0.1) !important;
+  }
+  
+  .q-style-1 blockquote p, .q-style-2 blockquote p {
+    background : none repeat scroll 0 0 rgba(255, 255, 255, 0.5); 
+    box-shadow : 0 -6px 0 rgba(135, 175,	78, 0.2); 
+    color : rgba(135, 175,	78, 0.8); 
+    display : inline; 
+    font-family : Baskerville, Georgia, serif; 
+    font-style : italic; 
+    font-size : 28px; 
+    line-height : 46px; 
+    text-shadow : 0 1px 1px rgba(255, 255, 255, 0.5);  
+  } 
+  .q-style-2 blockquote p {
+    box-shadow : 0 -6px 0 rgba(235, 150, 108, 0.2); 
+    color : rgba(235, 150, 108, 0.8); 
+  }
+
+  
+  /* SERVICES */
+  /* CODE SPLIT */
+
+  /* POST-STRIP */
+  /* CODE SPLIT */
+
+/* *** FOOTER *** */
+/* CODE SPLIT */
+
+
+
+/* --- RESPONSIVE --- */
+
+  /*
+ Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+ */
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  html { font-size: 15px; }
+  .container { max-width: 540px; }
+
+  .post .thinglist {
+    column-count: 2;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up)  */
+@media screen and (min-width: 768px) {
+  html { font-size: 14px; }
+  .container { max-width: 720px; }
+
+  .q-wrap {
+    width : 60%; 
+  } 
+  .post .thinglist {
+    width: 60%;
+    display: inline-block;
+    column-count: 1;
+  }
+  .post figure.wp-block-image {
+    width: 40%;
+    display: inline-block;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  html { font-size: 15px; }
+  .container { max-width: 960px; }
+
+  .post .thinglist {
+    column-count: 2;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  html { font-size: 16px; }
+  .container { max-width: 1140px; }
+}
+
+
+/* --- ANIMATION --- */
+/* CODE SPLIT */
+
+/* DataMap */
+/* CODE SPLIT */
+
+  
