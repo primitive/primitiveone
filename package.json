@@ -6,6 +6,7 @@
   "keywords": [
     "frontity",
     "primitivedigital",
+    "wordpress",
     "headless",
     "decoupled",
     "rest",
@@ -25,6 +26,9 @@
     "eslint": "^6.8.0",
     "frontity": "^1.4.4",
     "npm-check-updates": "^4.0.1",
-    "primitiveone": "./packages/primitiveone"
+    "primitiveone": "./packages/primitiveone",
+    "fills": "file:packages/fills",
+    "cpt-timelines": "file:packages/cpt-timelines",
+    "react-instagram-embed": "^1.5.0"
   }
 }
