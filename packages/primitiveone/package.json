@@ -4,10 +4,10 @@
   "description": "Primitive One - Built with Frontity",
   "private": false,
   "keywords": [
+    "wordpress",
     "frontity",
     "primitivedigital",
     "frontity-theme",
-    "frontity-amp",
     "headless",
     "decoupled",
     "rest",
@@ -30,14 +30,14 @@
     "@frontity/components": "^1.1.15",
     "@frontity/html2react": "^1.1.15",
     "@frontity/yoast": "^1.1.6",
-    "bootstrap": "^4.4.1",
     "frontity": "^1.4.4",
+    "react-spinners": "^0.8.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
-    "react-bootstrap": "^1.0.0-beta.16",
     "react-ga": "^2.7.0",
     "react-gsap": "^1.2.0",
-    "react-scrollmagic": "^2.1.1",
-    "react-spinners": "^0.8.0"
+    "react-scrollmagic": "^2.1.1"
   }
 }
