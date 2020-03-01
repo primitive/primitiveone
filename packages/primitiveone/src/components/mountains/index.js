@@ -39,7 +39,7 @@ const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
   const display = state.theme.config;
 
-  //console.log("@index: data", data);
+  console.log("@index: data", data);
   //console.log("@index: display", display);
 
   // sk-dev: basic tracking snippet to be replaced with frontity package once released
