@@ -1,6 +1,6 @@
 import Theme from "./components/mountains";
 import image from "@frontity/html2react/processors/image";
-import CustomPageHandlers from "./sand/handlers.js";
+import CustomPageHandlers from "./components/sand/handlers.js";
 
 const primitiveOne = {
   name: "primitiveone",

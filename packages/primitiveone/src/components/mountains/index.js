@@ -95,7 +95,6 @@ const Theme = ({ state }) => {
 
       <BodyWrapper className="wrap-body">
 
-
           {(data.isFetching && <Loading />) ||
             (data.isHome && <Home />) ||
             (data.isPostArchive && <Posts />) ||
@@ -105,7 +104,6 @@ const Theme = ({ state }) => {
             (data.isTemporalEventsArchive && <Timeline />) ||
             (data.isTimelineType && <SubTimeline />) ||
             (data.isTimelines && <Timelines />)}
-
 
       </BodyWrapper>
 
