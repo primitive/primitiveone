@@ -19,25 +19,26 @@ const jump = keyframes`
   }
 `;
 
+// animation: heartbeat 1.2s infinite;
 const heartbeat = keyframes`
-    0% {
-      transform: scale( .75);
-    }
-    20% {
-      transform: scale( 1);
-    }
-    40% {
-      transform: scale( .75);
-    }
-    60% {
-      transform: scale( 1);
-    }
-    80% {
-      transform: scale( .75);
-    }
-    100% {
-      transform: scale( .75);
-    }
+  0% {
+    transform: scale( .75 );
+  }
+  20% {
+    transform: scale( 1 );
+  }
+  40% {
+    transform: scale( .75 );
+  }
+  60% {
+    transform: scale( 1 );
+  }
+  80% {
+    transform: scale( .75 );
+  }
+  100% {
+    transform: scale( .75 );
+  }
 `;
 
 // animation: pulse 1.5s infinite;
