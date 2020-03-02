@@ -79,7 +79,7 @@ const primitiveOne = {
         },
         global: {
           showPromo: true,
-          showSocial: true,
+          showSocial: false,
           promo: {
             rocks: "global-promo",
             type: "text",

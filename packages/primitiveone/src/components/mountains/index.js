@@ -31,7 +31,7 @@ import SubTimeline from "../timeline/cpt-subtimeline";
 // console.log(bsCSS);
 
 import globalStyles from '../dust/style.css';
-import FontFaces from "../dust/font-faces";
+//import FontFaces from "../dust/font-faces";
 
 
 const Theme = ({ state }) => {
@@ -84,7 +84,7 @@ const Theme = ({ state }) => {
         <link rel="canonical" href="https://primitivedigital.co.uk" />
 
         <link rel="dns-prefetch" SameSite="None" Secure href="https://www.google-analytics.com" />
-        <link rel="dns-prefetch" SameSite="None" Secure href="https://stats.g.doubleclick.net" />
+        <link rel="dns-prefetch" SameSite="None" Secure href="http://doubleclick.net" />
 
       </Head>
 
