@@ -2,7 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import { Container } from "react-bootstrap";
 import Link from "../pebbles/link";
-import {randomWord} from "../sand/utils";
+import { randomWord } from "../sand/utils";
 
 const Header = ({ state }) => (
   <StyledHeader>
@@ -29,8 +29,9 @@ const StyledHeader = styled.header`
     text-decoration: none;
     padding: 15px;
     display: block;
-}
+  }
 `;
+
 const Title = styled.h2`
   color: #fff;
   font-size: 5rem;
@@ -38,6 +39,7 @@ const Title = styled.h2`
   text-shadow: 1px 1px 2px #477C16;
   margin-bottom: .5rem;
 `;
+
 const Intro = styled.p`
   color: #fff;
   font-size: 1.8rem;
@@ -54,12 +56,14 @@ const Intro = styled.p`
     text-transform: uppercase;
  }
 `;
+
 const Description = styled.h4`
   color: #fff;
   font-size: 1.5rem;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px #477C16;
 `;
+
 const StyledLink = styled(Link)`
   text-decoration: none;
 `;
