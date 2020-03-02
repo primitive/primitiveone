@@ -78,7 +78,7 @@ const primitiveOne = {
           page: false
         },
         global: {
-          showPromo: true,
+          showPromo: false,
           showSocial: false,
           promo: {
             rocks: "global-promo",
@@ -96,6 +96,18 @@ const primitiveOne = {
             facebook: { type: "none" },
             twitter: { type: "none" },
             pinterest: { type: "none" }
+          },
+          footer: {
+            rocks: "",
+            fontfamily: "subslab",
+            text1: "- Top Banana -",
+            text2: "Web Design",
+            text3: "&",
+            text4: "Development",
+            contact: {
+              info: "Phone 0113 314 8880",
+              prompt: "to make beautiful digital stuff together"
+            }
           }
         }
       },
