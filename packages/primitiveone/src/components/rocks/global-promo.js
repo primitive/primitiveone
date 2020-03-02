@@ -2,18 +2,24 @@ import React from "react";
 import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 
-const Promo = ({ state }) => (
-  <section>
-    <Container>
-      <Row>
-        <Content>
-          <PreText>{state.theme.config.global.promo.pretext}</PreText>
-          <Text>{state.theme.config.global.promo.text}</Text>
-        </Content>
-      </Row>
-    </Container>
-  </section>
-);
+const Promo = ({ state }) => {
+
+  const display = state.theme.config.global.promo;
+  if (!display) {return null}
+
+  return (
+    <section>
+      <Container>
+        <Row>
+          <Content>
+            <PreText>{display.pretext}</PreText>
+            <Text>{display.text}</Text>
+          </Content>
+        </Row>
+      </Container>
+    </section>
+  )
+};
 
 export default connect(Promo);
 
@@ -24,6 +30,6 @@ const Content = styled(Col)`
 const PreText = styled.h6`
   padding: 2rem;
 `;
-const Text = styled.h6`
+const Text = styled.p`
   padding: 0 2rem 2rem;
 `;
