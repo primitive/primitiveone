@@ -3,16 +3,12 @@
     "alias": "primitivedigital.co.uk",
     "builds": [
       {
-        "src": "build/server.js",
-        "use": "@now/node"
+        "src": "package.json",
+        "use": "@frontity/now"
       },
       {
         "src": "build/static/**/*",
         "use": "@now/static"
-      },
-      {
-        "src": "package.json",
-        "use": "@now/node-server"
       }
     ],
     "routes": [	
@@ -26,10 +22,6 @@
       {
         "src": "/static/(.*)",
         "dest": "/build/static/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/build/server.js"
       }
       ]
   }
