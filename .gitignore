@@ -33,30 +33,16 @@ npm-debug.log
 yarn-error.log
 package-lock.json
 
-# Dreamweaver
-_notes
-dwsync.xml
 
-# Sublime
-*.sublime-project
-*.sublime-workspace
 
-# Komodo
-*.komodoproject
-.komodotools
+
 
 # Folders
 node_modules
 intermediate
 publish
 # build
-dist
 
 # Unoptimised / Optimised Image Folders
 #images
 #img
-
-## build script local files
-# build/buildinfo.properties
-# build/config/buildinfo.properties
-# /inc/.DS_Store
