@@ -6,6 +6,7 @@
         "src": "build/static/**/*",
         "use": "@now/static"
       },
+      {"src": "static/*", "use": "@now/static"},
       {
         "src": "favicon.ico",
         "use": "@now/static"
