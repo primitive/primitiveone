@@ -7,6 +7,10 @@
         "use": "@frontity/now"
       },
       {
+        "src": "build/server.js",
+        "use": "@now/node"
+      },
+      {
         "src": "build/static/**/*",
         "use": "@now/static"
       }
@@ -18,10 +22,6 @@
       },
       { "src": "/redirect",
         "dest": "https://primitivedigital.co.uk/"
-      },
-      {
-        "src": "/static/(.*)",
-        "dest": "/build/static/$1"
       }
       ]
   }
