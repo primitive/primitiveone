@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.0",
-  "hash": "6558281293bc66ba5f99",
+  "hash": "37219009eacacdc2e42f",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/GIT/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -69,7 +69,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 9556256,
+      "size": 9557441,
       "chunks": [
         "primitiveone"
       ],
