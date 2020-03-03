@@ -16,9 +16,8 @@ import InterSemiBoldLatin from "../../fonts/inter/Inter-SemiBold-LATIN.woff2";
 
 // sk-dev: WEBFONTS REFINE/STANDARD
 // https://community.frontity.org/t/frontity-release-4-november-2019/795
-// test performance impact of font loading: NOT working, cannot remove cdn url???
 // Import your own font file.
-import heptaSlab from "../../fonts/hepta-slab-v6-latin-500.woff";
+import heptaSlab from "../../fonts/hepta-slab-v6-latin-500.woff2";
 
 const FontFace = ({ state }) => {
   let fonts = null;
