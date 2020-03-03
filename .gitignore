@@ -49,7 +49,7 @@ dwsync.xml
 node_modules
 intermediate
 publish
-build
+# build
 dist
 
 # Unoptimised / Optimised Image Folders
