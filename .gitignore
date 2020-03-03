@@ -53,8 +53,10 @@ publish
 dist
 
 # Unoptimised / Optimised Image Folders
-images
-img
+#images
+#img
+img/jungle
+packages/primitiveone/src/img/jungle
 
 ## build script local files
 # build/buildinfo.properties
