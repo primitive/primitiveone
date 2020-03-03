@@ -7,10 +7,6 @@
         "use": "@now/node"
       },
       {
-        "src": "favicon.ico",
-        "use": "@now/static"
-      },
-      {
         "src": "build/static/**/*",
         "use": "@now/static"
       },
