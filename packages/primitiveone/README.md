@@ -28,43 +28,6 @@ See [changelog](CHANGELOG.md) for release notes.
 1. Having issues importing the bootstrap CSS correctly
 
 
-## WIP: SEO bits and bobs ###
-
-1) Zeit Now deployment 
-
-Now recommends setting domains to point at their nameservers.
-Or, alternatively setting CNAME/ANAME DNS records
-
-- CNAME works for subdomains (www.) but you can not set CNAME records on the root i.e. example.com
-- Not all domain registrars support ANAME records.
-- My current deployment is set to use Zeit Nameservers
-- You can set DNS records via the Now cli
-- https://zeit.co/blog/now-dns / https://zeit.co/docs/v2/advanced/domains/dns/
-
-
-Duplicated Content
-
-- Do add canonical links to your index
-- Self referncing canonical links are OK
-<link rel="canonical" href="https://example.com/" />
-
-robots.txt
-
-- You can create a robots text via now.json (routes)
-- You DO NOT need to do this manually for Frontity
-
-www/non-www redirects
-
-- Also possible via now.json (routes)
-- To Do: https://zeit.co/guides/redirect-from-www/
-
-Sitemaps
-- TBC
-
-To Test/Implement: title/meta / Frontity Yoast module
-- TBC
-
-
 ## To Do: Features >>>>>>
 - Content: load WP pages and create cpt/acf
 - Feat: custom post/cpt blocks ( ??? test with filters vs WP_Query)
