@@ -31,7 +31,7 @@ import SubTimeline from "../timeline/cpt-subtimeline";
 // console.log(bsCSS);
 
 import globalStyles from '../dust/style.css';
-//import FontFaces from "../dust/font-faces";
+import FontFaces from "../dust/font-faces";
 
 
 const Theme = ({ state }) => {
@@ -60,6 +60,7 @@ const Theme = ({ state }) => {
       <Global styles={[globalStyles]} />
 
       {/* sk-dev: To TEST <FontFaces /> */}
+      <FontFaces />
 
       {/* sk-dev: To TEST Add some metatags to the <head> of the HTML. 
       <MetaTitle />*/}
@@ -78,8 +79,8 @@ const Theme = ({ state }) => {
           crossorigin="anonymous"
         />
 
-        { /* <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />  */}
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
+        { /* <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />  
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />*/}
 
         <link rel="canonical" href="https://primitivedigital.co.uk" />
 
