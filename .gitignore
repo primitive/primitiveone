@@ -16,11 +16,12 @@
 *.sass-cache
 .hg
 .svn
-.CVS
+.csv
 .idea
-.DS_Store
+
 
 # OS or Editor files
+.DS_Store
 Thumbs.db
 .cache
 .project
@@ -34,14 +35,13 @@ yarn-error.log
 package-lock.json
 
 
-
-
-
 # Folders
 node_modules
 intermediate
 publish
 # build
+
+packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders
 #images
