@@ -6,7 +6,7 @@ import ImgLogo from "../../img/footer/primitive.svg";
 import ImgHeart from "../../img/footer/heart.svg";
 import ImgFrontity from "../../img/footer/frontity.svg";
 import ImgWordpress from "../../img/footer/wordpress.svg";
-import { heartbeat } from "../dust/animation";
+import { heartbeat } from "../scenes/glamourmagic";
 
 const Footer = ({ state }) => {
 

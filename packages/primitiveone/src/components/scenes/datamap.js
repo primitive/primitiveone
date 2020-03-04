@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { styled, css } from "frontity";
-import { africa, asia, australia, europe, northamerica, southamerica } from "../dust/animation";
+import { africa, asia, australia, europe, northamerica, southamerica } from "../scenes/glamourmagic";
 
 const DataMap = () => {
 

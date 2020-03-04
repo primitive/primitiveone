@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "frontity";
 import { Container, Row, Col, Tabs, Tab } from "react-bootstrap";
 import DataMap from '../scenes/datamap';
-import { underlinewoosh } from "../dust/animation";
+import { underlinewoosh } from "../scenes/glamourmagic";
 
 const TabBlock = ({ state }) => (
   <StyledSection>
