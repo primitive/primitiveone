@@ -126,25 +126,15 @@ button:focus {
     color: #87af4e;
     text-decoration: none;
   }
-  .post .thinglist {
-    margin: 0;
-    padding: 1rem 5% 2rem 0;
-    width: 100%;
-    list-style-type: none;
-    display: block;
-    column-count: 1;
-  }
-  .post .thinglist li {
-    margin: 0 0 3px 0;
-    padding: .2rem .3rem .6rem;
-    display: block;
-    font-size: 1.3rem;
-    border-bottom: solid 3px rgba(135, 175,	78, .8);
-    font-family: 'Pacifico', Georgia, cursive; 
-  }
-  .post .thinglist li:nth-of-type(odd) {
-    border-bottom: solid 3px rgba(235, 150, 108, 0.8);
-  }
+
+
+
+
+
+
+
+
+
   .post figure.wp-block-image {
     margin: 0;
     padding: 0;
@@ -270,11 +260,6 @@ button:focus {
 @media screen and (min-width: 576px) {
   html { font-size: 15px; }
   .container { max-width: 540px; }
-
-  .post .thinglist {
-    column-count: 2;
-  }
-
 }
 
 /* Medium devices (tablets, 768px and up)  */
@@ -285,15 +270,7 @@ button:focus {
   .q-wrap {
     width : 60%; 
   } 
-  .post .thinglist {
-    width: 60%;
-    display: inline-block;
-    column-count: 1;
-  }
-  .post figure.wp-block-image {
-    width: 40%;
-    display: inline-block;
-  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -301,9 +278,6 @@ button:focus {
   html { font-size: 15px; }
   .container { max-width: 960px; }
 
-  .post .thinglist {
-    column-count: 2;
-  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

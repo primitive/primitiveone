@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
-import { connect, styled } from "frontity";
+import { connect, styled, Global } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
+
+import postStyles from "../dust/page-styles";
 
 import List from "../rocks/postlist";
 import Link from "../pebbles/link";
@@ -34,6 +36,8 @@ const Post = ({ state, actions, libraries }) => {
 
   return data.isReady ? (
     <StyledMain className={"post " + postType} id={postType + "-" + postId}>
+
+<Global styles={postStyles} />
 
       <Container>
 
