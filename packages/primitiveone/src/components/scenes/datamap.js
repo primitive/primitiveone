@@ -14,12 +14,12 @@ const DataMap = () => {
   const grid = [...Array(noOfCells)].map((e, i) => <div className="cell" key={i}></div>)
 
   return (
-  <StyledDataMap>
-    <div className="mapgrid">
-      {grid}
-    </div>
-  </StyledDataMap>
-)
+    <StyledDataMap>
+      <div className="mapgrid">
+        {grid}
+      </div>
+    </StyledDataMap>
+  )
 };
 
 export default DataMap;
