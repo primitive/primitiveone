@@ -8,6 +8,8 @@ import List from "../rocks/postlist";
 import Link from "../pebbles/link";
 import FeaturedMedia from "../pebbles/featured-media";
 
+import DiscoPreload from "../scenes/disco-preload"
+
 const Post = ({ state, actions, libraries }) => {
 
   // Get info of current post.
@@ -28,6 +30,8 @@ const Post = ({ state, actions, libraries }) => {
     List.preload();
   }, []);
 
+  if (!data.isReady) return <Loading><DiscoPreload /></Loading>;
+
   /*
   let titleTag = ['h1','h2','h3'];
   let titleTagClose = ['</h1>','</h2>','</h3>'];
@@ -35,51 +39,58 @@ const Post = ({ state, actions, libraries }) => {
   */
 
   return data.isReady ? (
-    <StyledMain className={"post " + postType} id={postType + "-" + postId}>
+    <>
+      <Global styles={postStyles} />
+      <StyledMain className={"post " + postType} id={postType + "-" + postId}>
 
-<Global styles={postStyles} />
+        <Container>
 
-      <Container>
-
-        <PostHead className="row">
-          <Col>
-            <PostTitle dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-          </Col>
-        </PostHead>
-
-        {data.isPost && (
-          <Row className="postMeta">
+          <PostHead className="row">
             <Col>
-              <StyledLink link={author.link}>
-                <PostAuthor> By <b>{author.name}</b></PostAuthor>
-              </StyledLink>
+              <PostTitle dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+            </Col>
+          </PostHead>
 
-              <PostDate> {" "} on <b>{date.toDateString()}</b></PostDate>
+          {data.isPost && (
+            <Row className="postMeta">
+              <Col>
+                <StyledLink link={author.link}>
+                  <PostAuthor> By <b>{author.name}</b></PostAuthor>
+                </StyledLink>
+
+                <PostDate> {" "} on <b>{date.toDateString()}</b></PostDate>
+              </Col>
+            </Row>
+          )}
+
+          <Row>
+            <Col>
+
+              {state.theme.featured.showOnPost && (<FeaturedMedia id={post.featured_media} />)}
+
             </Col>
           </Row>
-        )}
 
-        <Row>
-          <Col>
+          <Row>
+            <PostBody>
+              <libraries.html2react.Component html={post.content.rendered} />
+            </PostBody>
+          </Row>
 
-            {state.theme.featured.showOnPost && (<FeaturedMedia id={post.featured_media} />)}
+        </Container>
 
-          </Col>
-        </Row>
-
-        <Row>
-          <PostBody>
-            <libraries.html2react.Component html={post.content.rendered} />
-          </PostBody>
-        </Row>
-
-      </Container>
-      
-    </StyledMain>
+      </StyledMain>
+    </>
   ) : null;
 };
 
 export default connect(Post);
+
+const Loading = styled.div`
+  padding: 3rem;
+  font-size: 1rem;
+  text-align: center;
+`;
 
 const StyledMain = styled.main`
   padding: 5px;
