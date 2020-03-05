@@ -8,7 +8,10 @@ import { Global, css, connect } from "frontity";
 /* Kudos to: Google Fonts & http://google-webfonts-helper.herokuapp.com/ */
 /* 500/600/900 = normal/bold/heavy - theses are headers so not used 400 for normal */
 
-// CDN URL: https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|
+// CDN URL: https://fonts.googleapis.com/css?family=
+// Abril+Fatface|
+// Amatic+SC|
+// Comfortaa|
 // Hepta+Slab|
 // Pacifico|
 // Playfair+Display:700|Slabo+27px
@@ -18,6 +21,8 @@ import { Global, css, connect } from "frontity";
 import heptaSlab from "../../fonts/hepta-slab/hepta-slab-v7-latin-500.woff2";
 import heptaSlabBold from "../../fonts/hepta-slab/hepta-slab-v7-latin-700.woff2";
 import heptaSlabBlack from "../../fonts/hepta-slab/hepta-slab-v7-latin-900.woff2";
+
+import heptaSlabSVG from "../../fonts/hepta-slab/hepta-slab-v7-latin-500.svg";
 
 import amatic from "../../fonts/amatic-sc/amatic-sc-v13-latin-regular.woff2";
 import amaticBold from "../../fonts/amatic-sc/amatic-sc-v13-latin-700.woff2";
@@ -111,7 +116,7 @@ const FontFace = ({ state }) => {
           font-family: "Comfortaa";
           font-style: normal;
           font-weight: 500;
-          src: url(${fonts[8]}) format("woff2");
+          src: url(${fonts[8]+"SVG"}) format("woff2");
           font-display: ${fontDisplay};
         }
 
@@ -130,6 +135,15 @@ const FontFace = ({ state }) => {
           src: url(${fonts[10]}) format("woff2");
           font-display: ${fontDisplay};
         }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+          @font-face {
+            font-family: "Hepta Slab";
+            font-style: normal;
+            font-weight: 500;
+            src: url(${fonts[0]}) format("svg");
+            font-display: ${fontDisplay};
+          }}
 
       `}
     />

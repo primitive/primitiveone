@@ -24,14 +24,14 @@ import Timeline from "../timeline";
 import SubTimeline from "../timeline/cpt-subtimeline";
 
 
-// sk-dev: cannot use local bs css??? all attempts to replace cdn breaks layout???
+// sk-dev: cannot use local bs css? all attempts to replace cdn breaks layout??
 // Do I really need all this???
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import bsCSS from 'bootstrap/dist/css/bootstrap.css';
 // console.log(bsCSS);
 
 import globalStyles from '../dust/style.css';
-import FontFaces from "../dust/font-faces";
+//import FontFaces from "../dust/font-faces";
 
 
 const Theme = ({ state }) => {
@@ -57,10 +57,9 @@ const Theme = ({ state }) => {
           Not classes here because we use CSS-in-JS. Only global HTML tags.
         */
       }
-      <Global styles={[globalStyles]} />
-
-      {/* sk-dev: To TEST <FontFaces /> */}
-      <FontFaces />
+      <Global styles={globalStyles} />
+      {/* sk-dev: To TESTING <FontFaces /> */}
+      
 
       {/* sk-dev: To TEST Add some metatags to the <head> of the HTML. 
       <MetaTitle />*/}
@@ -79,8 +78,11 @@ const Theme = ({ state }) => {
           crossorigin="anonymous"
         />
 
-        { /* <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />  
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />*/}
+        { /*
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />  
+        
+        */}
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
 
         <link rel="canonical" href="https://primitivedigital.co.uk" />
 

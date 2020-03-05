@@ -2,15 +2,29 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.0",
-  "hash": "37219009eacacdc2e42f",
+  "hash": "3089f11e40d757d86724",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/GIT/primitiveone-test/build/static",
   "assetsByChunkName": {
     "cpt-timeline": "cpt-timeline.module.js",
     "list": "list.module.js",
-    "primitiveone": "primitiveone.module.js"
+    "primitiveone": [
+      "primitiveone.module.js",
+      "primitiveone.4aafaf7895feda08bb43.hot-update.js"
+    ]
   },
   "assets": [
+    {
+      "name": "4aafaf7895feda08bb43.hot-update.json",
+      "size": 54,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
     {
       "name": "cpt-timeline.module.js",
       "size": 31286,
@@ -68,8 +82,23 @@
       "emitted": false
     },
     {
+      "name": "primitiveone.4aafaf7895feda08bb43.hot-update.js",
+      "size": 39481,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "primitiveone.module.js",
-      "size": 9557441,
+      "size": 9561279,
       "chunks": [
         "primitiveone"
       ],
@@ -87,7 +116,8 @@
         "primitiveone"
       ],
       "assets": [
-        "primitiveone.module.js"
+        "primitiveone.module.js",
+        "primitiveone.4aafaf7895feda08bb43.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -99,7 +129,8 @@
         "primitiveone"
       ],
       "assets": [
-        "primitiveone.module.js"
+        "primitiveone.module.js",
+        "primitiveone.4aafaf7895feda08bb43.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
