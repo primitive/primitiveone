@@ -39,7 +39,7 @@ package-lock.json
 node_modules
 intermediate
 publish
-# build
+build
 
 packages/contact-form-7/
 
