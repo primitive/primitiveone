@@ -22,9 +22,6 @@ button:focus {
   outline: none;
 }
 
-
-
-
 .scroll {
   /* scrollbar show only when more content to see */
   overflow: auto !important;
@@ -50,7 +47,8 @@ button:focus {
 
 
 
-  .page-home, .post {
+  .page-home,
+  .post {
     position : relative; 
     display: block;
     width: 100%;
@@ -126,13 +124,6 @@ button:focus {
     color: #87af4e;
     text-decoration: none;
   }
-
-
-
-
-
-
-
 
 
   .post figure.wp-block-image {
@@ -238,15 +229,6 @@ button:focus {
   }
 
   
-  /* SERVICES */
-  /* CODE SPLIT */
-
-  /* POST-STRIP */
-  /* CODE SPLIT */
-
-/* *** FOOTER *** */
-/* CODE SPLIT */
-
 
 
 /* --- RESPONSIVE --- */
@@ -271,6 +253,11 @@ button:focus {
     width : 60%; 
   } 
 
+  .post figure.wp-block-image {
+    width: 40%;
+    display: inline-block;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -287,10 +274,19 @@ button:focus {
 }
 
 
+
+
+/* SERVICES */
+/* CODE SPLIT */
+
+/* POST-STRIP */
+/* CODE SPLIT */
+
+/* *** FOOTER *** */
+/* CODE SPLIT */
+
 /* --- ANIMATION --- */
 /* CODE SPLIT */
 
 /* DataMap */
 /* CODE SPLIT */
-
-  

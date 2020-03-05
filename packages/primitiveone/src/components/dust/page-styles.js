@@ -1,7 +1,5 @@
 import { css } from "frontity";
 
-
-
 const discoListStyle = css`
 
   .glowball {
@@ -67,12 +65,6 @@ const discoListStyle = css`
       width: 80%;
       column-count: 2;
     }
-
-    .post figure.wp-block-image {
-      width: 40%;
-      display: inline-block;
-    }
-
   }
 
   @media screen and (min-width: 992px) {
