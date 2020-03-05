@@ -3,12 +3,13 @@ import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 import { shuffle } from "../../sand/utils";
 
+import DiscoPreload from "../../scenes/disco-preload"
 import Post from "./cpt-works-item";
 
 // In a React component that uses "connect":
 const PostStrip = ({ state, actions, props }) => {
 
-  // use props or set defaults
+  // use props or set defaults (hmmm, do I want to use prop-types)
   const posttype = props.posttype ? props.posttype : "works";
   const display = props.mode ? props.mode : "recent";
   const max = props.limit ? props.limit : 3;
@@ -21,10 +22,14 @@ const PostStrip = ({ state, actions, props }) => {
 
   useEffect(() => {
     actions.source.fetch("/works/");
-    //console.log("@post-strip: data", data);
+    //actions.source.fetch(`/${posttype}/`);
+    //actions.source.fetch("/"+posttype+"/");
+
+    console.log("@post-strip: data", data);
   }, []);
 
-  if (!data.isReady) return <Loading>loading works...</Loading>;
+  //if (!data.isReady) return <Loading>loading works...</Loading>;
+  if (!data.isReady) return <Loading><DiscoPreload /></Loading>;
 
   const displaySwitch = (param) => {
     switch (param) {

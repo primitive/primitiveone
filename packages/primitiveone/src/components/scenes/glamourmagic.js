@@ -102,13 +102,23 @@ const animatedgradient = keyframes`
   }
 `;
 
-// animation: underlinewoosh 6s linear infinite;
+// animation: ${underlinewoosh} 6s linear infinite;
 const underlinewoosh = keyframes`
   0% {
     transform: translate3d(0%, 0%, 0);
   }
   100% {
     transform: translate3d(-75%, 0%, 0);
+  }
+`;
+
+// animation: ${grow} 1.6s ease-in-out infinite;
+const grow = keyframes`
+  0% , 40% , 100% {
+    transform:scale(0.2);
+  }
+  20%{
+    transform:scale(1);
   }
 `;
 
@@ -171,4 +181,4 @@ const southamerica = keyframes`
   }
 `;
 
-export {jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, africa, asia, australia, europe, northamerica, southamerica };
+export {jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, africa, asia, australia, europe, northamerica, southamerica };
