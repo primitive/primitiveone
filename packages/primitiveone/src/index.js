@@ -84,7 +84,7 @@ const primitiveOne = {
             rocks: "global-promo",
             type: "text",
             pretext: "Big Business and Enterprize",
-            text: "Primitive is not for you, to hire me visit sknow.it!",
+            text: "Primitive is not for you, to hire me for a contract visit sknow.it!",
             link: "/"
           },
           social: {
@@ -95,7 +95,15 @@ const primitiveOne = {
             },
             facebook: { type: "none" },
             twitter: { type: "none" },
-            pinterest: { type: "none" }
+            pinterest: { type: "none" },
+            profiles: {
+              instagram: "https://www.instagram.com/primitivedigital/",
+              facebook: "https://www.facebook.com/primitivedigital",
+              twitter: "https://twitter.com/primitivestuff",
+              github: "https://github.com/primitiveshaun",
+              behance: "https://www.behance.net/primitiveshaun/"
+            }
+
           },
           footer: {
             rocks: "",
@@ -114,7 +122,7 @@ const primitiveOne = {
       // Whether to auto-fetch links on a page. Values can be "no" | "all" | "in-view" | "hover"
       autoPreFetch: "no",
       /**
-       * At the moment, we only include the ascii characters of Inter font.
+       * only including latin characters at present
        * Values can be "us-ascii" | "latin" | "all"
        */
       fontSets: "latin"
