@@ -4,9 +4,8 @@ import Link from "../pebbles/link";
 import { Container, Nav, Navbar, Image } from "react-bootstrap";
 
 const MainNav = ({ state }) => (
-
-  <Container>
     <Styled>
+      <Container>
       <Navbar expand="lg" aria-label="Main">
 
         <Navbar.Brand href="/">
@@ -28,13 +27,15 @@ const MainNav = ({ state }) => (
 
         </Navbar.Collapse>
       </Navbar>
+      </Container>
     </Styled>
-  </Container>
 );
 
 export default connect(MainNav);
 
 const Styled = styled.div`
+border-bottom: 3px solid rgba(12,17,43,0.9);
+
   nav.navbar {
     background: rgba(12,17,43,0.9);
     border-top-left-radius: .5rem;

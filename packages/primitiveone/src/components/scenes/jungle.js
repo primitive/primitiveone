@@ -134,22 +134,21 @@ const TweenStyled = styled(Container)`
   min-height: 300vh;
   overflow: hidden;
   position: relative;
-  border-top: 3px solid rgba(12,17,43,0.9);
 
   #hero {
     width: 100vw;
     height: 60vw;
   
-  max-height: 1400px;
-  max-height: 2600px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  background-color: #b7ebde;
-  background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317290/jungle/PD_BGNight_2560x1440px_bskivq.png);
-  background-position: bottom center;
-  background-size: cover;
-  border-bottom: solid 3px #343a40;
+    max-height: 1400px;
+    max-height: 2600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-color: #b7ebde;
+    background: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317290/jungle/PD_BGNight_2560x1440px_bskivq.png);
+    background-position: bottom center;
+    background-size: cover;
+    border-bottom: solid 3px #343a40;
   }
   
   .a-layer {
