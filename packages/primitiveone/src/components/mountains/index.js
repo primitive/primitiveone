@@ -1,25 +1,26 @@
 import React from "react";
 import { connect, Global, Head, styled, Slot } from "frontity";
-
-import ReactGA from 'react-ga';
-
-import MetaTitle from "../pebbles/meta-title";
 import Loading from "../pebbles/loading";
-
+import MetaTitle from "../pebbles/meta-title";
 import Header from "../rocks/header";
 import Nav from "../rocks/nav";
 import Footer from "../rocks/footer";
+
 import Posts from "../rocks/postlist";
+
+import Home from './page-home';
+import Post from "./post";
+//import Page from "./page";
+
+import Page404 from "./page404";
+//import PageError from "./page-error";
 
 // check best method of conditional loading / imports
 import GlobalPromo from "../rocks/global-promo";
 import GlobalSocial from "../rocks/social/social-section";
 
-import Home from './page-home';
-import Post from "./post";
-//import Page from "./page";
-import Page404 from "./page404";
-//import PageError from "./page-error";
+// replace with frontity GA package
+import ReactGA from 'react-ga';
 
 import Timelines from "../timeline/ct-timelines";
 import Timeline from "../timeline";
@@ -75,17 +76,11 @@ const Theme = ({ state }) => {
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous"
         />
-
-        { /*
-
-        */}
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
 
         <link rel="canonical" href="https://primitivedigital.co.uk" />
-
         <link rel="dns-prefetch" SameSite="None" Secure href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" SameSite="None" Secure href="http://doubleclick.net" />
-
       </Head>
 
       <HeadWrapper className="wrap-header">

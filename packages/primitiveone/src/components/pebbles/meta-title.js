@@ -1,4 +1,5 @@
 
+// updated 06/03/20, based on src: https://github.com/frontity/frontity/blob/dev/packages/twentytwenty-theme/src/components/page-meta-title.js
 import React from "react";
 import { Head, connect, decode } from "frontity";
 
