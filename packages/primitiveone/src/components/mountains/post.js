@@ -21,6 +21,8 @@ const Post = ({ state, actions, libraries }) => {
   // Get a date for humans.
   const date = new Date(post.date);
 
+  console.log("@post: state", state );
+
   const postType = data.type;
   const postId = data.id;
 
