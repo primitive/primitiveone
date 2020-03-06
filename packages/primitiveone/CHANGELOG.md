@@ -46,8 +46,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 // https://emotion.sh/docs/keyframes
 
 
-1.0.13 > 
-- Implement New Frontity Features: Web Fonts
 
 1.0.12 > 
 - Intergrate New Frontity Features: Custom Post Types and Taxonomies
@@ -60,7 +58,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 // OR
 // https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
 // https://wp.primitivedigital.uk/wp-json/acf/v3/timelines
-
 
 
 1.0.11 > Update (January 15, 2020): 
