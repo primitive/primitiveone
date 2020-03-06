@@ -1,19 +1,18 @@
 import React from "react";
 import { connect, Global, Head, styled, Slot } from "frontity";
+import Switch from "@frontity/components/switch";
 import Loading from "../pebbles/loading";
 import MetaTitle from "../pebbles/meta-title";
 import Header from "../rocks/header";
 import Nav from "../rocks/nav";
 import Footer from "../rocks/footer";
-
-import Posts from "../rocks/postlist";
-
 import Home from './page-home';
 import Post from "./post";
-//import Page from "./page";
+import Page from "./page";
+import Posts from "../rocks/postlist";
 
 import Page404 from "./page404";
-//import PageError from "./page-error";
+import PageError from "./page-error";
 
 // check best method of conditional loading / imports
 import GlobalPromo from "../rocks/global-promo";
@@ -90,15 +89,21 @@ const Theme = ({ state }) => {
 
       <BodyWrapper className="wrap-body">
 
-          {(data.isFetching && <Loading />) ||
-            (data.isHome && <Home />) ||
-            (data.isPostArchive && <Posts />) ||
-            (data.isPostType && <Post />) ||
-            (data.is404 && <Page404 />) ||
-            (data.isError && <PageError />) ||
-            (data.isTemporalEventsArchive && <Timeline />) ||
-            (data.isTimelineType && <SubTimeline />) ||
-            (data.isTimelines && <Timelines />)}
+      <Switch>
+            <Loading when={data.isFetching} />
+            <Home when={data.isHome} />
+            {/* <Archive when={data.isArchive} /> */ }
+            <Posts when={data.isPostArchive} />
+            <Post when={data.isPostType} />
+            <Page when={data.isPage} />
+    
+            <PageError when={data.isError} />
+
+            <Timeline when={data.isTemporalEventsArchive} />
+            <SubTimeline when={data.isTimelineType} />
+            <Timelines when={data.isTimelines} />
+
+      </Switch>    
 
       </BodyWrapper>
 
