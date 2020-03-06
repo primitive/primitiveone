@@ -1,17 +1,12 @@
-// updated 06/03/20 src: https://github.com/frontity/frontity/blob/dev/packages/twentytwenty-theme/src/components/link.js
+// updated 06/03/20, based on src: https://github.com/frontity/frontity/blob/dev/packages/twentytwenty-theme/src/components/link.js
 import React, { useEffect } from "react";
 import { connect } from "frontity";
 
-const Link = ({
-  state,
-  actions,
-  link,
-  className,
-  children,
-  rel,
-  "aria-current": ariaCurrent,
-  onClick: onClickProp
-}) => {
+
+const Link = ({ state, actions, link, className, children, rel, "aria-current": ariaCurrent, onClick: onClickProp }) => {
+
+  //sk-dev: console.log("@link: link", link);
+
   // Check if the link is an external or internal link
   const isExternal = link.startsWith("http");
 
@@ -23,6 +18,9 @@ const Link = ({
   }, []);
 
   const onClick = event => {
+
+    //sk-dev: console.log("@linkOnClick: link", link);
+
     // Do nothing if it's an external link
     if (isExternal) return;
 
@@ -45,7 +43,6 @@ const Link = ({
 
   return (
     <a
-      // ref={ref}
       href={link}
       onClick={onClick}
       className={className}
