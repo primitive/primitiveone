@@ -117,7 +117,7 @@ const primitiveOne = {
        * At the moment, we only include the ascii characters of Inter font.
        * Values can be "us-ascii" | "latin" | "all"
        */
-      fontSets: "all"
+      fontSets: "latin"
     }
   },
   /**
