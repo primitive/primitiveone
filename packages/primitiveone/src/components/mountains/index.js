@@ -10,6 +10,8 @@ import Header from "../rocks/header";
 import Nav from "../rocks/nav";
 import Footer from "../rocks/footer";
 import Posts from "../rocks/postlist";
+
+// check best method of conditional loading / imports
 import GlobalPromo from "../rocks/global-promo";
 import GlobalSocial from "../rocks/social/social-section";
 

@@ -50,6 +50,20 @@ const FontFace = ({ state }) => {
       fonts = [ heptaSlab, heptaSlabBold, heptaSlabBlack, amatic, amaticBold, playfair, playfairBold, playfairBlack, comfortaa, slabo, abrilFatface ];
   }
 
+  /* 
+  untested / issues with webfont display 
+
+          @media screen and (-webkit-min-device-pixel-ratio:0) {
+          @font-face {
+            font-family: "Hepta Slab";
+            font-style: normal;
+            font-weight: 500;
+            src: url(${fonts[0]+"SVG"}) format("svg");
+            font-display: ${fontDisplay};
+          }}
+
+  */
+
   return (
     <Global
       styles={css`
@@ -135,15 +149,6 @@ const FontFace = ({ state }) => {
           src: url(${fonts[10]}) format("woff2");
           font-display: ${fontDisplay};
         }
-
-        @media screen and (-webkit-min-device-pixel-ratio:0) {
-          @font-face {
-            font-family: "Hepta Slab";
-            font-style: normal;
-            font-weight: 500;
-            src: url(${fonts[0]+"SVG"}) format("svg");
-            font-display: ${fontDisplay};
-          }}
 
       `}
     />

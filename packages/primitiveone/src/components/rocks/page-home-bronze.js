@@ -31,6 +31,7 @@ const Bronze = ({ state }) => {
                 <Image
                   alt={display.title1}
                   src={display.imagesrc1}
+                  className={"img-fluid"}
                   //srcSet={srcset}
                 />
 
@@ -67,6 +68,7 @@ const Bronze = ({ state }) => {
                 <Image
                   alt={display.title2}
                   src={display.imagesrc2}
+                  className={"img-fluid"}
                 //srcSet={srcset}
                 />
 
