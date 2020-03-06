@@ -27,7 +27,6 @@ Thumbs.db
 .project
 .settings
 .tmproj
-*.esproj
 nbproject
 sftp-config.json
 npm-debug.log
@@ -37,10 +36,7 @@ package-lock.json
 
 # Folders
 node_modules
-intermediate
-publish
 build
-
 packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders

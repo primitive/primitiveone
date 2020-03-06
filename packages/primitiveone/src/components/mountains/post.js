@@ -30,6 +30,7 @@ const Post = ({ state, actions, libraries }) => {
     List.preload();
   }, []);
 
+  // not sure this will work here?
   if (!data.isReady) return <Loading><DiscoPreload /></Loading>;
 
   /*

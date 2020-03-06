@@ -116,7 +116,7 @@ const FontFace = ({ state }) => {
           font-family: "Comfortaa";
           font-style: normal;
           font-weight: 500;
-          src: url(${fonts[8]+"SVG"}) format("woff2");
+          src: url(${fonts[8]}) format("woff2");
           font-display: ${fontDisplay};
         }
 
@@ -141,7 +141,7 @@ const FontFace = ({ state }) => {
             font-family: "Hepta Slab";
             font-style: normal;
             font-weight: 500;
-            src: url(${fonts[0]}) format("svg");
+            src: url(${fonts[0]+"SVG"}) format("svg");
             font-display: ${fontDisplay};
           }}
 

@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.0",
-  "hash": "3089f11e40d757d86724",
+  "hash": "9e8eaccb634afad9f755",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/GIT/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -10,12 +10,12 @@
     "list": "list.module.js",
     "primitiveone": [
       "primitiveone.module.js",
-      "primitiveone.4aafaf7895feda08bb43.hot-update.js"
+      "primitiveone.545979739d797ffeac15.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "4aafaf7895feda08bb43.hot-update.json",
+      "name": "545979739d797ffeac15.hot-update.json",
       "size": 54,
       "chunks": [],
       "chunkNames": [],
@@ -82,8 +82,8 @@
       "emitted": false
     },
     {
-      "name": "primitiveone.4aafaf7895feda08bb43.hot-update.js",
-      "size": 39481,
+      "name": "primitiveone.545979739d797ffeac15.hot-update.js",
+      "size": 12097,
       "chunks": [
         "primitiveone"
       ],
@@ -98,7 +98,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 9561279,
+      "size": 9595616,
       "chunks": [
         "primitiveone"
       ],
@@ -117,7 +117,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.4aafaf7895feda08bb43.hot-update.js"
+        "primitiveone.545979739d797ffeac15.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -130,7 +130,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.4aafaf7895feda08bb43.hot-update.js"
+        "primitiveone.545979739d797ffeac15.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

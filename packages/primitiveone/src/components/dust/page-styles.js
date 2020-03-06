@@ -2,6 +2,13 @@ import { css } from "frontity";
 
 const discoListStyle = css`
 
+  hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    clear:both;
+  }
+
   .glowball {
     width: 300px;
     height: 300px;
