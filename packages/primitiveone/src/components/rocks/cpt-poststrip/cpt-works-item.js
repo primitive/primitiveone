@@ -15,7 +15,7 @@ const Works = ({ state, item }) => {
   return (
     <Col>
 
-      <StyledLink href={acfFields.link}>
+      <StyledLink link={acfFields.link}>
 
         <StyledCard>
 
