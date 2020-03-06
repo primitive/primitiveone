@@ -3,7 +3,7 @@ import { connect, Global, Head, styled, Slot } from "frontity";
 
 import ReactGA from 'react-ga';
 
-//import MetaTitle from "../pebbles/meta-title";
+import MetaTitle from "../pebbles/meta-title";
 import Loading from "../pebbles/loading";
 
 import Header from "../rocks/header";
@@ -60,16 +60,12 @@ const Theme = ({ state }) => {
         */
       }
       <Global styles={globalStyles} />
-      {/* sk-dev: To TESTING <FontFaces /> */}
+
+      {/* sk-dev: TESTING <FontFaces /> */}
       
-
-      {/* sk-dev: To TEST Add some metatags to the <head> of the HTML. 
-      <MetaTitle />*/}
-
+      {/* Add some metatags to the <head> of the HTML. */}
+      <MetaTitle />
       <Head>
-
-        <title>{state.frontity.title} - Primitive Digital</title>
-
         <meta name="description" content={state.frontity.description} />
         <html lang="en" />
 
@@ -81,8 +77,7 @@ const Theme = ({ state }) => {
         />
 
         { /*
-        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />  
-        
+
         */}
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
 
