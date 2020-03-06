@@ -4,12 +4,13 @@ const settings = {
     frontity: {
       url: "https://primitivedigital.uk",
       title: "Want a Website?",
-      description: "WordPress Web Sites and Apps"
+      description: "WordPress Web Sites and Apps",
+      name: "Primitive Digital"
     }
   },
   packages: [
     {
-      name: "primitiveone",
+      name: "@primitvedigital/primitiveone",
       state: {
         theme: {
           menu: [
