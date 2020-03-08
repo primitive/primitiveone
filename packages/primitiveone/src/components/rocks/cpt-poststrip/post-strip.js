@@ -28,8 +28,7 @@ const PostStrip = ({ state, actions, props }) => {
     console.log("@post-strip: data", data);
   }, []);
 
-  //if (!data.isReady) return <Loading>loading works...</Loading>;
-  if (!data.isReady) return <Loading><DiscoPreload /></Loading>;
+  if (!data.isReady) return <Loading><DiscoPreload message="loading works..." /></Loading>;
 
   const displaySwitch = (param) => {
     switch (param) {
