@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.0",
-  "hash": "8aac4b8d589d2fdd441b",
+  "hash": "992af78830b53bf4d5da",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/GIT/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -10,12 +10,12 @@
     "list": "list.module.js",
     "primitiveone": [
       "primitiveone.module.js",
-      "primitiveone.7db31425c7c817b90291.hot-update.js"
+      "primitiveone.ae770fc035dd9e771c95.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "7db31425c7c817b90291.hot-update.json",
+      "name": "ae770fc035dd9e771c95.hot-update.json",
       "size": 54,
       "chunks": [],
       "chunkNames": [],
@@ -35,7 +35,7 @@
         "cpt-timeline"
       ],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/frontity.svg",
@@ -43,7 +43,7 @@
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/heart.svg",
@@ -51,7 +51,7 @@
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/primitive.svg",
@@ -59,7 +59,7 @@
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "images/wordpress.svg",
@@ -67,7 +67,7 @@
       "chunks": [],
       "chunkNames": [],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
       "name": "list.module.js",
@@ -79,11 +79,11 @@
         "list"
       ],
       "info": {},
-      "emitted": true
+      "emitted": false
     },
     {
-      "name": "primitiveone.7db31425c7c817b90291.hot-update.js",
-      "size": 15988,
+      "name": "primitiveone.ae770fc035dd9e771c95.hot-update.js",
+      "size": 45590,
       "chunks": [
         "primitiveone"
       ],
@@ -98,7 +98,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 9725378,
+      "size": 9691110,
       "chunks": [
         "primitiveone"
       ],
@@ -117,7 +117,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.7db31425c7c817b90291.hot-update.js"
+        "primitiveone.ae770fc035dd9e771c95.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -130,7 +130,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.7db31425c7c817b90291.hot-update.js"
+        "primitiveone.ae770fc035dd9e771c95.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

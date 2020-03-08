@@ -3,7 +3,7 @@ import { connect, styled, loadable } from "frontity";
 
 import Hero from '../scenes/jungle';
 import Intro from '../rocks/page-home-intro';
-import Page from "./post";
+import Page from "./page";
 import Gold from '../rocks/page-home-tabs';
 import Silver from '../rocks/cpt-poststrip/post-strip';
 import Bronze from "../rocks/page-home-bronze";
