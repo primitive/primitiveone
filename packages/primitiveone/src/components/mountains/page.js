@@ -5,54 +5,42 @@ import { Container, Row, Col } from "react-bootstrap";
 import pageStyles from "../dust/page-styles";
 
 import Link from "../pebbles/link";
-import FeaturedMedia from "../pebbles/featured-media";
-
+//import FeaturedMedia from "../pebbles/featured-media";
 import DiscoPreload from "../scenes/disco-preload"
 
 const Page = ({ state, actions, libraries }) => {
 
   // Get info of current page.
   const data = state.source.get(state.router.link);
-  // Get the the page.
-  const page = state.source[data.type][data.id];
-  // Get the author.
-  const author = state.source.author[page.author];
-  // Get a date for humans.
-  const date = new Date(page.date);
 
-  //const pageType = data.type;
+  // Get the the full data.
+  const page = state.source[data.type][data.id];
+
+  // Get the the full data.
   const pageId = data.id;
 
-  console.log("@page: state", state );
+  console.log("@page: data", data);
 
   // Prefetch page
   useEffect(() => {
     actions.source.fetch(state.router.link);
   }, []);
 
-  // not sure this will work here?
-  if (!data.isReady) return <Loading><DiscoPreload /></Loading>;
+  if (!data.isReady) return <Loading><DiscoPreload message="loading page..." /></Loading>;
 
-  return data.isReady ? (
+  return (
     <>
       <Global styles={pageStyles} />
-      <StyledMain className="page" id={"page-" + pageId}>
+
+      <main className="page" id={"page-" + pageId}>
 
         <Container>
 
-          <PageHead className="row">
+          <header className="row">
             <Col>
-              <PageTitle dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+              <PageTitle dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
             </Col>
-          </PageHead>
-
-          <Row>
-            <Col>
-
-              {state.theme.featured.showOnPost && (<FeaturedMedia id={page.featured_media} />)}
-
-            </Col>
-          </Row>
+          </header>
 
           <Row>
             <PageBody>
@@ -62,9 +50,9 @@ const Page = ({ state, actions, libraries }) => {
 
         </Container>
 
-      </StyledMain>
+      </main>
     </>
-  ) : null;
+  );
 };
 
 export default connect(Page);
@@ -75,36 +63,19 @@ const Loading = styled.div`
   text-align: center;
 `;
 
-const StyledMain = styled.main`
-  padding: 5px;
-`;
-
-const StyledLink = styled(Link)`
-  padding: 15px 0;
-`;
-
-const PageHead = styled.header`
-
-`;
-
 const PageTitle = styled.h1`
   color: rgba(12, 17, 43);
 `;
 
 const PageBody = styled(Col)`
+  padding-top: 2rem;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
-  padding-top: 2rem;
+  
 
-  p {
-    line-height: 1.6em;
-  }
 
-  a {
-    color: rgb(31, 56, 197);
-    text-decoration: underline;
-  }
 
+  
   img {
     width: 100%;
     object-fit: cover;
@@ -121,20 +92,7 @@ const PageBody = styled(Col)`
     }
   }
 
-  iframe {
-    display: block;
-    margin: auto;
-  }
-
-
-
-
-
-
-
-
   /* WordPress Core Align Classes */
-
   @media (min-width: 420px) {
     img.aligncenter,
     img.alignleft,

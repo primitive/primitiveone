@@ -58,8 +58,91 @@ const discoListStyle = css`
       box-shadow:
           inset 60px 0 120px #f0f,  /* left magenta */
           inset -60px 0 120px #0ff; /* right cyan */
-
   }
+
+
+  .q-wrap {
+    margin : 5px 0 40px auto; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width : 80%; 
+  } 
+  .q-wrap p {
+    margin : 0; 
+    padding : 0; 
+  }
+  .q-wrap blockquote {
+    margin : 0; 
+    padding : 0; 
+    padding-top : 150px; 
+    position : relative; 
+    padding-left: 1.5rem;
+    background-color: transparent !important;
+  } 
+  .q-wrap cite {
+    padding: 3px 6px 3px 20px;
+    font-size : 1.5rem; 
+    font-style : normal;
+    font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  } 
+  .q-style-1 blockquote {
+    border-left: 4px solid rgba(135, 175,	78, .8) !important;
+  }
+  .q-style-2 blockquote {
+    border-left: 4px solid rgba(235, 150, 108, 0.8) !important;
+  } 
+  .q-style-1 blockquote:after, .q-style-2 blockquote:after {
+      background: none repeat scroll 0 0 rgba(135, 175,	78, 0.8);
+      border-radius: 50% 50% 50% 50%;
+      color: rgba(255, 255, 255, 0.5);
+      content: "❞";
+      font-family: 'icons';
+      font-size: 70px;
+      height: 130px;
+      left: 50%;
+      line-height: 130px;
+      margin-left: -65px;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+      top: 0;
+      width: 130px;
+  }
+  .q-style-1 blockquote:before, .q-style-2 blockquote:before {
+      border-left: 5px solid rgba(135, 175,	78, .1) !important;
+      border-radius: 50% 50% 50% 50%;
+      content: "";
+      height: 500px;
+      left: -50px;
+      position: absolute;
+      top: 0;
+      width: 500px;
+      z-index: -1;
+  }
+  .q-style-2 blockquote:after {
+    background: none repeat scroll 0 0 rgba(235, 150, 108, 0.8);
+  }
+  .q-style-2 blockquote:before {
+    border-left: 5px solid rgba(235, 150, 108, 0.1) !important;
+  }
+  .q-style-1 blockquote p,
+  .q-style-2 blockquote p {
+    background : none repeat scroll 0 0 rgba(255, 255, 255, 0.5); 
+    box-shadow : 0 -6px 0 rgba(135, 175,	78, 0.2); 
+    color : rgba(135, 175,	78, 0.8); 
+    display : inline; 
+    font-family : Baskerville, Georgia, serif; 
+    font-style : italic; 
+    font-size : 28px; 
+    line-height : 46px; 
+    text-shadow : 0 1px 1px rgba(255, 255, 255, 0.5);  
+  } 
+  .q-style-2 blockquote p {
+    box-shadow : 0 -6px 0 rgba(235, 150, 108, 0.2); 
+    color : rgba(235, 150, 108, 0.8); 
+  }
+
+  
 
   @media screen and (min-width: 576px) {
     .thinglist {
@@ -71,6 +154,9 @@ const discoListStyle = css`
     .thinglist {
       width: 80%;
       column-count: 2;
+    }
+    .q-wrap {
+      width : 60%; 
     }
   }
 
