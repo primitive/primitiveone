@@ -5,11 +5,11 @@ import React from 'react';
 import { styled, css } from "frontity";
 import { grow } from "./glamourmagic";
 
-const DiscoLoader = () => {
+const DiscoLoader = ({message}) => {
 
   return (
     <StyledDiscoLoader>
-      <div><p>loading works...</p></div>
+      <div><p>{ message ? message : "loading..." }</p></div>
       <ul>
         <li></li>
         <li></li>
@@ -33,8 +33,8 @@ const StyledDiscoLoader = styled.div`
   }
   ul li {
     list-style:none;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background:#fff;
     border-radius:50%;
     animation: ${grow} 1.6s ease-in-out infinite;
