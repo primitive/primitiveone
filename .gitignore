@@ -36,7 +36,7 @@ package-lock.json
 
 # Folders
 node_modules
-#build
+build
 packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders
