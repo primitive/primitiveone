@@ -17,10 +17,16 @@ const primitiveOne = {
      * It is scoped to the `theme` namespace.
      */
     theme: {
-      isMobileMenuOpen: false,
-      featured: {
-        showOnList: false,
-        showOnPost: false
+      colors: {
+        gray: {
+          base: "#6D6D6D",
+          light: "#DCD7CA",
+          lighter: "#F5EFE0"
+        },
+        primary: "#cd2653",
+        headerBg: "#ffffff",
+        footerBg: "#ffffff",
+        bodyBg: "#f5efe0"
       },
       // show all post content or only the excerpt in archive views
       // showAllContentOnArchive: false,
@@ -119,13 +125,18 @@ const primitiveOne = {
           }
         }
       },
+      featured: {
+        showOnList: false,
+        showOnPost: false
+      },
       // Whether to auto-fetch links on a page. Values can be "no" | "all" | "in-view" | "hover"
       autoPreFetch: "no",
       /**
        * only including latin characters at present
        * Values can be "us-ascii" | "latin" | "all"
        */
-      fontSets: "latin"
+      fontSets: "latin",
+      isMobileMenuOpen: false,
     }
   },
   /**
