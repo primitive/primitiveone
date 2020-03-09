@@ -81,25 +81,25 @@ const primitiveOne = {
           showGold: true,
           showSilver: true,
           showBronze: true,
-          page: false
+          template: false
         },
         global: {
           showPromo: false,
-          showSocial: false,
+          showSocial: true,
           promo: {
             rocks: "global-promo",
             type: "text",
             pretext: "Big Business and Enterprize",
-            text: "Primitive is not for you, to hire me for a contract visit sknow.it!",
+            text: "Primitive is not for you, contract visit sknow.it!",
             link: "/"
           },
           social: {
             instagram: {
-              type: "posts", // "post" | "posts" | "feed"
+              type: "none", // "none" | "post" | "posts" | "feed"
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
-            facebook: { type: "none" },
+            facebook: { type: "none" }, // "none" | "page" 
             twitter: { type: "none" },
             pinterest: { type: "none" },
             profiles: {
