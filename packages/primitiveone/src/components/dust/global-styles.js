@@ -393,7 +393,7 @@ const documentSetup = colors => css`
   body {
     box-sizing: border-box;
     color: #000;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
       Helvetica, sans-serif;
     font-size: 1.8rem;
     text-align: left;
