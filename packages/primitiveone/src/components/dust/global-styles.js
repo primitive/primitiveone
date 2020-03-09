@@ -397,6 +397,20 @@ const documentSetup = colors => css`
       Helvetica, sans-serif;
     font-size: 1.8rem;
     text-align: left;
+
+    &::-webkit-scrollbar {
+      width:1rem; /* scrollbar width */
+      position: absolute;
+    }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* scrollbar track */
+      border-radius: 0
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: olive ; /* scrollbar thumb background color */
+      border-radius: 0;
+    }	
   }
 
   *,
