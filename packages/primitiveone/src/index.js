@@ -85,12 +85,12 @@ const primitiveOne = {
         },
         global: {
           showPromo: false,
-          showSocial: true,
+          showSocial: false,
           promo: {
             rocks: "global-promo",
             type: "text",
-            pretext: "Big Business and Enterprize",
-            text: "Primitive is not for you, contract visit sknow.it!",
+            pretext: "Big Business and Enterprise",
+            text: "Primitive is not your bag, baby. You want a sknow.it all!",
             link: "/"
           },
           social: {
