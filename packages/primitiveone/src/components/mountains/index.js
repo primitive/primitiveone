@@ -94,7 +94,7 @@ const Theme = ({ state }) => {
             <Home when={data.isHome} />
             {/* <Archive when={data.isArchive} /> */ }
             <Posts when={data.isPostArchive} />
-            <Post when={data.isPostType} />
+            <Post when={data.isPost} />
             <Page when={data.isPage} />
     
             <PageError when={data.isError} />

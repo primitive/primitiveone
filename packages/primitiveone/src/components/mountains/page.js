@@ -19,11 +19,10 @@ const Page = ({ state, actions, libraries }) => {
   // Get the the full data.
   const pageId = data.id;
 
-  console.log("@page: data", data);
-
   // Prefetch page
   useEffect(() => {
     actions.source.fetch(state.router.link);
+    console.log("@page: data", data);
   }, []);
 
   if (!data.isReady) return <Loading><DiscoPreload message="loading page..." /></Loading>;
@@ -69,51 +68,8 @@ const PageTitle = styled.h1`
 
 const PageBody = styled(Col)`
   padding-top: 2rem;
+  padding-bottom: 2rem;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
   
-
-
-
-  
-  img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  figure {
-    margin: 24px auto;
-    /* next line overrides an inline style of the figure element. 
-    width: 100% !important;
-    */
-    figcaption {
-      font-size: 0.7em;
-    }
-  }
-
-  /* WordPress Core Align Classes */
-  @media (min-width: 420px) {
-    img.aligncenter,
-    img.alignleft,
-    img.alignright {
-      width: auto;
-    }
-
-    .aligncenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .alignright {
-      float: right;
-      margin-left: 24px;
-    }
-
-    .alignleft {
-      float: left;
-      margin-right: 24px;
-    }
-  }
 `;

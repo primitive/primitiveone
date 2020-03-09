@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect, styled, Global } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 
-import postStyles from "../dust/page-styles";
+import postStyles from "../dust/post-styles";
 
 import List from "../rocks/postlist";
 import Link from "../pebbles/link";
@@ -21,8 +21,6 @@ const Post = ({ state, actions, libraries }) => {
   // Get a date for humans.
   const date = new Date(post.date);
 
-  console.log("@post: state", state );
-
   const postType = data.type;
   const postId = data.id;
 
@@ -30,6 +28,8 @@ const Post = ({ state, actions, libraries }) => {
   useEffect(() => {
     actions.source.fetch("/");
     List.preload();
+
+    console.log("@post: state", state );
   }, []);
 
   // not sure this will work here?
@@ -44,6 +44,7 @@ const Post = ({ state, actions, libraries }) => {
   return data.isReady ? (
     <>
       <Global styles={postStyles} />
+
       <StyledMain className={"post " + postType} id={postType + "-" + postId}>
 
         <Container>
@@ -124,70 +125,14 @@ const PostDate = styled.p`
 `;
 
 const PostBody = styled(Col)`
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
-  padding-top: 2rem;
-
-  p {
-    line-height: 1.6em;
-  }
 
   a {
     color: rgb(31, 56, 197);
     text-decoration: underline;
   }
 
-  img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
-  figure {
-    margin: 24px auto;
-    /* next line overrides an inline style of the figure element. 
-    width: 100% !important;
-    */
-    figcaption {
-      font-size: 0.7em;
-    }
-  }
-
-  iframe {
-    display: block;
-    margin: auto;
-  }
-
-
-
-
-
-
-
-
-  /* WordPress Core Align Classes */
-
-  @media (min-width: 420px) {
-    img.aligncenter,
-    img.alignleft,
-    img.alignright {
-      width: auto;
-    }
-
-    .aligncenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .alignright {
-      float: right;
-      margin-left: 24px;
-    }
-
-    .alignleft {
-      float: left;
-      margin-right: 24px;
-    }
-  }
 `;
