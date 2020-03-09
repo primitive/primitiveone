@@ -8,7 +8,7 @@ const PostList = ({ state }) => {
   // Get the data of the current url
   const data = state.source.get(state.router.link);
 
-  //console.log("@postlist/list: data", data);
+  console.log("@postlist/list: data", data);
 
   return (
     <StyledMain className="container">
