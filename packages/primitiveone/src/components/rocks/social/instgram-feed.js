@@ -2,11 +2,24 @@ import React, { Fragment } from 'react'
 import { buildUrl } from 'react-instafeed'
  
 
-import useAbortableFetch from '@hooks/useAbortableFetch'
-import Image from '@components/Image'
+//import useAbortableFetch from '@hooks/useAbortableFetch'
+import Image from "@frontity/components/image";
+
+const options = {
+  accessToken: 'access...',
+  clientId: 'client...',
+  get: 'user', // popular, user
+  locationId: null,
+  resolution: 'standard_resolution', // thumbnail, low_resolution, standard_resolution
+  sortBy: 'none', // none, least-commented, least-liked, least-recent, most-commented, most-liked, most-recent, random
+  tagName: null,
+  userId: 123,
+}
  
-const Instagram = () => {
-  const { json, loading, error, abort } = useAbortableFetch(buildUrl(options))
+const InstagramFeed = ({ actions }) => {
+
+  //const { json, loading, error, abort } = useAbortableFetch(buildUrl(options))
+  const { json, loading, error, abort } = fetch(buildUrl(options))
   if (loading) return 'Loading...'
   if (error) return `Error: ${error}`
   if (!json) return null
@@ -15,6 +28,7 @@ const Instagram = () => {
  
   return (
     <Fragment>
+
       {// eslint-disable-next-line no-unused-vars
       data &&
         data.map(({ caption, id, images, tags }, index) => {
@@ -31,6 +45,9 @@ const Instagram = () => {
 
           )
         })}
+
     </Fragment>
   )
-}
+};
+
+export default InstagramFeed;

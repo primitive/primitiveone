@@ -2,6 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 import InstagramPost from "./instgram-post";
+import FacebookPage from "./facebook-page";
 
 const SocialSection = ({ state }) => {
 
@@ -25,13 +26,22 @@ const SocialSection = ({ state }) => {
         <Row>
 
           {/* If instagram has data */}
-          {instagram && (
+          {( instagram && "none" !== instagram.type ) && (
             //instagram.postids.map(( item ) => {
               postidsfix.map(( item ) => {
               return (<Col key={item}><InstagramPost id={item} maxwidth={instagram.maxwidth} /></Col>);
             })
           )}
 
+        </Row>
+        <Row>
+          {/* If facebook has data */}
+          {( facebook && "none" !== facebook.type ) && (
+              <Col>
+              <p>TEST</p>
+                <FacebookPage />
+              </Col>
+          )}
         </Row>
 
       </Container>
