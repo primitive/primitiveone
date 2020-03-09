@@ -11,28 +11,21 @@ import Post from "./post";
 import Page from "./page";
 import Posts from "../rocks/postlist";
 
-import Page404 from "./page404";
+//import Page404 from "./page404";
 import PageError from "./page-error";
 
 // check best method of conditional loading / imports
 import GlobalPromo from "../rocks/global-promo";
 import GlobalSocial from "../rocks/social/social-section";
 
-// replace with frontity GA package
-import ReactGA from 'react-ga';
-
 import Timelines from "../timeline/ct-timelines";
 import Timeline from "../timeline";
 import SubTimeline from "../timeline/cpt-subtimeline";
 
+// replace with frontity GA package
+import ReactGA from 'react-ga';
 
-// sk-dev: cannot use local bs css? all attempts to replace cdn breaks layout??
-// Do I really need all this???
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import bsCSS from 'bootstrap/dist/css/bootstrap.css';
-// console.log(bsCSS);
-
-import globalStyles from '../dust/style.css';
+import globalStyles from '../dust/global-styles';
 //import FontFaces from "../dust/font-faces";
 
 
@@ -59,7 +52,7 @@ const Theme = ({ state }) => {
           Not classes here because we use CSS-in-JS. Only global HTML tags.
         */
       }
-      <Global styles={globalStyles} />
+      <Global styles={globalStyles(state.theme.colors)} />
 
       {/* sk-dev: TESTING <FontFaces /> */}
       
