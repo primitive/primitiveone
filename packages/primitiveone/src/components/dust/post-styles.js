@@ -2,6 +2,20 @@ import { css } from "frontity";
 
 const discoListStyle = css`
 
+#post-1 a {
+  color: #87af4e;
+  font-weight: bold;
+  text-decoration: none;
+}
+#post-1 a:hover {
+  color: plum;
+  text-decoration: underline;
+}
+
+
+
+
+
   h1 {
     padding: 2rem;
     font-size: 4rem;

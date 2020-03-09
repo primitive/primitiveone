@@ -200,6 +200,16 @@ const discoListStyle = css`
 // p2136: housekeeping
 const page8 = css`
 
+#page-1 a {
+  color: #87af4e;
+  font-weight: bold;
+  text-decoration: none;
+}
+#page-1 a:hover {
+  color: plum;
+  text-decoration: underline;
+}
+
 #page-2 h1 {
   padding: 2rem 2rem 2rem 1rem;
   font-size: 4rem;
