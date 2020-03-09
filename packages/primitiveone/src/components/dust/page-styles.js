@@ -2,6 +2,30 @@ import { css } from "frontity";
 
 const discoListStyle = css`
 
+  h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  h3 {
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    color: rgba(12, 17, 43, 0.9);
+  }
+  h3:after {
+    content: " ";
+    margin: 1.2rem auto 0 0;
+    width: 5rem;
+    height: 3px;
+    display: block;
+    background: rgba(135, 175,	78, .8) !important;
+  }
+  h3:nth-of-type(even):after {
+    background: rgba(235, 150, 108, .8) !important;
+  }
+
   hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -168,11 +192,51 @@ const discoListStyle = css`
 
 `;
 
+// p139: homepage
+// p8: design
+// p1904: dev
+// p2102: data
+// p2128: marketing
+// p2136: housekeeping
+const page8 = css`
+
+#page-2 h1 {
+  padding: 2rem 2rem 2rem 1rem;
+  font-size: 4rem;
+  text-align: left;
+}
+
+#page-8 h1,
+#page-1904 h1,
+#page-2102 h1,
+#page-2128 h1 {
+  padding: 2rem 0 2rem;
+  margin: 0 15% 1.5rem;
+  font-size: 4rem;
+}
+#page-8 h1:after,
+#page-1904 h1:after,
+#page-2102 h1:after,
+#page-2128 h1:after {
+  content: " ";
+  margin-top: .6rem;
+  width: 100%;
+  height: 6px;
+  display: block;
+  /* 
+  this has issues on chrome iOS
+  animation: underline-gradient 6s linear infinite; */
+  background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+}
+
+`;
+
 
 const pageStyles = colors =>
   css([
     //elementBase(colors),
-    discoListStyle
+    discoListStyle,
+    page8
   ]);
 
 export default pageStyles;
