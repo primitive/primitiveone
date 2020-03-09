@@ -44,9 +44,8 @@ export default connect(Works);
 const StyledCard = styled(Card)`
   margin-bottom: 1rem;
   border: none;
-  border-radius: 0;
   text-align: center;
-  box-shadow: 0 0 0 2px rgba(12, 17, 43, 0.1);
+  box-shadow: rgb(239, 239, 239) 3px 3px 9px 6px;
 }`
 
 const StyledLink = styled(Link)`
