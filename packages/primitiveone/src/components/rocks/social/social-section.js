@@ -39,7 +39,7 @@ const SocialSection = ({ state }) => {
           {/* If facebook has data  */}
           {(facebook && "none" !== facebook.type) && (
             "page" === facebook.type && <Col><FacebookPage /></Col> ||
-            "like" === facebook.type && <Col><FacebookLike /></Col>
+            "like" === facebook.type && <Col><FacebookLike props={facebook.settings} /></Col>
           )}
         </Row>
 

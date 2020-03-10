@@ -5,18 +5,18 @@ import Iframe from "@frontity/components/iframe";
 
 const FacebookLike = ({ props }) => {
 
-  console.log(`@facebook-like: id: ${props}`);
+  // console.log("@facebook-like: props ", props);
 
   return (
     <StyledIframe
-      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fprimitivedigital&width=150&layout=button_count&action=like&size=large&share=true&height=46&appId=2317056035225898"
-      width="150"
-      height="46"
-      style="border:none;overflow:hidden"
-      scrolling="no"
-      frameborder="0"
-      allowTransparency="true"
-      allow="encrypted-media"
+      src={props.src}
+      width={props.width}
+      height={props.height}
+      style={props.style}
+      scrolling={props.scrolling}
+      frameborder={props.frameborder}
+      allowTransparency={props.allowTransparency}
+      allow={props.allow}
     >
     </StyledIframe>
   );

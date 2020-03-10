@@ -90,7 +90,7 @@ const primitiveOne = {
             rocks: "global-promo",
             type: "text",
             pretext: "Big Business and Enterprise",
-            text: "Primitive is not your bag, baby. You want a sknow.it all!",
+            text: "Primitive is not your bag, baby. You need a sknow.it all!",
             link: "/"
           },
           social: {
@@ -99,7 +99,19 @@ const primitiveOne = {
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
-            facebook: { type: "like" }, // "none" | "page" 
+            facebook: {
+              type: "like", // "none" | "page" | "like"
+              settings: {
+                src: "https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fprimitivedigital&width=150&layout=button_count&action=like&size=large&share=true&height=46&appId=2317056035225898",
+                width: "150",
+                height: "46",
+                style: "border:none;overflow:hidden",
+                scrolling: "no",
+                frameborder: "0",
+                allowTransparency: "true",
+                allow: "encrypted-media"
+              }
+            }, 
             twitter: { type: "none" },
             pinterest: { type: "none" },
             profiles: {
