@@ -9,23 +9,6 @@ const discoListStyle = css`
     overflow: hidden;
   }
 
-  h3 {
-    margin-bottom: 1.2rem;
-    font-weight: bold;
-    color: rgba(12, 17, 43, 0.9);
-  }
-  h3:after {
-    content: " ";
-    margin: 1.2rem auto 0 0;
-    width: 5rem;
-    height: 3px;
-    display: block;
-    background: rgba(135, 175,	78, .8) !important;
-  }
-  h3:nth-of-type(even):after {
-    background: rgba(235, 150, 108, .8) !important;
-  }
-
   hr {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -198,6 +181,32 @@ const discoListStyle = css`
 // p2102: data
 // p2128: marketing
 // p2136: housekeeping
+
+/* Homepage */
+const page139 = css`
+  #page-139 {
+    h3 {
+      margin-bottom: 1.2rem;
+      font-weight: bold;
+      color: rgba(12, 17, 43, 0.9);
+
+      &:after {
+        content: " ";
+        margin: 1.2rem auto 0 0;
+        width: 5rem;
+        height: 3px;
+        display: block;
+        background: rgba(135, 175,	78, .8) !important;
+      }
+
+      &:nth-of-type(even):after {
+        background: rgba(235, 150, 108, .8) !important;
+      }
+    }
+  }
+`;
+
+
 const page8 = css`
 
 #page-1 a {
@@ -246,6 +255,7 @@ const pageStyles = colors =>
   css([
     //elementBase(colors),
     discoListStyle,
+    page139,
     page8
   ]);
 
