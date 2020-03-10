@@ -11,13 +11,12 @@ With little help from our friends: Bootstrap 4, GSAP and ScrollMagic.
 
 Live demo site: https://primitivedigital.co.uk
 
-GitHub: https://github.com/primitiveshaun/primitiveone
+GitHub repo: https://github.com/primitiveshaun/primitiveone
+
 NPM: https://www.npmjs.com/package/primitiveone
 
 Domain and WordPress hosting from: https://primitivehosting.uk/headlesswp
 
-N.B. This is only my second attempt at React based website so do be kind.  
-It may be messy and it may be downright wrong in places.	
 
 See [changelog](packages/primitiveone/CHANGELOG.md) for release notes.
 
