@@ -85,7 +85,7 @@ const primitiveOne = {
         },
         global: {
           showPromo: false,
-          showSocial: false,
+          showSocial: true,
           promo: {
             rocks: "global-promo",
             type: "text",
@@ -99,7 +99,7 @@ const primitiveOne = {
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
-            facebook: { type: "none" }, // "none" | "page" 
+            facebook: { type: "like" }, // "none" | "page" 
             twitter: { type: "none" },
             pinterest: { type: "none" },
             profiles: {
