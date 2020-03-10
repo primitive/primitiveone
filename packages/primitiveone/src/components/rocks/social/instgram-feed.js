@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react'
 import { buildUrl } from 'react-instafeed'
  
+// sk-dev: not developed
 
-//import useAbortableFetch from '@hooks/useAbortableFetch'
+import useAbortableFetch from '@hooks/useAbortableFetch'
 import Image from "@frontity/components/image";
 
 const options = {
@@ -19,7 +20,6 @@ const options = {
 const InstagramFeed = ({ actions }) => {
 
   //const { json, loading, error, abort } = useAbortableFetch(buildUrl(options))
-  const { json, loading, error, abort } = fetch(buildUrl(options))
   if (loading) return 'Loading...'
   if (error) return `Error: ${error}`
   if (!json) return null

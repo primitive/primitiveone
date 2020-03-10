@@ -1,5 +1,7 @@
 import React, { Component} from 'react';
 import { FacebookProvider, Feed } from 'react-facebook';
+
+// sk-dev: not developed
  
 export default class Example extends Component {
   render() {
