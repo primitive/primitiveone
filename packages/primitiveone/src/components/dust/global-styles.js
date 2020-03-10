@@ -392,24 +392,24 @@ const documentSetup = colors => css`
 
   body {
     box-sizing: border-box;
+
     color: #000;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
       Helvetica, sans-serif;
     font-size: 1.8rem;
     text-align: left;
 
+    overflow-y: overlay;
+
     &::-webkit-scrollbar {
-      width:1rem; /* scrollbar width */
-      position: absolute;
+      width:1.2rem; /* scrollbar width */
     }
     &::-webkit-scrollbar-track {
       background: transparent;
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* scrollbar track */
-      border-radius: 0
     }
     &::-webkit-scrollbar-thumb {
-      background-color: olive ; /* scrollbar thumb background color */
-      border-radius: 0;
+      background-color: rgba(12,17,43,0.3) ; /* scrollbar thumb background color */
     }	
   }
 
@@ -445,7 +445,13 @@ const documentSetup = colors => css`
   
   /* Large devices (desktops, 992px and up) */
   @media screen and (min-width: 992px) {
+
     html { font-size: 15px; }
+    body {
+      &::-webkit-scrollbar {
+        width:1.5rem;
+      }
+    }
     .container { max-width: 960px; }
   }
   
