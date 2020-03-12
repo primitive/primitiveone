@@ -14,50 +14,53 @@ const TabBlock = ({ state }) => (
           <Row>
 
             <Col className="txt-area">
-              <div className="txt-wrap">
+
+              <TextWrap>
                 <Title>Web Design</Title>
-                <p>Find your audience</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>Find your audience</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>App &amp; UI Design</Title>
-                <p>And connect with your users</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>And connect with your users</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Brand &amp; Logo Design</Title>
-                <p>In creative, beautiful and consistent ways</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>In creative, beautiful and consistent ways</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Print Design</Title>
-                <p>Across all platforms</p>
-              </div>
+                <Blurb>Across all platforms</Blurb>
+              </TextWrap>
+
             </Col>
+
           </Row>
         </Tab>
 
         <Tab eventKey="hp-dev" className="hp-dev" title="Development">
           <Row>
-            
-            <Col lg="12" className="txt-area">
 
-              <div className="txt-wrap">
+            <Col className="txt-area">
+
+              <TextWrap>
                 <Title>Rapid Web Development</Title>
-                <p>Get online fast</p>
-              </div>
+                <Blurb>Get online fast</Blurb>
+              </TextWrap>
 
-              <div className="txt-wrap">
+              <TextWrap>
                 <Title>Application Development</Title>
-                <p>Meet the needs of your users</p>
-              </div>
+                <Blurb>Meet the needs of your users</Blurb>
+              </TextWrap>
 
-              <div className="txt-wrap">
+              <TextWrap>
                 <Title>WordPress</Title>
-                <p>Built on the most popular core</p>
-              </div>
+                <Blurb>Built on the most popular core</Blurb>
+              </TextWrap>
 
-              <div className="txt-wrap">
+              <TextWrap>
                 <Title>REST API + CPT</Title>
-                <p>The possibilities are endless</p>
-              </div>
+                <Blurb>The possibilities are endless</Blurb>
+              </TextWrap>
 
             </Col>
 
@@ -66,50 +69,55 @@ const TabBlock = ({ state }) => (
 
         <Tab eventKey="hp-data" className="hp-data" title="Data">
           <Row>
-            <Col lg="12" className="txt-area">
-              <div className="txt-wrap">
+
+            <Col className="txt-area">
+
+              <TextWrap>
                 <Title>Analytics and Reporting</Title>
-                <p>Infomation is beautiful</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>Infomation is beautiful</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Search Engine Optimisation</Title>
-                <p>Especially climbing the ranks</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>Especially climbing the ranks</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Data Visualisation</Title>
-                <p>So make communication a simple joy</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>So make communication a simple joy</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Testing and Research</Title>
-                <p>But you can always A/B better</p>
-              </div>
+                <Blurb>But you can always A/B better</Blurb>
+              </TextWrap>
 
               <DataMap />
 
             </Col>
+
           </Row>
         </Tab>
 
         <Tab eventKey="hp-marketing" className="hp-marketing" title="Marketing">
           <Row>
-            <Col lg="12" className="txt-area">
-              <div className="txt-wrap">
+
+            <Col className="txt-area">
+              <TextWrap>
                 <Title>Social Media</Title>
-                <p>Graphics, Banners and Promos</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>Graphics, Banners and Promos</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>eMail &amp; eCommerce</Title>
-                <p>To Sell, sell, sell</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>To Sell, sell, sell</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Strategy &amp; Campaigns</Title>
-                <p>And do it well, well, well</p>
-              </div>
-              <div className="txt-wrap">
+                <Blurb>And do it well, well, well</Blurb>
+              </TextWrap>
+              <TextWrap>
                 <Title>Triggers &amp; Automation</Title>
-                <p>With robots and magic buttons</p>
-              </div>
+                <Blurb>With robots and magic buttons</Blurb>
+              </TextWrap>
             </Col>
+
           </Row>
         </Tab>
 
@@ -123,39 +131,25 @@ export default TabBlock;
 
 const StyledSection = styled.section`
 
-  .services { margin-bottom: 2rem; }
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 
-  .nav-tabs {
-    max-width: 1140px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  /* sk-dev: styled Tab didn't work */
+
+  .tab-content {
+    border-top: 6px solid #87af4e;
+    background-color: black;
   }
 
-
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { 
-    border-bottom: 0; color: #111; background-color: #87af4e; }
-  .tab-content { border-top: 6px solid #87af4e; background-color: black; }
-
-  .tab-content .tab-pane {
-    padding: 2rem 1rem;
+  .tab-pane {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2rem;
     width: 100%;
+    max-height: 700px;
     max-width: 1140px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    background-color: black;
   }
-
-  .txt-wrap {
-    display: block;
-    position: relative;
-    z-index: 20;
-    overflow: hidden;
-  }
-
-  p { color: ivory; }
 
   .tab-pane:hover h3:after {
     transition: 1s;
@@ -165,7 +159,6 @@ const StyledSection = styled.section`
     background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
   }
 
-  .tab-pane { max-height: 700px; background-color: black; }
   .hp-design {
     background-size: contain;
     background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317718/m/monkey-happy_hiofsx.jpg);
@@ -181,6 +174,7 @@ const StyledSection = styled.section`
 
   .hp-data { position: relative; }
   .hp-data .txt-area { position: relative; z-index: 10; }
+
   .hp-marketing {
     background-size: contain;
     background-image: url(https://res.cloudinary.com/primitivedigital/image/upload/f_auto/v1569317718/m/monkey-smile_aagvmp.jpg);
@@ -191,28 +185,76 @@ const StyledSection = styled.section`
 `;
 
 const StyledTabs = styled(Tabs)`
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
   font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
   letter-spacing: 1px;
+  justify-content: center;
 
-  a {
+  .nav-item {
+    font-size: 1.2rem;
     color: #87af4e;
+
+    &:hover {
+      color: #111;
+      background-color: rgba(135,175,78,.1);
+      border-bottom-color: rgb(135,175,78);
+    }
   }
-  a:hover {
+
+  .nav-item.show.nav-link,
+  .nav-link.active { 
+    border-bottom: 0;
     color: #111;
+    background-color: #87af4e;
+  }
+
+  @media screen and (max-width: 576px) {
+
+    .nav-item {
+      margin-bottom: .9rem;
+      width: 49%;
+      border-radius: .25rem;
+      text-align: center;
+  
+      &:hover {
+        border-bottom-color: rgb(135,175,78);
+        border-right-color: rgb(135,175,78);
+      }
+    }
+
+    .nav-item:nth-of-type(odd) {
+      margin-right: 2%;
+    }
+
   }
 
 `;
 
+const TextWrap = styled.div`
+  display: block;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+  text-shadow: 1px 1px 1px #000;
+`;
+
 const Title = styled.h3`
-  color: ivory;
   margin-bottom: .3rem;
-  font-size: 3rem;
-  font-weight: normal;
   display: inline-block;
   overflow: hidden;
 
-  span { color: #87af4e; }
+  color: ivory;
+  font-size: 3rem;
+  font-weight: normal;
+
+  span {
+    color: #87af4e;
+  }
 
   &:after {
     content: " ";
@@ -225,4 +267,8 @@ const Title = styled.h3`
     background:#87af4e;
   }
 
+`;
+
+const Blurb = styled.p`
+    color: ivory;
 `;
