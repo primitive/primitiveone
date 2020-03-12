@@ -131,7 +131,7 @@ export default TabBlock;
 
 const StyledSection = styled.section`
 
-  margin-top: 1rem;
+  margin-top: .5rem;
   margin-bottom: 2rem;
 
   /* sk-dev: styled Tab didn't work */
