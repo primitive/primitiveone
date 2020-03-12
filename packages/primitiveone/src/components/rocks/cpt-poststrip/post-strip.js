@@ -18,7 +18,8 @@ const PostStrip = ({ state, actions, props }) => {
   const icon = props.icon ? props.icon : null;
 
   // get the data of the posttype or default cpt 'works'.
-  const data = state.source.get("/" + posttype + "/");
+  const data = state.source.get("/works/");
+  //const data = state.source.get("/" + posttype + "/");
 
   useEffect(() => {
     actions.source.fetch("/works/");
@@ -58,7 +59,7 @@ const PostStrip = ({ state, actions, props }) => {
           </Col>
         </Header>
 
-        <Row className="d-flex align-items-stretch">
+        <Row>
 
           {/* sk-dev: test client side filtering vs filtered requests
             1. Modify array data

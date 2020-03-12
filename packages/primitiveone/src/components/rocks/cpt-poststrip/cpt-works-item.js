@@ -6,50 +6,50 @@ import ACFMedia from "../../timeline/cpt-media";
 import { Col, Card } from 'react-bootstrap';
 
 
-const Works = ({ state, item }) => {
+const Works = ({ item }) => {
 
   const acfFields = item.acf;
-
   //console.log("@cpt-works-item: item", item );
 
   return (
-    <Col>
+    <Col sm={12} md={4}>
 
-      <StyledLink link={acfFields.link}>
+      <StyledCard>
 
-        <StyledCard>
-
+        <StyledLink link={acfFields.link}>
           <StyledImage className="card-img-top" id={item.id} />
+        </StyledLink>
 
-          <Title>{acfFields.project_type}</Title>
+        <Title>{acfFields.project_type}</Title>
 
-          <Card.Body className="pt-3">
+        <Card.Body className="pt-3">
 
-            <Project>{acfFields.project}</Project>
+          <Project>{acfFields.project}</Project>
 
-            <Meta>{acfFields.services}</Meta>
+          <Meta>{acfFields.services}</Meta>
 
-          </Card.Body>
+        </Card.Body>
 
-        </StyledCard>
-
-      </StyledLink>
+      </StyledCard>
 
     </Col>
   );
 };
 
-export default connect(Works);
+export default Works;
 
 const StyledCard = styled(Card)`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border: none;
   text-align: center;
   box-shadow: rgb(239, 239, 239) 3px 3px 9px 6px;
-}`
+
+  @media screen and (min-width: 576px) {
+    height: 100%;
+  }
+`;
 
 const StyledLink = styled(Link)`
-  color: rgba(12, 17, 43, 0.9);
   text-decoration: none;
 `;
 
@@ -70,8 +70,8 @@ const Title = styled.h4`
 `;
 
 const Project = styled.h5`
-  height: 3rem;
-  font-family: 'Hepta Slab', Georgia, serif; }
+  min-height: 3rem;
+  font-family: 'Hepta Slab', Georgia, serif;
 `;
 
 const Meta = styled.p`
@@ -80,5 +80,3 @@ const Meta = styled.p`
   letter-spacing: 1px;
   color: rgba(12, 17, 43, 0.6);
 `;
-
-
