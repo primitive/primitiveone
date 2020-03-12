@@ -1,6 +1,7 @@
 import Theme from "./components/mountains";
 import image from "@frontity/html2react/processors/image";
 import CustomPageHandlers from "./components/sand/handlers.js";
+import { colortheme } from "./components/dust/_variables.js";
 
 const primitiveOne = {
   name: "primitiveone",
@@ -17,17 +18,7 @@ const primitiveOne = {
      * It is scoped to the `theme` namespace.
      */
     theme: {
-      colors: {
-        gray: {
-          base: "#6D6D6D",
-          light: "#DCD7CA",
-          lighter: "#F5EFE0"
-        },
-        primary: "#cd2653",
-        headerBg: "#ffffff",
-        footerBg: "#ffffff",
-        bodyBg: "#f5efe0"
-      },
+      colors: colortheme,
       // show all post content or only the excerpt in archive views
       // showAllContentOnArchive: false,
       config: {
