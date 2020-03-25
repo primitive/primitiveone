@@ -87,7 +87,7 @@ const primitiveOne = {
           social: {
             background: "#fffff0",
             instagram: {
-              type: "post", // "none" | "post" | "posts" | "feed"
+              type: "none", // "none" | "post" | "posts" | "feed"
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
