@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, styled, css } from "frontity";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Frame from "../pebbles/frame";
 import Image from "@frontity/components/image";
 import { jump, animatedgradient } from "../scenes/glamourmagic";
@@ -79,7 +79,7 @@ const Bronze = ({ state }) => {
 
               <StyledFrame className={display.listFrame2} link="/">
                 <TitleTwo>{display.title2}</TitleTwo>
-                <ul css={css`&:hover {animation: ${jump} 1s ease infinite;}`}>
+                <ul>
                   {
                     list2fix.map((item, i) => (
                       // display.list2.map((item, i) => (
@@ -116,7 +116,12 @@ const StyledSection = styled.section`
     padding: 0;
   }
 
+  &:hover .frame h5 {
+    animation: ${jump} 1s ease infinite;
+  }
+
   .fancy-frame {
+    margin-top: 2rem;
     padding: 12px;
     display: inline-block;
     position: relative;
@@ -145,8 +150,10 @@ const TitleTwo = styled.h5`
 `;
 
 const StyledFrame = styled(Frame)`
-  a:hover {
-    text-decoration: none;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
   }
 `;
 
