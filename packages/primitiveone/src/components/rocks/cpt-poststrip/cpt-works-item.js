@@ -44,7 +44,7 @@ const StyledCard = styled(Card)`
   text-align: center;
   box-shadow: rgb(239, 239, 239) 3px 3px 9px 6px;
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 768px) {
     height: 100%;
   }
 `;

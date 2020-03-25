@@ -18,9 +18,9 @@ const InstagramPost = ({ id, maxwidth }) => {
         onAfterRender={() => { }}
         onFailure={() => { }}
         css={css`
-          margin: auto;
+          margin: 1rem auto;
           max-width: ${maxwidth}px;
-      `}
+        `}
       />
     )
 };

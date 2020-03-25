@@ -394,22 +394,22 @@ const documentSetup = colors => css`
     box-sizing: border-box;
 
     color: #000;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-      Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 1.8rem;
     text-align: left;
 
-    overflow-y: overlay;
+    /* overflow-y: overlay; */
 
     &::-webkit-scrollbar {
       width:1.2rem; /* scrollbar width */
     }
     &::-webkit-scrollbar-track {
       background: transparent;
+      /* background: rgba(135,175,78,.3); */
       box-shadow: inset 0 0 6px rgba(0,0,0,0.3); /* scrollbar track */
     }
     &::-webkit-scrollbar-thumb {
-      background-color: rgba(12,17,43,0.3) ; /* scrollbar thumb background color */
+      background-color: rgba(12,17,43,.3); /* scrollbar thumb background color */
     }	
   }
 

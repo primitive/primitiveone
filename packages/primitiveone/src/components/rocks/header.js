@@ -29,6 +29,10 @@ const StyledHeader = styled.header`
     text-decoration: none;
     padding: 15px;
     display: block;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 `;
 

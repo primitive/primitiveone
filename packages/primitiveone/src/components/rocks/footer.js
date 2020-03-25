@@ -116,8 +116,6 @@ const Footer = ({ state }) => {
 export default connect(Footer);
 
 const StyledFooter = styled.footer`
-  padding-top: 1rem;
-
   h5 {
     font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 4rem;

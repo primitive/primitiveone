@@ -54,5 +54,5 @@ const PageHome = ({ state }) => {
 export default connect(PageHome);
 
 const HomePage = styled.div`
-  padding-bottom: 2rem;
+
 `;
