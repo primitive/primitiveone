@@ -41,7 +41,7 @@ const Page = ({ state, actions, libraries }) => {
             </Col>
           </header>
 
-          {data.id && 8===data.id && <DiscoBall />}
+          { /* sk-dev: data.id && 8===data.id && <DiscoBall /> */ }
 
           <Row>
             <PageBody>
