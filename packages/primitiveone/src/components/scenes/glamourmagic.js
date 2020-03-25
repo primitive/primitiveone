@@ -4,6 +4,8 @@ const colour = {
   bounce: "blue"
 }
 
+// animation: jump 1s infinite;
+//<ul css={css`&:hover {animation: ${jump} 1s ease-in-out infinite;}`}>
 const jump = keyframes`
   from, 20%, 53%, 80%, to {
     transform: translate3d(0,0,0);
@@ -41,7 +43,7 @@ const heartbeat = keyframes`
   }
 `;
 
-// animation: pulse 1.5s infinite;
+// animation: sonar 1.5s infinite;
 const sonar = keyframes`
   0% {
     @include transform(scale(.9));
@@ -122,7 +124,30 @@ const grow = keyframes`
   }
 `;
 
+// Disco
+const rotateDiscoBall = keyframes`
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateZ(360deg) rotate(0deg);
+  }
+`;
 
+const rotateDiscoBallMiddle = keyframes`
+  0% {
+    transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateX(90deg) rotateY(-360deg) rotate(0deg);
+  }
+`;
+
+const reflect = keyframes`
+  0% {opacity: 1;}
+  50% {opacity: 0.4;}  
+  100% {opacity: 1;}  
+`;
 
 
 // DataMap 
@@ -181,4 +206,4 @@ const southamerica = keyframes`
   }
 `;
 
-export {jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, africa, asia, australia, europe, northamerica, southamerica };
+export { jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, rotateDiscoBall, rotateDiscoBallMiddle, reflect, africa, asia, australia, europe, northamerica, southamerica };
