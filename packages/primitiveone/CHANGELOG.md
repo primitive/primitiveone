@@ -9,7 +9,7 @@ Very, very loosly following [Conventional Commits](https://conventionalcommits.o
 
 ## Notes
 
- // https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
+// https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
 // https://wp.primitivedigital.uk/wp-json/wp/v2/timelines
 // https://wp.primitivedigital.uk/wp-json/wp/v2/work
 
