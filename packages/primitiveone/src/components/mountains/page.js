@@ -4,9 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import pageStyles from "../dust/page-styles";
 
-import Link from "../pebbles/link";
 //import FeaturedMedia from "../pebbles/featured-media";
 import DiscoPreload from "../scenes/disco-preload"
+import DiscoBall from "../scenes/discoball"
 
 const Page = ({ state, actions, libraries }) => {
 
@@ -40,6 +40,8 @@ const Page = ({ state, actions, libraries }) => {
               <PageTitle dangerouslySetInnerHTML={{ __html: page.title.rendered }} />
             </Col>
           </header>
+
+          {data.id && 8===data.id && <DiscoBall />}
 
           <Row>
             <PageBody>
