@@ -26,7 +26,7 @@ const FacebookLike = ({ props }) => {
 export default FacebookLike;
 
 const StyledIframe = styled(Iframe)`
-  margin: 1rem auto;
+  margin: 1.5rem auto;
   border: none;
   text-align: center;
 `;
