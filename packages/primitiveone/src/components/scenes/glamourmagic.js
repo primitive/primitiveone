@@ -151,11 +151,10 @@ const reflect = keyframes`
 
 const glowball = keyframes`
 	0% {
-		box-shadow: 0 0 rgba(#61EF61, 1);
+		box-shadow: 0 0 10px 8px rgba(175,238,238, 1);
 	}
 	100% {
-		box-shadow: 0 0 10px 8px transparent;
-		border-width: 2px;
+		box-shadow: 0 0 10px 8px rgba(175,238,238, 0);
 	}
 `;
 
