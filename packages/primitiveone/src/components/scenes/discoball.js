@@ -1,10 +1,8 @@
 import React from 'react';
 import { styled, css } from "frontity";
 import { rotateDiscoBall, rotateDiscoBallMiddle, reflect } from "./glamourmagic";
-//import "../sand/discoball";
 
-// based on original codepen by Marty
-// https://codepen.io/okra/pen/fDuzC
+// nod to original concept by Marty: https://codepen.io/okra/pen/fDuzC
 
 const JungleDiscoBall = () => {
 
@@ -18,17 +16,9 @@ const JungleDiscoBall = () => {
   let discoBall = <></>;
   let discoTiles = [];
 
-  const Tile = styled('div')`
-  width: ${props => props.width || "auto"};
-  height: ${props => props.height || "auto"};
-  transform-origin: ${props => props.transformorigin || "0 0 0"};
-  transform: ${props => props.transform || "none"};
-  background-color: ${props => props.bgcolor || "none"};
-  `
-
   let t = 1;
   for (t = fuzzy; t < Math.PI; t += inc) {
-    let ka = t;
+
     let z = radius * Math.cos(t);
     let currentRadius = Math.abs((radius * Math.cos(0) * Math.sin(t)) - (radius * Math.cos(Math.PI) * Math.sin(t))) / 2.5;
     let circumference = Math.abs(2 * Math.PI * currentRadius);
@@ -36,30 +26,24 @@ const JungleDiscoBall = () => {
     let angleInc = (Math.PI * 2 - fuzzy) / squaresThatFit;
 
     //let discoTiles;
-    let kb = 1;
+    let fkey = 1;
     for (var i = angleInc / 2 + fuzzy; i < (Math.PI * 2); i += angleInc) {
-
-      //let squareTileStyles = "";
-
-      //let squareStyles = "width: " + squareSize + "px; " 
-      //+ "height: " + squareSize + "px; " 
-      //+ "transform-origin: 0 0 0; " 
-      //+ "transform: rotate(" + i + "rad) rotateY(" + t + "rad);";
 
       //squareTile.style.width = squareSize + "px";
       //squareTile.style.height = squareSize + "px";
       //squareTile.style.transformOrigin = "0 0 0";
       //squareTile.style.transform = "rotate(" + i + "rad) rotateY(" + t + "rad)";
+      //square.style.transform = "translateX(" + x + "px) translateY(" + y + "px) translateZ(" + z + "px)";
+
 
       //squareTileStyles = "width:" + squareSize + "px;";
       //squareTileStyles += "width:" +  squareSize + "px;";
       //squareTileStyles += "transform:rotate(" + i + "rad) rotateY(" + t + "rad);";
       //squareTileStyles += "transform-origin:0 0 0;";
+      //squareTile.style.animation = "reflect 2s linear infinite";
+      //squareTile.style.animationDelay = String(randomNumber(0,20)/10) + "s";
+      //squareTile.style.backfaceVisibility = "hidden";
 
-
-
-
- 
       let tilebg;
       if((t>1.3 && t<1.9) || (t<-1.3 && t>-1.9)) {
         tilebg = randomColor("bright");
@@ -68,46 +52,38 @@ const JungleDiscoBall = () => {
         tilebg = randomColor("any");
       }
       
-     
-
-      let square = <Tile className="square"
-        key={ka+'-'+kb}
-        width={squareSize + 'px'}
-        height={squareSize + 'px'} 
-        transform-origin="0 0 0"
-        transform={"rotate(" + i + "rad) rotateY(" + t + "rad)"}
-        >
-
-        <Tile className="squareTile"
-                  key={'2'+ka+'-'+kb}
-                  width={squareSize + 'px'}
-                  height={squareSize + 'px'} 
-                  transform-origin="0 0 0"
-                  transform={"rotate(" + i + "rad) rotateY(" + t + "rad)"}
-                  bgcolor={tilebg}>
-        </Tile>
-      </Tile>;
-
-
-      //squareTile.style.animation = "reflect 2s linear infinite";
-      //squareTile.style.animationDelay = String(randomNumber(0,20)/10) + "s";
-      //squareTile.style.backfaceVisibility = "hidden";
-
       let x = radius * Math.cos(i) * Math.sin(t);
       let y = radius * Math.sin(i) * Math.sin(t);
 
-      //square.style.webkitTransform = "translateX(" + Math.ceil(x) + "px) translateY(" + y + "px) translateZ(" + z + "px)";
-      //square.style.transform = "translateX(" + x + "px) translateY(" + y + "px) translateZ(" + z + "px)";
+      let square = <Square
+          className="square"
+          key={t+'-1-'+fkey}
+          width={squareSize + 'px'}
+          height={squareSize + 'px'} 
+          transformorigin="0 0 0"
+          transform={"rotate(" + i + "rad) rotateY(" + t + "rad) translateX(" + x + "px) translateY(" + y + "px) translateZ(" + z + "px)"}
+        >
 
-      //discoBall.appendChild(square);
+        <Tile
+            className="squareTile"
+            key={t+'-2-'+fkey}
+            width={squareSize + 'px'}
+            height={squareSize + 'px'} 
+            transformorigin="0 0 0"
+            transform={"rotate(" + i + "rad) rotateY(" + t + "rad)"}
+            bgcolor={tilebg}
+            animationdelay={String(randomNumber(0,20)/10) + "s"}
+            backface="hidden"
+          >
+        </Tile>
+      </Square>;
+
       discoTiles.push(square);
-      //console.log(discoTiles);
-      kb++;
+      fkey++;
     }
+
     //discoBall = <>{discoTiles}</>
-
     //console.log(discoBall);
-
   }
 
   function randomColor(type) {
@@ -128,12 +104,9 @@ const JungleDiscoBall = () => {
       <DiscoBallLight></DiscoBallLight>
       <DiscoBall>
 
-        <DiscoBallMiddle>
-
-        </DiscoBallMiddle>
-
+        <DiscoBallMiddle></DiscoBallMiddle>
         <>
-        {discoTiles}
+          {discoTiles}
         </>
 
       </DiscoBall>
@@ -148,6 +121,23 @@ const background = (top, bottom) => css`
   background: linear-gradient( to bottom,${top} 0%,${bottom} 100% );  
 `
 
+const Square = styled('div')`
+  width: ${props => props.width || "auto"};
+  height: ${props => props.height || "auto"};
+  transform-origin: ${props => props.transformorigin || "0 0 0"};
+  transform: ${props => props.transform || "none"};
+`
+const Tile = styled('div')`
+  width: ${props => props.width || "auto"};
+  height: ${props => props.height || "auto"};
+  transform-origin: ${props => props.transformorigin || "0 0 0"};
+  transform: ${props => props.transform || "none"};
+  background-color: ${props => props.bgcolor || "#ccc"};
+  animation: ${reflect} 2s linear infinite;
+  animation-delay: ${props => props.animationdelay || "none"};
+  backface-visibility: ${props => props.backface || "hidden"};
+`
+
 const StyledDiscoBall = styled.div`
   height: 300px;
   position: relative;
@@ -157,10 +147,6 @@ const StyledDiscoBall = styled.div`
     position: absolute;
     top: 50px;
     left: 50px;
-    width: 6px;
-    height: 6px;
-    position: absolute;
-    transform: rotateX(90deg) rotateY(0deg) translateZ(0px);
   }
 `;
 
