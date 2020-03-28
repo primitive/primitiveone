@@ -104,8 +104,11 @@ const JungleDiscoBall = () => {
 
 export default JungleDiscoBall;
 
-const background = (top, bottom) => css`
+const backgroundlinear = (top, bottom) => css`
   background: linear-gradient( to bottom,${top} 0%,${bottom} 100% );  
+`
+const backgroundradial = (top, bottom) => css`
+background: radial-gradient(${top},${bottom});  
 `
 
 const Square = styled('div')`
@@ -136,9 +139,10 @@ const DiscoBallLight = styled.div`
   margin-left: -50px; 
   border-radius: 100%;
   background-color: white; 
-  animation: ${glowball} 30s linear infinite alternate;
+  box-shadow: 0 0 30px 8px rgba(231, 250, 140, .9);
 
 `;
+// https://encycolorpedia.com/f0fa8c
 
 const DiscoBallMiddle = styled.div`
   height: 100%;
@@ -146,7 +150,7 @@ const DiscoBallMiddle = styled.div`
   border-radius: 100%;
   background-color: #111;
   position: absolute;
-  ${background("#ccc", "#111")};
+  ${backgroundradial("#e7ef97", "#111")};
   animation: ${rotateDiscoBallMiddle} 18s linear infinite;
 `;
 
