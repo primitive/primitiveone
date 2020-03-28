@@ -8,7 +8,7 @@ import List from "../rocks/postlist";
 import Link from "../pebbles/link";
 import FeaturedMedia from "../pebbles/featured-media";
 
-import DiscoPreload from "../scenes/disco-preload"
+import DiscoPreload from "../scenes/preload-disco";
 
 const Post = ({ state, actions, libraries }) => {
 

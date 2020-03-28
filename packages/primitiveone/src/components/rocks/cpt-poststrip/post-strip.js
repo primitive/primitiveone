@@ -3,7 +3,7 @@ import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 import { shuffle } from "../../sand/utils";
 
-import DiscoPreload from "../../scenes/disco-preload"
+import DiscoPreload from "../../scenes/preload-disco"
 import Post from "./cpt-works-item";
 
 // In a React component that uses "connect":
