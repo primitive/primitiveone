@@ -159,6 +159,79 @@ const glowball = keyframes`
 `;
 
 
+
+/* 348413 magenta, #702904 green, */
+
+const rainbow = {
+  green: '#348413',
+  yellow: '#f5e527',
+  pink: '#ed22a5',
+  blue: '#06b6f1'
+};
+
+const iCanSingA = function(obj) {
+  const keys = Object.keys(obj);
+  let rand = obj[keys[ keys.length * Math.random() << 0]];
+  return [rand, rand, rand]
+};
+//const singA = iCanSingA(rainbow);
+
+function hexToRGB(h,a) {
+  let r = 0, g = 0, b = 0;
+
+  // 3 digits
+  if (h.length == 4) {
+    r = "0x" + h[1] + h[1];
+    g = "0x" + h[2] + h[2];
+    b = "0x" + h[3] + h[3];
+
+  // 6 digits
+  } else if (h.length == 7) {
+    r = "0x" + h[1] + h[2];
+    g = "0x" + h[3] + h[4];
+    b = "0x" + h[5] + h[6];
+  }
+  
+  return "rgba("+ +r + "," + +g + "," + +b + "," + a + ")";
+}
+
+
+const discolight = keyframes`
+{
+  0% {
+      background: ${ hexToRGB(iCanSingA(rainbow)[0], '.1') };
+      box-shadow:
+      inset 0 0 130px ${iCanSingA(rainbow)[0]},
+      inset 0 0 70px ${iCanSingA(rainbow)[0]}; 
+    }
+
+  25%  {
+    background: ${ hexToRGB(iCanSingA(rainbow)[0], '.6') };
+    box-shadow:
+    inset 0 0 140px ${iCanSingA(rainbow)[1]},
+    inset 0 0 100px ${iCanSingA(rainbow)[1]}; 
+   }
+  50%  {
+    box-shadow:
+    inset 0 0 140px ${iCanSingA(rainbow)[1]},
+    inset 0 0 90px ${iCanSingA(rainbow)[1]};
+  }
+  50%  {
+    box-shadow:
+    inset 0 0 130px ${iCanSingA(rainbow)[1]},
+    inset 0 0 70px ${iCanSingA(rainbow)[1]};
+  }
+  100% {
+    background: ${ hexToRGB(iCanSingA(rainbow)[0], '.1') };
+
+    box-shadow:
+    inset 0 0 130px ${iCanSingA(rainbow)[0]},
+    inset 0 0 90px ${iCanSingA(rainbow)[0]}; 
+  }
+}
+`;
+
+
 // DataMap 
 
 const africa = keyframes`
@@ -215,4 +288,4 @@ const southamerica = keyframes`
   }
 `;
 
-export { jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, rotateDiscoBall, rotateDiscoBallMiddle, reflect, glowball, africa, asia, australia, europe, northamerica, southamerica };
+export { jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, rotateDiscoBall, rotateDiscoBallMiddle, reflect, glowball, discolight, africa, asia, australia, europe, northamerica, southamerica };

@@ -1,4 +1,5 @@
 import { css } from "frontity";
+import { discolight } from "../scenes/glamourmagic";
 
 const discoListStyle = css`
 
@@ -33,39 +34,69 @@ const discoListStyle = css`
 
   .thinglist {
     margin: 1rem auto;
-    padding: 1rem;
+    padding: .5rem;
     width: 100%;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    column-count: 1;
+    background: #ccc;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+    li {
+      margin: 0;
+      padding: .2rem .3rem .6rem;
+      min-height: 130px;
+      display: flex;
+      flex: 33%;
+      font-size: 1.3rem;
+      font-family: 'Pacifico', Georgia, cursive; 
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 15px #fff,
+                    0 0 20px #FF9900,
+                    0 0 35px #FF9900,
+                    0 0 40px #FF9900,
+                    0 0 50px #FF9900,
+                    0 0 75px #FF9900;
+  
+      background-color: #232b2b;
+      border: solid 1px #0e1111;
+
+      
+
+    }
+
+    li:nth-of-type(odd) {
+      animation: ${discolight} 4s ease-out infinite;
+      animation-direction: alternate;
+    }
+    li:nth-of-type(even) {
+      animation: ${discolight} 4s ease-out infinite;
+      animation-direction: alternate-reverse;
+
+    }
+    li:nth-of-type(2), li:nth-of-type(8) {
+      animation-delay: .3s;
+    }
+    li:nth-of-type(3), li:nth-of-type(9) {
+      animation-delay: .6s;
+    }
+    li:nth-of-type(4), li:nth-of-type(6) {
+      animation-delay: .9s;
+    }
+    li:nth-of-type(5), li:nth-of-type(7) {
+      animation-delay: 1.2s;
+    }
+
+
+
+
   }
 
-  .thinglist li {
-    margin: 3px;
-    padding: .2rem .3rem .6rem;
-    display: block;
-    font-size: 1.3rem;
-    font-family: 'Pacifico', Georgia, cursive; 
-    text-align: center;
 
-    min-height: 100px;
-    background-color: #fff;
-    border: solid 2px #fff;
-    box-shadow:
-        inset 60px 0 120px #f0f,  /* left magenta */
-        inset -60px 0 120px #0ff; /* right cyan */
-  }
-
-  .thinglist li:nth-of-type(odd) {
-
-      height: 100px;
-      background-color: #fff;
-      border: solid 2px #fff;
-      box-shadow:
-          inset 60px 0 120px #f0f,  /* left magenta */
-          inset -60px 0 120px #0ff; /* right cyan */
-  }
 
 
   .q-wrap {
