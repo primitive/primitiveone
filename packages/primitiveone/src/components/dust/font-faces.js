@@ -16,6 +16,8 @@ import { Global, css, connect } from "frontity";
 // Pacifico|
 // Playfair+Display:700|Slabo+27px
 
+// 'Playfair Display', Georgia, cursive;
+
 
 // Import your own font files.
 import heptaSlab from "../../fonts/hepta-slab/hepta-slab-v7-latin-500.woff2";

@@ -49,46 +49,53 @@ const discoListStyle = css`
       display: flex;
       flex: 33%;
       font-size: 1.3rem;
-      font-family: 'Pacifico', Georgia, cursive; 
+      font-family: 'Abril Fatface', Georgia, cursive; 
+      font-weight: 700;
       text-align: center;
       align-items: center;
       justify-content: center;
-      text-shadow: 0 0 5px #fff,
-                    0 0 10px #fff,
-                    0 0 15px #fff,
-                    0 0 20px #FF9900,
-                    0 0 35px #FF9900,
-                    0 0 40px #FF9900,
-                    0 0 50px #FF9900,
-                    0 0 75px #FF9900;
+      text-shadow:
+        1px 0 6px #fff,
+        1px 1px 0px #fff,
+        7px 4px 2px rgba(0,0,0,0.3);
   
       background-color: #232b2b;
-      border: solid 1px #0e1111;
-
-      
+      border: solid 1px rgb(12,17,43);
 
     }
 
     li:nth-of-type(odd) {
-      animation: ${discolight} 4s ease-out infinite;
+      animation: ${discolight} 6s ease-out infinite;
       animation-direction: alternate;
     }
     li:nth-of-type(even) {
-      animation: ${discolight} 4s ease-out infinite;
-      animation-direction: alternate-reverse;
+      animation: ${discolight} 6s ease-out infinite;
+      animation-direction: alternate;
 
     }
-    li:nth-of-type(2), li:nth-of-type(8) {
+    li:nth-of-type(2) {
       animation-delay: .3s;
     }
-    li:nth-of-type(3), li:nth-of-type(9) {
+    li:nth-of-type(3) {
       animation-delay: .6s;
     }
-    li:nth-of-type(4), li:nth-of-type(6) {
+    li:nth-of-type(4) {
       animation-delay: .9s;
     }
-    li:nth-of-type(5), li:nth-of-type(7) {
+    li:nth-of-type(5) {
       animation-delay: 1.2s;
+    }
+    li:nth-of-type(6) {
+      animation-delay: 1.5s;
+    }
+    li:nth-of-type(7) {
+      animation-delay: 1.8s;
+    }
+    li:nth-of-type(8) {
+      animation-delay: 2.1s;
+    }
+    li:nth-of-type(9) {
+      animation-delay: 2.4s;
     }
 
 
