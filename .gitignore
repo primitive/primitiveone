@@ -13,30 +13,12 @@
 *.swp
 *.vi
 *~
-*.sass-cache
-.hg
-.svn
-.csv
-.idea
 
-
-# OS or Editor files
-.DS_Store
-Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-nbproject
-sftp-config.json
-npm-debug.log
-yarn-error.log
 package-lock.json
-
 
 # Folders
 node_modules
-#build
+build
 packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders
