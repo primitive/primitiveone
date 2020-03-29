@@ -1,0 +1,167 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.42.1",
+  "hash": "32e73c11deda8c480de8",
+  "publicPath": "/static/",
+  "outputPath": "/Users/sknow/a/primitiveone-test/build/static",
+  "assetsByChunkName": {
+    "cpt-timeline": "cpt-timeline.module.js",
+    "list": "list.module.js",
+    "primitiveone": [
+      "primitiveone.module.js",
+      "primitiveone.56c85d9f500f9b011eea.hot-update.js"
+    ]
+  },
+  "assets": [
+    {
+      "name": "56c85d9f500f9b011eea.hot-update.json",
+      "size": 54,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "cpt-timeline.module.js",
+      "size": 31277,
+      "chunks": [
+        "cpt-timeline"
+      ],
+      "chunkNames": [
+        "cpt-timeline"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/frontity.svg",
+      "size": 2062,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/heart.svg",
+      "size": 6202,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/primitive.svg",
+      "size": 11176,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "images/wordpress.svg",
+      "size": 1627,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 45231,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "primitiveone.56c85d9f500f9b011eea.hot-update.js",
+      "size": 54296,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "primitiveone.module.js",
+      "size": 10222427,
+      "chunks": [
+        "primitiveone"
+      ],
+      "chunkNames": [
+        "primitiveone"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js",
+        "primitiveone.56c85d9f500f9b011eea.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "primitiveone": {
+      "chunks": [
+        "primitiveone"
+      ],
+      "assets": [
+        "primitiveone.module.js",
+        "primitiveone.56c85d9f500f9b011eea.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "cpt-timeline": {
+      "chunks": [
+        "cpt-timeline"
+      ],
+      "assets": [
+        "cpt-timeline.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
