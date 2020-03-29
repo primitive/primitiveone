@@ -5,14 +5,6 @@
       {
         "src": "package.json",
         "use": "@frontity/now"
-      },
-      {
-        "src": "build/server.js",
-        "use": "@now/node"
-      },
-      {
-        "src": "build/static/**/*",
-        "use": "@now/static"
       }
     ],
     "routes": [	
