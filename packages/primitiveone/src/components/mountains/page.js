@@ -41,9 +41,8 @@ const Page = ({ state, actions, libraries }) => {
             </Col>
           </header>
 
-          { /* sk-dev: data.id && 8===data.id && <DiscoBall /> */ }
+          { data.id && 8===data.id && <DiscoBall /> }
           
-
           <Row>
             <PageBody>
               <libraries.html2react.Component html={page.content.rendered} />
@@ -74,5 +73,4 @@ const PageBody = styled(Col)`
   padding-bottom: 2rem;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
-  
 `;

@@ -1,6 +1,9 @@
 import { css } from "frontity";
 import { discolight } from "../scenes/glamourmagic";
 
+// https://codepen.io/hxd/pen/aLpbh
+// DEV page
+
 const discoListStyle = css`
 
   h1 {
@@ -8,6 +11,7 @@ const discoListStyle = css`
     font-size: 4rem;
     text-align: center;
     overflow: hidden;
+    text-shadow: .15rem .15rem rgba(173, 216, 230, .5);
   }
 
   hr {
@@ -32,71 +36,80 @@ const discoListStyle = css`
         10px 0 80px #0ff;         /* outer right cyan */
   }
 
-  .thinglist {
-    margin: 1rem auto;
-    padding: .5rem;
-    width: 100%;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    background: #ccc;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-    li {
-      margin: 0;
-      padding: .2rem .3rem .6rem;
-      min-height: 130px;
+    .thinglist {
+      margin: 1rem auto;
+      padding: .5rem;
+      width: 100%;
+      list-style-type: none;
       display: flex;
-      flex: 33%;
-      font-size: 1.3rem;
-      font-family: 'Abril Fatface', Georgia, cursive; 
-      font-weight: 700;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      text-shadow:
-        1px 0 6px #fff,
-        1px 1px 0px #fff,
-        7px 4px 2px rgba(0,0,0,0.3);
-  
-      background-color: #232b2b;
-      border: solid 1px rgb(12,17,43);
+      flex-wrap: wrap;
+      
+      background: #ccc;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+                  0 0 40px rgba(0, 0, 0, 0.1) inset;
 
-    }
+                  
 
-    li:nth-of-type(odd) {
-      animation: ${discolight} 6s ease-out infinite;
-      animation-direction: alternate;
-    }
-    li:nth-of-type(even) {
-      animation: ${discolight} 6s ease-out infinite;
-      animation-direction: alternate;
 
-    }
-    li:nth-of-type(2) {
-      animation-delay: .3s;
-    }
-    li:nth-of-type(3) {
-      animation-delay: .6s;
-    }
-    li:nth-of-type(4) {
-      animation-delay: .9s;
-    }
-    li:nth-of-type(5) {
-      animation-delay: 1.2s;
-    }
-    li:nth-of-type(6) {
-      animation-delay: 1.5s;
-    }
-    li:nth-of-type(7) {
-      animation-delay: 1.8s;
-    }
-    li:nth-of-type(8) {
-      animation-delay: 2.1s;
-    }
-    li:nth-of-type(9) {
-      animation-delay: 2.4s;
-    }
+      li {
+        margin: 0;
+        padding: .2rem .3rem .6rem;
+        min-height: 130px;
+        display: flex;
+        flex: 33%;
+
+        font-size: 1.3rem;
+        font-family: 'Abril Fatface', Georgia, cursive; 
+        color: rgba(12,17,43,1);
+        font-weight: 700;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-shadow:
+          1px 0 6px #fff,
+          1px 1px 0px #fff,
+          7px 4px 2px rgba(0,0,0,0.3);
+    
+        background-color: #232b2b;
+        border: solid 1px rgb(12,17,43);
+
+      }
+
+      li:nth-of-type(odd) {
+        will-change: background, box-shadow;
+        animation: ${discolight} 5s ease-out infinite;
+        animation-direction: alternate;
+      }
+      li:nth-of-type(even) {
+        will-change: background, box-shadow;
+        animation: ${discolight} 5s ease-out infinite;
+        animation-direction: alternate;
+
+      }
+      li:nth-of-type(2) {
+        animation-delay: .2s;
+      }
+      li:nth-of-type(3) {
+        animation-delay: .4s;
+      }
+      li:nth-of-type(4) {
+        animation-delay: .6s;
+      }
+      li:nth-of-type(5) {
+        animation-delay: .8s;
+      }
+      li:nth-of-type(6) {
+        animation-delay: 1s;
+      }
+      li:nth-of-type(7) {
+        animation-delay: 1.2s;
+      }
+      li:nth-of-type(8) {
+        animation-delay: 2.4s;
+      }
+      li:nth-of-type(9) {
+        animation-delay: 2.6s;
+      }
 
 
 
@@ -220,8 +233,8 @@ const discoListStyle = css`
 // p2128: marketing
 // p2136: housekeeping
 
-/* Homepage */
-const page139 = css`
+/* Homepage: p139 */
+const pagehome = css`
   #page-139 {
     h3 {
       margin-bottom: 1.2rem;
@@ -245,7 +258,36 @@ const page139 = css`
 `;
 
 
-const page8 = css`
+
+/* Design Page: p8 */
+const pagedesign = css`
+#page-8 {
+  h1 {
+    padding: 2rem 0 2rem;
+    margin: 0 15% 1.5rem;
+    font-size: 4rem;
+    font-family: 'Abril Fatface', Georgia, cursive; 
+    color: rgba(12,17,43, .9);
+    text-shadow: -8px 1px 2px rgba(0,255,255, .4),
+                  8px -1px 2px rgba(255,0,255, .4);
+
+    &:after {
+      content: " ";
+      margin: .9rem auto .6rem;
+      width: 60%;
+      height: 5px;
+      display: block;
+      border-top: 2px solid black;
+      opacity: .8;
+      box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
+      background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+    }
+  }
+}
+
+`;
+
+const pageall = css`
 
 #page-1 a {
   color: #87af4e;
@@ -263,7 +305,7 @@ const page8 = css`
   text-align: left;
 }
 
-#page-8 h1,
+
 #page-1904 h1,
 #page-2102 h1,
 #page-2128 h1 {
@@ -271,7 +313,7 @@ const page8 = css`
   margin: 0 15% 1.5rem;
   font-size: 4rem;
 }
-#page-8 h1:after,
+
 #page-1904 h1:after,
 #page-2102 h1:after,
 #page-2128 h1:after {
@@ -293,8 +335,9 @@ const pageStyles = colors =>
   css([
     //elementBase(colors),
     discoListStyle,
-    page139,
-    page8
+    pagehome,
+    pagedesign,
+    pageall
   ]);
 
 export default pageStyles;

@@ -6,9 +6,11 @@ import { rotateDiscoBall, rotateDiscoBallMiddle, reflect, glowball } from "./gla
 
 const JungleDiscoBall = () => {
 
-  // plan disco
-  const radius = 50;
-  const squareSize = 6.5;
+  /* do disco planning */
+
+  // I want a ball 'so' big
+  const radius = 90;
+  const squareSize = 10;
   const prec = 19.55;
   const fuzzy = 0.001;
   const inc = (Math.PI - fuzzy) / prec;
@@ -24,21 +26,16 @@ const JungleDiscoBall = () => {
     let squaresThatFit = Math.floor(circumference / squareSize);
     let angleInc = (Math.PI * 2 - fuzzy) / squaresThatFit;
 
-    let fkey = 1;
-    for (var i = angleInc / 2 + fuzzy; i < (Math.PI * 2); i += angleInc) {
+    let i, fkey = 1;
+    for (i = angleInc / 2 + fuzzy; i < (Math.PI * 2); i += angleInc) {
 
       let tilebg;
-      if((t>1.3 && t<1.9) || (t<-1.3 && t>-1.9)) {
-        tilebg = randomColor("bright");
-      }
-      else {
-        tilebg = randomColor("any");
-      }
+      if((t>1.3 && t<1.9) || (t<-1.3 && t>-1.9)) { tilebg = randomColor("bright"); }
+      else { tilebg = randomColor("any"); }
       
-      let x = radius * Math.cos(i) * Math.sin(t);
-      let y = radius * Math.sin(i) * Math.sin(t);
-
-      let square = <Square
+      let x = radius * Math.cos(i) * Math.sin(t),
+      y = radius * Math.sin(i) * Math.sin(t),
+      square = <Square
           className="square"
           key={t+'-1-'+fkey}
           css={css`
@@ -108,7 +105,7 @@ const backgroundlinear = (top, bottom) => css`
   background: linear-gradient( to bottom,${top} 0%,${bottom} 100% );  
 `
 const backgroundradial = (top, bottom) => css`
-background: radial-gradient(${top},${bottom});  
+  background: radial-gradient(${top},${bottom});  
 `
 
 const Square = styled('div')`
@@ -139,7 +136,7 @@ const DiscoBallLight = styled.div`
   margin-left: -50px; 
   border-radius: 100%;
   background-color: white; 
-  box-shadow: 0 0 30px 8px rgba(231, 250, 140, .9);
+  box-shadow: 0 0 30px 8px rgba(0,255,255, .4);
 
 `;
 // https://encycolorpedia.com/f0fa8c
@@ -150,18 +147,21 @@ const DiscoBallMiddle = styled.div`
   border-radius: 100%;
   background-color: #111;
   position: absolute;
-  ${backgroundradial("#e7ef97", "#111")};
+  ${backgroundradial("rgba(0,255,255, .4)", "rgba(255,0,255, .4)")};
+
+  will-change: transform;
   animation: ${rotateDiscoBallMiddle} 18s linear infinite;
 `;
 
 const DiscoBall = styled.div`
   transform-style: preserve-3d;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   position: absolute;
   top: 50px;
   left: 50%;
   margin-left: -50px;
+  will-change: transform;
   animation: ${rotateDiscoBall} 18s linear infinite;
 `;
 

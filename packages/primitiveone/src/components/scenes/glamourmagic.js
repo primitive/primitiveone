@@ -222,11 +222,11 @@ const discolight = keyframes`
     inset 0 0 70px ${iCanSingA(rainbow)[1]};
   }
   100% {
-    background: ${ hexToRGB(iCanSingA(rainbow)[0], '.1') };
+    background: ${ hexToRGB(iCanSingA(rainbow)[2], '.5') };
 
     box-shadow:
-    inset 0 0 130px ${iCanSingA(rainbow)[0]},
-    inset 0 0 90px ${iCanSingA(rainbow)[0]}; 
+    inset 0 0 130px ${iCanSingA(rainbow)[2]},
+    inset 0 0 90px ${iCanSingA(rainbow)[2]}; 
   }
 }
 `;
