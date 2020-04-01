@@ -250,7 +250,7 @@ const pagedesign = css`
     text-shadow: -8px 1px 2px rgba(0,255,255, .4),
                   8px -1px 2px rgba(255,0,255, .4);
 
-    background: rgba(0,0,0,.5),;
+    background: rgba(255,255,255,.5);
 
     &:after {
       content: " ";
