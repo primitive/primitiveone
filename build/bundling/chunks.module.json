@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "6c7a9abe553aa1fb614f",
+  "hash": "eaae1c86b47239768a72",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/a/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -10,21 +10,10 @@
     "list": "list.module.js",
     "primitiveone": [
       "primitiveone.module.js",
-      "primitiveone.14af73af1ddbf32611e6.hot-update.js"
+      "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
     ]
   },
   "assets": [
-    {
-      "name": "14af73af1ddbf32611e6.hot-update.json",
-      "size": 54,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
     {
       "name": "cpt-timeline.module.js",
       "size": 31277,
@@ -35,6 +24,17 @@
         "cpt-timeline"
       ],
       "info": {},
+      "emitted": false
+    },
+    {
+      "name": "fb96db0bf8e7b9d3c245.hot-update.json",
+      "size": 54,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
       "emitted": false
     },
     {
@@ -82,8 +82,8 @@
       "emitted": false
     },
     {
-      "name": "primitiveone.14af73af1ddbf32611e6.hot-update.js",
-      "size": 57830,
+      "name": "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js",
+      "size": 79773,
       "chunks": [
         "primitiveone"
       ],
@@ -98,7 +98,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 10225961,
+      "size": 10243735,
       "chunks": [
         "primitiveone"
       ],
@@ -117,7 +117,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.14af73af1ddbf32611e6.hot-update.js"
+        "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -130,7 +130,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.14af73af1ddbf32611e6.hot-update.js"
+        "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
       ],
       "children": {},
       "childAssets": {}

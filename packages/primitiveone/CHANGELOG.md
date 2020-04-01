@@ -1,6 +1,6 @@
 # Change Log
 
-All notable changes to this project and some odd comments may be documented in this file.
+All notable changes to this project and some odd comments may be documented here.
 
 Very, very loosly following [Conventional Commits](https://conventionalcommits.org) guidelines.
 
@@ -17,56 +17,44 @@ Very, very loosly following [Conventional Commits](https://conventionalcommits.o
 // https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
 // https://wp.primitivedigital.uk/wp-json/acf/v3/timelines
 
-// https://github.com/segunadebayo/chakra-ui
 
 ## WIP
+
+- T: fade in lazy loaded images
+- T: Google Analitics: Review and implement package when released
+- T: Research conditional loading of various UI cores + theme
+- T: Set base CSS to use none/twentytwenty/bootstrap
 
 - Q: benefits of useEffect vs self-invoking
 - Q: why favour function components over class components
 - Q: why favour .js over .jsx
 - Q: why favour typescript
 - Q: why favour styled vars after exports
+- Q: why favour loadable, conditional
 
-- Google Analitics: Review and implement package when released
+- 
 
 
 ## History
 
-1.0.12 > Major Update (March 12, 2020):
-- Update theme project structure to work with templating/config (views/blocks/elements)
-- Refine and Split Code
-- - Remove CSS classes whereever possible.
-- - Use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
-- - Research conditional loading of various UI cores + theme
+1.1.0 > Major Update (April 01, 2020):
+- Fixed full URI redirects 
+- Server clean up
+- Deploy new CDN and Edge Caching
 
-- Emotion and styled components
-// https://stackoverflow.com/questions/51748396/composition-of-react-emotion-and-external-css-eg-bootstrap-classes
-// https://www.sitepoint.com/integrating-bootstrap-with-react/
-// https://codesandbox.io/s/xoxw25nn84
-// https://emotion.sh/docs/introduction
-// https://emotion.sh/docs/theming
-// https://github.com/styled-system/styled-system
-// https://blog.alexdevero.com/introduction-styled-components/
-
-- Loadable components
-// https://github.com/gregberge/loadable-components
-// https://css-tricks.com/using-react-loadable-for-code-splitting-by-components-and-routes/
-// https://levelup.gitconnected.com/decreasing-webpack-bundle-size-with-conditional-imports-f8bb94db8195
-// https://stackoverflow.com/questions/35914712/es6-conditional-dynamic-import-statements
-
-- Keyframe Animation with emotion: https://docs.frontity.org/learning-frontity/styles#keyframes
-// https://emotion.sh/docs/keyframes
-
-- Using sass/less or frameworks: https://community.frontity.org/t/use-css-or-scss-instead-of-emotion/451/9
-// https://github.com/emotion-js/emotion/issues/1416
-// https://github.com/bwarner/emotion-bootstrap
-// https://github.com/bwarner/emotion-react-bootstrap
-
+- Update project structure to work with templating/config (views/blocks/elements)
+- - Reduce CSS classes and global styles
+- - New views / mountains
+- - New content block components / rocks
+- - New animated content block / scenes
+- - New cpt/taxonomy components 
+- - Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
+- - 
 
 - Intergrate New Frontity Features:
 - - Custom Post Types and Taxonomies
 - - - Added some custom post types / taxonomies content to wp
-- - - Done via plugins ACF+CPT UI (mainly as I've not modified functions.php at all yet)
+- - - Done via plugins ACF+CPT UI (I've not modified functions.php at all yet)
 
 - - Switch/router plus hi-jacked some code updates from the twentytwenty theme
 
