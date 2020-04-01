@@ -9,7 +9,7 @@ import Footer from "../rocks/footer";
 import Home from './page-home';
 import Post from "./post";
 import Page from "./page";
-import Posts from "../rocks/postlist";
+import Posts from "./post-list";
 
 //import Page404 from "./page404";
 import PageError from "./page-error";
