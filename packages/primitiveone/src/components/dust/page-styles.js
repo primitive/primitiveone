@@ -7,110 +7,76 @@ import { discolight } from "../scenes/glamourmagic";
 const discoListStyle = css`
 
   h1 {
-    padding: 2rem;
-    font-size: 4rem;
     text-align: center;
     overflow: hidden;
     text-shadow: .15rem .15rem rgba(173, 216, 230, .5);
   }
 
   hr {
+    display: block;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    display: block;
     clear:both;
   }
 
-  .glowball {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-shadow:
-        inset 0 0 50px #fff,      /* inner white */
-        inset 20px 0 80px #f0f,   /* inner left magenta short */
-        inset -20px 0 80px #0ff,  /* inner right cyan short */
-        inset 20px 0 300px #f0f,  /* inner left magenta broad */
-        inset -20px 0 300px #0ff, /* inner right cyan broad */
-        0 0 50px #fff,            /* outer white */
-        -10px 0 80px #f0f,        /* outer left magenta */
-        10px 0 80px #0ff;         /* outer right cyan */
-  }
-
-    .thinglist {
-      margin: 1rem auto;
-      padding: .5rem;
-      width: 100%;
-      list-style-type: none;
-      display: flex;
-      flex-wrap: wrap;
-      
-      background: #ccc;
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
-                  0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-                  
-
-
-      li {
-        margin: 0;
-        padding: .2rem .3rem .6rem;
-        min-height: 130px;
-        display: flex;
-        flex: 33%;
-
-        font-size: 1.3rem;
-        font-family: 'Abril Fatface', Georgia, cursive; 
-        color: rgba(12,17,43,1);
-        font-weight: 700;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        text-shadow:
-          1px 0 6px #fff,
-          1px 1px 0px #fff,
-          7px 4px 2px rgba(0,0,0,0.3);
+  .thinglist {
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 90%;
+    flex-wrap: wrap;
+    list-style-type: none;
     
-        background-color: #232b2b;
-        border: solid 1px rgb(12,17,43);
+    background: #ccc;
+    border-radius: .3rem;
+    box-shadow: 0 0 3px rgba(0,0,0,0.6),
+                0 19px 38px rgba(0,0,0,0.30),
+                0 15px 12px rgba(0,0,0,0.22),
+                inset 0 0 6px rgba(0,0,0,0.3);
 
-      }
+    li {
+      display: flex;
+      margin: 0;
+      padding: .2rem .3rem .6rem;
+      min-height: 130px;
+      flex: 33%;
 
-      li:nth-of-type(odd) {
-        will-change: background, box-shadow;
-        animation: ${discolight} 5s ease-out infinite;
-        animation-direction: alternate;
-      }
-      li:nth-of-type(even) {
-        will-change: background, box-shadow;
-        animation: ${discolight} 5s ease-out infinite;
-        animation-direction: alternate;
+      font-size: 1.3rem;
+      font-family: 'Abril Fatface', Georgia, cursive; 
+      font-weight: 700;
+      color: rgba(12,17,43,1);
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      text-shadow:
+        1px 0 6px #fff,
+        1px 1px 0px #fff,
+        7px 4px 2px rgba(0,0,0,0.3);
+  
+      background-color: #232b2b;
+      border: solid 2px rgb(12,17,43);
+    }
 
-      }
-      li:nth-of-type(2) {
-        animation-delay: .2s;
-      }
-      li:nth-of-type(3) {
-        animation-delay: .4s;
-      }
-      li:nth-of-type(4) {
-        animation-delay: .6s;
-      }
-      li:nth-of-type(5) {
-        animation-delay: .8s;
-      }
-      li:nth-of-type(6) {
-        animation-delay: 1s;
-      }
-      li:nth-of-type(7) {
-        animation-delay: 1.2s;
-      }
-      li:nth-of-type(8) {
-        animation-delay: 2.4s;
-      }
-      li:nth-of-type(9) {
-        animation-delay: 2.6s;
-      }
+    li:nth-of-type(odd) {
+      /* will-change: background, box-shadow; */
+      animation: ${discolight} 5s ease-out infinite;
+      animation-direction: alternate;
+    }
+    li:nth-of-type(even) {
+      /* will-change: background, box-shadow; */
+      animation: ${discolight} 5s ease-out infinite;
+      animation-direction: alternate;
 
+    }
+
+    li:nth-of-type(2) { animation-delay: .2s; }
+    li:nth-of-type(3) { animation-delay: .4s; }
+    li:nth-of-type(4) { animation-delay: .6s; }
+    li:nth-of-type(5) { animation-delay: .8s; }
+    li:nth-of-type(6) { animation-delay: 1s; }
+    li:nth-of-type(7) { animation-delay: 1.2s; }
+    li:nth-of-type(8) { animation-delay: 1.4s; }
+    li:nth-of-type(9) { animation-delay: 1.6s; }
 
 
 
@@ -203,7 +169,7 @@ const discoListStyle = css`
   
 
   @media screen and (min-width: 576px) {
-    .thinglist {
+    .split-col {
       column-count: 2;
     }
   }
@@ -211,6 +177,8 @@ const discoListStyle = css`
   @media screen and (min-width: 768px) {
     .thinglist {
       width: 80%;
+    }
+    .split-col {
       column-count: 2;
     }
     .q-wrap {
@@ -219,7 +187,7 @@ const discoListStyle = css`
   }
 
   @media screen and (min-width: 992px) {
-    .thinglist {
+    .split-col {
       column-count: 2;
     }
   }
@@ -262,6 +230,17 @@ const pagehome = css`
 /* Design Page: p8 */
 const pagedesign = css`
 #page-8 {
+
+  background: linear-gradient(to bottom, rgba(12, 17, 43, 0.0), rgba(12, 17, 43, 0.5)),
+              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock.png) repeat fixed bottom;
+
+
+
+  .thinglist {
+    background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png);
+    background-size: contain;
+  }
+
   h1 {
     padding: 2rem 0 2rem;
     margin: 0 15% 1.5rem;
@@ -271,10 +250,23 @@ const pagedesign = css`
     text-shadow: -8px 1px 2px rgba(0,255,255, .4),
                   8px -1px 2px rgba(255,0,255, .4);
 
+    background: rgba(0,0,0,.5),;
+
     &:after {
       content: " ";
       margin: .9rem auto .6rem;
       width: 60%;
+      height: 5px;
+      display: block;
+      border-top: 2px solid black;
+      opacity: .8;
+      box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
+      background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+    }
+    &::before {
+      content: " ";
+      margin: 2rem auto .6rem;
+      width: 40%;
       height: 5px;
       display: block;
       border-top: 2px solid black;

@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "eaae1c86b47239768a72",
+  "hash": "5cceb2f2015556cbf4a0",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/a/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -10,10 +10,21 @@
     "list": "list.module.js",
     "primitiveone": [
       "primitiveone.module.js",
-      "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
+      "primitiveone.bcb395a73f7ce6e6b9fc.hot-update.js"
     ]
   },
   "assets": [
+    {
+      "name": "bcb395a73f7ce6e6b9fc.hot-update.json",
+      "size": 54,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
     {
       "name": "cpt-timeline.module.js",
       "size": 31277,
@@ -24,17 +35,6 @@
         "cpt-timeline"
       ],
       "info": {},
-      "emitted": false
-    },
-    {
-      "name": "fb96db0bf8e7b9d3c245.hot-update.json",
-      "size": 54,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
       "emitted": false
     },
     {
@@ -82,8 +82,8 @@
       "emitted": false
     },
     {
-      "name": "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js",
-      "size": 79773,
+      "name": "primitiveone.bcb395a73f7ce6e6b9fc.hot-update.js",
+      "size": 75166,
       "chunks": [
         "primitiveone"
       ],
@@ -98,7 +98,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 10243735,
+      "size": 10246955,
       "chunks": [
         "primitiveone"
       ],
@@ -117,7 +117,7 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
+        "primitiveone.bcb395a73f7ce6e6b9fc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -130,12 +130,22 @@
       ],
       "assets": [
         "primitiveone.module.js",
-        "primitiveone.fb96db0bf8e7b9d3c245.hot-update.js"
+        "primitiveone.bcb395a73f7ce6e6b9fc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
     },
     "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "rocks-postlist-list": {
       "chunks": [
         "list"
       ],
