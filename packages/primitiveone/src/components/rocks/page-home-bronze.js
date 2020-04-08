@@ -3,6 +3,7 @@ import { connect, styled, css } from "frontity";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Frame from "../pebbles/frame";
 import Image from "@frontity/components/image";
+import CTA from "./button-fancy";
 import { jump, animatedgradient } from "../scenes/glamourmagic";
 
 const Bronze = ({ state }) => {
@@ -32,7 +33,7 @@ const Bronze = ({ state }) => {
                   alt={display.title1}
                   src={display.imagesrc1}
                   className={"img-fluid"}
-                  //srcSet={srcset}
+                //srcSet={srcset}
                 />
 
               </StyledFrame>
@@ -52,6 +53,11 @@ const Bronze = ({ state }) => {
               </StyledFrame>
             </Col>
 
+          </Row>
+          <Row>
+            <Col className="align-content-center">
+              <CTA />
+            </Col>
           </Row>
         </Container>
 
@@ -96,7 +102,8 @@ const Bronze = ({ state }) => {
 
       </PromoTwo>
 
-    </StyledSection>)
+    </StyledSection>
+  )
 };
 
 export default connect(Bronze);
