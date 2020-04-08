@@ -26,7 +26,9 @@ const SocialSection = ({ state }) => {
   return (
     <section css={css`
       background-color: ivory;
-      margin: 0
+      margin: 0;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
     `}>
 
       <Container>

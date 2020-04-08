@@ -36,7 +36,7 @@ const FeaturedMedia = ({ state, id, className }) => {
 export default connect(FeaturedMedia);
 
 const Container = styled.div`
-  margin-top: 16px;
+  margin-top: 1rem;
   height: 400px;
 `;
 

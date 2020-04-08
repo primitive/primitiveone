@@ -1,14 +1,10 @@
 import { css } from "frontity";
 import { discolight } from "../scenes/glamourmagic";
 
-// https://codepen.io/hxd/pen/aLpbh
-// DEV page
-
 const discoListStyle = css`
 
   h1 {
     text-align: center;
-    overflow: hidden;
     text-shadow: .15rem .15rem rgba(173, 216, 230, .5);
   }
 
@@ -57,12 +53,12 @@ const discoListStyle = css`
       border: solid 2px rgb(12,17,43);
     }
 
-    li:nth-of-type(odd) {
+    li:nth-of-type(20) {
       /* will-change: background, box-shadow; */
       animation: ${discolight} 5s ease-out infinite;
       animation-direction: alternate;
     }
-    li:nth-of-type(even) {
+    li:nth-of-type(21) {
       /* will-change: background, box-shadow; */
       animation: ${discolight} 5s ease-out infinite;
       animation-direction: alternate;
@@ -78,8 +74,6 @@ const discoListStyle = css`
     li:nth-of-type(8) { animation-delay: 1.4s; }
     li:nth-of-type(9) { animation-delay: 1.6s; }
 
-
-
   }
 
 
@@ -91,10 +85,8 @@ const discoListStyle = css`
     position : relative; 
     width : 80%; 
   } 
-  .q-wrap p {
-    margin : 0; 
-    padding : 0; 
-  }
+  .q-wrap p { margin : 0; padding : 0; }
+
   .q-wrap blockquote {
     margin : 0; 
     padding : 0; 
@@ -109,12 +101,9 @@ const discoListStyle = css`
     font-style : normal;
     font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   } 
-  .q-style-1 blockquote {
-    border-left: 4px solid rgba(135, 175,	78, .8) !important;
-  }
-  .q-style-2 blockquote {
-    border-left: 4px solid rgba(235, 150, 108, 0.8) !important;
-  } 
+  .q-style-1 blockquote { border-left: 4px solid rgba(135, 175,	78, .8) !important; }
+  .q-style-2 blockquote { border-left: 4px solid rgba(235, 150, 108, 0.8) !important; } 
+
   .q-style-1 blockquote:after, .q-style-2 blockquote:after {
       background: none repeat scroll 0 0 rgba(135, 175,	78, 0.8);
       border-radius: 50% 50% 50% 50%;
@@ -132,7 +121,7 @@ const discoListStyle = css`
       top: 0;
       width: 130px;
   }
-  .q-style-1 blockquote:before, .q-style-2 blockquote:before {
+  .q-style-1 blockquote::before, .q-style-2 blockquote::before {
       border-left: 5px solid rgba(135, 175,	78, .1) !important;
       border-radius: 50% 50% 50% 50%;
       content: "";
@@ -146,7 +135,7 @@ const discoListStyle = css`
   .q-style-2 blockquote:after {
     background: none repeat scroll 0 0 rgba(235, 150, 108, 0.8);
   }
-  .q-style-2 blockquote:before {
+  .q-style-2 blockquote::before {
     border-left: 5px solid rgba(235, 150, 108, 0.1) !important;
   }
   .q-style-1 blockquote p,
@@ -209,7 +198,7 @@ const pagehome = css`
       font-weight: bold;
       color: rgba(12, 17, 43, 0.9);
 
-      &:after {
+      &::after {
         content: " ";
         margin: 1.2rem auto 0 0;
         width: 5rem;
@@ -218,41 +207,109 @@ const pagehome = css`
         background: rgba(135, 175,	78, .8) !important;
       }
 
-      &:nth-of-type(even):after {
+      &:nth-of-type(even)::after {
         background: rgba(235, 150, 108, .8) !important;
       }
     }
   }
 `;
 
-
-
 /* Design Page: p8 */
 const pagedesign = css`
-#page-8 {
+  #page-8 {
 
-  background: linear-gradient(to bottom, rgba(12, 17, 43, 0.0), rgba(12, 17, 43, 0.5)),
-              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock.png) repeat fixed bottom;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(12, 17, 43, 0.6)),
+                url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
+                background-size: 400px;
+                
+
+    .thinglist {
+      background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png);
+
+    }
+
+    h1 {
+      width: 90%;
+      padding: 2rem 0;
+      margin: 1rem auto;
+
+      font-family: 'Abril Fatface', Georgia, cursive; 
+      font-size: 4.3rem;
+      color: rgba(12,17,43, .9);
+      text-shadow: -8px 1px 2px rgba(0,255,255, .4),
+                    8px -1px 2px rgba(255,0,255, .4);
 
 
+      &::after {
+        content: " ";
+        margin: .9rem auto .6rem;
+        width: 60%;
+        height: 5px;
+        display: block;
+        border-top: 2px solid black;
+        opacity: .8;
+        box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
+        background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+      }
+      &::before {
+        content: " ";
+        margin: .6rem auto .6rem;
+        width: 40%;
+        height: 5px;
+        display: block;
+        border-top: 2px solid black;
+        opacity: .8;
+        box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
+        background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+      }
+    }
 
+    .list-wrap {
+      margin : 5px 0 40px; 
+      padding : 10px 20px 20px; 
+      position : relative; 
+      width : 30%; 
+      float: left;
+    } 
+
+    .q-wrap {
+      margin : 5px 0 40px; 
+      padding : 10px 20px 20px; 
+      position : relative; 
+      width : 70%; 
+      float: right;
+    } 
+
+    
+  }
+`;
+
+// https://codepen.io/hxd/pen/aLpbh
+
+/* Development Page: p1904 */
+const pagedev = css`
+#page-1904 {
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(12, 17, 43, 0.6)),
+              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
+              background-size: 400px;
+              
   .thinglist {
-    background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png);
-    background-size: contain;
+    background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/brownrock.png);
   }
 
   h1 {
-    padding: 2rem 0 2rem;
-    margin: 0 15% 1.5rem;
-    font-size: 4rem;
+    width: 90%;
+    padding: 2rem 0;
+    margin: 1rem auto;
+
     font-family: 'Abril Fatface', Georgia, cursive; 
     color: rgba(12,17,43, .9);
     text-shadow: -8px 1px 2px rgba(0,255,255, .4),
                   8px -1px 2px rgba(255,0,255, .4);
 
-    background: rgba(255,255,255,.5);
 
-    &:after {
+    &::after {
       content: " ";
       margin: .9rem auto .6rem;
       width: 60%;
@@ -265,7 +322,7 @@ const pagedesign = css`
     }
     &::before {
       content: " ";
-      margin: 2rem auto .6rem;
+      margin: .6rem auto .6rem;
       width: 40%;
       height: 5px;
       display: block;
@@ -306,9 +363,9 @@ const pageall = css`
   font-size: 4rem;
 }
 
-#page-1904 h1:after,
-#page-2102 h1:after,
-#page-2128 h1:after {
+#page-1904 h1::after,
+#page-2102 h1::after,
+#page-2128 h1::after {
   content: " ";
   margin-top: .6rem;
   width: 100%;
