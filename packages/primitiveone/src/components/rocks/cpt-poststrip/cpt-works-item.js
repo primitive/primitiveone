@@ -58,6 +58,7 @@ const StyledImage = styled(ACFMedia)`
   object-fit: cover;
   border-top-left-radius: calc(.25rem - 1px);
   border-top-right-radius: calc(.25rem - 1px);
+  overflow: hidden;
 `;
 
 const Title = styled.h4`
