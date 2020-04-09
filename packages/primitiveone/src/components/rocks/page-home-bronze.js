@@ -55,7 +55,7 @@ const Bronze = ({ state }) => {
 
           </Row>
           <Row>
-            <Col className="align-content-center">
+            <Col className="align-content-center pt-5 pb-0">
               <CTA />
             </Col>
           </Row>
@@ -97,6 +97,11 @@ const Bronze = ({ state }) => {
 
             </Col>
 
+          </Row>
+          <Row>
+            <Col className="align-content-center pt-5 pb-3">
+              <CTA />
+            </Col>
           </Row>
         </Container>
 
@@ -298,7 +303,7 @@ const PromoTwo = styled.div`
       padding: .1rem .3rem;
       font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
       font-size: 1.8rem;
-      line-height: 1.5;
+      line-height: 1.6;
       list-style: none;
       color: #212529;
       text-shadow: 1px 1px 0 rgba(171,207,117, 0.6);

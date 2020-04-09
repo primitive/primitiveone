@@ -1,16 +1,13 @@
 import React from "react";
 import { connect, styled } from "frontity";
 import Link from "../pebbles/link";
-import { Container, Row, Col } from "react-bootstrap";
 
 const ButtonFancy = ({ state }) => {
-
-
 
   return (
     <StyledButton>
       <StyledLink link="/web-design/">
-        See More
+        Find out More
         <div className="ring one"></div>
         <div className="ring two"></div>
         <div className="ring three"></div>
@@ -23,7 +20,6 @@ const ButtonFancy = ({ state }) => {
 export default connect(ButtonFancy);
 
 
-
 const color = {
   palewhite: "#f6f6f6"
 };
@@ -31,13 +27,9 @@ const color = {
 const StyledButton = styled.div`
   display: block;
   padding: 30px;
-  width: 6rem;
-  height: 6rem;
-  color: ${color.palewhite};
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-
+  width: 260px;
+  height: 120px;
+  
   position: relative;
   top: 50%;
   left: 50%;
@@ -64,26 +56,28 @@ const StyledButton = styled.div`
   }
 
   &:hover .one{
-    transform: perspective(500px) translate3d(-90px, -50px,150px);
+    transform: perspective(500px) translate3d(-90px, -50px,200px);
     opacity: 1;
   }
   &:hover .two{
+    background: rgb(215, 243, 109);
     transform: perspective(800px) translate3d(-130px, 50px,180px);
     opacity: 0.6;
  }
-  &:hover .three{
+  &:hover .three {
     transform: perspective(800px) translate3d(130px, 50px,30px);
     opacity: 0.2;
  }
  &:hover .four{
-    transform: perspective(800px) translate3d(130px, -120px,80px);
+    background: rgb(215, 243, 109);
+    transform: perspective(800px) translate3d(80px, -90px,80px);
     opacity: 0.9;
  }
 
   &::before{
     position: absolute;
     top: -40px;
-    left:-6px;
+    left: -12px;
     width: 160px;
     height: 160px;
     border: solid 1px #fff;
@@ -121,5 +115,20 @@ const StyledButton = styled.div`
 const StyledLink = styled(Link)`
   display: block;
   text-decoration: none;
-  text-wrap: none;
+  word-wrap: none;
+  white-space:nowrap;
+
+  font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #212529;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 1px 1px 0 rgba(215, 243, 109, 0.2);
+
+  &:hover {
+    color: #212529;
+    text-decoration: none;
+    text-shadow: 2px 1px 0 rgba(215, 243, 109, 0.6);
+  }
 `;

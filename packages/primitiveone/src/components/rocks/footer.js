@@ -251,6 +251,7 @@ const FooterColophon = styled.div`
   margin-top: 0;
   padding: 3rem 0 1rem;
   background-color: #87635C;
+  background: linear-gradient(to bottom,  #87635c 60%,#7b5a54 100%);
 
   color: #D4AEA6;
   font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
