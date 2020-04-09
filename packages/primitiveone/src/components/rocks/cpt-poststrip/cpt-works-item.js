@@ -56,6 +56,8 @@ const StyledLink = styled(Link)`
 const StyledImage = styled(ACFMedia)`
   display: block;
   object-fit: cover;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
 `;
 
 const Title = styled.h4`
