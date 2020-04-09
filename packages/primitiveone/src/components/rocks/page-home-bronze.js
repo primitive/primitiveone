@@ -4,7 +4,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import Frame from "../pebbles/frame";
 import Image from "@frontity/components/image";
 import CTA from "./button-fancy";
-import { jump, animatedgradient } from "../scenes/glamourmagic";
+import { jump, animatedgradient, stripedbg } from "../scenes/glamourmagic";
 
 const Bronze = ({ state }) => {
 
@@ -26,7 +26,7 @@ const Bronze = ({ state }) => {
         <Container>
           <Row>
 
-            <Col lg="6">
+            <Col lg="6" className="nip">
               <StyledFrame className={display.imageFrame1} link="/">
 
                 <Image
@@ -68,8 +68,8 @@ const Bronze = ({ state }) => {
         <Container>
           <Row>
 
-            <Col lg={6}>
-              <StyledFrame className="fancy-frame" link="/">
+            <Col lg={6} className="nip">
+              <StyledFrame className={display.imageFrame2} link="/">
 
                 <Image
                   alt={display.title2}
@@ -113,39 +113,46 @@ export default connect(Bronze);
 
 const StyledSection = styled.section`
 
-  .frame {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .nip {
+    text-align: center;
   }
-
-  .frame ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  &:hover .frame h5 {
-    animation: ${jump} 1s ease infinite;
-  }
-
+  
   .fancy-frame {
-    margin-top: 2rem;
+    margin: 2rem auto;
     padding: 12px;
     display: inline-block;
     position: relative;
     transition: 1s ease-in-out;
   }
 
+  .frame {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   @media screen and (min-width: 992px) {
+    .nip {
+      text-align: right;
+    }
+    .fancy-frame { 
+      margin-top: 4rem; 
+    }
     .frame { 
-      padding-top: 2rem; 
-      padding-bottom: 2.5rem;
+      margin-top: 1rem; 
+      text-align: left;
     }
   }
 
 `;
 
 const TitleOne = styled.h5`
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: ivory;
 `;
@@ -157,44 +164,104 @@ const TitleTwo = styled.h5`
 `;
 
 const StyledFrame = styled(Frame)`
-  a {
-    &:hover {
-      text-decoration: none;
-    }
-  }
+  a { &:hover { text-decoration: none; } }
 `;
 
 const PromoOne = styled.div`
-  margin-top: 4rem;
-  padding: 3rem 1rem;
-  height: 100%;
-  background-color: #7A9E47;
-  text-align: center;
+  margin-top: 3rem;
+  padding: 4rem 1rem;
+  background-color: #7a9e47;
+  background: linear-gradient(to bottom,  #7a9e47 42%,#5e822c 100%); 
 
-  .fancy-frame { background: #fff; }
-  
-  &:hover .fancy-frame {
-    transition: 1s ease-in-out;
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    animation: ${animatedgradient} 3s ease alternate infinite;
-    background-size: 300% 300%;
+  .fancy-frame { 
+    background: linear-gradient(
+      -45deg, 
+      #9bc85a 25%, 
+      rgb(0, 165, 70) 25%, 
+      rgb(0, 165, 70) 50%, 
+      #9bc85a 50%, 
+      #9bc85a 75%, 
+      rgb(0, 165, 70) 75%, 
+      rgb(0, 165, 70));
+    background-size: 20px 20px;
+    background-position: 0 0;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+    /* end fancy-frame */
   }
 
-  li {
-    font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    list-style: none;
-    color: #212529;
+  .frame {
+  
+    h5 { 
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      position: relative;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+      &::after {
+        content: " ";
+        height: .3rem;
+        width: 100%;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        
+        background: linear-gradient(
+          -45deg, 
+          #9bc85a 25%, 
+          rgb(0, 165, 70) 25%, 
+          rgb(0, 165, 70) 50%, 
+          #9bc85a 50%, 
+          #9bc85a 75%, 
+          rgb(0, 165, 70) 75%, 
+          rgb(0, 165, 70)
+          );
+        background-size: 20px 20px;
+        background-position: 0 0;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    li {
+      margin: 0;
+      padding: .1rem .3rem;
+      font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      list-style: none;
+      color: #212529;
+      text-shadow: 1px 1px 0 rgba(171,207,117, 0.6);
+    }
+
+    /* end frame */
+  }
+
+
+  &:hover {
+    .fancy-frame {
+     animation: ${stripedbg} 1s linear infinite;
+    }
+    .frame h5::after {
+      animation: ${stripedbg} 1s linear infinite reverse;
+    }
+
+    /* end animation triggers */
   }
 
 `;
 
 const PromoTwo = styled.div`
   padding: 4rem 1rem;
-  height: 100%;
   background-color: ivory;
   text-align: center;
+
+  li {
+    font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 2;
+    list-style: none;
+    color: #212529;
+  }
 
   .fancy-frame { background: #87af4e; }
 
@@ -203,14 +270,6 @@ const PromoTwo = styled.div`
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     animation: ${animatedgradient} 3s ease alternate infinite;
     background-size: 300% 300%;
-  }
-
-  li {
-    font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    line-height: 2;
-    list-style: none;
-    color: #212529;
   }
 
 `;

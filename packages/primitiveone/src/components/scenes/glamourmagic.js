@@ -231,6 +231,12 @@ const discolight = keyframes`
 }
 `;
 
+const stripedbg = keyframes`
+	100% { 
+		background-position: 20px 0, 20px 0, 20px 0;
+	}
+`;
+
 
 // DataMap 
 
@@ -288,4 +294,4 @@ const southamerica = keyframes`
   }
 `;
 
-export { jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, rotateDiscoBall, rotateDiscoBallMiddle, reflect, glowball, discolight, africa, asia, australia, europe, northamerica, southamerica };
+export { jump, heartbeat, sonar, flash, pop, animatedgradient, underlinewoosh, grow, rotateDiscoBall, rotateDiscoBallMiddle, reflect, glowball, discolight, stripedbg, africa, asia, australia, europe, northamerica, southamerica };
