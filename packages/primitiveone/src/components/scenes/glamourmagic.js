@@ -11,13 +11,13 @@ const jump = keyframes`
     transform: translate3d(0,0,0);
   }
   40%, 43% {
-    transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -10px, 0);
   }
   70% {
-    transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -5px, 0);
   }
   90% {
-    transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-2px,0);
   }
 `;
 
@@ -46,14 +46,14 @@ const heartbeat = keyframes`
 // animation: sonar 1.5s infinite;
 const sonar = keyframes`
   0% {
-    @include transform(scale(.9));
+    transform(scale(.9));
   }
   70% {
-    @include transform(scale(1));
+    transform(scale(1));
     box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
   }
   100% {
-    @include transform(scale(.9));
+    transform(scale(.9));
     box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
   }
 `;

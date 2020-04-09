@@ -158,9 +158,10 @@ const TitleOne = styled.h5`
 `;
 
 const TitleTwo = styled.h5`
-  font-size: 4rem;
-  font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  font-family: 'Playfair Display';
   color: #7A9E47;
+  letter-spacing: -1px;
 `;
 
 const StyledFrame = styled(Frame)`
@@ -171,7 +172,7 @@ const PromoOne = styled.div`
   margin-top: 3rem;
   padding: 4rem 1rem;
   background-color: #7a9e47;
-  background: linear-gradient(to bottom,  #7a9e47 42%,#5e822c 100%); 
+  background: linear-gradient(to bottom,  #7a9e47 52%,#5e822c 100%); 
 
   .fancy-frame { 
     background: linear-gradient(
@@ -193,7 +194,8 @@ const PromoOne = styled.div`
   .frame {
   
     h5 { 
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.8rem;
+      padding: 5px;
       display: inline-block;
       position: relative;
       text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
@@ -203,7 +205,7 @@ const PromoOne = styled.div`
         height: .3rem;
         width: 100%;
         position: absolute;
-        top: 5rem;
+        top: 5.5rem;
         left: 0;
         
         background: linear-gradient(
@@ -239,9 +241,11 @@ const PromoOne = styled.div`
 
   &:hover {
     .fancy-frame {
-     animation: ${stripedbg} 1s linear infinite;
+      transition: 2s ease-out;
+      animation: ${stripedbg} 1s linear infinite;
     }
     .frame h5::after {
+      transition: 2s ease-out;
       animation: ${stripedbg} 1s linear infinite reverse;
     }
 
@@ -253,23 +257,74 @@ const PromoOne = styled.div`
 const PromoTwo = styled.div`
   padding: 4rem 1rem;
   background-color: ivory;
-  text-align: center;
+  background: linear-gradient(to top,  #7a9e47 42%,#5e822c 100%); 
 
-  li {
-    font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    line-height: 2;
-    list-style: none;
-    color: #212529;
+  .fancy-frame { 
+    background: linear-gradient(45deg, #abcf75, #4b6f1a);
+    background-size: 300% 300%;
+    background-position: 0 0;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+    /* end fancy-frame */
   }
 
-  .fancy-frame { background: #87af4e; }
+  .frame {
+  
+    h5 { 
+      margin-bottom: 1.8rem;
+      padding: 5px;
+      display: inline-block;
+      position: relative;
+      color: ivory;
+      text-shadow: 1px 1px 0 rgba(24,30,14, 0.3);
 
-  &:hover .fancy-frame {
-    transition: 1s ease-in-out;
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    animation: ${animatedgradient} 3s ease alternate infinite;
-    background-size: 300% 300%;
+      &::after {
+        content: " ";
+        height: .3rem;
+        width: 100%;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        
+        background: linear-gradient(45deg, #abcf75, #4b6f1a);
+
+        background-position: 0 0;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    li {
+      margin: 0;
+      padding: .1rem .3rem;
+      font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      list-style: none;
+      color: #212529;
+      text-shadow: 1px 1px 0 rgba(171,207,117, 0.6);
+
+      &:hover {
+        animation: ${jump} .6s 1;
+      }
+    }
+
+    /* end frame */
+  }
+
+
+  &:hover {
+    .fancy-frame {
+      transition: 10s ease-in-out;
+      animation: ${animatedgradient} 4s ease alternate infinite;
+      background-size: 300% 300%;
+    }
+    .frame h5::after {
+      transition: 2s ease-out;
+      animation: ${animatedgradient} 4s ease alternate infinite;
+      background-size: 300% 300%;
+    }
+
+    /* end animation triggers */
   }
 
 `;
