@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.42.1",
-  "hash": "f2328a21615d0b558701",
+  "hash": "bc5496c5a6a780c5c77b",
   "publicPath": "/static/",
   "outputPath": "/Users/sknow/a/primitiveone-test/build/static",
   "assetsByChunkName": {
@@ -69,7 +69,7 @@
     },
     {
       "name": "primitiveone.module.js",
-      "size": 10297518,
+      "size": 10368420,
       "chunks": [
         "primitiveone"
       ],
@@ -77,7 +77,8 @@
         "primitiveone"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true,
+      "isOverSizeLimit": true
     }
   ],
   "filteredAssets": 0,
