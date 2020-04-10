@@ -101,7 +101,7 @@ const discoListStyle = css`
     font-style : normal;
     font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   } 
-  .q-style-1 blockquote { border-left: 4px solid rgba(135, 175,	78, .8) !important; }
+  .q-style-1 blockquote { border-left: 4px solid rgba(135, 175,	78, .8);}
   .q-style-2 blockquote { border-left: 4px solid rgba(235, 150, 108, 0.8) !important; } 
 
   .q-style-1 blockquote:after, .q-style-2 blockquote:after {
@@ -218,14 +218,13 @@ const pagehome = css`
 const pagedesign = css`
   #page-8 {
 
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(12, 17, 43, 0.6)),
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
                 url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
                 background-size: 400px;
                 
 
     .thinglist {
       background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png);
-
     }
 
     h1 {
@@ -268,16 +267,166 @@ const pagedesign = css`
       margin : 5px 0 40px; 
       padding : 10px 20px 20px; 
       position : relative; 
-      width : 30%; 
+      width: 50%; 
       float: left;
+
+      text-align: center;
+
+      h2 {
+        position: relative;
+        font-family: 'Playfair Display'; 
+        color: #000;
+        font-size:  5rem;
+        line-height: 4.5rem;
+        letter-spacing: 2px;
+        font-weight: 400;
+        text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+        0px 1px 0 rgba(255,255,255, 0.6),
+        1px 0px 0 rgba(255,255,255, 0.6),
+        -1px -1px 0 rgba(255,255,255, 0.6),
+        -0px -1px 0 rgba(255,255,255, 0.6),
+        -1px -0px 0 rgba(255,255,255, 0.6);
+        
+        span {
+          width: 100%;
+          display: block;
+          font-size:  2rem;
+          color: #fff;
+          font-family: 'Pacifico';
+          text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+        }
+
+        &::before {
+          content: " ";
+          display: block;
+          width: 4rem;
+          height: 12rem;
+          position: absolute;
+          top: 2rem;
+          left: 1.5rem;
+          border-top: 1px solid #fff;
+          border-left: 1px solid #fff;
+          box-shadow: -2px -1px 2px rgba(0,255,255,.4), -1px -2px 2px rgba(255,0,255,.4);
+        }
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 3rem;
+        padding-top: 0;
+        font-size:  5rem;
+        line-height: 4.5rem;
+        letter-spacing: 2px;
+        color: #000;
+        text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+          0px 1px 0 rgba(255,255,255, 0.6),
+          1px 0px 0 rgba(255,255,255, 0.6),
+          -1px -1px 0 rgba(255,255,255, 0.6),
+          -0px -1px 0 rgba(255,255,255, 0.6),
+          -1px -0px 0 rgba(255,255,255, 0.6);
+
+        span {
+          width: 100%;
+          display: block;
+          font-size:  2rem;
+          color: #fff;
+          font-family: 'Pacifico';
+          text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+        }
+
+        &::after {
+          content: " ";
+          display: block;
+          width: 4rem;
+          height: 12rem;
+          position: absolute;
+          top: 6rem;
+          right: 1.5rem;
+          border-bottom: 1px solid #fff;
+          border-right: 1px solid #fff;
+          box-shadow: 2px 1px 2px rgba(0,255,255,.4), 1px 2px 2px rgba(255,0,255,.4);
+        }
+      }
+
+      ul {
+        margin: 2rem;
+        padding: 1rem;
+        background: rgba(255,255,255,0.5);
+        border: 2px solid #212529;
+      }
+
+      li {
+        margin: 0;
+        padding: .2rem .5rem;
+        font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        list-style: none;
+        color: #212529;
+        text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
+        
+      }
+      li:last-of-type {
+        padding: 1rem;
+        font-size: 1rem;
+        font-family: "Pacifico";
+      }
+
+      /* end list-wrap */
     } 
 
     .q-wrap {
-      margin : 5px 0 40px; 
+      margin : 9rem 0 40px; 
       padding : 10px 20px 20px; 
       position : relative; 
-      width : 70%; 
+      width : 50%; 
       float: right;
+
+      blockquote {
+        border-left: 4px solid rgba(1, 255, 137, 0.6) !important;
+
+        p {
+          padding: .5rem 0;
+          line-height: 4rem;
+          background: rgba(255,255,255,0.6);
+          /* box-shadow: 0 -6px 0 rgba(122, 95, 255, 0.8); */
+          box-shadow: 0 -6px 0  rgba(1, 255, 137, 0.6);
+          color: #212529;
+          white-space: pre-wrap;
+          text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+          border-width: 0.5rem 0;
+
+          span {
+            display: inline-block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -0.5rem;
+            right: 100%;
+            bottom: -0.5rem;
+            width: 0.5rem;
+          }
+
+
+        }
+
+        
+
+        cite {
+          font-size: 1.8rem;
+          color: rgba(1, 255, 137, 0.6);
+          text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        }
+      
+        &::after {
+          background: rgba(1, 255, 137, 0.6);
+        }
+      }
+
+      
     } 
 
     
