@@ -53,12 +53,12 @@ const discoListStyle = css`
       border: solid 2px rgb(12,17,43);
     }
 
-    li:nth-of-type(20) {
+    li:nth-of-type(odd) {
       /* will-change: background, box-shadow; */
       animation: ${discolight} 5s ease-out infinite;
       animation-direction: alternate;
     }
-    li:nth-of-type(21) {
+    li:nth-of-type(even) {
       /* will-change: background, box-shadow; */
       animation: ${discolight} 5s ease-out infinite;
       animation-direction: alternate;
@@ -348,8 +348,9 @@ const pagedesign = css`
       }
 
       ul {
-        margin: 2rem;
-        padding: 1rem;
+       /* margin: 2rem; */
+        margin: 1rem 1.5rem 0 5rem;
+        padding: 2rem 1rem;
         background: rgba(255,255,255,0.5);
         border: 2px solid #212529;
       }
@@ -358,8 +359,8 @@ const pagedesign = css`
         margin: 0;
         padding: .2rem .5rem;
         font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
-        font-size: 1.5rem;
-        line-height: 1.5;
+        font-size: 1.7rem;
+        line-height: 1.6;
         list-style: none;
         color: #212529;
         text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
@@ -535,6 +536,7 @@ const pageStyles = colors =>
     discoListStyle,
     pagehome,
     pagedesign,
+    pagedev,
     pageall
   ]);
 
