@@ -1,5 +1,5 @@
 import { css } from "frontity";
-import { discolight } from "../scenes/glamourmagic";
+import { discolight, animatedgradient } from "../scenes/glamourmagic";
 
 const discoListStyle = css`
 
@@ -222,10 +222,7 @@ const pagedesign = css`
                 url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
                 background-size: 400px;
                 
-
-    .thinglist {
-      background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png);
-    }
+    .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
 
     h1 {
       width: 90%;
@@ -238,7 +235,6 @@ const pagedesign = css`
       text-shadow: -8px 1px 2px rgba(0,255,255, .4),
                     8px -1px 2px rgba(255,0,255, .4);
 
-
       &::after {
         content: " ";
         margin: .9rem auto .6rem;
@@ -250,6 +246,7 @@ const pagedesign = css`
         box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
         background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
       }
+
       &::before {
         content: " ";
         margin: .6rem auto .6rem;
@@ -410,81 +407,639 @@ const pagedesign = css`
             bottom: -0.5rem;
             width: 0.5rem;
           }
-
-
         }
-
-        
 
         cite {
           font-size: 1.8rem;
-          color: rgba(1, 255, 137, 0.6);
-          text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+          color: #212529;
+          text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
         }
       
         &::after {
           background: rgba(1, 255, 137, 0.6);
         }
       }
-
-      
     } 
-
-    
   }
 `;
 
-// https://codepen.io/hxd/pen/aLpbh
 
 /* Development Page: p1904 */
 const pagedev = css`
 #page-1904 {
 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(12, 17, 43, 0.6)),
-              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
-              background-size: 400px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
+              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock.png) repeat fixed;
+              background-size: 300px;
               
-  .thinglist {
-    background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/brownrock.png);
-  }
+  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/lava.png); }
 
   h1 {
-    width: 90%;
+    width: 70%;
+    max-width: 900px;
     padding: 2rem 0;
     margin: 1rem auto;
 
-    font-family: 'Abril Fatface', Georgia, cursive; 
-    color: rgba(12,17,43, .9);
-    text-shadow: -8px 1px 2px rgba(0,255,255, .4),
-                  8px -1px 2px rgba(255,0,255, .4);
-
+    font-size: 4.5rem;
+    font-family: "Hepta Slab";
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 1px 0 #eee, 4px 3px 0 #707070;
 
     &::after {
       content: " ";
-      margin: .9rem auto .6rem;
-      width: 60%;
-      height: 5px;
+      margin-top: .9rem;
+      width: 100%;
+      height: 12px;
       display: block;
-      border-top: 2px solid black;
-      opacity: .8;
-      box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
-      background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
-    }
-    &::before {
-      content: " ";
-      margin: .6rem auto .6rem;
-      width: 40%;
-      height: 5px;
-      display: block;
-      border-top: 2px solid black;
-      opacity: .8;
-      box-shadow: -10px 2px 5px rgba(0,255,255, .4), 10px -2px 5px rgba(255,0,255, .4);
-      background-image: linear-gradient(90deg, rgba(255,0,255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+      border-top: 1px solid rgba(12,17,43,.6);
+      border-left: 1px solid rgba(12,17,43,.6);
+      box-shadow: 1px 1px 0 rgba(238, 238, 238, .6), 3px 2px 0 rgba(	112, 112, 112, .6);
+      background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
+      
+      /* animation: ${animatedgradient} 6s linear infinite;
+      animation-direction: alternate; */
     }
   }
+
+  .list-wrap {
+    margin : 5px 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width: 50%; 
+    float: left;
+    text-align: center;
+
+    h2 {
+      position: relative;
+      font-family: 'Playfair Display'; 
+      color: #000;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+      0px 1px 0 rgba(255,255,255, 0.6),
+      1px 0px 0 rgba(255,255,255, 0.6),
+      -1px -1px 0 rgba(255,255,255, 0.6),
+      -0px -1px 0 rgba(255,255,255, 0.6),
+      -1px -0px 0 rgba(255,255,255, 0.6);
+      
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::before {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        box-shadow: -2px -1px 2px rgba(0,255,255,.4), -1px -2px 2px rgba(255,0,255,.4);
+      }
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      padding-top: 0;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      color: #000;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+        0px 1px 0 rgba(255,255,255, 0.6),
+        1px 0px 0 rgba(255,255,255, 0.6),
+        -1px -1px 0 rgba(255,255,255, 0.6),
+        -0px -1px 0 rgba(255,255,255, 0.6),
+        -1px -0px 0 rgba(255,255,255, 0.6);
+
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::after {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 6rem;
+        right: 1.5rem;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        box-shadow: 2px 1px 2px rgba(0,255,255,.4), 1px 2px 2px rgba(255,0,255,.4);
+      }
+    }
+
+    ul {
+     /* margin: 2rem; */
+      margin: 1rem 1.5rem 0 5rem;
+      padding: 2rem 1rem;
+      background: rgba(255,255,255,0.5);
+      border: 2px solid #212529;
+    }
+
+    li {
+      margin: 0;
+      padding: .2rem .5rem;
+      font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.7rem;
+      line-height: 1.6;
+      list-style: none;
+      color: #212529;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
+      
+    }
+    li:last-of-type {
+      padding: 1rem;
+      font-size: 1rem;
+      font-family: "Pacifico";
+    }
+
+    /* end list-wrap */
+  } 
+
+  .q-wrap {
+    margin : 9rem 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width : 50%; 
+    float: right;
+
+    blockquote {
+      border-left: 4px solid rgba(122,95,255,0.8) !important;
+
+      p {
+        padding: .5rem 0;
+        line-height: 4rem;
+        background: rgba(255,255,255,0.6);
+        box-shadow: 0 -6px 0 rgba(122,95,255,0.8);
+        color: #212529;
+        white-space: pre-wrap;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+        border-width: 0.5rem 0;
+
+        span {
+          display: inline-block;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.5rem;
+          right: 100%;
+          bottom: -0.5rem;
+          width: 0.5rem;
+        }
+      }
+
+      cite {
+        font-size: 1.8rem;
+        color: #212529;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+      }
+    
+      &::after {
+        background: rgba(122,95,255,0.8);
+      }
+    }
+  } 
 }
 
 `;
+
+/* Data Page: p2102 */
+const pagedata = css`
+#page-2102 {
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
+              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall.png) repeat fixed;
+              background-size: 300px;
+              
+  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
+
+  h1 {
+    padding: 2rem 0 2rem;
+    margin: 0 15% 1.5rem;
+    color: rgba(12,17,43, .9);
+    font-size: 4rem;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    text-shadow: 2px 1px 0 #fff, -8px -8px 0 rgba(0,168,255,0.5), 8px 8px 0 rgba(255,0,180,0.5);
+
+    &::after {
+      content: " ";
+      margin-top: .6rem;
+      width: 100%;
+      height: 12px;
+      display: block;
+      border-top: 1px solid rgba(12,17,43,.6);
+      border-left: 1px solid rgba(12,17,43,.6);
+      background: linear-gradient(
+      -45deg, 
+      rgba(255,0,180,0.5) 25%, 
+      rgba(0,168,255,0.5) 25%, 
+      rgba(0,168,255,0.5) 50%, 
+      rgba(255,0,180,0.5) 50%, 
+      rgba(255,0,180,0.5) 75%, 
+      rgba(0,168,255,0.5) 75%, 
+      rgba(0,168,255,0.5));
+      background-size: 20px 20px;
+      background-position: 0 0;
+      box-shadow: 1px 1px 0 rgba(238, 238, 238, .6), 3px 2px 0 rgba(	112, 112, 112, .6);
+
+      /* animation: ${animatedgradient} 6s linear infinite;
+      animation-direction: alternate; */
+    }
+  }
+
+  .list-wrap {
+    margin : 5px 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width: 50%; 
+    float: left;
+    text-align: center;
+
+    h2 {
+      position: relative;
+      font-family: 'Playfair Display'; 
+      color: #000;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+      0px 1px 0 rgba(255,255,255, 0.6),
+      1px 0px 0 rgba(255,255,255, 0.6),
+      -1px -1px 0 rgba(255,255,255, 0.6),
+      -0px -1px 0 rgba(255,255,255, 0.6),
+      -1px -0px 0 rgba(255,255,255, 0.6);
+      
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::before {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        box-shadow: -2px -1px 2px rgba(0,255,255,.4), -1px -2px 2px rgba(255,0,255,.4);
+      }
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      padding-top: 0;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      color: #000;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+        0px 1px 0 rgba(255,255,255, 0.6),
+        1px 0px 0 rgba(255,255,255, 0.6),
+        -1px -1px 0 rgba(255,255,255, 0.6),
+        -0px -1px 0 rgba(255,255,255, 0.6),
+        -1px -0px 0 rgba(255,255,255, 0.6);
+
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::after {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 6rem;
+        right: 1.5rem;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        box-shadow: 2px 1px 2px rgba(0,255,255,.4), 1px 2px 2px rgba(255,0,255,.4);
+      }
+    }
+
+    ul {
+     /* margin: 2rem; */
+      margin: 1rem 1.5rem 0 5rem;
+      padding: 2rem 1rem;
+      background: rgba(255,255,255,0.5);
+      border: 2px solid #212529;
+    }
+
+    li {
+      margin: 0;
+      padding: .2rem .5rem;
+      font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.7rem;
+      line-height: 1.6;
+      list-style: none;
+      color: #212529;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
+      
+    }
+    li:last-of-type {
+      padding: 1rem;
+      font-size: 1rem;
+      font-family: "Pacifico";
+    }
+
+    /* end list-wrap */
+  } 
+
+  .q-wrap {
+    margin : 9rem 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width : 50%; 
+    float: right;
+
+    blockquote {
+      border-left: 4px solid rgba(0,168,255,0.6) !important;
+
+      p {
+        padding: .5rem 0;
+        line-height: 4rem;
+        background: rgba(255,255,255,0.6);
+        box-shadow: -3px -6px 0 rgba(0,168,255,0.6), 3px 3px 0 rgba(255,0,180,0.6);
+        color: #212529;
+        white-space: pre-wrap;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+        border-width: 0.5rem 0;
+
+        span {
+          display: inline-block;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.5rem;
+          right: 100%;
+          bottom: -0.5rem;
+          width: 0.5rem;
+        }
+      }
+
+      cite {
+        font-size: 1.8rem;
+        color: #212529;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+      }
+    
+      &::after {
+        background: rgba(0,168,255,0.7);
+      }
+    }
+  } 
+}
+
+`;
+
+/* Marketing Page: p2128 */
+const pagemarketing = css`
+#page-2128 {
+
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
+              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/duowall.png) repeat fixed;
+              background-size: 300px;
+              
+  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
+
+  h1 {
+    padding: 2rem 0 2rem;
+    margin: 0 15% 1.5rem;
+    color: rgba(12,17,43, .9);
+    font-size: 4rem;
+    font-family: "Hepta Slab";
+    font-weight: bold;
+    text-shadow: 2px 1px 0 #fff, -8px -8px 0 rgba(0,168,255,0.5), 8px 8px 0 rgba(255,0,180,0.5);
+
+    &::after {
+      content: " ";
+      margin-top: .6rem;
+      width: 100%;
+      height: 12px;
+      display: block;
+      border-top: 1px solid rgba(12,17,43,.6);
+      border-left: 1px solid rgba(12,17,43,.6);
+      background: linear-gradient(
+      -45deg, 
+      rgba(255,0,180,0.5) 25%, 
+      rgba(0,168,255,0.5) 25%, 
+      rgba(0,168,255,0.5) 50%, 
+      rgba(255,0,180,0.5) 50%, 
+      rgba(255,0,180,0.5) 75%, 
+      rgba(0,168,255,0.5) 75%, 
+      rgba(0,168,255,0.5));
+      background-size: 20px 20px;
+      background-position: 0 0;
+      box-shadow: 1px 1px 0 rgba(238, 238, 238, .6), 3px 2px 0 rgba(	112, 112, 112, .6);
+
+      /* animation: ${animatedgradient} 6s linear infinite;
+      animation-direction: alternate; */
+    }
+  }
+
+  .list-wrap {
+    margin : 5px 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width: 50%; 
+    float: left;
+    text-align: center;
+
+    h2 {
+      position: relative;
+      font-family: 'Playfair Display'; 
+      color: #000;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+      0px 1px 0 rgba(255,255,255, 0.6),
+      1px 0px 0 rgba(255,255,255, 0.6),
+      -1px -1px 0 rgba(255,255,255, 0.6),
+      -0px -1px 0 rgba(255,255,255, 0.6),
+      -1px -0px 0 rgba(255,255,255, 0.6);
+      
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::before {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 2rem;
+        left: 1.5rem;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        box-shadow: -2px -1px 2px rgba(0,255,255,.4), -1px -2px 2px rgba(255,0,255,.4);
+      }
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      padding-top: 0;
+      font-size:  5rem;
+      line-height: 4.5rem;
+      letter-spacing: 2px;
+      color: #000;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6), 
+        0px 1px 0 rgba(255,255,255, 0.6),
+        1px 0px 0 rgba(255,255,255, 0.6),
+        -1px -1px 0 rgba(255,255,255, 0.6),
+        -0px -1px 0 rgba(255,255,255, 0.6),
+        -1px -0px 0 rgba(255,255,255, 0.6);
+
+      span {
+        width: 100%;
+        display: block;
+        font-size:  2rem;
+        color: #fff;
+        font-family: 'Pacifico';
+        text-shadow: -2px 1px 2px rgba(0,255,255,.4), 2px -1px 2px rgba(255,0,255,.4);
+      }
+
+      &::after {
+        content: " ";
+        display: block;
+        width: 4rem;
+        height: 12rem;
+        position: absolute;
+        top: 6rem;
+        right: 1.5rem;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        box-shadow: 2px 1px 2px rgba(0,255,255,.4), 1px 2px 2px rgba(255,0,255,.4);
+      }
+    }
+
+    ul {
+     /* margin: 2rem; */
+      margin: 1rem 1.5rem 0 5rem;
+      padding: 2rem 1rem;
+      background: rgba(255,255,255,0.5);
+      border: 2px solid #212529;
+    }
+
+    li {
+      margin: 0;
+      padding: .2rem .5rem;
+      font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.7rem;
+      line-height: 1.6;
+      list-style: none;
+      color: #212529;
+      text-shadow: 1px 1px 0 rgba(255,255,255, 0.6);
+      
+    }
+    li:last-of-type {
+      padding: 1rem;
+      font-size: 1rem;
+      font-family: "Pacifico";
+    }
+
+    /* end list-wrap */
+  } 
+
+  .q-wrap {
+    margin : 9rem 0 40px; 
+    padding : 10px 20px 20px; 
+    position : relative; 
+    width : 50%; 
+    float: right;
+
+    blockquote {
+      border-left: 4px solid rgba(0,168,255,0.6) !important;
+
+      p {
+        padding: .5rem 0;
+        line-height: 4rem;
+        background: rgba(255,255,255,0.6);
+        box-shadow: -3px -6px 0 rgba(0,168,255,0.6), 3px 3px 0 rgba(255,0,180,0.6);
+        color: #212529;
+        white-space: pre-wrap;
+        text-shadow: 0 1px 1px rgba(255,255,255,0.5);
+        border-width: 0.5rem 0;
+
+        span {
+          display: inline-block;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.5rem;
+          right: 100%;
+          bottom: -0.5rem;
+          width: 0.5rem;
+        }
+      }
+
+      cite {
+        font-size: 1.8rem;
+        color: #212529;
+        text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+      }
+    
+      &::after {
+        background: rgba(0,168,255,0.7);
+      }
+    }
+  } 
+}
+
+`;
+
+
 
 const pageall = css`
 
@@ -505,25 +1060,20 @@ const pageall = css`
 }
 
 
-#page-1904 h1,
-#page-2102 h1,
-#page-2128 h1 {
+
+.page h1 {
   padding: 2rem 0 2rem;
   margin: 0 15% 1.5rem;
   font-size: 4rem;
 }
 
-#page-1904 h1::after,
-#page-2102 h1::after,
-#page-2128 h1::after {
+
+.page h1::after {
   content: " ";
   margin-top: .6rem;
   width: 100%;
   height: 6px;
   display: block;
-  /* 
-  this has issues on chrome iOS
-  animation: underline-gradient 6s linear infinite; */
   background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
 }
 
@@ -537,6 +1087,8 @@ const pageStyles = colors =>
     pagehome,
     pagedesign,
     pagedev,
+    pagedata,
+    pagemarketing,
     pageall
   ]);
 

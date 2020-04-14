@@ -88,11 +88,13 @@ const primitiveOne = {
             background: "#fffff0",
             instagram: {
               type: "none", // "none" | "post" | "posts" | "feed"
+              url: "https://www.instagram.com/primitivedigital/",
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
             facebook: {
               type: "like", // "none" | "page" | "like"
+              url: "https://www.facebook.com/primitivedigital",
               settings: {
                 src: "https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fprimitivedigital&width=150&layout=button_count&action=like&size=large&share=true&height=46&appId=2317056035225898",
                 width: "150",
@@ -104,7 +106,10 @@ const primitiveOne = {
                 allow: "encrypted-media"
               }
             }, 
-            twitter: { type: "none" },
+            twitter: {
+              type: "none",
+              url: ""
+            },
             pinterest: { type: "none" },
             profiles: {
               instagram: "https://www.instagram.com/primitivedigital/",
@@ -156,10 +161,10 @@ const primitiveOne = {
   libraries: {
     html2react: {
       /**
-       * Add a processor to `html2react` so it processes the `<img>` tags inside the content HTML.
-       * You can add your own processors here too
+       * Add a processoror to `html2react` so it processores the `<img>` tags inside the content HTML.
+       * You can add your own processorors here too
        */
-      processors: [image]
+      processorors: [image]
     },
     source: {
       handlers: CustomPageHandlers

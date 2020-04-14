@@ -19,7 +19,7 @@ const settings = {
             [ "Development", "/web-development" ],
             [ "Data", "/data-insights" ],
             [ "Marketing", "/marketing" ],
-            [ "A Nice Log", "/blog/" ]
+            [ "A Nice Log", "/blog" ]
           ],
           featured: {
             showOnList: true,
@@ -57,6 +57,7 @@ const settings = {
         },
       }
     },
+    "frontity-contact-form-7",
     "@frontity/tiny-router",
     "@frontity/html2react"
   ]

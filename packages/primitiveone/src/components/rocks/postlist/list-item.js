@@ -2,10 +2,9 @@ import React from "react";
 import { connect, styled } from "frontity";
 
 import Button from 'react-bootstrap/Button';
-
 import Link from "../../pebbles/link";
 import FeaturedMedia from "../../pebbles/featured-media";
-
+import CTA from "../../rocks/button-fancy";
 
 
 const Item = ({ state, item }) => {
@@ -13,62 +12,80 @@ const Item = ({ state, item }) => {
   const date = new Date(item.date);
 
   return (
-    <article>
+    <article className="col">
+
       <Link link={item.link}>
         <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
       </Link>
-      <div>
+
+      <Meta>
+        <PostDate>
+          <b>{date.toDateString()}</b>
+        </PostDate>
         <StyledLink link={author.link}>
           <Author>
-            By <b>{author.name}</b>
+            Pretty Post By <b>{author.name}</b>
           </Author>
         </StyledLink>
-        <Fecha>
-          {" "}
-          on <b>{date.toDateString()}</b>
-        </Fecha>
-      </div>
+      </Meta>
+
       {state.theme.featured.showOnList && (
         <FeaturedMedia id={item.featured_media} />
       )}
+
       <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-      <Link link={item.link}>
-        <Button variant="success" size="xl">
-          Read it!
-        </Button>
-      </Link>
+
+      <CTA
+        link={item.link}
+        colorone={""}
+        colortwo={""}
+        />
     </article>
   );
 };
 
 export default connect(Item);
 
-const Title = styled.h1`
-  color: rgba(12, 17, 43);
+const Title = styled.h2`
   margin: 0;
-  padding-top: 24px;
-  padding-bottom: 8px;
-  box-sizing: border-box;
+  padding: 2rem 1rem;
+  text-align: center;
+`;
+
+const Meta = styled.span`
+  text-align: center;
 `;
 
 const Author = styled.span`
   color: rgba(12, 17, 43, 0.9);
+  font-family: "Amatic SC";
   font-size: 0.9em;
 `;
 
 const StyledLink = styled(Link)`
-  padding: 15px 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 `;
 
-const Fecha = styled.span`
+const PostDate = styled.span`
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
+  font-family: Courier;
 `;
 
 const Excerpt = styled.div`
   padding: 2rem 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  font-family: Baskerville,Georgia,serif;
-  color: rgba(12,17,43,.7);
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-family: Baskerville,Georgia,serif;
+    color: rgba(12,17,43,.7);
+  }
 `;
