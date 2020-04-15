@@ -566,7 +566,7 @@ const elementBase = colors => css`
   }
   a:hover,
   a:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   button:focus {
