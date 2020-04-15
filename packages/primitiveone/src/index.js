@@ -108,7 +108,7 @@ const primitiveOne = {
             }, 
             twitter: {
               type: "none",
-              url: ""
+              url: "https://twitter.com/primitivestuff"
             },
             pinterest: { type: "none" },
             profiles: {
