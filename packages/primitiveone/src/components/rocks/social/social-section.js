@@ -33,9 +33,9 @@ const SocialSection = ({ state }) => {
           <SocialIcons>
             <h3 className="heading">let'z b friends 4eva</h3>
             <ul>
-              <li> <Icon name="instagram" /> Instagram </li>
-            <li> <Icon name="facebook" /> Facebook </li>
-            <li> <Icon name="twitter" /> Twitter </li>
+              <li> <Icon name="instagram" /> <a href={instagram.url} target="_blank">Instagram </a></li>
+            <li> <Icon name="facebook" /> <a href={facebook.url} target="_blank">Facebook </a></li>
+            <li> <Icon name="twitter" /> <a href={twitter.url} target="_blank">Twitter </a></li>
             </ul>
           </SocialIcons>
         </Row>
@@ -92,6 +92,11 @@ const SocialIcons = styled(Col)`
 
   h3 {
     font-size: 4rem;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
   }
 
   ul {
