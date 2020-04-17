@@ -11,7 +11,7 @@
 node_modules/
 build/
 dist/
-packages/contact-form-7/
+#packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders
 #images
