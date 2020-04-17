@@ -15,8 +15,6 @@ const Page = ({ state, actions, libraries }) => {
 
   // Get the the full data.
   const page = state.source[data.type][data.id];
-
-  // Get the the full data.
   const pageId = data.id;
 
   // Prefetch page
