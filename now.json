@@ -15,8 +15,5 @@
       { "src": "/redirect",
         "dest": "https://primitivedigital.co.uk/"
       }
-      ],
-      "files": [
-        "build"
       ]
   }
