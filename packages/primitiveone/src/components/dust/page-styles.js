@@ -217,17 +217,29 @@ const pagehome = css`
 /* Design Page: p8 */
 const pagedesign = css`
   #page-8 {
-
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
-                url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec.png) repeat fixed;
-                background-size: 400px;
-                
-    .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
+    background-color: rgb(128,124,125);
+    background: linear-gradient(to bottom, rgba(12, 17, 43, 0) 0%, rgba(12, 17, 43, 0) 45%, rgba(12, 17, 43, 0.3) 65%, rgba(12, 17, 43, 0.5) 100%),
+      linear-gradient(to top, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 95%, rgba(12, 17, 43, 0.3) 100%),
+      linear-gradient(to right, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+      linear-gradient(to left, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+      url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec-300x300.png) repeat fixed;
+                     
+    .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock-300x300.png); }
 
     h1 {
-      width: 90%;
-      padding: 2rem 0;
-      margin: 1rem auto;
+      margin: 2rem auto;
+      padding: 3rem 2.5rem 2.5rem;
+      max-width: 800px;
+      position: relative;
+  
+      background-color: rgba(255,255,255,.4);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,.4), rgba(255,255,255,.6));
+      border: solid 1px rgba(255,255,255, .6);
+      outline: solid 1px rgba(12,17,43, .1);
+      outline-offset: -.5rem;
+      box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
 
       font-family: 'Abril Fatface', Georgia, cursive; 
       font-size: 4.3rem;
@@ -423,22 +435,32 @@ const pagedesign = css`
   }
 `;
 
-
 /* Development Page: p1904 */
 const pagedev = css`
 #page-1904 {
-
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
-              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock.png) repeat fixed;
-              background-size: 300px;
-              
-  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/lava.png); }
+  background-color: rgb(128,124,125);
+  background: linear-gradient(to bottom, rgba(12, 17, 43, 0) 0%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to top, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 95%, rgba(12, 17, 43, 0.3) 100%),
+    linear-gradient(to right, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to left, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock-300x261.png) repeat fixed;
+                   
+  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock-300x300.png); }
 
   h1 {
-    width: 70%;
-    max-width: 900px;
-    padding: 2rem 0;
-    margin: 1rem auto;
+    margin: 2rem auto;
+    padding: 3rem 2.5rem 2.5rem;
+    max-width: 800px;
+    position: relative;
+
+    background-color: rgba(255,255,255,.4);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.4), rgba(255,255,255,.6));
+    border: solid 1px rgba(255,255,255, .6);
+    outline: solid 1px rgba(12,17,43, .1);
+    outline-offset: -.5rem;
+    box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
+
 
     font-size: 4.5rem;
     font-family: "Hepta Slab";
@@ -449,8 +471,8 @@ const pagedev = css`
 
     &::after {
       content: " ";
-      margin-top: .9rem;
-      width: 100%;
+      margin: 1.2rem auto 0;
+      width: 70%;
       height: 12px;
       display: block;
       border-top: 1px solid rgba(12,17,43,.6);
@@ -547,7 +569,6 @@ const pagedev = css`
     }
 
     ul {
-     /* margin: 2rem; */
       margin: 1rem 1.5rem 0 5rem;
       padding: 2rem 1rem;
       background: rgba(255,255,255,0.5);
@@ -628,26 +649,39 @@ const pagedev = css`
 /* Data Page: p2102 */
 const pagedata = css`
 #page-2102 {
-
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
-              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall.png) repeat fixed;
-              background-size: 300px;
-              
-  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
+  background-color: rgb(128,124,125);
+  background: linear-gradient(to bottom, rgba(12, 17, 43, 0) 0%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to top, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 95%, rgba(12, 17, 43, 0.3) 100%),
+    linear-gradient(to right, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to left, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall-300x300.png) repeat fixed;
+                   
+    .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock-300x300.png); }
 
   h1 {
-    padding: 2rem 0 2rem;
-    margin: 0 15% 1.5rem;
+    margin: 2rem auto;
+    padding: 3rem 2.5rem 2.5rem;
+    max-width: 800px;
+    position: relative;
+
+    background-color: rgba(255,255,255,.4);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.4), rgba(255,255,255,.6));
+    border: solid 1px rgba(255,255,255, .6);
+    outline: solid 1px rgba(12,17,43, .1);
+    outline-offset: -.5rem;
+    box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
+
     color: rgba(12,17,43, .9);
     font-size: 4rem;
     font-family: "Playfair Display";
     font-weight: bold;
-    text-shadow: 2px 1px 0 #fff, -8px -8px 0 rgba(0,168,255,0.5), 8px 8px 0 rgba(255,0,180,0.5);
+    text-shadow: 2px 1px 0 #fff, -2px -3px 1px rgba(0,168,255,0.5), 4px 3px 1px rgba(255,0,180,0.5);
 
     &::after {
       content: " ";
-      margin-top: .6rem;
-      width: 100%;
+      margin: 1.2rem auto 0;
+      width: 70%;
       height: 12px;
       display: block;
       border-top: 1px solid rgba(12,17,43,.6);
@@ -835,46 +869,50 @@ const pagedata = css`
 /* Marketing Page: p2128 */
 const pagemarketing = css`
 #page-2128 {
-
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(12, 17, 43, 0.6)),
-              url(https://wp.primitivedigital.uk/wp-content/uploads/stone/duowall.png) repeat fixed;
-              background-size: 300px;
-              
-  .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock.png); }
+  background-color: rgb(128,124,125);
+  background: linear-gradient(to bottom, rgba(12, 17, 43, 0) 0%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to top, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 95%, rgba(12, 17, 43, 0.3) 100%),
+    linear-gradient(to right, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    linear-gradient(to left, rgba(128,124,125, 0.2) 0%, rgba(128,124,125, 0.2) 90%, rgba(12, 17, 43, 0.5) 100%),
+    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/duowall-300x300.png) repeat fixed;
+                   
+    .thinglist { background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock-300x300.png); }
 
   h1 {
-    padding: 2rem 0 2rem;
-    margin: 0 15% 1.5rem;
+    margin: 2rem auto;
+    padding: 3rem 2.5rem 2.5rem;
+    max-width: 800px;
+    position: relative;
+
+    background-color: rgba(255,255,255,.4);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,.4), rgba(255,255,255,.6));
+    border: solid 1px rgba(255,255,255, .6);
+    outline: solid 1px rgba(12,17,43, .1);
+    outline-offset: -.5rem;
+    box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+               0px -5px 35px rgba(255,255,255,0.3);
+
     color: rgba(12,17,43, .9);
     font-size: 4rem;
-    font-family: "Hepta Slab";
+    font-family: "Abril Fatface";
+    letter-spacing: 1px;
     font-weight: bold;
-    text-shadow: 2px 1px 0 #fff, -8px -8px 0 rgba(0,168,255,0.5), 8px 8px 0 rgba(255,0,180,0.5);
 
-    &::after {
-      content: " ";
-      margin-top: .6rem;
-      width: 100%;
-      height: 12px;
-      display: block;
-      border-top: 1px solid rgba(12,17,43,.6);
-      border-left: 1px solid rgba(12,17,43,.6);
-      background: linear-gradient(
-      -45deg, 
-      rgba(255,0,180,0.5) 25%, 
-      rgba(0,168,255,0.5) 25%, 
-      rgba(0,168,255,0.5) 50%, 
-      rgba(255,0,180,0.5) 50%, 
-      rgba(255,0,180,0.5) 75%, 
-      rgba(0,168,255,0.5) 75%, 
-      rgba(0,168,255,0.5));
-      background-size: 20px 20px;
-      background-position: 0 0;
-      box-shadow: 1px 1px 0 rgba(238, 238, 238, .6), 3px 2px 0 rgba(	112, 112, 112, .6);
+    /*
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
 
-      /* animation: ${animatedgradient} 6s linear infinite;
-      animation-direction: alternate; */
-    }
+                 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
+                 text-shadow: -6px 6px 0px #00e6e6,
+                 -12px 12px 0px #01cccc,
+                 -18px 18px 0px #00bdbd;
+    */
+
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                  0px -5px 35px rgba(255,255,255,0.3);
+
   }
 
   .list-wrap {
@@ -1038,7 +1076,6 @@ const pagemarketing = css`
 }
 
 `;
-
 
 /* Contact Page: p19466 */
 const pagecontact = css`
@@ -1214,7 +1251,6 @@ const pagecontact = css`
 }
 
 `;
-
 
 
 const pageall = css`
