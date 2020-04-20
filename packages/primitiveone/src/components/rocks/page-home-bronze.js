@@ -1,6 +1,6 @@
 import React from "react";
-import { connect, styled, css } from "frontity";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { connect, styled } from "frontity";
+import { Container, Row, Col } from "react-bootstrap";
 import Frame from "../pebbles/frame";
 import Image from "@frontity/components/image";
 import CTA from "./button-fancy";
@@ -56,7 +56,10 @@ const Bronze = ({ state }) => {
           </Row>
           <Row>
             <Col className="align-content-center pt-5 pb-0">
-              <CTA />
+              <CTA
+                text="Find out More" 
+                link="/web-design/"
+              />
             </Col>
           </Row>
         </Container>
@@ -100,7 +103,10 @@ const Bronze = ({ state }) => {
           </Row>
           <Row>
             <Col className="align-content-center pt-5 pb-3">
-              <CTA />
+            <CTA
+                text="Find out More" 
+                link="/web-design/"
+              />
             </Col>
           </Row>
         </Container>
