@@ -22,9 +22,8 @@ import Timelines from "../timeline/ct-timelines";
 import Timeline from "../timeline";
 import SubTimeline from "../timeline/cpt-subtimeline";
 
-// replace with frontity GA package
-import ReactGA from 'react-ga';
 
+import ReactGA from 'react-ga';
 import globalStyles from '../dust/global-styles';
 //import FontFaces from "../dust/font-faces";
 
@@ -34,7 +33,7 @@ const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
   const display = state.theme.config;
 
-  console.log("@index: data", data);
+  //console.log("@index: data", data);
   //console.log("@index: display", display);
 
   // sk-dev: basic tracking snippet to be replaced with frontity package once released
