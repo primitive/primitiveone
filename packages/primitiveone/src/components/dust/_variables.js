@@ -8,15 +8,20 @@
 
 const colortheme = {
     white: "#ffffff",
+    ivory: "#fffff0",
+    palewhite: "#f6f6f6",
     gray: {
       base: "#6D6D6D",
       light: "#DCD7CA",
       lighter: "#F5EFE0"
     },
     primary: "#cd2653",
+    green: "#87af4e",
     headerBg: "#ffffff",
     footerBg: "#ffffff",
-    bodyBg: "#f5efe0"
+    bodyBg: "#f5efe0",
+    coal: "#212529",
+    brightlime: "#d7f36d"
   }
 
   export {colortheme};
