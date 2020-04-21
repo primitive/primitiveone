@@ -1,21 +1,34 @@
 import React from "react";
-import { styled } from "frontity";
+import { styled, css} from "frontity";
 import Link from "../pebbles/link";
 
 const ButtonFancy = (props) => {
 
   const _text = props.text ? props.text : "Find out More";
   const _link = props.link ? props.link : "/";
-  const _color = props.color ? props.color : "#f6f6f6";
+  
+  //console.log("colours", props.colors);
+
+  const color = {
+    color: props.colors[0],
+    background: props.colors[1],
+    accent: props.colors[2]
+  };
 
   return (
-    <StyledButton>
-      <StyledLink link={_link}>
+    <StyledButton
+        background={color.background}
+        accent={color.accent}
+      >
+      <StyledLink
+        link={_link}
+        color={color.color}
+        accent={color.accent}>
           {_text}
-        <Layer className="one"></Layer>
-        <Layer className="two"></Layer>
-        <Layer className="three"></Layer>
-        <Layer className="four"></Layer>
+        <Layer className="one" background={color.background}></Layer>
+        <Layer className="two" background={color.background}></Layer>
+        <Layer className="three" background={color.background}></Layer>
+        <Layer className="four" background={color.background}></Layer>
       </StyledLink>
     </StyledButton>
   );
@@ -24,13 +37,7 @@ const ButtonFancy = (props) => {
 export default ButtonFancy;
 
 
-const color = {
-  coal: "#212529",
-  white: "#ffffff",
-  ivory: "#fffff0",
-  palewhite: "#f6f6f6",
-  brightlime: "#d7f36d"
-};
+
 
 const StyledButton = styled.div`
   padding: 30px;
@@ -42,7 +49,8 @@ const StyledButton = styled.div`
   background: transparent;
   transform: translate(-50%, -50%);
   transition: all 0.6s cubic-bezier(.55,0,.1,1);
-  box-shadow: 0px 0px 0px ${color.white};
+  box-shadow: 0px 0px 0px ${ ({background})  => background };
+  
   cursor: pointer;
   z-index: 0;
 
@@ -51,7 +59,7 @@ const StyledButton = styled.div`
     opacity: 1;
   }
   &:hover .two{
-    background: ${color.brightlime};
+    background-color: ${ ({accent}) => accent };
     transform: perspective(800px) translate3d(-130px, 50px,180px);
     opacity: 0.6;
  }
@@ -60,7 +68,7 @@ const StyledButton = styled.div`
     opacity: 0.2;
  }
  &:hover .four{
-    background: ${color.brightlime};
+    background-color: ${ ({accent}) => accent };
     transform: perspective(800px) translate3d(80px, -90px,80px);
     opacity: 0.9;
  }
@@ -73,7 +81,7 @@ const StyledButton = styled.div`
     width: 160px;
     height: 160px;
     background:transparent;
-    border: solid 1px ${color.white};
+    border: solid 1px ${ ({background})  => background };
     transform: perspective(800px) scale(0.4) rotate(0deg);
     transition: all 2s cubic-bezier(.55,0,.1,1);
     z-index: -1;
@@ -85,7 +93,7 @@ const StyledButton = styled.div`
     left:0;
     width: 150px;
     height: 150px;
-    background: ${color.white};
+    background-color: ${ ({background})  => background };
     transform: perspective(800px) scale(0.0) rotate(0deg);
     transition: all 2s cubic-bezier(.55,0,.1,1);
     z-index: -1;
@@ -109,7 +117,7 @@ const Layer = styled.div`
   transition: all 1s cubic-bezier(.55,0,.1,1);
   transform: perspective(500px), translate3d(0px, 0px,0px);
   opacity: 0.0;
-  background: ${color.white};
+  background-color: ${ background  => background };
 `;
 
 const StyledLink = styled(Link)`
@@ -118,16 +126,16 @@ const StyledLink = styled(Link)`
   word-wrap: none;
   white-space: nowrap;
 
-  color: ${color.coal};
+  color: ${ color  => color };
   font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
   font-size: 1em;
   letter-spacing: 1px;
   text-align: center;
-  text-shadow: 1px 1px 0 rgba(${color.brightlime}, 0.2);
+  text-shadow: 1px 1px 0 rgba(${ accent => accent }, 0.2);
 
   &:hover {
-    color: ${color.coal};
+    color: ${ color  => color };
     text-decoration: none;
     text-shadow: 2px 1px 0 rgba(215, 243, 109, 0.6);
   }

@@ -37,7 +37,7 @@ const Item = ({ state, item }) => {
       <CTA
         text="Read More"
         link={item.link}
-        theme={"dark"}
+        colors={[state.theme.colors.coal, state.theme.colors.green, state.theme.colors.brightlime]}
       />
 
     </article>
