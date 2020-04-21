@@ -56,14 +56,14 @@ const primitiveOne = {
             imagesrc1: "https://wp.primitivedigital.uk/wp-content/uploads/promo/wantawebsite_square.jpg",
             listFrame1: "frame",
             list1: ["Web Sites, CMS, CRM and Blogs.", "Fully Editable Content.", "Online shops and Progressive Web Apps.", "API's and application integration", "Mobile friendly and responsive", "Google Analytics", "High tech, low cost, no hassle", "Excellence as standard & satisfaction guaranteed"],
-            link1: "/",
+            link1: "/web-design/",
             icon1: "",
             title2: "We Love Startups",
             imageFrame2: "fancy-frame",
             imagesrc2: "https://wp.primitivedigital.uk/wp-content/uploads/promo/selfiemonkey_square.jpg",
             listFrame2: "frame",
             list2: ["Get a custom built Website", "Professionally designed and branded", "Plus Logo design", "Plus business card design", "Easy, peasy chimpanzizi!"],
-            link2: "/",
+            link2: "/business-in-a-box/",
             icon2: ""
           }
         },
@@ -110,7 +110,9 @@ const primitiveOne = {
               type: "none",
               url: "https://twitter.com/primitivestuff"
             },
-            pinterest: { type: "none" },
+            pinterest: {
+              type: "none"
+            },
             profiles: {
               instagram: "https://www.instagram.com/primitivedigital/",
               facebook: "https://www.facebook.com/primitivedigital",
