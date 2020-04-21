@@ -1,7 +1,6 @@
 import React from "react";
 import { connect, styled } from "frontity";
 
-import Button from 'react-bootstrap/Button';
 import Link from "../../pebbles/link";
 import FeaturedMedia from "../../pebbles/featured-media";
 import CTA from "../../rocks/button-fancy";
@@ -36,10 +35,11 @@ const Item = ({ state, item }) => {
       <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
 
       <CTA
+        text="Read More"
         link={item.link}
-        colorone={""}
-        colortwo={""}
-        />
+        theme={"dark"}
+      />
+
     </article>
   );
 };
@@ -81,6 +81,7 @@ const PostDate = styled.span`
 
 const Excerpt = styled.div`
   padding: 2rem 1.5rem;
+  margin-bottom: 6rem;
 
   p {
     font-size: 1.5rem;

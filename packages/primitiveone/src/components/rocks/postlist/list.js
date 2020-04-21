@@ -9,7 +9,7 @@ const PostList = ({ state }) => {
   // Get the data of the current url
   const data = state.source.get(state.router.link);
 
-  console.log("@postlist/list: data", data);
+  // console.log("@postlist/list: data", data);
 
   return (
     <StyledMain className="container">
@@ -22,22 +22,21 @@ const PostList = ({ state }) => {
           </Col>
         </Row>
 
-        {/* If the list is a taxonomy, we render a title. */}
+        {/* If the list is a taxonomy, render a title. */}
         {data.isTaxonomy && (
           <Header>
             {data.taxonomy}: {state.source[data.taxonomy][data.id].name}
           </Header>
         )}
 
-        {/* If the list is an author, we render a title. */}
+        {/* If the list is an author, render a title. */}
         {data.isAuthor && (
-          <Header>Author: {state.source.author[data.id].name}</Header>
+          <Header>Posts by: {state.source.author[data.id].name}</Header>
         )}
 
-        {/* Iterate over the items of the list. */}
+        {/* Iterate over the array of objects. */}
         {data.items.map(({ type, id }) => {
           const item = state.source[type][id];
-          // Render one Item component for each one.
           return <Item key={item.id} item={item} />;
         })}
 
@@ -60,8 +59,7 @@ const StyledMain = styled.main`
     font-family: "Playfair Display";
   }
 
-  /* overide in list-item stylers in list view */
-
+  /* overide in list-item styles in list view */
 
 `;
 
