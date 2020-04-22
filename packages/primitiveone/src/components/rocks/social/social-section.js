@@ -2,6 +2,7 @@ import React from "react";
 import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 import InstagramPost from "./instgram-post";
+//import InstagramFeed from "./instgram-feed";
 import FacebookPage from "./facebook-page";
 import FacebookLike from "./facebook-like";
 import Icon from 'react-fontawesome';
@@ -13,7 +14,8 @@ const SocialSection = ({ state }) => {
   const instagram = display.instagram;
   const facebook = display.facebook;
   const twitter = display.twitter;
-  const pinterest = display.pinterest;
+  // const pinterest = display.pinterest;
+  // const youtube = display.pinterest;
 
   return (
     <StyledSection>
@@ -32,18 +34,19 @@ const SocialSection = ({ state }) => {
         </Row>
 
         <Row>
-
-          { /* If instagram has data */ }
-          {(instagram && "none" !== instagram.type) && (
+          { /* If instagram has data */}
+          {(instagram && "posts" === instagram.type) && (
             instagram.postids.map((item) => {
               return (<Col key={item}><InstagramPost id={item} maxwidth={instagram.maxwidth} /></Col>);
             })
           )}
-
+          {(instagram && "feed" === instagram.type) && (
+            <div>Feed to do </div>
+          )}
         </Row>
 
         <Row>
-          { /* If facebook has data  */ }
+          { /* If facebook has data  */}
           {(facebook && "none" !== facebook.type) && (
             "page" === facebook.type && <Col><FacebookPage /></Col> ||
             "like" === facebook.type && <Col><FacebookLike props={facebook.settings} /></Col>

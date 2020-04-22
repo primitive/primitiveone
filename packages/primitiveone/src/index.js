@@ -87,13 +87,13 @@ const primitiveOne = {
           social: {
             background: "#fffff0",
             instagram: {
-              type: "none", // "none" | "post" | "posts" | "feed"
+              type: "none", // "none" | "posts" | "feed"
               url: "https://www.instagram.com/primitivedigital/",
               postids: ["B9HhnSSj5NX", "B9JXQ7WDpll"],
               maxwidth: 320
             },
             facebook: {
-              type: "like", // "none" | "page" | "like"
+              type: "like", // "none" | "page" | "like" | "feed"
               url: "https://www.facebook.com/primitivedigital",
               settings: {
                 src: "https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fprimitivedigital&width=150&layout=button_count&action=like&size=large&share=true&height=46&appId=2317056035225898",
