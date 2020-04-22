@@ -9,21 +9,8 @@ import { jump, animatedgradient, stripedbg } from "../scenes/glamourmagic";
 const Bronze = ({ state }) => {
 
   const display = state.theme.config.homepage.bronzeConfig;
-  console.log("@page-home-bronze: state.theme", state.theme.colors);
+  //console.log("@page-home-bronze: state.theme", state.theme.colors);
 
-  /* RESOLVED: sk-dev: workaround for duplicate array items
-
-  const unique = (value, index, self) => {
-    return self.indexOf(value) === index
-  }
-  const list1fix = display.list1.filter(unique);
-  const list2fix = display.list2.filter(unique);
-
-  console.log("@page-home-bronze: display.list1", display.list1);
-  console.log("@page-home-bronze: display.list1", display.list1);
-
-  */
- 
   return (
     <StyledSection>
 

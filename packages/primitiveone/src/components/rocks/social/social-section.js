@@ -1,5 +1,5 @@
 import React from "react";
-import { connect, styled, css } from "frontity";
+import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 import InstagramPost from "./instgram-post";
 import FacebookPage from "./facebook-page";
@@ -8,21 +8,12 @@ import Icon from 'react-fontawesome';
 
 const SocialSection = ({ state }) => {
 
-  // Get the social config from state
+  // Get social config from state
   const display = state.theme.config.global.social;
   const instagram = display.instagram;
   const facebook = display.facebook;
   const twitter = display.twitter;
   const pinterest = display.pinterest;
-
-  // sk-dev: workaround for duplicate array items
-  //const unique = (value, index, self) => {
-  //  return self.indexOf(value) === index
-  //}
-
-  // const postidsfix = instagram.postids.filter(unique);
-  // const postidsfix = new Set(instagram.postids);
-  const postidsfix = instagram.postids;
 
   return (
     <StyledSection>
@@ -34,18 +25,17 @@ const SocialSection = ({ state }) => {
             <h3 className="heading">let'z b friends 4eva</h3>
             <ul>
               <li> <Icon name="instagram" /> <a href={instagram.url} target="_blank">Instagram </a></li>
-            <li> <Icon name="facebook" /> <a href={facebook.url} target="_blank">Facebook </a></li>
-            <li> <Icon name="twitter" /> <a href={twitter.url} target="_blank">Twitter </a></li>
+              <li> <Icon name="facebook" /> <a href={facebook.url} target="_blank">Facebook </a></li>
+              <li> <Icon name="twitter" /> <a href={twitter.url} target="_blank">Twitter </a></li>
             </ul>
           </SocialIcons>
         </Row>
 
         <Row>
 
-          {/* If instagram has data */}
+          { /* If instagram has data */ }
           {(instagram && "none" !== instagram.type) && (
             instagram.postids.map((item) => {
-              //postidsfix.map((item) => {
               return (<Col key={item}><InstagramPost id={item} maxwidth={instagram.maxwidth} /></Col>);
             })
           )}
@@ -53,7 +43,7 @@ const SocialSection = ({ state }) => {
         </Row>
 
         <Row>
-          {/* If facebook has data  */}
+          { /* If facebook has data  */ }
           {(facebook && "none" !== facebook.type) && (
             "page" === facebook.type && <Col><FacebookPage /></Col> ||
             "like" === facebook.type && <Col><FacebookLike props={facebook.settings} /></Col>

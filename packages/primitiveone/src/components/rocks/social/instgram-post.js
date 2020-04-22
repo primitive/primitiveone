@@ -1,9 +1,9 @@
-import {css} from 'frontity';
+import { css } from 'frontity';
 import InstagramEmbed from 'react-instagram-embed';
 
 const InstagramPost = ({ id, maxwidth }) => {
 
-    console.log(`@instagram-post: id: ${id}`);
+    // console.log(`@instagram-post: id: ${id}`);
     
     return (
       <InstagramEmbed
