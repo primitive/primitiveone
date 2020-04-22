@@ -17,6 +17,8 @@ const colortheme = {
     },
     primary: "#cd2653",
     green: "#87af4e",
+    pink: "#FFC0CB",
+    plum: "#DDA0DD",
     headerBg: "#ffffff",
     footerBg: "#ffffff",
     bodyBg: "#f5efe0",

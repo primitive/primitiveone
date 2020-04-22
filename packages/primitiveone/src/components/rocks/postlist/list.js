@@ -59,12 +59,15 @@ const StyledMain = styled.main`
     font-family: "Playfair Display";
   }
 
-  /* overide in list-item styles in list view */
-
 `;
 
 const PageHead = styled.h1`
+  color: rgba(12, 17, 43, 0.7);
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2rem;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px rgba(173,216,230,.5)
 `;
 
 const Header = styled.h2`

@@ -5,7 +5,7 @@ import Image from "@frontity/components/image";
 const FeaturedMedia = ({ state, id, className }) => {
   const media = state.source.attachment[id];
 
-  console.log("@featured-media: media", media );
+  // console.log("@featured-media: media", media );
 
   if (!media) return null;
 
@@ -45,4 +45,12 @@ const StyledImage = styled(Image)`
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border: solid 3px rgba(0,44,44,.3);
+  border-radius: 150px 15px 150px 15px/15px 150px 15px 150px;
+  box-shadow:  0 2px 2.2px rgba(0, 0, 0, 0.034),
+              0 6px 5.3px rgba(0, 0, 0, 0.048),
+              0 12px 10px rgba(0, 0, 0, 0.06),
+              0 24px 15.9px rgba(0, 0, 0, 0.072),
+              0 35.8px 23.4px rgba(0, 0, 0, 0.086),
+              0 40px 30px rgba(0, 0, 0, 0.12);
 `;
