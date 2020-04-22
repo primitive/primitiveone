@@ -67,6 +67,7 @@ const PageHead = styled.h1`
   text-transform: uppercase;
   letter-spacing: 1.2rem;
   font-size: 1.5rem;
+  line-height: 1.6;
   text-shadow: 1px 1px rgba(173,216,230,.5)
 `;
 

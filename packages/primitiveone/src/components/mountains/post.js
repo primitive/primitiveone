@@ -56,10 +56,10 @@ const Post = ({ state, actions, libraries }) => {
           </PostHead>
 
           {data.isPost && (
-            <Row className="postMeta">
+            <Row>
               <Col>
                 <StyledLink link={author.link}>
-                  <PostAuthor> By <b>{author.name}</b></PostAuthor>
+                  <PostAuthor> <b>{author.name}</b> wrote this!</PostAuthor>
                 </StyledLink>
 
                 <PostDate> {" "} on <b>{date.toDateString()}</b></PostDate>
@@ -109,19 +109,33 @@ const PostHead = styled.header`
 `;
 
 const PostTitle = styled.h1`
-  color: rgba(12, 17, 43);
+  padding: 2rem 0 1.5rem;
+  margin: 0 15% 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: rgba(12, 17, 43, 0.7);
 `;
 
 const PostAuthor = styled.p`
+  margin-bottom: .5rem;
   color: rgba(12, 17, 43, 0.9);
   font-size: 0.9em;
-  display: inline;
+  font-family: "Amatic SC";
+  text-align: center;
 `;
 
 const PostDate = styled.p`
-  color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
-  display: inline;
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: rgba(12, 17, 43, 0.7);
+  font-size: 1rem;
+  font-family: Courier;
+  text-align: center;
+  line-height: 1.2rem;
 `;
 
 const PostBody = styled(Col)`

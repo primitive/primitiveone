@@ -1282,14 +1282,14 @@ const pageall = css`
 const pageStyles = colors =>
   css([
     //elementBase(colors),
-    discoListStyle,
+    pageall,
     pagehome,
     pagedesign,
     pagedev,
     pagedata,
     pagemarketing,
     pagecontact,
-    pageall
+    discoListStyle
   ]);
 
 export default pageStyles;
