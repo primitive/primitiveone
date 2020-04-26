@@ -4,6 +4,9 @@ import { Container } from "react-bootstrap";
 import Link from "../pebbles/link";
 import { randomWord } from "../sand/utils";
 
+// sk-dev: random content: Warning: Text content did not match. Server: "Fruity" Client: "Fast"
+//import RandomWord from "../pebbles/random-word";
+
 const Header = ({ state }) => (
   <StyledHeader>
     <Container className="mast">
