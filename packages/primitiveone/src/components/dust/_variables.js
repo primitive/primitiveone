@@ -1,106 +1,133 @@
-// https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+// consistent naming. Eg: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
 
-const colortheme = {
-    white: "#ffffff",
-    ivory: "#fffff0",
-    palewhite: "#f6f6f6",
-    gray: {
-      base: "#6D6D6D",
-      light: "#DCD7CA",
-      lighter: "#F5EFE0"
-    },
-    primary: "#cd2653",
-    green: "#87af4e",
-    pink: "#FFC0CB",
-    plum: "#DDA0DD",
-    headerBg: "#ffffff",
-    footerBg: "#ffffff",
-    bodyBg: "#f5efe0",
-    coal: "#212529",
-    brightlime: "#d7f36d"
+const colors = {
+  black: "#000000",
+  white: "#ffffff",
+
+  blue: "#0d6efd",
+  indigo: "#6610f2",
+  purple: "#6f42c1",
+  pink: "#d63384",
+  red: "#dc3545",
+  orange: "#fd7e14",
+  yellow: "#ffc107",
+  green: "#28a745",
+  teal: "#20c997",
+  cyan: "#17a2b8",
+
+  grays: {
+    base: "#6D6D6D",
+    light: "#DCD7CA",
+    lighter: "#F5EFE0",
+    g100: "#f8f9fa",
+    g200: "#e9ecef",
+    g300: "#dee2e6",
+    g400: "#ced4da",
+    g500: "#adb5bd",
+    g600: "#6c757d",
+    g700: "#495057",
+    g800: "#807c7d",
+    g900: "#212529"
   }
-
-  export {colortheme};
-
-/*
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+}
 
 
-// fusv-disable
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-) !default;
-// fusv-enable
+//light: "#CCC5B3",
+//dark: "#0C0B13",
+
+const primitive = {
+  red: "#cd2653",
+  blue: "#0f52ba",
+  orange: "#F05E23",
+  green: "#87af4e",
+
+  redapple: "#E1623F",
+  fluff: "#ADD8E6",
+  mustard: "#ffdb58",
+  greendark: "#6c8c3e",
+  mango: "#ffc324",
+  lime: "#00FF00",
+  pink: "#FFC0CB",
+  plum: "#DDA0DD",
+  peach: "#eb966c",
+
+  coal: "#0c112b",
+  graphite: "#212529",
+  midnight: "#0C0B13",
+
+  brightlime: "#d7f36d",
+  teal: "#008080",
+  watermelon: "#fc6c85",
+  salmom: "#ff8c69",
+  tomato: "#ff6347",
+  coral: "#E1623F",
+  cyan: "#00a5ba"
+}
+
+const bs = {
+  primary: primitive.green,
+  secondary: primitive.peach,
+  success: primitive.brightlime,
+  info: primitive.teal,
+  warning: primitive.mustard,
+  danger: primitive.applered,
+  light: colors.grays.g100,
+  dark: colors.grays.g800,
+}
+
+const colortheme = {
+  white:    colors.white,
+  black:    colors.black,
+
+  blue:     colors.blue,
+  indigo:   colors.indigo,
+  purple:   primitive.plum,
+  pink:     primitive.pink,
+  red:      primitive.red,
+  orange:   primitive.mango,
+  yellow:   primitive.mustard,
+  green:    primitive.green,
+  teal:     primitive.teal,
+  cyan:     primitive.cyan,
+
+  gray:     colors.grays.g600,
+  grays: {
+    base: colors.grays.base,
+    light: colors.grays.light,
+    lighter: colors.grays.lighter
+  },
 
 
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+  coal:     primitive.coal,
+  ivory:    primitive.ivory,
+  cream:    primitive.cream,
+  peach:    primitive.peach,
+  fluff:    primitive.fluff,
+  disco: {
+    cyan: "#00FFFF",
+    magenta: "#FF00FF",
+    neongreen: "#01FF89",
+    purple: "#7A5FFF"
+  },
 
-$colors: (
-  "blue":       $blue,
-  "indigo":     $indigo,
-  "purple":     $purple,
-  "pink":       $pink,
-  "red":        $red,
-  "orange":     $orange,
-  "yellow":     $yellow,
-  "green":      $green,
-  "teal":       $teal,
-  "cyan":       $cyan,
-  "white":      $white,
-  "gray":       $gray-600,
-  "gray-dark":  $gray-800
-) !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
 
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-) !default;
+  bs: {
+    primary: bs.primary,
+    secondary: bs.secondary,
+    success: bs.success,
+    info: bs.info,
+    warning: bs.warning,
+    danger: bs.danger,
+    light: bs.light,
+    dark: bs.dark
+  }
+}
 
-*/
+export { colortheme };

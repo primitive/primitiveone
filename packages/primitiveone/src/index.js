@@ -22,6 +22,10 @@ const primitiveOne = {
       // show all post content or only the excerpt in archive views
       // showAllContentOnArchive: false,
       config: {
+        breakpoints: {
+          sm: ""
+        },
+        rootEm: "62.5%",
         homepage: {
           showHero: true,
           showIntro: true,
