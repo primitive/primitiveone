@@ -2,7 +2,7 @@ import { css } from "frontity";
 
 // p1: hello world
 
-
+// do i need the .post to not overide global a?
 const postall = css`
     .post a {
       color: #87af4e;
@@ -14,26 +14,23 @@ const postall = css`
         text-decoration: underline;
       }
     }
-`;
-
-const posthello = css`
-    #post-1 a {
-      color: #87af4e;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    #post-1 a:hover {
-      color: plum;
-      text-decoration: underline;
+    
+    .has-text-align-left {
+      width: 50%;
     }
 `;
 
+// target wp classes
+const wpclasses = css`    
+    .has-text-align-left {
+      width: 50%;
+    }
+`;
 
 const postStyles = colors =>
   css([
-    //elementBase(colors),
-    postall,
-    posthello
+    postall(colors),
+    wpclasses
   ]);
 
 export default postStyles;
