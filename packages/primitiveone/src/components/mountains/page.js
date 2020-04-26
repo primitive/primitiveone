@@ -4,13 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import pageStyles from "../dust/page-styles";
 
-//import FeaturedMedia from "../pebbles/featured-media";
 import DiscoPreload from "../scenes/preload-disco"
-import DiscoBall from "../scenes/discoball"
+//import DiscoBall from "../scenes/discoball"
 
 const Page = ({ state, actions, libraries }) => {
 
-  // Get info of current page.
+  // Get skelton data.
   const data = state.source.get(state.router.link);
 
   // Get the the full data.
@@ -27,7 +26,7 @@ const Page = ({ state, actions, libraries }) => {
 
   return (
     <>
-      <Global styles={pageStyles} />
+      <Global styles={pageStyles(state.theme.colors)} />
 
       <main className="page" id={"page-" + pageId}>
 
@@ -42,7 +41,7 @@ const Page = ({ state, actions, libraries }) => {
           { /* data.id && 8===data.id && <DiscoBall /> */ }
           
           <Row>
-            <PageBody>
+            <PageBody className="content">
               <libraries.html2react.Component html={page.content.rendered} />
             </PageBody>
           </Row>

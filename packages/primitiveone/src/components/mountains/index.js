@@ -22,10 +22,10 @@ import Timelines from "../timeline/ct-timelines";
 import Timeline from "../timeline";
 import SubTimeline from "../timeline/cpt-subtimeline";
 
-
-import ReactGA from 'react-ga';
 import globalStyles from '../dust/global-styles';
 //import FontFaces from "../dust/font-faces";
+
+import ReactGA from 'react-ga';
 
 
 const Theme = ({ state }) => {
@@ -84,7 +84,7 @@ const Theme = ({ state }) => {
       <Switch>
             <Loading when={data.isFetching} />
             <Home when={data.isHome} />
-            {/* <Archive when={data.isArchive} /> */ }
+            <Posts when={data.isArchive} />
             <Posts when={data.isPostArchive} />
             <Post when={data.isPost} />
             <Page when={data.isPage} />
