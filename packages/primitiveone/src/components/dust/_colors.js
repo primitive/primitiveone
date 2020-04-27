@@ -1,6 +1,6 @@
-
 // Variables
-//
+// COLORS
+
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Eg: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
@@ -81,6 +81,7 @@ const bs = {
   dark: colors.grays.g800,
 }
 
+
 const colortheme = {
   white:    colors.white,
   black:    colors.black,
@@ -102,7 +103,6 @@ const colortheme = {
     light: colors.grays.light,
     lighter: colors.grays.lighter
   },
-
 
   coal:     primitive.coal,
   ivory:    primitive.ivory,

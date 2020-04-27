@@ -30,6 +30,8 @@ const defaultGrid = {
     xl: 1140,
   },
   gutters: 15,
+  rootEm: "62.5%",
+  minWidth: "320"
 };
 
 export default defaultGrid;

@@ -1,7 +1,8 @@
 import Theme from "./components/mountains";
 import image from "@frontity/html2react/processors/image";
 import CustomPageHandlers from "./components/sand/handlers.js";
-import { colortheme } from "./components/dust/_variables.js";
+import { colortheme } from "./components/dust/_colors.js";
+//import grid from "./components/dust/_grid.js";
 
 const primitiveOne = {
   name: "primitiveone",
@@ -85,8 +86,8 @@ const primitiveOne = {
             rocks: "global-promo",
             type: "text",
             pretext: "Big Business and Enterprise",
-            text: "Primitive is not your bag, baby. For consultancy work you need a sknow.it all!",
-            link: "/"
+            text: "Primitive is not your bag, baby. For consultancy work you want a sknow.it all!",
+            link: "https://sknow.it"
           },
           social: {
             background: "#fffff0",
