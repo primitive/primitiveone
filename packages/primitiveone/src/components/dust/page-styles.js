@@ -2,6 +2,40 @@ import { css } from "frontity";
 import { discolight, animatedgradient } from "../scenes/glamourmagic";
 import convert from 'color-convert';
 
+/* Themed variants */
+const jungleDiscoBG = colors => {
+  return {
+    bg: {
+      aztec:  css`background-color: ${ colors.bs.dark};
+      background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0) 45%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 65%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+      linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
+      linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+      linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+      url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec-300x300.png) repeat fixed;`,
+      oldrock: css`background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
+        background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
+        linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock-300x261.png) repeat fixed;`,
+      wallrock: css`background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
+        background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
+        linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
+        url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall-300x300.png) repeat fixed;`
+    }
+  }
+}
+
+
+
+// p139: homepage
+// p8: design
+// p1904: dev
+// p2102: data
+// p2128: marketing
+// p2136: housekeeping
 
 const pageall = colors => css`
 
@@ -259,12 +293,6 @@ const pageall = colors => css`
 
 `;
 
-// p139: homepage
-// p8: design
-// p1904: dev
-// p2102: data
-// p2128: marketing
-// p2136: housekeeping
 
 /* Homepage: p139 */
 const pagehome = colors => css`
@@ -294,12 +322,16 @@ const pagehome = colors => css`
 /* Design Page: p8 */
 const pagedesign = colors => css`
   #page-8 {
-    background-color: ${ colors.bs.dark};
-    background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0) 45%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 65%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-      linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
-      linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-      linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-      url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec-300x300.png) repeat fixed;
+
+    ${ jungleDiscoBG(colors).bg.aztec }  
+    
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
                      
     h1 {
       margin: 2rem auto;
@@ -346,13 +378,7 @@ const pagedesign = colors => css`
       }
     }
 
-    .content {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
-    }
+
 
     
     .list-wrap {
@@ -541,18 +567,21 @@ const pagedesign = colors => css`
   }
 `;
 
+
 /* Development Page: p1904 */
 const pagedev = colors => css`
 #page-1904 {
-  background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
-  background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
-    linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock-300x261.png) repeat fixed;
-                   
-  
 
+  ${ jungleDiscoBG(colors).bg.aztec }  
+    
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  } 
+  
   h1 {
     margin: 2rem auto;
     padding: 3rem 2.5rem 2.5rem;
@@ -749,14 +778,16 @@ const pagedev = colors => css`
 /* Data Page: p2102 */
 const pagedata = colors => css`
 #page-2102 {
-  background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
-  background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
-    linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall-300x300.png) repeat fixed;
-                   
+
+  ${ jungleDiscoBG(colors).bg.aztec }  
     
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   h1 {
     margin: 2rem auto;
@@ -964,15 +995,17 @@ const pagedata = colors => css`
 /* Marketing Page: p2128 */
 const pagemarketing = colors => css`
 #page-2128 {
-  background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
-  background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
-    linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-    url(https://wp.primitivedigital.uk/wp-content/uploads/stone/duowall-300x300.png) repeat fixed;
-                   
-    
 
+  ${ jungleDiscoBG(colors).bg.aztec }  
+    
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+                   
   h1 {
     margin: 2rem auto;
     padding: 3rem 2.5rem 2.5rem;
@@ -992,18 +1025,6 @@ const pagemarketing = colors => css`
     font-family: "Abril Fatface";
     letter-spacing: 1px;
     font-weight: bold;
-
-    /*
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(${ convert.hex.rgb(colors.white).join()},0.3);
-
-                 text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(${ convert.hex.rgb(colors.white).join()},0.3);
-
-                 text-shadow: -6px 6px 0px #00e6e6,
-                 -12px 12px 0px #01cccc,
-                 -18px 18px 0px #00bdbd;
-    */
 
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                   0px -5px 35px rgba(${ convert.hex.rgb(colors.white).join()},0.3);

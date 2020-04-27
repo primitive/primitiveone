@@ -129,7 +129,7 @@ const StyledLink = styled(Link)`
   color: ${ color  => color };
   font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   text-align: center;
   text-shadow: 1px 1px 0 rgba(${ accent => accent }, 0.2);
