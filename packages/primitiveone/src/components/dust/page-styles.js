@@ -27,7 +27,37 @@ const jungleDiscoBG = colors => {
     }
   }
 }
+const flexRow = css`
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+`;
 
+const flex2Col = css`
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+
+  @media screen and (min-width: 992px) {
+    flex: 0 0 50%;
+  }
+`;
+
+const quoteStyle1 = css`
+  margin : 9rem 0 40px; 
+  padding : 10px 20px 20px; 
+  position : relative;
+`;
+
+const listStyle1 = css`
+  margin : 5px 0 40px; 
+  padding : 10px 20px 20px; 
+  position : relative; 
+  text-align: center;
+`;
 
 
 // p139: homepage
@@ -326,11 +356,7 @@ const pagedesign = colors => css`
     ${ jungleDiscoBG(colors).bg.aztec }  
     
     .content {
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: 100%;
+      ${ flexRow } 
     }
                      
     h1 {
@@ -385,13 +411,9 @@ const pagedesign = colors => css`
       margin : 5px 0 40px; 
       padding : 10px 20px 20px; 
       position : relative; 
-      
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex: 0 0 100%;
-
       text-align: center;
+      
+      ${ flex2Col } 
 
       h2 {
         position: relative;
@@ -499,10 +521,7 @@ const pagedesign = colors => css`
       padding : 10px 20px 20px; 
       position : relative; 
 
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      flex: 1;
+      ${ flex2Col } 
 
       blockquote {
         max-width: 450px;
@@ -514,7 +533,6 @@ const pagedesign = colors => css`
           padding: .5rem 0;
           line-height: 4rem;
           background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
-          /* box-shadow: 0 -6px 0 rgba(${ convert.hex.rgb(colors.disco.purple).join()}, 0.8); */
           box-shadow: 0 -6px 0  rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6);
           color: #212529;
           white-space: pre-wrap;
@@ -539,7 +557,7 @@ const pagedesign = colors => css`
 
         cite {
           font-size: 1.8rem;
-          color: #212529;
+          color: ${ colors.coal };
           text-shadow: 1px 1px 0 rgba(${ convert.hex.rgb(colors.white).join()},0.5);
         }
       
@@ -552,12 +570,7 @@ const pagedesign = colors => css`
 
     /* --- RESPONSIVE --- */
     @media screen and (min-width: 992px) {
-      .list-wrap {
-        flex: 0 0 50%;
-      }
       .q-style-1 {
-        flex: 0 0 50%;
-
         blockquote {
           max-width: 550px;
         }
@@ -567,7 +580,6 @@ const pagedesign = colors => css`
   }
 `;
 
-
 /* Development Page: p1904 */
 const pagedev = colors => css`
 #page-1904 {
@@ -575,12 +587,8 @@ const pagedev = colors => css`
   ${ jungleDiscoBG(colors).bg.aztec }  
     
   .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  } 
+    ${ flexRow } 
+  }
   
   h1 {
     margin: 2rem auto;
@@ -730,6 +738,7 @@ const pagedev = colors => css`
     position : relative; 
     width : 50%; 
     float: right;
+    
 
     blockquote {
       border-left: 4px solid rgba(122,95,255,0.8) !important;
@@ -782,11 +791,7 @@ const pagedata = colors => css`
   ${ jungleDiscoBG(colors).bg.aztec }  
     
   .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    ${ flexRow } 
   }
 
   h1 {
@@ -999,11 +1004,7 @@ const pagemarketing = colors => css`
   ${ jungleDiscoBG(colors).bg.aztec }  
     
   .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    ${ flexRow } 
   }
                    
   h1 {
@@ -1217,7 +1218,6 @@ const pagecontact = colors => css`
               15px 15px rgba(0, 98, 90, 0.2),
               20px 20px rgba(0, 98, 90, 0.1),
               25px 25px rgba(0, 98, 90, 0.05);
-
 
       label {
         display: block;
