@@ -1,20 +1,67 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project and some odd comments may be documented here.
+
+Very, very loosly following [Conventional Commits](https://conventionalcommits.org) guidelines.
+
+
+ 🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO.
+
+## Notes
+
+// https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
+// https://wp.primitivedigital.uk/wp-json/wp/v2/timelines
+// https://wp.primitivedigital.uk/wp-json/wp/v2/work
+
+// OR
+// https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
+// https://wp.primitivedigital.uk/wp-json/acf/v3/timelines
+
+
+## WIP
+
+- T: fade in lazy loaded images
+- T: Google Analitics: Review and implement package when released
+- T: Research conditional loading of various UI cores + theme
+- T: Set base CSS to use none/twentytwenty/bootstrap
+
+- Q: benefits of useEffect vs self-invoking
+- Q: why favour function components over class components
+- Q: why favour .js over .jsx
+- Q: why favour typescript
+- Q: why favour styled vars after exports
+- Q: why favour loadable, conditional
+
+- 
 
 
 ## History
 
-1.0.12 > 
-// https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
-// https://wp.primitivedigital.uk/wp-json/wp/v2/timelines
-// https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
+1.1.0 > Major Update (April 01, 2020):
+- Fixed full URI redirects 
+- Server clean up
+- Deploy new CDN and Edge Caching
+
+- Update project structure to work with templating/config (views/blocks/elements)
+- - Reduce CSS classes and global styles
+- - New views / mountains
+- - New content block components / rocks
+- - New animated content block / scenes
+- - New cpt/taxonomy components 
+- - Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
+- - 
+
+- Intergrate New Frontity Features:
+- - Custom Post Types and Taxonomies
+- - - Added some custom post types / taxonomies content to wp
+- - - Done via plugins ACF+CPT UI (I've not modified functions.php at all yet)
+
+- - Switch/router plus hi-jacked some code updates from the twentytwenty theme
 
 1.0.11 > Update (January 15, 2020): 
-- housekeeping: tidy up frontity.settings.js
-- Refine: update webfont useage method
-- Feat: add custom post types / taxonomies content to wp
+- Plan: CPT/Taxonomies, 
+- Housekeeping!!!: tidy up frontity.settings.js
+- Update: Frontity and all dependencies updated.
 
 1.0.10 > Update (December 15, 2019): 
 - Confirmed "Query strings break routing / 404s" as resolved: https://github.com/frontity/frontity/issues/229

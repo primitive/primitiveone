@@ -1,11 +1,12 @@
 {
-  "name": "primitiveone",
-  "version": "1.0.10",
+  "name": "@primitvedigital/primitiveone",
+  "version": "1.1.1",
   "private": true,
   "description": "Primitive One WordPress + Frontity Theme",
   "keywords": [
     "frontity",
     "primitivedigital",
+    "wordpress",
     "headless",
     "decoupled",
     "rest",
@@ -18,13 +19,23 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.4.1",
-    "@frontity/html2react": "^1.1.15",
-    "@frontity/tiny-router": "^1.0.18",
-    "@frontity/wp-source": "^1.5.0",
+    "@frontity/core": "^1.5.1",
+    "@frontity/html2react": "^1.3.1",
+    "@frontity/tiny-router": "^1.1.1",
+    "@frontity/wp-source": "^1.6.2",
+    "@primitvedigital/primitiveone": "./packages/primitiveone",
+    "color-convert": "^2.0.1",
     "eslint": "^6.8.0",
-    "frontity": "^1.4.4",
-    "npm-check-updates": "^4.0.1",
-    "primitiveone": "./packages/primitiveone"
+    "facepaint": "^1.2.1",
+    "frontity": "^1.5.2",
+    "frontity-contact-form-7": "./packages/contact-form-7",
+    "npm-check-updates": "^4.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-fontawesome": "^1.7.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }

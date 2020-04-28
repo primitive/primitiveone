@@ -4,12 +4,13 @@ const settings = {
     frontity: {
       url: "https://primitivedigital.uk",
       title: "Want a Website?",
-      description: "WordPress Web Sites and Apps"
+      description: "WordPress Web Sites and Apps",
+      name: "Primitive Digital"
     }
   },
   packages: [
     {
-      name: "primitiveone",
+      name: "@primitvedigital/primitiveone",
       state: {
         theme: {
           menu: [
@@ -18,28 +19,11 @@ const settings = {
             [ "Development", "/web-development" ],
             [ "Data", "/data-insights" ],
             [ "Marketing", "/marketing" ],
-            [ "A Log", "/blog/" ]
+            [ "A Nice Log", "/blog" ]
           ],
           featured: {
             showOnList: true,
             showOnPost: true
-          },
-          config: {
-            homepage: {
-              showHero: true,
-              showIntro: true,
-              showGold: true,
-              showSilver: true,
-              showBronze: true,
-              showPromo: false
-            },
-            page: {
-              showBanner: true,
-              showGold: true,
-              showSilver: true,
-              showBronze: true,
-              page: false
-            }
           }
         }
       }
@@ -53,9 +37,14 @@ const settings = {
           postsPage: "/blog/", // optional: set when using a page as the site homepage
           postTypes: [
             {
+              type: "works", // custom post type slug
+              endpoint: "works", // REST API endpoint
+              archive: "/works" // link where this custom posts are listed
+            },
+            {
               type: "temporal_events", // custom post type slug
               endpoint: "temporal_events", // REST API endpoint
-              archive: "/temporal_events" // link where this custom posts are listed
+              archive: "/evolution-of-digital-stuff" // link where this custom posts are listed
             }
           ],
           taxonomies: [
@@ -68,6 +57,7 @@ const settings = {
         },
       }
     },
+    "frontity-contact-form-7",
     "@frontity/tiny-router",
     "@frontity/html2react"
   ]

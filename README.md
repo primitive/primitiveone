@@ -9,29 +9,23 @@ Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/
 
 With little help from our friends: Bootstrap 4, GSAP and ScrollMagic. 
 
-Live demo site: https://primitivedigital.co.uk  
+Live demo site: https://primitivedigital.co.uk
 
-GitHub: https://github.com/primitiveshaun/primitiveone
+GitHub repo: https://github.com/primitiveshaun/primitiveone
+
 NPM: https://www.npmjs.com/package/primitiveone
 
 Domain and WordPress hosting from: https://primitivehosting.uk/headlesswp
 
 
-N.B. This is only my second attempt at React based website so do be kind.  
-It may be messy and it may be downright wrong in places.	
-
 See [changelog](packages/primitiveone/CHANGELOG.md) for release notes.
 
 
-## Issues, Fix and Refine ###
-
-1. Query strings break routing / 404s
-2. Having issues importing the bootstrap CSS correctly
 
 
 ## WIP: SEO bits and bobs ###
 
-1) Zeit Now deployment 
+1) Frontity / Zeit Now deployment 
 
 Now recommends setting domains to point at their nameservers.
 Or, alternatively setting CNAME/ANAME DNS records

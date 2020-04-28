@@ -3,60 +3,27 @@
 # Master File: Maintained by Primitive Digital's Housekeeping Department
 # https://primitivedigital.uk/housekeeping-department/
 
-# Always-ignore these extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.vi
-*~
-*.sass-cache
-.hg
-.svn
-.CVS
-.idea
+
 .DS_Store
-
-# OS or Editor files
-Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-*.esproj
-nbproject
-sftp-config.json
-npm-debug.log
-yarn-error.log
-package-lock.json
-
-# Dreamweaver
-_notes
-dwsync.xml
-
-# Sublime
-*.sublime-project
-*.sublime-workspace
-
-# Komodo
-*.komodoproject
-.komodotools
+**/package-lock.json
 
 # Folders
-node_modules
-intermediate
-publish
-build
-dist
+node_modules/
+build/
+dist/
+#packages/contact-form-7/
 
 # Unoptimised / Optimised Image Folders
-images
-img
+#images
+#img
 
-## build script local files
-# build/buildinfo.properties
-# build/config/buildinfo.properties
-# /inc/.DS_Store
+#frontity
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+analyze
+.env
+.vscode
+.now
