@@ -58,10 +58,10 @@ const StyledMain = styled.main`
   h2 {
     font-family: "Playfair Display";
   }
-
 `;
 
 const PageHead = styled.h1`
+  margin-bottom: 1rem;
   color: rgba(12, 17, 43, 0.7);
   text-align: center;
   text-transform: uppercase;

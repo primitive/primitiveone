@@ -28,7 +28,9 @@ const Item = ({ state, item }) => {
       </Meta>
 
       {state.theme.featured.showOnList && (
-        <FeaturedMedia id={item.featured_media} link={item.link} />
+        <StyledLink link={item.link}>
+          <FeaturedMedia id={item.featured_media} />
+        </StyledLink>
       )}
 
       <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />

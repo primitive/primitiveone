@@ -43,7 +43,7 @@ const Post = ({ state, actions, libraries }) => {
 
   return data.isReady ? (
     <>
-      <Global styles={postStyles} />
+      <Global styles={postStyles(state.theme.colors)} />
 
       <StyledMain className={"post " + postType} id={postType + "-" + postId}>
 
@@ -69,9 +69,7 @@ const Post = ({ state, actions, libraries }) => {
 
           <Row>
             <Col>
-
               {state.theme.featured.showOnPost && (<FeaturedMedia id={post.featured_media} />)}
-
             </Col>
           </Row>
 
@@ -92,20 +90,29 @@ export default connect(Post);
 
 const Loading = styled.div`
   padding: 3rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 `;
 
 const StyledMain = styled.main`
-  padding: 5px;
+  padding: 1rem;
 `;
 
 const StyledLink = styled(Link)`
-  padding: 15px 0;
+  
+    padding: 15px 0;
+    color: #87af4e;
+    text-decoration: none;
+
+    &:hover {
+      color: plum;
+      text-decoration: underline;
+    }
+
 `;
 
 const PostHead = styled.header`
-
+  text-align: center;
 `;
 
 const PostTitle = styled.h1`
@@ -122,7 +129,7 @@ const PostTitle = styled.h1`
 const PostAuthor = styled.p`
   margin-bottom: .5rem;
   color: rgba(12, 17, 43, 0.9);
-  font-size: 0.9em;
+  font-size: 1.2rem;
   font-family: "Amatic SC";
   text-align: center;
 `;
@@ -132,21 +139,20 @@ const PostDate = styled.p`
   margin: 0;
   padding: 0;
   color: rgba(12, 17, 43, 0.7);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: Courier;
   text-align: center;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 `;
 
 const PostBody = styled(Col)`
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
+  font-size: 1.1rem;
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
 
   a {
-    color: rgb(31, 56, 197);
-    text-decoration: underline;
+    font-weight: bold;
   }
-
 `;
