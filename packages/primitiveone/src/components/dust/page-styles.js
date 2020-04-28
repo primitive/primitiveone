@@ -1,6 +1,7 @@
 import { css } from "frontity";
 import { discolight, animatedgradient } from "../scenes/glamourmagic";
 import convert from 'color-convert';
+import { mq2col } from './_grid';
 
 /* Themed variants */
 const jungleDiscoBG = colors => {
@@ -27,6 +28,7 @@ const jungleDiscoBG = colors => {
     }
   }
 }
+
 /*
 const flexRow = css`
   display: flex;
@@ -45,22 +47,27 @@ const flexRow = `
   width: 100%;
 `;
 
-
-const flex2Col = `
+const flexCol = css`
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
-
-  @media screen and (min-width: 992px) {
-    flex: 0 0 50%;
-  }
 `;
 
-const quoteStyle1 = `
+const flex2Col = css(mq2col({
+  flex: ['0 0 100%', '0 0 50%'],
+}))
+
+const quoteStyle1 = css`
   margin : 9rem 0 40px; 
   padding : 10px 20px 20px; 
   position : relative;
+
+  blockquote {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 `;
 
 const listStyle1 = colors => `
@@ -194,7 +201,6 @@ const pageall = colors => css`
     padding: 2rem 0 2rem;
     font-size: 4rem;
     text-align: center;
-
     text-shadow: .15rem .15rem rgba(${ convert.hex.rgb(colors.fluff).join()}, .5);
   }
   
@@ -214,20 +220,14 @@ const pageall = colors => css`
     padding: .5rem 5% .1rem;
     font-size: 1.6rem;
     color:  rgba(${ convert.hex.rgb(colors.coal).join()}, .7);
-  }
-  .panache strong,
-  .panache a {
-    color: ${colors.bs.primary};
-    font-style: italic;
-    text-decoration: none;
+
+    strong, a {
+      color: ${colors.bs.primary};
+      font-style: italic;
+      text-decoration: none;
+    }
   }
 
-  hr {
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    clear:both;
-  }
 
   .thinglist {
     display: flex;
@@ -308,7 +308,7 @@ const pageall = colors => css`
       padding-top : 150px; 
       position : relative; 
       padding-left: 1.5rem;
-      background-color: transparent !important;
+      background-color: transparent;
       border-left: 4px solid rgba(${ convert.hex.rgb(colors.gray).join()}, .8);
     } 
 
@@ -444,7 +444,6 @@ const pageall = colors => css`
 
 `;
 
-
 /* Homepage: p139 */
 const pagehome = colors => css`
   #page-139 {
@@ -514,14 +513,10 @@ const pagedesign = colors => css`
       }
     }
 
-
-
-    
-    .list-wrap {
+    .list-style-1 {
 
       ${ listStyle1(colors) } 
-      
-      ${ flex2Col } 
+      ${ flexCol, flex2Col } 
 
       h2 {
         ${ h2Style(colors) }
@@ -536,20 +531,15 @@ const pagedesign = colors => css`
         font-family: "Pacifico";
       }
 
-      /* end list-wrap */
+
     } 
 
     .q-style-1 {
-      margin : 9rem 0 40px; 
-      padding : 10px 20px 20px; 
-      position : relative; 
-
-      ${ flex2Col } 
+      
+      ${ quoteStyle1 } 
+      ${ flexCol, flex2Col } 
 
       blockquote {
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
         border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6) !important;
 
         p {
@@ -588,17 +578,8 @@ const pagedesign = colors => css`
           background: rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6);
         }
       }
-      /* end q-style-1 */
-    } 
 
-    /* --- RESPONSIVE --- */
-    @media screen and (min-width: 992px) {
-      .q-style-1 {
-        blockquote {
-          max-width: 550px;
-        }
-      }
-    }
+    } 
 
   }
 `;
@@ -638,10 +619,10 @@ const pagedev = colors => css`
     }
   }
 
-  .list-wrap {
+  .list-style-1 {
+
     ${ listStyle1(colors) } 
-      
-    ${ flex2Col } 
+    ${ flexCol, flex2Col } 
 
     h2 {
       ${ h2Style(colors) }
@@ -650,25 +631,34 @@ const pagedev = colors => css`
       ${ h3Style(colors) } }
     }
 
-    /* end list-wrap */
+  } 
+  .list-style-2 {
+
+    ${ listStyle1(colors) } 
+    ${ flexCol, flex2Col } 
+
+    h2 {
+      ${ h2Style(colors) }
+    }
+    h3 {
+      ${ h3Style(colors) } }
+    }
+
   } 
 
-  .q-wrap {
-    margin : 9rem 0 40px; 
-    padding : 10px 20px 20px; 
-    position : relative; 
-    width : 50%; 
-    float: right;
-    
+  .q-style-1 {
+      
+    ${ quoteStyle1 } 
+    ${ flexCol, flex2Col } 
 
     blockquote {
-      border-left: 4px solid rgba(122,95,255,0.8) !important;
+      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.purple).join()},0.8);
 
       p {
         padding: .5rem 0;
         line-height: 4rem;
         background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
-        box-shadow: 0 -6px 0 rgba(122,95,255,0.8);
+        box-shadow: 0 -6px 0 rgba(${ convert.hex.rgb(colors.disco.purple).join()},0.8);
         color: ${ colors.coal };
         white-space: pre-wrap;
         text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()},0.5);
@@ -697,10 +687,11 @@ const pagedev = colors => css`
       }
     
       &::after {
-        background: rgba(122,95,255,0.8);
+        background: rgba(${ convert.hex.rgb(colors.disco.purple).join()},0.8);
       }
     }
-  } 
+  }
+   
 }
 
 `;
@@ -722,7 +713,7 @@ const pagedata = colors => css`
     font-size: 4rem;
     font-weight: bold;
     color: rgba(${ convert.hex.rgb(colors.coal).join()}, .9);
-    text-shadow: 2px 1px 0 #fff, -2px -3px 1px rgba(0,168,255,0.5), 4px 3px 1px rgba(255,0,180,0.5);
+    text-shadow: 2px 1px 0 #fff, -2px -3px 1px rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.5), 4px 3px 1px rgba(255,0,180,0.5);
 
     &::after {
       content: " ";
@@ -735,12 +726,12 @@ const pagedata = colors => css`
       background: linear-gradient(
       -45deg, 
       rgba(255,0,180,0.5) 25%, 
-      rgba(0,168,255,0.5) 25%, 
-      rgba(0,168,255,0.5) 50%, 
+      rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.5) 25%, 
+      rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.5) 50%, 
       rgba(255,0,180,0.5) 50%, 
       rgba(255,0,180,0.5) 75%, 
-      rgba(0,168,255,0.5) 75%, 
-      rgba(0,168,255,0.5));
+      rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.5) 75%, 
+      rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.5));
       background-size: 20px 20px;
       background-position: 0 0;
       box-shadow: 1px 1px 0 rgba(238, 238, 238, .6), 3px 2px 0 rgba(	112, 112, 112, .6);
@@ -750,10 +741,10 @@ const pagedata = colors => css`
     }
   }
 
-  .list-wrap {
+  .list-style-1 {
+
     ${ listStyle1(colors) } 
-      
-    ${ flex2Col } 
+    ${ flexCol, flex2Col } 
 
     h2 {
       ${ h2Style(colors) }
@@ -762,24 +753,21 @@ const pagedata = colors => css`
       ${ h3Style(colors) } }
     }
 
-    /* end list-wrap */
   } 
 
-  .q-wrap {
-    margin : 9rem 0 40px; 
-    padding : 10px 20px 20px; 
-    position : relative; 
-    width : 50%; 
-    float: right;
+  .q-style-1 {
+      
+    ${ quoteStyle1 } 
+    ${ flexCol, flex2Col } 
 
     blockquote {
-      border-left: 4px solid rgba(0,168,255,0.6) !important;
+      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6) !important;
 
       p {
         padding: .5rem 0;
         line-height: 4rem;
         background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
-        box-shadow: -3px -6px 0 rgba(0,168,255,0.6), 3px 3px 0 rgba(255,0,180,0.6);
+        box-shadow: -3px -6px 0 rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6), 3px 3px 0 rgba(255,0,180,0.6);
         color: ${ colors.coal };
         white-space: pre-wrap;
         text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()},0.5);
@@ -808,7 +796,7 @@ const pagedata = colors => css`
       }
     
       &::after {
-        background: rgba(0,168,255,0.7);
+        background: rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.7);
       }
     }
   } 
@@ -839,10 +827,10 @@ const pagemarketing = colors => css`
 
   }
 
-  .list-wrap {
+  .list-style-1 {
+
     ${ listStyle1(colors) } 
-      
-    ${ flex2Col } 
+    ${ flexCol, flex2Col } 
 
     h2 {
       ${ h2Style(colors) }
@@ -857,24 +845,21 @@ const pagemarketing = colors => css`
       font-family: "Pacifico";
     }
 
-    /* end list-wrap */
   } 
 
-  .q-wrap {
-    margin : 9rem 0 40px; 
-    padding : 10px 20px 20px; 
-    position : relative; 
-    width : 50%; 
-    float: right;
+  .q-style-1 {
+      
+    ${ quoteStyle1 } 
+    ${ flexCol, flex2Col } 
 
     blockquote {
-      border-left: 4px solid rgba(0,168,255,0.6) !important;
+      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6) !important;
 
       p {
         padding: .5rem 0;
         line-height: 4rem;
         background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
-        box-shadow: -3px -6px 0 rgba(0,168,255,0.6), 3px 3px 0 rgba(255,0,180,0.6);
+        box-shadow: -3px -6px 0 rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6), 3px 3px 0 rgba(255,0,180,0.6);
         color: ${ colors.coal };
         white-space: pre-wrap;
         text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()},0.5);
@@ -903,7 +888,7 @@ const pagemarketing = colors => css`
       }
     
       &::after {
-        background: rgba(0,168,255,0.7);
+        background: rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.7);
       }
     }
   } 

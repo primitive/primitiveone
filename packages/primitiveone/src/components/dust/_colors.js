@@ -1,9 +1,6 @@
 // Variables
 // COLORS
 
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Eg: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
 // Color system
 
 const colors = {
@@ -76,7 +73,7 @@ const bs = {
   success: primitive.brightlime,
   info: primitive.teal,
   warning: primitive.mustard,
-  danger: primitive.applered,
+  danger: primitive.redapple,
   light: colors.grays.g100,
   dark: colors.grays.g800,
 }
@@ -109,11 +106,16 @@ const colortheme = {
   cream:    primitive.cream,
   peach:    primitive.peach,
   fluff:    primitive.fluff,
+  lime: primitive.lime,
+  mustard: primitive.mustard,
+  greendark: primitive.greendark,
+
   disco: {
     cyan: "#00FFFF",
     magenta: "#FF00FF",
     neongreen: "#01FF89",
-    purple: "#7A5FFF"
+    purple: "#7A5FFF",
+    blue: "#00a8ff"
   },
 
 

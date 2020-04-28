@@ -299,12 +299,15 @@ const elementBase = colors => css`
   }
 
   hr {
-    margin: 4rem 0;
+    display: block;
+    margin: 2.5rem 0;
     color: inherit;
+    clear:both;
     border-style: solid;
     border-width: 0.1rem 0 0 0;
     opacity: 0.25;
   }
+  
   hr:not([size]) {
     height: 1px;
   }

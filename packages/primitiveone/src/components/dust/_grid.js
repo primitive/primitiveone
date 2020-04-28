@@ -1,3 +1,12 @@
+import { css } from "frontity";
+import facepaint from 'facepaint'
+
+/* ®ead > */
+
+// https://emotion.sh/docs/media-queries
+// https://github.com/janczizikow/emotion-flex
+// https://github.com/emotion-js/emotion/issues/287
+
 /*
 export interface Grid {
   breakpoints: {
@@ -16,7 +25,7 @@ export interface Grid {
 }
 */
 
-const defaultGrid = {
+const Grid = {
   breakpoints: {
     sm: 576,
     md: 768,
@@ -34,4 +43,18 @@ const defaultGrid = {
   minWidth: "320"
 };
 
-export default defaultGrid;
+const mq = facepaint([
+  `@media(min-width: ${Grid.breakpoints.sm}px)`,
+  `@media(min-width: ${Grid.breakpoints.md}px)`,
+  `@media(min-width: ${Grid.breakpoints.lg}px)`,
+  `@media(min-width: ${Grid.breakpoints.xl}px)`
+])
+const mq2col = facepaint([
+  `@media(min-width: ${Grid.breakpoints.lg}px)`,
+])
+
+const demoClassName = css(mq({
+  color: ['red', 'green', 'blue', 'darkorchid'],
+}))
+
+export {mq2col};
