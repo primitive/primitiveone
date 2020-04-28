@@ -593,7 +593,7 @@ const pageall = colors => css`
   
       blockquote {
 
-        border-left: 4px solid rgba(${ convert.hex.rgb(colors.bs.info).join()},0.8);
+        border-left: 4px solid rgba(${ convert.hex.rgb(colors.bs.warning).join()},0.8);
   
         p {
           padding: .5rem 0;
