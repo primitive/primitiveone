@@ -118,6 +118,7 @@ export default connect(Bronze);
 const StyledSection = styled.section`
 
   border: none;
+  background-color: #7a9e47;
 
   .nip {
     text-align: center;
