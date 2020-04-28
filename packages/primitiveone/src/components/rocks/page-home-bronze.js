@@ -117,6 +117,8 @@ export default connect(Bronze);
 
 const StyledSection = styled.section`
 
+  border: none;
+
   .nip {
     text-align: center;
   }
@@ -177,6 +179,7 @@ const PromoOne = styled.div`
   padding: 4rem 1rem;
   background-color: #7a9e47;
   background: linear-gradient(to bottom,  #7a9e47 52%,#5e822c 100%); 
+  border: none;
 
   .fancy-frame { 
     background: linear-gradient(
@@ -262,6 +265,7 @@ const PromoTwo = styled.div`
   padding: 4rem 1rem;
   background-color: ivory;
   background: linear-gradient(to top,  #7a9e47 42%,#5e822c 100%); 
+  border: none;
 
   .fancy-frame { 
     background: linear-gradient(45deg, #abcf75, #4b6f1a);

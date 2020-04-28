@@ -338,7 +338,7 @@ const pageall = colors => css`
       }
 
       &::before {
-        border-left: 5px solid rgba(${ convert.hex.rgb(colors.bs.primary).join()}, .1) !important;
+        border-left: 5px solid rgba(${ convert.hex.rgb(colors.bs.primary).join()}, .1);
         border-radius: 50% 50% 50% 50%;
         content: "";
         height: 500px;
@@ -368,6 +368,7 @@ const pageall = colors => css`
       }
     }
   }
+
   .q-style-2 {
     blockquote { 
       border-left: 4px solid rgba(${ convert.hex.rgb(colors.bs.secondary).join()}, 0.8); 
@@ -385,7 +386,7 @@ const pageall = colors => css`
       }
 
       &::before {
-        border-left: 5px solid rgba(${ convert.hex.rgb(colors.bs.secondary).join()}, .1) !important;
+        border-left: 5px solid rgba(${ convert.hex.rgb(colors.bs.secondary).join()}, .1);
         border-radius: 50% 50% 50% 50%;
         content: "";
         height: 500px;
@@ -413,12 +414,8 @@ const pageall = colors => css`
         top: 0;
         width: 130px;
       }
-
     }
   } 
-
-
-
 
   @media screen and (min-width: 576px) {
     .split-col {
@@ -530,8 +527,6 @@ const pagedesign = colors => css`
         font-size: 2rem;
         font-family: "Pacifico";
       }
-
-
     } 
 
     .q-style-1 {
@@ -540,7 +535,7 @@ const pagedesign = colors => css`
       ${ flexCol, flex2Col } 
 
       blockquote {
-        border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6) !important;
+        border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6);
 
         p {
           padding: .5rem 0;
@@ -578,9 +573,7 @@ const pagedesign = colors => css`
           background: rgba(${ convert.hex.rgb(colors.disco.neongreen).join()}, 0.6);
         }
       }
-
     } 
-
   }
 `;
 
@@ -630,8 +623,8 @@ const pagedev = colors => css`
     h3 {
       ${ h3Style(colors) } }
     }
-
   } 
+
   .list-style-2 {
 
     ${ listStyle1(colors) } 
@@ -643,7 +636,6 @@ const pagedev = colors => css`
     h3 {
       ${ h3Style(colors) } }
     }
-
   } 
 
   .q-style-1 {
@@ -691,9 +683,7 @@ const pagedev = colors => css`
       }
     }
   }
-   
 }
-
 `;
 
 /* Data Page: p2102 */
@@ -752,7 +742,6 @@ const pagedata = colors => css`
     h3 {
       ${ h3Style(colors) } }
     }
-
   } 
 
   .q-style-1 {
@@ -761,7 +750,7 @@ const pagedata = colors => css`
     ${ flexCol, flex2Col } 
 
     blockquote {
-      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6) !important;
+      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6);
 
       p {
         padding: .5rem 0;
@@ -800,8 +789,54 @@ const pagedata = colors => css`
       }
     }
   } 
-}
 
+  .q-style-2 {
+      
+    margin: 2.5rem auto 2rem;
+    max-width: 450px;
+
+    blockquote {
+      border-left: 4px solid rgba(${ convert.hex.rgb(colors.bs.warning).join()},0.8);
+
+      p {
+        padding: .5rem 0;
+        line-height: 4rem;
+        background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
+        box-shadow: 0 -6px 0 rgba(${ convert.hex.rgb(colors.bs.warning).join()}, 0.8);
+        color: ${ colors.coal };
+        white-space: pre-wrap;
+        text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()}, 0.5);
+        border-width: 0.5rem 0;
+
+        span {
+          display: inline-block;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -0.5rem;
+          right: 100%;
+          bottom: -0.5rem;
+          width: 0.5rem;
+        }
+      }
+
+      cite {
+        font-size: 1.8rem;
+        color: ${ colors.white };
+        text-shadow: 1px 1px 0 rgba(${ convert.hex.rgb(colors.coal).join()},0.5);
+      }
+    
+      &::after {
+        background: rgba(${ convert.hex.rgb(colors.bs.warning).join()},0.8);
+      }
+    }
+  }
+
+}
 `;
 
 /* Marketing Page: p2128 */
@@ -844,7 +879,6 @@ const pagemarketing = colors => css`
       font-size: 1rem;
       font-family: "Pacifico";
     }
-
   } 
 
   .q-style-1 {
@@ -852,47 +886,93 @@ const pagemarketing = colors => css`
     ${ quoteStyle1 } 
     ${ flexCol, flex2Col } 
 
-    blockquote {
-      border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6) !important;
+      blockquote {
+        border-left: 4px solid rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6);
 
-      p {
-        padding: .5rem 0;
-        line-height: 4rem;
-        background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
-        box-shadow: -3px -6px 0 rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6), 3px 3px 0 rgba(255,0,180,0.6);
-        color: ${ colors.coal };
-        white-space: pre-wrap;
-        text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()},0.5);
-        border-width: 0.5rem 0;
+        p {
+          padding: .5rem 0;
+          line-height: 4rem;
+          background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
+          box-shadow: -3px -6px 0 rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.6), 3px 3px 0 rgba(255,0,180,0.6);
+          color: ${ colors.coal };
+          white-space: pre-wrap;
+          text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()},0.5);
+          border-width: 0.5rem 0;
 
-        span {
-          display: inline-block;
-          padding-left: 1rem;
-          padding-right: 1rem;
+          span {
+            display: inline-block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -0.5rem;
+            right: 100%;
+            bottom: -0.5rem;
+            width: 0.5rem;
+          }
         }
 
-        &::after {
-          content: "";
-          position: absolute;
-          top: -0.5rem;
-          right: 100%;
-          bottom: -0.5rem;
-          width: 0.5rem;
+        cite {
+          font-size: 1.8rem;
+          color: ${ colors.coal };
+          text-shadow: 1px 1px 0 rgba(${ convert.hex.rgb(colors.white).join()},0.5);
         }
-      }
-
-      cite {
-        font-size: 1.8rem;
-        color: ${ colors.coal };
-        text-shadow: 1px 1px 0 rgba(${ convert.hex.rgb(colors.white).join()},0.5);
-      }
     
-      &::after {
-        background: rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.7);
+        &::after {
+          background: rgba(${ convert.hex.rgb(colors.disco.blue).join()},0.7);
+        }
+      }
+    } 
+    
+    .q-style-2 {
+      
+      margin: 2.5rem auto 2rem;
+      max-width: 450px;
+  
+      blockquote {
+        border-left: 4px solid rgba(${ convert.hex.rgb(colors.bs.info).join()},0.8);
+  
+        p {
+          padding: .5rem 0;
+          line-height: 4rem;
+          background: rgba(${ convert.hex.rgb(colors.white).join()},0.6);
+          box-shadow: 0 -6px 0 rgba(${ convert.hex.rgb(colors.bs.info).join()}, 0.8);
+          color: ${ colors.coal };
+          white-space: pre-wrap;
+          text-shadow: 0 1px 1px rgba(${ convert.hex.rgb(colors.white).join()}, 0.5);
+          border-width: 0.5rem 0;
+  
+          span {
+            display: inline-block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+  
+          &::after {
+            content: "";
+            position: absolute;
+            top: -0.5rem;
+            right: 100%;
+            bottom: -0.5rem;
+            width: 0.5rem;
+          }
+        }
+  
+        cite {
+          font-size: 1.8rem;
+          color: ${ colors.white };
+          text-shadow: 1px 1px 0 rgba(${ convert.hex.rgb(colors.coal).join()},0.5);
+        }
+      
+        &::after {
+          background: rgba(${ convert.hex.rgb(colors.bs.info).join()},0.8);
+        }
       }
     }
-  } 
-}
+  }
 
 `;
 

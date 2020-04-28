@@ -154,5 +154,6 @@ const PostBody = styled(Col)`
 
   a {
     font-weight: bold;
+    padding: .1rem;
   }
 `;
