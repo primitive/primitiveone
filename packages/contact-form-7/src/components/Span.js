@@ -26,7 +26,7 @@ const Span = ( { state, children, className, spanKey } ) => {
 		<span className={ className }>
 			{ children }
 			{ errorMessage && (
-				<NotValidTip css={css`color: ${state.theme.colors.red};`}>⬆ { errorMessage }</NotValidTip>
+				<NotValidTip color={state.theme.colors.red}>⬆ { errorMessage }</NotValidTip>
 			) }
 		</span>
 	);
@@ -43,7 +43,7 @@ const NotValidTip = styled.span`
 	width: 60%;
 	min-width: 300px;
 	background-color: rgba(255,255,255,.6); 
-	${ color => color };
+	color: ${props => props.color || "red"};
     font-size: 1.2rem;
 	font-weight: normal;
 	text-align: center;

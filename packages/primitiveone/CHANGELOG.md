@@ -21,21 +21,29 @@ Very, very loosly following [Conventional Commits](https://conventionalcommits.o
 ## WIP
 
 - T: fade in lazy loaded images
+- T: Fade in lazy loaded images?
 - T: Google Analitics: Review and implement package when released
-- T: Research conditional loading of various UI cores + theme
+- T: Research conditional loading of various UI cores + theme ()
+- T: Create shoelace theme vars
 - T: Set base CSS to use none/twentytwenty/bootstrap
+
+
 
 - Q: benefits of useEffect vs self-invoking
 - Q: why favour function components over class components
 - Q: why favour .js over .jsx
-- Q: why favour typescript
 - Q: why favour styled vars after exports
-- Q: why favour loadable, conditional
+- Q: imports / conditional / slots?
 
 - 
 
 
 ## History
+
+1.1.1 > Update (April 29, 2020):
+- Theming and config
+- Minimise Bootrap use / create shoelace implimentation 
+- Apply custom styling/theme to CF7 components
 
 1.1.0 > Major Update (April 01, 2020):
 - Fixed full URI redirects 
@@ -48,15 +56,21 @@ Very, very loosly following [Conventional Commits](https://conventionalcommits.o
 - - New content block components / rocks
 - - New animated content block / scenes
 - - New cpt/taxonomy components 
-- - Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
+- - New Social components
 - - 
+- - Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
+
 
 - Intergrate New Frontity Features:
 - - Custom Post Types and Taxonomies
 - - - Added some custom post types / taxonomies content to wp
+- - - Added CPT views and content blocks
 - - - Done via plugins ACF+CPT UI (I've not modified functions.php at all yet)
 
 - - Switch/router plus hi-jacked some code updates from the twentytwenty theme
+
+- - Added cf7 package
+
 
 1.0.11 > Update (January 15, 2020): 
 - Plan: CPT/Taxonomies, 
@@ -95,3 +109,5 @@ Update (October 06, 2019):
 
 1st Working Draft Release (September 16, 2019):  
 - Deployed to Zeit Now with Google analytics  
+
+ 🐒 - 

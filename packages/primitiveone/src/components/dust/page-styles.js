@@ -228,6 +228,51 @@ const pageall = colors => css`
     }
   }
 
+  .btn {
+    display: block;
+    max-width: 300px;
+    margin: 2rem auto;
+
+    a {
+      display: block;
+      padding: .5rem;
+      color: ${colors.white};
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      opacity: .8;
+
+      &:hover {
+        color: ${colors.white};
+        opacity: 1;
+      }
+    }
+
+    &:hover a {
+      color: ${colors.white};
+      opacity: 1;
+    }
+  }
+
+  .btn-primary {
+    
+    text-shadow: 2px 2px 2px rgba(${ convert.hex.rgb(colors.coal).join()}, .2);
+    background-color: ${colors.bs.primary};
+    border: 1px solid ${colors.bs.primary};
+    border-left: 5px solid ${colors.bs.primary};
+    transition: all .5s ease-in-out;
+
+    &:hover {
+      background-color: ${colors.bs.primary};
+      border: 1px solid ${colors.bs.primary};
+      max-width: 360px;
+    }
+    &:active {
+      text-shadow: 1px 1px 0px rgba(${ convert.hex.rgb(colors.coal).join()}, .3);
+      max-width: 360px;
+    }
+  }
+
 
   .thinglist {
     display: flex;
@@ -921,7 +966,7 @@ const pagecontact = colors => css`
         box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
       }
 
-      input, textarea {
+      input[type=text], input[type=number], input[type=email], textarea {
         border: 0;
         padding: 1rem;
         width: 100%;
@@ -930,6 +975,10 @@ const pagecontact = colors => css`
         background-color: white;
         background-image: linear-gradient(180deg, rgba(227, 255, 231, .6) 0%, rgba(217, 231, 255, .6) 100%);
         box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .btn {
+        width: 80%;
       }
 
       span.ftype {

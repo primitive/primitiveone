@@ -25,9 +25,9 @@ const Message = ( { state } ) => {
 	const getMessage = () => {
 
 		if ( 'sent' === responseInfo.status ) {
-			return <SuccessMessage>{ responseInfo.message }</SuccessMessage>
+			return <SuccessMessage color={state.theme.colors.green} border={state.theme.colors.bs.success}>{ responseInfo.message }</SuccessMessage>
 		} else if ( 'failed' === responseInfo.status ) {
-			return <ErrorMessage>{ responseInfo.validationErrors }</ErrorMessage>
+			return <ErrorMessage color={state.theme.colors.red} border={state.theme.colors.bs.danger} >{ responseInfo.validationErrors }</ErrorMessage>
 		} else {
 			return '';
 		}
@@ -39,13 +39,25 @@ const Message = ( { state } ) => {
 };
 
 const SuccessMessage = styled.div`
-    border: 2px solid #398f14;
-    padding: 0.75rem 1.25rem;
+	margin: .5rem 1rem 0;
+	padding: 1rem;
+	color: ${props => props.color || "green"};
+    border: 2px solid ${props => props.border || "green"};
+	background: rgba(255,255,255, .6);
+	border-radius: .3rem;
+	text-shadow: 1px 1px 1px white;
+	box-shadow: 1px 1px 2px rgba(0,0,0, .4);
 `;
 
 const ErrorMessage = styled.div`
-    border: 2px solid #ff2c18;
-    padding: 0.75rem 1.25rem;
+	margin: .5rem 1rem 0;
+	color: ${props => props.color || "red"};
+    border: 2px solid ${props => props.border || "red"};
+	padding: 0.75rem 1.25rem;
+	background: rgba(255,255,255, .6);
+	border-radius: .3rem;
+	text-shadow: 1px 1px 1px white;
+	box-shadow: 1px 1px 2px rgba(0,0,0, .4);
 `;
 
 export default connect( Message );
