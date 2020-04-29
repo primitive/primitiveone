@@ -914,6 +914,7 @@ const pagecontact = colors => css`
         border-top-left-radius: .3rem;
         border-top-right-radius: .3rem;
         color: rgb(0,165,70);
+        font-size: 1.3rem;
         font-weight: 800;
         letter-spacing: 1px;
         text-shadow: 1px 1px 0 rgba(0,165,70, .3);
@@ -952,7 +953,7 @@ const pagecontact = colors => css`
 
       .form-group {
       
-        span {
+        .wpcf7-form-control-wrap {
           display: block;
 
           &::before {

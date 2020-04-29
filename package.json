@@ -28,7 +28,7 @@
     "eslint": "^6.8.0",
     "facepaint": "^1.2.1",
     "frontity": "^1.5.3",
-    "frontity-contact-form-7": "./packages/contact-form-7",
+    "frontity-contact-form-7": "file:packages/contact-form-7",
     "npm-check-updates": "^4.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
