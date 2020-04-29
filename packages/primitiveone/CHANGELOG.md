@@ -1,113 +1,131 @@
-# Change Log
+# @primitivedigital/primitiveone
 
-All notable changes to this project and some odd comments may be documented here.
-
-Very, very loosly following [Conventional Commits](https://conventionalcommits.org) guidelines.
-
+Log
 
  🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO.
 
-## Notes
+All notable changes to this project and some odd comments may be documented here.
 
-// https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events
-// https://wp.primitivedigital.uk/wp-json/wp/v2/timelines
-// https://wp.primitivedigital.uk/wp-json/wp/v2/work
+Commit messages are very loosly following [Conventional Commits](https://conventionalcommits.org).
 
-// OR
-// https://wp.primitivedigital.uk/wp-json/acf/v3/temporal_events
-// https://wp.primitivedigital.uk/wp-json/acf/v3/timelines
+1.1.0: restructured. development of theme-able system
+
+1.0.0: customised theme based on early release of frontity mars theme
 
 
-## WIP
+## Dev Notes
 
-- T: fade in lazy loaded images
-- T: Fade in lazy loaded images?
-- T: Google Analitics: Review and implement package when released
-- T: Research conditional loading of various UI cores + theme ()
-- T: Create shoelace theme vars
-- T: Set base CSS to use none/twentytwenty/bootstrap
+1. sort/filters: modify the wp theme funtions.php or use a plugin?
 
 
+*Noted Issues / already resolved:*
+* arrays in settings have duplicated values
+* dependency errors
+* vercel(zeit) problems .gitignore, .nowignore - build folder
 
-- Q: benefits of useEffect vs self-invoking
-- Q: why favour function components over class components
-- Q: why favour .js over .jsx
-- Q: why favour styled vars after exports
-- Q: imports / conditional / slots?
+- [ ] BS emotion warnings
+- [ ] Random content errors
+- [ ] Some CSS-IN-JS gets messed up on prod build?
+- [ ] Some Fonts gets messed up on prod build?
 
-- 
+- [ ] FIX or FEAT: author list view / profile
+- [ ] FIX: menu collapse / routing
+
+
+## WIP / TODO
+
+- [ ] WIP filter and sort
+- [ ] WIP: custom cpt/taxonomy components 
+- [ ] Optimise for Mobile: Don't serve some animations on mobile, 
+- [ ] WebFonts: Tested as per docs. Implementation works but some google fonts don't convert well to .woff
+- [ ] Google Analitics: Review and implement package (current implementation doesn't track 404s)
+- [ ] Fade in lazy loaded images?
+- [ ] Research conditional loading of various UI cores + theme ()
+- [ ] Create *shoelace* theme vars
+- [ ] Set base CSS to use none/twentytwenty/bootstrap?
+
+
+- Q: useEffect vs self-invoking
+- Q: imports / conditional / slots?  
 
 
 ## History
 
-1.1.1 > Update (April 29, 2020):
-- Theming and config
-- Minimise Bootrap use / create shoelace implimentation 
-- Apply custom styling/theme to CF7 components
+**1.1.1 > Update (April 29, 2020):**
+- [x] Develop base theming and config
+- [x] Minimise Bootrap use / create shoelace implimentation 
+- [x] Apply custom styling/theme to CF7 components
 
-1.1.0 > Major Update (April 01, 2020):
-- Fixed full URI redirects 
-- Server clean up
-- Deploy new CDN and Edge Caching
+**1.1.0 > MAJOR Update (April 01, 2020):**
+- [x] Fixed full URI redirects
+- [x] Server clean up
+- [x] Deployed new CDN and Edge Cache system
 
-- Update project structure to work with templating/config (views/blocks/elements)
-- - Reduce CSS classes and global styles
-- - New views / mountains
-- - New content block components / rocks
-- - New animated content block / scenes
-- - New cpt/taxonomy components 
-- - New Social components
-- - 
-- - Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
-
-
-- Intergrate New Frontity Features:
-- - Custom Post Types and Taxonomies
-- - - Added some custom post types / taxonomies content to wp
-- - - Added CPT views and content blocks
-- - - Done via plugins ACF+CPT UI (I've not modified functions.php at all yet)
-
-- - Switch/router plus hi-jacked some code updates from the twentytwenty theme
-
-- - Added cf7 package
+#### - [x] Update project structure;
+- [x] New templating/config (views/blocks/elements)
+- [x] Reduced CSS classes and global styles
+- [x] Split post / page styles
+- [x] New views / mountains
+- [x] New content block components / rocks
+- [x] New animated content block / scenes
+- [x] New cpt/taxonomy components 
+- [x] New social components
+- [x] intagram: post(s)
+- [x] facebook: like, page
+- [x] Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
 
 
-1.0.11 > Update (January 15, 2020): 
+#### - [x] Intergrate New Frontity Features;
+- [x] Custom Post Types and Taxonomies
+- [x] Added some custom post types / taxonomies content to wp
+- [x] Added CPT views and content blocks
+- [x] Done via plugins ACF+CPT UI (I've not modified functions.php at all yet)
+- [x] Switch/router plus hi-jacked some code updates from the twentytwenty theme
+- [x] Added cf7 package and /contact page
+
+
+**1.0.11 > Update (January 15, 2020):**
 - Plan: CPT/Taxonomies, 
 - Housekeeping!!!: tidy up frontity.settings.js
 - Update: Frontity and all dependencies updated.
 
-1.0.10 > Update (December 15, 2019): 
-- Confirmed "Query strings break routing / 404s" as resolved: https://github.com/frontity/frontity/issues/229
+**1.0.10 > Update (December 15, 2019):** 
+- Confirmed ["Query strings break routing / 404s" as resolved](https://github.com/frontity/frontity/issues/229)
 - Refine: replace :nth-child with :nth-of-type in datamap css
 - Update: Frontity and all dependencies updated.
 
-Update (October 27, 2019):  
-- Resolved: React-bootstrap Tabs aria issue: https://github.com/react-bootstrap/react-bootstrap/pull/4331
+**Update (October 27, 2019):** 
+- Resolved: [React-bootstrap Tabs aria issue](https://github.com/react-bootstrap/react-bootstrap/pull/4331)
 - Test: Images URLs modified for auto responsive sizing in mock-widget block
 - Installed redirect plugin to prevent access to WP (rest server) frontend
 - Config files updated
 - Previous now deployment failed, adding mars-theme config/files back resolved this
 
-
-Update (October 09, 2019):  
+**Update (October 09, 2019):**
 - Footer updated
 - Clean install performed
-- Published as npm package: https://www.npmjs.com/package/primitiveone
-- Test, preload/preconnect: https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect
+- Published [@primitivedigital/primitiveone as npm package](https://www.npmjs.com/package/primitiveone)
+- Test, [preload/preconnect](https://developers.google.com/web/fundamentals/performance/resource-prioritization?utm_source=lighthouse&utm_medium=devtools#preconnect)
 
-
-Update (October 06, 2019):  
+**Update (October 06, 2019):**
 - Frontity core and package updated
 - Clean wp install done to new subdomain
-- Settings, read.me and project structure updated, unused modules removed
+- Settings, readme and project structure updated, unused modules removed
 - Began CSS code splitting
 
-1st Release/RC (October 01, 2019):  
+**1st Release/RC (October 01, 2019):**
 - Performance enhancements and docs update  
 - Moved static images to cloudinary and set format to auto
 
-1st Working Draft Release (September 16, 2019):  
-- Deployed to Zeit Now with Google analytics  
+**1st Working Draft Release (September 16, 2019):**
+- Deployed to Zeit Now with basic Google analytics snippet  
+  
+#### Ω - *the end*
 
- 🐒 - 
+ > 🐒 - 🐒 - 🐒 - 🐒 - 🐒 - 🐒 - 🐒 - 🐒       
+<pre>                      
+._ _  _. _| _  |_    ._ _  _ ._ | o _  _  
+| | |(_|(_|(/_ |_)\/ | | |(_)| ||<|(/__>  
+                  /                      
+</pre>
+> [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
