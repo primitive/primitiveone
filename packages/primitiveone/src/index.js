@@ -35,7 +35,8 @@ const primitiveOne = {
           showBronze: true,
           showPromo: false,
           heroConfig: {
-            rocks: "scene",
+            rocks: "scenes",
+            scene: "pd-jungle",
             fluid: "true"
           },
           introConfig: {
