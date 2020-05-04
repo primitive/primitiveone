@@ -1,32 +1,40 @@
 # @primitivedigital/primitiveone
 
-Log
+***The Log of Change***
 
  🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO,  🔥️ HOT 🥔 POTATO.
 
-All notable changes to this project and some odd comments may be documented here.
+To whom it may concern. Some odd comments may be documented here.
 
-Commit messages are very loosly following [Conventional Commits](https://conventionalcommits.org).
+Commit messages are loosly following [Conventional Commits](https://conventionalcommits.org).
 
-1.1.0: restructured. development of theme-able system
+1.1.0: restructured for development of theme-able system. WIP
 
-1.0.0: customised theme based on early release of frontity mars theme
+1.0.0: customised theme based on early release of frontity mars theme. published to npm.
 
 
 ## Dev Notes
 
-1. sort/filters: modify the wp theme funtions.php or use a plugin?
-
 
 *Noted Issues / already resolved:*
 * arrays in settings have duplicated values
-* dependency errors
-* vercel(zeit) problems .gitignore, .nowignore - build folder
+* dependency errors, depricviation errors
+* vercel(zeit) deployment failure .gitignore, .nowignore - build folder issue with github integration.
 
+- [ ] WIP: sort/filters: modify the wp theme funtions.php or use a plugin?
+- [ ] base and custom cpt/taxonomy components (recent, random, related)
 - [ ] BS emotion warnings
 - [ ] Random content errors
-- [ ] Some CSS-IN-JS gets messed up on prod build?
+- [ ] Some CSS-IN-JS gets messed up on prod build (this could have been an extra '}'?
+
+- [ ] WebFonts: Tested as per docs. Implementation works but some google fonts don't convert well
+- [ ] Some Google Fonts gets messed up converting to .woff/.woff2
 - [ ] Some Fonts gets messed up on prod build?
+
+- [ ] [SEO: Add Site maps](https://community.frontity.org/t/xml-sitemaps-landing-in-wordpress-core/1153)
+- [ ] SEO: Google Analitics: Review and implement package (current implementation doesn't track 404s)
+- [ ] [SEO: Frontity Blog](https://frontity.org/blog/seo-for-headless-wordpress-themes/)
+- [ ] [WP Theme Bridge](https://community.frontity.org/t/theme-bridge/1432/12)
 
 - [ ] FIX or FEAT: author list view / profile
 - [ ] FIX: menu collapse / routing
@@ -34,11 +42,7 @@ Commit messages are very loosly following [Conventional Commits](https://convent
 
 ## WIP / TODO
 
-- [ ] WIP filter and sort
-- [ ] WIP: custom cpt/taxonomy components 
-- [ ] Optimise for Mobile: Don't serve some animations on mobile, 
-- [ ] WebFonts: Tested as per docs. Implementation works but some google fonts don't convert well to .woff
-- [ ] Google Analitics: Review and implement package (current implementation doesn't track 404s)
+- [ ] Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
 - [ ] Fade in lazy loaded images?
 - [ ] Research conditional loading of various UI cores + theme ()
 - [ ] Create *shoelace* theme vars
