@@ -1,89 +1,15 @@
 import { css } from "frontity";
+import cssReset from "./_reset";
 //import bootstrapCSS from 'bootstrap/dist/css/bootstrap.min.css';
-
-// sk-dev: review resets and base styling use in bootrap, frontity2020
-// https://github.com/twbs/bootstrap/blob/master/dist/css/bootstrap-reboot.css
 
 // sk-dev: this causes a warning: https://github.com/emotion-js/emotion/issues/1105
 //const bootstrapStyles = css`${bootstrapCSS}`;
 
-const cssReset = css`
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-body {
-  margin: 0;
-  padding: 0;
-  color: black;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  background-color: white;
-  border: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-address,
-big,
-cite,
-code,
-em,
-font,
-img,
-small,
-strike,
-sub,
-sup,
-li,
-ol,
-ul,
-fieldset,
-form,
-label,
-legend,
-button,
-table,
-caption,
-tr,
-th,
-td {
-  border: none;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-}
-
-blockquote::before,
-blockquote::after {
-  content: "";
-}
-
-a,
-path {
-  transition: all 0.15s linear;
-}
-
-`;
-
-// sk-dev: x-browser scroll is a pain in the donkey, needs work
+// sk-dev: x-browser scroll is a pain in the donkey, needs work. Fails on mobile.
 // https://css-tricks.com/the-current-state-of-styling-scrollbars/
+
+// sk-dev: min-with causes overflow on mobile
+// https://stackoverflow.com/questions/22946264/setting-a-minimum-width-to-fit-on-responsive-website
 
 const documentSetup = colors => css`
   html {
@@ -134,7 +60,6 @@ const documentSetup = colors => css`
 
   .container {
     max-width: 1140px;
-    min-width: 480px;
   }
   
   /* --- RESPONSIVE --- */
@@ -190,6 +115,7 @@ const elementBase = colors => css`
     font-weight: 500;
     line-height: 1.2;
   }
+  
   h1 { font-size: 2.5rem; }
   h2 { font-size: 2rem; }
   h3 { font-size: 1.75rem; }
@@ -197,9 +123,9 @@ const elementBase = colors => css`
   h5 { font-size: 1.25rem; }
   h6 { font-size: 1rem; }
 
-  h1, .slab {  font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; font-size: 3.3rem; }
-  h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3rem; }
-  h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; font-size: 3rem; }
+  h1, .slab {  font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; }
+  h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; }
   h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
   h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; }
   h6, .scribe { font-family: 'Pacifico', Georgia, cursive; }
