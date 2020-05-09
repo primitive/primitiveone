@@ -1,11 +1,12 @@
 import { css } from "frontity";
 import cssReset from "./_reset";
+import themeClasses from "./_theme";
 //import bootstrapCSS from 'bootstrap/dist/css/bootstrap.min.css';
 
 // sk-dev: this causes a warning: https://github.com/emotion-js/emotion/issues/1105
 //const bootstrapStyles = css`${bootstrapCSS}`;
 
-// sk-dev: x-browser scroll is a pain in the donkey, needs work. Fails on mobile.
+// sk-dev: x-browser scroll is a pain in the donkey, needs work. Fails on mobile
 // https://css-tricks.com/the-current-state-of-styling-scrollbars/
 
 // sk-dev: min-with causes overflow on mobile
@@ -116,19 +117,12 @@ const elementBase = colors => css`
     line-height: 1.2;
   }
   
-  h1 { font-size: 2.5rem; }
-  h2 { font-size: 2rem; }
-  h3 { font-size: 1.75rem; }
-  h4 { font-size: 1.5rem; }
-  h5 { font-size: 1.25rem; }
-  h6 { font-size: 1rem; }
-
-  h1, .slab {  font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; }
-  h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-  h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; }
-  h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-  h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; }
-  h6, .scribe { font-family: 'Pacifico', Georgia, cursive; }
+  h1, .slab {  font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif; font-size: 3.3rem; }
+  h2, .heading { font-family: 'Amatic SC', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 3rem; }
+  h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; font-size: 3rem; }
+  h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.6rem;}
+  h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; font-size: 1.3rem; }
+  h6, .scribe { font-family: 'Pacifico', Georgia, cursive; font-size: 1.1rem; }
 
   p {
     margin: 0 0 1rem 0;
@@ -478,6 +472,7 @@ const tableStyles = colors => css`
   }
 `;
 
+
 const globalStyle = colors =>
   css([
     cssReset,
@@ -489,8 +484,8 @@ const globalStyle = colors =>
     quoteStyle(colors),
     codeStyle(colors),
     mediaStyle(colors),
-    tableStyles(colors)
-    //themeClasses(colors)
+    tableStyles(colors),
+    themeClasses(colors)
   ]);
 
 export default globalStyle;

@@ -6,45 +6,115 @@ import convert from 'color-convert';
 // do i need the .post to not overide global a?
 const postall = colors => css`
 
-  .intro {
-    font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
-    text-align: center;
-    padding: 3px 5%;
-    font-size: 1.3rem;
-  }
+  .post {
 
-  .hello {
-    padding: 1rem 1.2rem;
-    font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    color: ${colors.coal};
+    /* sk-dev: nested overrides */
+  
+    /* sk-dev: issue - adjacent a tags have no padding */
+    /* sk-dev: test direct selectors */
 
-    a {
-      color: ${colors.bs.secondary};
+    h2 { margin-top: 2rem; }
+
+    p > a, strong > a {
+      margin-left: .25rem;
+      margin-right: .25rem;
+      color: inherit;
+      border-bottom: 2px solid ${colors.bs.warning};
+      background-image: linear-gradient(120deg, ${colors.bs.warning} 0%, ${colors.bs.warning} 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.0em;
+      background-position: 0 100%;
+      transition: background-size 0.125s ease-in;
+
+      &:hover {
+        text-decoration: none;
+        background-size: 100% 100%;
+        color: black;
+      }
     }
-  }
 
-  .blurb {
-    padding: 1rem 1.2rem;
-    font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    color: ${colors.bs.primary};
 
-    a {
-      color: ${colors.bs.secondary};
+    .intro {
+      font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+      text-align: center;
+      padding: 3px 5%;
+      font-size: 1.3rem;
     }
-  }
 
-  .panache {
-    font-family: Baskerville, Georgia, serif; 
-    padding: .5rem 5% .1rem;
-    font-size: 1.6rem;
-    color:  rgba(${ convert.hex.rgb(colors.coal).join()}, .7);
+    .hello {
+      padding: 1rem 1.2rem;
+      font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
+      font-size: 2rem;
+      color: ${colors.coal};
+  
+      a {
+        color: ${colors.bs.secondary}; 
+        border-bottom: none;
+        background: none;
+        transition: all 0.125s ease-in;
 
-    strong, a {
+        &:hover {
+          text-decoration: none;
+          background: none;
+          color: ${colors.bs.danger}; 
+        }
+      }
+    }
+
+    .blurb {
+      padding: 1rem 1.2rem;
+      font-size: 2rem;
+      font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
       color: ${colors.bs.primary};
+  
+      a {
+        color: ${colors.bs.primary}; 
+        border-bottom: none;
+        background: none;
+        transition: all 0.125s ease-in;
+
+        &:hover {
+          text-decoration: none;
+          background: none;
+          color: ${colors.bs.info}; 
+        }
+      }
     }
+
+    .panache {
+      padding: .5rem 5% .1rem;
+      font-size: 1.6rem;
+      font-family: Baskerville, Georgia, serif; 
+      color:  rgba(${ convert.hex.rgb(colors.coal).join()}, .7);
+          
+      strong, a {
+        color: ${colors.bs.primary}; 
+        border-bottom: none;
+        background: none;
+        transition: all 0.125s ease-in;
+
+        &:hover {
+          text-decoration: none;
+          background: none;
+          color: ${colors.bs.warning}; 
+        }
+      }
+    }
+
+    .heading {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    
+    /* end .post wrap - increased css specificity */
   }
+
+
+
+
+  
 
   .circle-primary {
     padding: 2rem 1rem 2rem 1rem;;
@@ -144,12 +214,15 @@ const postall = colors => css`
       font-size: 1.2rem;
       text-align: center;
       text-decoration: none;
-      opacity: .8;
+      border: none;
+      background: transparent;
+      opacity: .9;
 
       &:hover {
         color: ${colors.white};
         opacity: 1;
       }
+
     }
 
     &:hover a {
@@ -159,45 +232,88 @@ const postall = colors => css`
   }
 
   .btn-primary {
-    
     text-shadow: 2px 2px 2px rgba(${ convert.hex.rgb(colors.coal).join()}, .2);
     background-color: ${colors.bs.primary};
     border: 1px solid ${colors.bs.primary};
     border-left: 5px solid ${colors.bs.primary};
     transition: all .5s ease-in-out;
 
-    &:hover {
+    &:hover, &:active, &:focus {
       background-color: ${colors.bs.primary};
       border: 1px solid ${colors.bs.primary};
       max-width: 360px;
     }
-    &:active {
-      text-shadow: 1px 1px 0px rgba(${ convert.hex.rgb(colors.coal).join()}, .3);
-      max-width: 360px;
-    }
+
   }
     
 
 `;
 
 // target wp classes
-const wpclasses = css`    
-    .has-text-align-left {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
+const wpclasses = colors => css`    
+
+    .overlay-text figure {
+      position: relative;
+      
+      figcaption {
+        padding: 1rem;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-family: "Playfair Display";
+        font-size: 5rem;
+        color: black;
+        text-align: center;
+        mix-blend-mode: screen;
+        background-color: rgba(244, 220, 211, .8);
+      }
     }
-    .has-text-align-center {
-      width: 60%;
-      margin-left: auto;
-      margin-right: auto;
+
+    .wp-block-image {
+      margin-bottom: 1.5rem; 
     }
+
+    blockquote.has-text-align-center {
+
+      position: relative;
+
+      cite {
+        font-family: "Comfortaa";
+        font-size: .7rem;
+        letter-spacing: 3px;
+
+        a {
+          color: ${colors.gray};
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+      
+      &::before {
+        content: "";
+        display: block;
+        height: 135px;
+        width: 240px;
+        position: absolute;
+        left: -243px;
+        top: 0;
+        background-image: url("https://media.giphy.com/media/aTGwuEFyg6d8c/giphy.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        opacity: .8;
+      }
+      
+    }
+
 `;
 
 const postStyles = colors =>
   css([
     postall(colors),
-    wpclasses
+    wpclasses(colors)
   ]);
 
 export default postStyles;
