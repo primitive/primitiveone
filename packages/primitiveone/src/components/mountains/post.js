@@ -152,8 +152,6 @@ const PostBody = styled(Col)`
   color: rgba(12, 17, 43, 0.8);
   word-break: break-word;
 
-  a {
-    font-weight: bold;
-    padding: .1rem;
-  }
+  background: transparent;
+
 `;
