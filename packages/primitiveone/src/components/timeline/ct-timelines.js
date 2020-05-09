@@ -1,28 +1,49 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
-
 import { setTitle } from "../sand/utils";
 import CustomTaxonomyItem from "./ct-item";
 
-// In a React component that uses "connect":
+// A connected Frontity component to display custom taxonomies:
 const Timelines = ({ state, actions }) => {
 
-  // 1.a fetch data related to a path
-  // actions.source.fetch("/timelines/");
+  /*
 
-  // 2. get data from frontity state
-  const data = state.source.get("/timelines/");
+    Hello, what type of skeleton are we workin with?
+
+    : get data skeleton / retrieve info about what kind of content should be rendered for the current path in frontity state.
+
+  */
+
+  const data = state.source.get(state.router.link);
 
   useEffect(() => {
-    // 1.b fetch data related to a path using side effects (like calling on ComponentDidMount)
-    actions.source.fetch("/timelines/");
-    //List.preload();
+
+    /*
+
+      Request delivery of full skeleton.
+    
+      : fetch data related to a path using side effects is similar to calling on ComponentDidMount
+      : this action fetches all entities related to a link, i.e. the pathname of a URL in your site.
+
+    */
+
+    actions.source.fetch(state.router.link);
+
+    // preloading N/A here?
+
   }, []);
 
+  console.log("@ct-timelines: data", data);
   //console.log("@ct-timelines: data", state.source[data.taxonomy]);
   //console.log("@ct-timelines: state.source", state.source);
   //console.log("@ct-timelines: data", data.items);
+
+  /*
+
+    Now Let's Dress it!
+
+  */
 
   return (
     <StyledTimelines className="container-fluid">
@@ -58,6 +79,12 @@ const Timelines = ({ state, actions }) => {
 };
 
 export default connect(Timelines);
+
+  /*
+
+    Vally of the wardrobe mistress
+
+  */
 
 const StyledTimelines = styled.main`
   background-color: transparent;

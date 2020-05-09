@@ -8,14 +8,14 @@ import Pagination from "../pebbles/pagination";
 //import {sortBy} from "../sand/sortUtils"
 import {getTerm} from "../sand/utils"
 
-// In a React component that uses "connect":
+// A connected React component to display custom post types by custom taxonomies:
 const SubTimeline = ({ state, actions }) => {
 
   // 2. get the data from frontity state
   const data = state.source.get( state.router.link );
 
   useEffect(() => {
-    // 1.b fetch data related to a path using side effects (like calling on ComponentDidMount / ComponentDidMount)
+    // 1.b fetch data related to a path using side effects (like calling on ComponentDidMount / ComponentDidUpdate )
     actions.source.fetch( state.router.link );
     //List.preload();
   }, []);
@@ -52,7 +52,8 @@ const SubTimeline = ({ state, actions }) => {
           {/* Regular display - iterate over the items of the list. */}
           {data.items.map(({ type, id }) => {
             const item = state.source[type][id];
-            console.log(item);
+
+            // console.log(item);
 
             // Render one Item component for each one.
             return <Item key={item.id} item={item} />;
@@ -71,6 +72,12 @@ const SubTimeline = ({ state, actions }) => {
 };
 
 export default connect(SubTimeline);
+
+  /*
+
+    Vally of the wardrobe mistress
+
+  */
 
 const StyledList = styled.main`
   background-color: transparent;
