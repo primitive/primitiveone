@@ -3,8 +3,6 @@
 // https://community.frontity.org/t/frontity-release-support-for-custom-post-types-custom-taxonomies/698
 // https://community.frontity.org/t/how-do-i-get-all-custom-posts-in-the-list-js-to-work/1105/2
 
-
-
 import {getTerm} from "./utils"
 
 const timelinesHandler = {
@@ -17,8 +15,6 @@ const timelinesHandler = {
 
     const _timelines = await libraries.source.populate({ response, state });
 
-    //console.log("_timelines", _timelines);
-
     Object.assign(state.source.data[route], {
       isTaxonomy: true,
       isTimelines: true,
@@ -26,12 +22,9 @@ const timelinesHandler = {
       taxonomy: 'timelines',
 
       items: _timelines.map(item => ({
-        
         type: 'temporal_events',
         id: item.id,
         taxonomy:  'timelines',
-        //name:  item.name,
-        //slug:  item.slug,
         link: item.link
       })),
 
@@ -41,7 +34,8 @@ const timelinesHandler = {
 
 
 /*
-  end point tests
+  endpoint tests
+    ? use wp filter plugin : add custom endpoint to functions.php
   
   url pattern:
     /temporal_events
@@ -51,6 +45,7 @@ const timelinesHandler = {
 OK > https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events?[orderby]=year&order=desc
 OK > https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events?[orderby]=year&order=asc
 
+TO TEST >
 https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events?[orderby]=year&order=asc
 https://wp.primitivedigital.uk/wp-json/wp/v2/temporal_events?filter[timelines]&filter[term]=internet
 
@@ -61,14 +56,15 @@ const timelineHandler = {
   func: async ({ route, params, state, libraries }) => {
     //const filterOn = getTerm( route );
     const filterOn = params.slug;
+    const sortBy = 'desc';
+    console.log("_state", state);
     const response = await libraries.source.api.get({
-      // endpoint: "temporal_events?[orderby]=year&order=asc"
-      endpoint: "temporal_events?filter[taxonomy]=timelines&filter[term]="+filterOn+"&[orderby]=year&order=asc"
+      //endpoint: "temporal_events?[orderby]=year&order="+sortBy
+      endpoint: "temporal_events?filter[taxonomy]=timelines&filter[term]="+filterOn
+      //endpoint: "temporal_events?filter[taxonomy]=timelines&filter[term]="+filterOn+"&[orderby]=year&order="+sortBy
     });
 
     const _timeline = await libraries.source.populate({ response, state });
-
-    console.log("_timeline", _timeline);
 
     Object.assign(state.source.data[route], {    
       isTaxonomy: true,
@@ -76,12 +72,11 @@ const timelineHandler = {
       isTimelineType: true,
       isPostType: false,
       items: _timeline.map(item => ({
-        
-        type: 'temporal_events',
         id: item.id,
-        taxonomy:  item,
-        //name:  item.name,
-        //slug:  item.slug,
+        type: 'temporal_events',
+        taxonomy:  'timelines',
+        tags:  null,
+        taxonomies:  null,
         link: item.link
       })),
     });
@@ -131,5 +126,5 @@ const servicesHandler = {
 };
 
 
-const CustomPageHandlers = [ /*temporalEventsHandler */, timelinesHandler, timelineHandler, worksHandler]
+const CustomPageHandlers = [ timelinesHandler, timelineHandler, worksHandler ]
 export default CustomPageHandlers;
