@@ -8,17 +8,19 @@ const Title = ({ state }) => {
   const data = state.source.get(state.router.link);
   // Set the default title.
   let title = state.frontity.title;
-  
+
 
   if (data.isTaxonomy) {
-    // Add titles to taxonomies, like "Category: Nature - Blog Name" or "Tag: Japan - Blog Name".
-    // 1. Get the taxonomy entity from the state to get its taxonomy term and name.
-    const { taxonomy, name } = state.source[data.taxonomy][data.id];
-    // 2. Uppercase first letter of the taxonomy term (from "category" to "Category").
-    const taxonomyCapitalized =
-      taxonomy.charAt(0).toUpperCase() + taxonomy.slice(1);
-    // 3. Render the proper title.
-    title = `${taxonomyCapitalized}: ${decode(name)} - ${state.frontity.title}`;
+    if (!data.isTimelines && !data.isTimelineType) {
+      // Add titles to taxonomies, like "Category: Nature - Blog Name" or "Tag: Japan - Blog Name".
+      // 1. Get the taxonomy entity from the state to get its taxonomy term and name.
+      const { taxonomy, name } = state.source[data.taxonomy][data.id];
+      // 2. Uppercase first letter of the taxonomy term (from "category" to "Category").
+      const taxonomyCapitalized =
+        taxonomy.charAt(0).toUpperCase() + taxonomy.slice(1);
+      // 3. Render the proper title.
+      title = `${taxonomyCapitalized}: ${decode(name)} - ${state.frontity.title}`;
+    }
   } else if (data.isAuthor) {
     // Add titles to authors, like "Author: Jon Snow - Blog Name".
     // 1. Get the author entity from the state to get its name.
@@ -36,6 +38,12 @@ const Title = ({ state }) => {
   } else if (data.is404) {
     // Add titles to 404's.
     title = `404 Not Found - ${state.frontity.title}`;
+  } else if (data.isTimelines) {
+    // Add titles to Timeline Custom Taxonomy
+    title = `Primitive Digital - Adventures in Time`;
+  } else if (data.isTimelineType) {
+    // Add titles to Timeline Custom Post Types
+    title = `Primitive Digital - Adventures in Time`;
   }
 
   return (
