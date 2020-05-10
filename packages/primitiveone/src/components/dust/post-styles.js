@@ -42,10 +42,17 @@ const postall = colors => css`
     }
 
     .hello {
+      display: inline-block;
       padding: 1rem 1.2rem;
       font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
       font-size: 2rem;
       color: ${colors.coal};
+
+      /* don't work
+      &::first-letter {
+        initial-letter: 2;
+      }
+      */
   
       a {
         color: ${colors.bs.secondary}; 
@@ -106,6 +113,10 @@ const postall = colors => css`
       padding-bottom: 2rem;
       text-align: center;
       font-size: 2.5rem;
+    }
+
+    .news {
+      font-size: 1.5rem;
     }
     
     /* end .post wrap - increased css specificity */
@@ -271,6 +282,23 @@ const wpclasses = colors => css`
       }
     }
 
+    .equation figure {
+      overflow: hidden;
+      border-radius: 150px 15px 150px 15px/15px 150px 15px 150px;
+      box-shadow: 0 2px 2.2px rgba(0,0,0,0.034), 
+                  0 6px 5.3px rgba(0,0,0,0.048), 
+                  0 12px 10px rgba(0,0,0,0.06);
+
+        figcaption {
+          
+          padding: .5rem 1.5rem 1.5rem;
+          font-family: "Amatic SC";
+          font-size: 2rem;
+          text-align: center;
+          color: black;
+          text-shadow: 1px 12px 0 rgba(255,255,255,.8);
+        }
+    }
     .wp-block-image {
       margin-bottom: 1.5rem; 
     }
