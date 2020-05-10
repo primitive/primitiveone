@@ -42,18 +42,11 @@ const postall = colors => css`
     }
 
     .hello {
-      display: inline-block;
       padding: 1rem 1.2rem;
       font-family: 'Hepta Slab', Georgia, 'Times New Roman', Times, serif;
       font-size: 2rem;
       color: ${colors.coal};
 
-      /* don't work
-      &::first-letter {
-        initial-letter: 2;
-      }
-      */
-  
       a {
         color: ${colors.bs.secondary}; 
         border-bottom: none;
