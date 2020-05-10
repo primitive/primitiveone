@@ -14,12 +14,12 @@ const settings = {
       state: {
         theme: {
           menu: [
-            [ "Home", "/" ],
-            [ "Design", "/web-design" ],
-            [ "Development", "/web-development" ],
-            [ "Data", "/data-insights" ],
-            [ "Marketing", "/marketing" ],
-            [ "A Nice Log", "/blog" ]
+            ["Home", "/"],
+            ["Design", "/web-design"],
+            ["Development", "/web-development"],
+            ["Data", "/data-insights"],
+            ["Marketing", "/marketing"],
+            ["A Nice Log", "/blog"]
           ],
           featured: {
             showOnList: true,
@@ -27,6 +27,14 @@ const settings = {
           }
         }
       }
+    },
+    {
+      name: "@frontity/google-analytics",
+      state: {
+        googleAnalytics: {
+          trackingIds: ['UA-61815763-1']
+        },
+      },
     },
     {
       name: "@frontity/wp-source",

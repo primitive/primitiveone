@@ -33,15 +33,19 @@ const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
   const display = state.theme.config;
 
-  //console.log("@index: data", data);
+  console.log("@index: data", data);
   //console.log("@index: display", display);
 
-  // sk-dev: basic tracking snippet to be replaced with frontity package once released
-  function initializeReactGA() {
-    ReactGA.initialize('UA-61815763-1');
-    ReactGA.pageview(state.router.link);
-  }
-  initializeReactGA();
+  /*
+   sk-dev: basic tracking snippet (fails to report 404s/Errors)
+          : 10/05/20 replaced as per: https://community.frontity.org/t/using-frontity-analytics/1677/4
+          
+    function initializeReactGA() {
+      ReactGA.initialize('UA-61815763-1');
+      ReactGA.pageview(state.router.link);
+    }
+    initializeReactGA();
+  */
 
   return (
     <>
@@ -54,7 +58,7 @@ const Theme = ({ state }) => {
       <Global styles={globalStyles(state.theme.colors)} />
 
       {/* sk-dev: TESTING <FontFaces /> */}
-      
+
       {/* Add some metatags to the <head> of the HTML. */}
       <MetaTitle />
       <Head>
@@ -81,21 +85,23 @@ const Theme = ({ state }) => {
 
       <BodyWrapper className="wrap-body">
 
-      <Switch>
-            <Loading when={data.isFetching} />
-            <Home when={data.isHome} />
-            <Posts when={data.isArchive} />
-            <Posts when={data.isPostArchive} />
-            <Post when={data.isPost} />
-            <Page when={data.isPage} />
-    
-            <PageError when={data.isError} />
+        <Switch>
 
-            <Timeline when={data.isTemporalEventsArchive} />
-            <SubTimeline when={data.isTimelineType} />
-            <Timelines when={data.isTimelines} />
+          <Loading when={data.isFetching} />
 
-      </Switch>    
+          <Home when={data.isHome} />
+          <Posts when={data.isArchive} />
+          <Posts when={data.isPostArchive} />
+          <Post when={data.isPost} />
+          <Page when={data.isPage} />
+
+          <PageError when={data.isError} />
+
+          <Timeline when={data.isTemporalEventsArchive} />
+          <SubTimeline when={data.isTimelineType} />
+          <Timelines when={data.isTimelines} />
+
+        </Switch>
 
       </BodyWrapper>
 
