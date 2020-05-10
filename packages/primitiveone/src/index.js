@@ -22,9 +22,13 @@ const primitiveOne = {
       colors: colortheme,
       // show all post content or only the excerpt in archive views
       // showAllContentOnArchive: false,
+
       config: {
         breakpoints: {
-          sm: ""
+          sm: "",
+          md: "",
+          lg: "",
+          xl: ""
         },
         rootEm: "62.5%",
         homepage: {
@@ -69,7 +73,7 @@ const primitiveOne = {
             imagesrc2: "https://wp.primitivedigital.uk/wp-content/uploads/promo/selfiemonkey_square.jpg",
             listFrame2: "frame",
             list2: ["Get a custom built Website", "Professionally designed and branded", "Plus Logo design", "Plus business card design", "Easy, peasy chimpanzizi!"],
-            link2: "/business-in-a-box/",
+            link2: "/darwin-project/",
             icon2: ""
           }
         },
