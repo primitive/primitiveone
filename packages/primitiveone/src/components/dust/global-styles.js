@@ -122,7 +122,9 @@ const elementBase = colors => css`
   h3, .news { font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif; font-size: 3rem; }
   h4, .display { font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.6rem;}
   h5, .subslab { font-family: 'Slabo 27px', Georgia, 'Times New Roman', Times, serif; font-size: 1.3rem; }
-  h6, .scribe { font-family: 'Pacifico', Georgia, cursive; font-size: 1.3rem; }
+  h6 { font-family: 'Pacifico', Georgia, cursive; font-size: 1.3rem; }
+
+.scribe { font-family: 'Pacifico', Georgia, cursive;}
 
   p {
     margin: 0 0 1rem 0;

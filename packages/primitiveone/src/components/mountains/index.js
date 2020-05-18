@@ -33,11 +33,11 @@ const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
   const display = state.theme.config;
 
-  console.log("@index: data", data);
+  //console.log("@index: data", data);
   //console.log("@index: display", display);
 
   /*
-   sk-dev: basic tracking snippet (fails to report 404s/Errors)
+   sk-dev: basic tracking snippet (this fails to report any 404s/Errors)
           : 10/05/20 replaced as per: https://community.frontity.org/t/using-frontity-analytics/1677/4
           
     function initializeReactGA() {
@@ -90,7 +90,7 @@ const Theme = ({ state }) => {
           <Loading when={data.isFetching} />
 
           <Home when={data.isHome} />
-          <Posts when={data.isArchive} />
+          { /* <Posts when={data.isArchive} /> */ }
           <Posts when={data.isPostArchive} />
           <Post when={data.isPost} />
           <Page when={data.isPage} />
