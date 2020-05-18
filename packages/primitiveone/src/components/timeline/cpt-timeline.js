@@ -7,7 +7,7 @@ import PostMagic from "../scenes/postmagic";
 import Pagination from "../pebbles/pagination";
 import {sortBy} from "../sand/utils"
 
-// In a React component that uses "connect":
+// a connected Frontity component to display custom post types:
 const Timeline = ({ state, actions }) => {
 
   // 1.a fetch the data related to a path ( this path should be set in frontity.settings.js ??? )
@@ -24,10 +24,6 @@ const Timeline = ({ state, actions }) => {
 
   console.log("@cpt-timeline: data", data);
 
-  // 3. get entities from frontity state
-  //if (data.isPostTypeArchive) {
-  //if (data.isTemporalEventsArchive) {
-
   // the category entity ???
   // const category = state.source.category[data.id];
 
@@ -40,9 +36,9 @@ const Timeline = ({ state, actions }) => {
   //console.log("@cpt-timeline: actions", JSON.stringify(actions));
   //console.log(data.input_data['price-row_122']); 
 
-  console.log("@cpt-timeline: data.items", data.items);
+  //console.log("@cpt-timeline: data.items", data.items);
   
-  //data.items.sort(sortBy("Name"));
+  data.items.sort(sortBy("year"));
 
   // render your content
   return (

@@ -5,10 +5,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Item from "./cpt-item";
 import PostMagic from "../scenes/postmagic";
 import Pagination from "../pebbles/pagination";
-//import {sortBy} from "../sand/sortUtils"
-import {getTerm} from "../sand/utils"
+import {getTerm, sortBy} from "../sand/utils"
 
-// A connected React component to display custom post types by custom taxonomies:
+// a connected Frontity component to display custom post types by custom taxonomies:
 const SubTimeline = ({ state, actions }) => {
 
   // 2. get the data from frontity state
@@ -21,11 +20,11 @@ const SubTimeline = ({ state, actions }) => {
   }, []);
 
   console.log("@cpt-subtimeline: data", data);
-  //console.log("@cpt-subtimeline: state", state);
+  console.log("@cpt-subtimeline: state", state);
   //console.log("@cpt-subtimeline: actions", actions);
   //console.log("@cpt-subtimeline: data.items", data.items);
   
-  //data.items.sort(sortBy("Name"));
+  data.items.sort(sortBy("year"));
 
   // render your content
   return (
@@ -55,7 +54,7 @@ const SubTimeline = ({ state, actions }) => {
 
             // console.log(item);
 
-            // Render one Item component for each one.
+            // Render one Item component for each item.
             return <Item key={item.id} item={item} />;
           })}
 
@@ -66,9 +65,6 @@ const SubTimeline = ({ state, actions }) => {
 
     </StyledList>
   );
-
-  //}
-
 };
 
 export default connect(SubTimeline);

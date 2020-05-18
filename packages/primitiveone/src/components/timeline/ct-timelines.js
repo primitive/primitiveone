@@ -4,12 +4,12 @@ import { Container, Row, Col } from "react-bootstrap";
 import { setTitle } from "../sand/utils";
 import CustomTaxonomyItem from "./ct-item";
 
-// A connected Frontity component to display custom taxonomies:
+// a connected Frontity component to display custom taxonomies:
 const Timelines = ({ state, actions }) => {
 
   /*
 
-    Hello, what type of skeleton are we workin with?
+    Hello, what type of skeleton we workin with?
 
     : get data skeleton / retrieve info about what kind of content should be rendered for the current path in frontity state.
 
