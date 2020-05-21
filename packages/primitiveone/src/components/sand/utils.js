@@ -90,7 +90,8 @@ export function setTitle(ctname) {
     if (ctname === "timelines") {
         return (<h1><span className="scribe">Adventures in...</span> Time</h1>);
     }
-    return (<h1><span className="scribe">The Taxonomy of: </span> + ctname + </h1>);
+    ctname = ctname.replace("-", ' ');
+    return (<h1><span className="scribe">Evolution of... </span> {ctname}</h1>);
 }
 
 

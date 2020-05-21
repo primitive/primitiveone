@@ -51,11 +51,12 @@ const timelinesHandler = {
     const _timelines = await libraries.source.populate({ response, state });
 
     Object.assign(state.source.data[route], {
+      isPostType: false,
       isTaxonomy: true,
       isTimelines: true,
-      isPostType: false,
+      isTimelineType: false,
       taxonomy: 'timelines',
-
+      
       items: _timelines.map(item => ({
         type: 'temporal_events',
         id: item.id,
@@ -105,11 +106,13 @@ const timelineHandler = {
       isTimelines: false,
       isTimelineType: true,
       isPostType: false,
+      taxType:  params.slug,
+      //taxId:  params.slug,
 
       items: _timeline.map(item => ({
         id: item.id,
         type: item.type,
-        taxonomy:  'timelines',
+        //taxonomy:  'timelines',
         year: state.source[item.type][item.id].acf.year,
         tags:  null,
         timelines:  state.source[item.type][item.id].timelines,

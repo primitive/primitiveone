@@ -5,25 +5,25 @@ import { Container, Row, Col } from "react-bootstrap";
 import Item from "./cpt-item";
 import PostMagic from "../scenes/postmagic";
 import Pagination from "../pebbles/pagination";
-import {getTerm, sortBy} from "../sand/utils"
+import { setTitle, getTerm, sortBy } from "../sand/utils"
 
-// a connected Frontity component to display custom post types by custom taxonomies:
+// a connected Frontity component to display custom post types by custom taxonomies
 const SubTimeline = ({ state, actions }) => {
 
-  // 2. get the data from frontity state
-  const data = state.source.get( state.router.link );
+  // get the data from frontity state
+  const data = state.source.get(state.router.link);
 
   useEffect(() => {
-    // 1.b fetch data related to a path using side effects (like calling on ComponentDidMount / ComponentDidUpdate )
-    actions.source.fetch( state.router.link );
-    //List.preload();
+    // fetch data related to this route using side effects (like calling on ComponentDidMount / ComponentDidUpdate )
+    actions.source.fetch(state.router.link);
   }, []);
 
   console.log("@cpt-subtimeline: data", data);
-  console.log("@cpt-subtimeline: state", state);
+  //console.log("@cpt-subtimeline: state", state);
   //console.log("@cpt-subtimeline: actions", actions);
   //console.log("@cpt-subtimeline: data.items", data.items);
-  
+
+  // fe sort, to be replaced
   data.items.sort(sortBy("year"));
 
   // render your content
@@ -34,7 +34,7 @@ const SubTimeline = ({ state, actions }) => {
         <Container>
           <Row>
             <Col>
-              <h1><span className="scribe">The Evolution of </span>Digital Stuff and Other Things</h1>
+              {data.isTimelineType ? setTitle(data.taxType) : <h1><span className="scribe">The Evolution of </span>Digital Stuff and Other Things</h1>}
             </Col>
           </Row>
         </Container>
@@ -44,7 +44,7 @@ const SubTimeline = ({ state, actions }) => {
         <Container>
 
           {/* Sort available data items */}
-          
+
           {/* Animated display - iterate over the items of the list and wrap in tween component. */}
           {/* <PostMagic items={data.items} /> */}
 
@@ -69,11 +69,11 @@ const SubTimeline = ({ state, actions }) => {
 
 export default connect(SubTimeline);
 
-  /*
+/*
 
-    Vally of the wardrobe mistress
+  Vally of the wardrobe mistress
 
-  */
+*/
 
 const StyledList = styled.main`
   background-color: transparent;
@@ -97,6 +97,7 @@ const PageHeader = styled.header`
 
       h1 {
         font-weight: 400;
+        text-transform: capitalize;
       }
   
       h1 span {
