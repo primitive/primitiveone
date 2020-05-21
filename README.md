@@ -9,11 +9,11 @@ Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/
 
 With little help from our friends: Bootstrap 4, GSAP and ScrollMagic. 
 
-Live demo site: https://primitivedigital.co.uk
+Live demo site: [Primitive Digital](https://primitivedigital.co.uk)
 
-GitHub: https://github.com/primitiveshaun/primitiveone
+GitHub Repo: https://github.com/primitiveshaun/primitiveone
 
-NPM: https://www.npmjs.com/package/primitiveone
+NPM (v1.0.x): https://www.npmjs.com/package/primitiveone
 
 WordPress hosting by: [Primitive Hosting](https://primitivehosting.uk/)
 

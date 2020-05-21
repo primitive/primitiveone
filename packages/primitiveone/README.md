@@ -9,20 +9,22 @@ Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/
 
 With little help from our friends: Bootstrap 4, GSAP and ScrollMagic. 
 
-Live demo site: https://primitivedigital.co.uk  
+Live demo site: [Primitive Digital](https://primitivedigital.co.uk)
 
-GitHub: https://github.com/primitiveshaun/primitiveone
+GitHub Repo: https://github.com/primitiveshaun/primitiveone
 
-NPM: https://www.npmjs.com/package/primitiveone
+NPM (v1.0.x): https://www.npmjs.com/package/primitiveone
 
 WordPress hosting by: [Primitive Hosting](https://primitivehosting.uk/)
 	
 See [changelog](CHANGELOG.md) for release notes.
 
 
-## Performance Comparrison Testing (WIP)
+## Performance Testing (WIP)
 
 [GTMetrix Report: 29th April](https://gtmetrix.com/reports/primitivedigital.co.uk/tyY4ZsWo)
+[Google PageSpeed Insigts: 98 Desktop](https://developers.google.com/speed/pagespeed/insights/?url=primitivedigital.co.uk&tab=desktop&hl=en_GB)
+[Google PageSpeed Insigts: 62 Mobile](https://developers.google.com/speed/pagespeed/insights/?url=primitivedigital.co.uk&tab=mobile&hl=en_GB)
 
 Check back for links to compare the performance of various deployments.  
 

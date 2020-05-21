@@ -15,24 +15,23 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## Dev Notes
 
+* dependency errors, depreciation errors
 
 *Noted Issues / already resolved:*
 * arrays in settings have duplicated values
-* dependency errors, depricviation errors
-* vercel(zeit) deployment failure .gitignore, .nowignore - build folder issue with github integration.
+* vercel(zeit) deployment failure .gitignore, .nowignore - build folder issue with github setup.
+* Some CSS-IN-JS gets messed up on prod build. this could have been an extra '}'?
 
 - [ ] WIP: sort/filters: modify the wp theme funtions.php or use a plugin?
 - [ ] base and custom cpt/taxonomy components (recent, random, related)
-- [ ] BS emotion warnings
 - [ ] Random content errors
-- [ ] Some CSS-IN-JS gets messed up on prod build (this could have been an extra '}'?
 
+- [ ] BS emotion warnings
 - [ ] WebFonts: Tested as per docs. Implementation works but some google fonts don't convert well
-- [ ] Some Google Fonts gets messed up converting to .woff/.woff2
-- [ ] Some Fonts gets messed up on prod build?
+- [ ] TBC. Some Google Fonts gets messed up converting to .woff/.woff2
+- [ ] TBC. Some Fonts gets messed up on prod build?
 
 - [ ] [SEO: Add Site maps](https://community.frontity.org/t/xml-sitemaps-landing-in-wordpress-core/1153)
-- [ ] SEO: Google Analitics: Review and implement package (current implementation doesn't track 404s)
 - [ ] [SEO: Frontity Blog](https://frontity.org/blog/seo-for-headless-wordpress-themes/)
 - [ ] [WP Theme Bridge](https://community.frontity.org/t/theme-bridge/1432/12)
 
@@ -44,16 +43,24 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 - [ ] Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
 - [ ] Fade in lazy loaded images?
-- [ ] Research conditional loading of various UI cores + theme ()
-- [ ] Create *shoelace* theme vars
-- [ ] Set base CSS to use none/twentytwenty/bootstrap?
-
+- [ ] Research conditional loading of UI cores + theme
+- [ ] Create *shoelace* theme vars (color, breakpoints)
+- [ ] Set base CSS to use none/twentytwenty/bootstrap (grid, classes, --modifiers-size/transparency/darken/lighten)
+- [ ] Split primitiverocks package
+- [ ] Split primitivescenes package
+- [ ] Split theme / dev staging
+- [ ] Research create a UI/cf7 theme builder vs cli
 
 - Q: useEffect vs self-invoking
 - Q: imports / conditional / slots?  
 
 
 ## History
+
+**1.1.2 > Update (May 19, 2020):**
+- [x] Update Frontity / packages
+- [x] Added Google Analytics package (May 10th): [@frontity/google-analytics](https://www.npmjs.com/package/@frontity/google-analytics)
+
 
 **1.1.1 > Update (April 29, 2020):**
 - [x] Develop base theming and config
@@ -74,7 +81,7 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 - [x] New animated content block / scenes
 - [x] New cpt/taxonomy components 
 - [x] New social components
-- [x] intagram: post(s)
+- [x] instagram: post(s)
 - [x] facebook: like, page
 - [x] Refine use of Bootstrap/CSS Frameworks and global/component CSS-IN-JS (emotion)
 
