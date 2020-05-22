@@ -4,17 +4,15 @@ import { connect, styled } from "frontity";
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween, Timeline } from 'react-gsap';
 import Item from "../timeline/cpt-item";
+import { gsap } from 'gsap';
+import { CSSPlugin } from "gsap/CSSPlugin.js";
+gsap.registerPlugin(CSSPlugin);
 
-/*
-  import 'react-gsap/CustomEase'; 
-  let CustomEase:null;
-*/
 
 const TweenComponent = ({ state, items }) => {
 
   const delorean = {
     fuel: `${items.length * 100}%`,
-
     seatbelt: true,
     fluxCapacitor: true
   };
@@ -32,10 +30,10 @@ const TweenComponent = ({ state, items }) => {
           <Timeline
             wrapper={<div id="postmagic" />}
             target={
-              <div style={{ width: '100px', height: '100px', background: '#ccc' }} />
+              <div style={{ width: '100px', height: '90px', background: '#ccc' }} />
             }
           >
-            <Tween from={{ x: '-100px', opacity: 0 }} to={{ x: '20vw', opacity: 1 }} duration={.2} />
+            <Tween from={{ x: '-100px', opacity: 0 }} to={{ x: '50vw', opacity: 1 }} duration={.5} />
 
             {/* Iterate over the items of a list. */}
             {items.map(({ type, id, index}) => {
@@ -44,36 +42,26 @@ const TweenComponent = ({ state, items }) => {
               // Render one Item component for each one.
               return (
                 <Tween
-                  staggerFrom={{
-                    css: {
+                  from={{
                       left: '90%',
                       opacity: '1.0',
-                      height: '50%',
-                      width: '10%',
-                      borderWidth: '10px',
-                      borderColor: 'blue',
-                      borderStyle: 'solid'
-                    }
+                      
+                      width: '12%',
                   }}
-                  staggerTo={{
-                    css: {
+                  to={{
                       left: '-120%',
                       //opacity: '1.0',
                       height: '100%',
                       width: '100%',
                       borderWidth: '1px',
-                    }
                   }}
 
-
-                  
-                  ease="Expo.easeOut" // sk-dev: https://greensock.com/docs/v2/Easing
-                  //ease={CustomEase.create("custom", "M0,0,C0,0,-0.05,0.571,0.074,0.752,0.119,0.818,0.383,0.569,0.435,0.631,0.481,0.687,0.509,0.719,0.56,0.77,0.603,0.814,0.631,0.839,0.68,0.876,0.717,0.905,0.743,0.921,0.785,0.943,0.822,0.963,0.849,0.974,0.89,0.985,0.929,0.995,1,1,1,1")}
+                  ease="ease.out"
                   key={item.id}
                 >
-                  <div className="a-post">
+                  <Post>
                     <Item key={item.id} item={item} z={`-${index}`}/>
-                  </div>
+                  </Post>
                 </Tween>
               )
 
@@ -83,7 +71,7 @@ const TweenComponent = ({ state, items }) => {
         </Scene>
 
       </Controller>
-      <div />
+
     </TweenStyled>
   );
 };
@@ -96,17 +84,16 @@ const TweenStyled = styled.div`
   overflow: hidden;
 
   #postmagic {
-
     height: 60vw;
     position: relative;
   }
-  .a-post {
-      height: 60vw;
-      max-width: 100%;
-      max-height: 100%;
-      position: absolute;
-      margin: 0 !important;
-      opacity: 0;
-  }
-  
+`;
+
+const Post = styled.div`
+  height: 60vw;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  margin: 0;
+  opacity: 0;
 `;
