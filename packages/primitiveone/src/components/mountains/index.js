@@ -25,27 +25,19 @@ import SubTimeline from "../timeline/cpt-subtimeline";
 import globalStyles from '../dust/global-styles';
 //import FontFaces from "../dust/font-faces";
 
-import ReactGA from 'react-ga';
-
 
 const Theme = ({ state }) => {
 
+  // get skeletal data model
   const data = state.source.get(state.router.link);
+
+  // get the theme config from state
   const display = state.theme.config;
 
-  //console.log("@index: data", data);
-  //console.log("@index: display", display);
-
-  /*
-   sk-dev: basic tracking snippet (this fails to report any 404s/Errors)
-          : 10/05/20 replaced as per: https://community.frontity.org/t/using-frontity-analytics/1677/4
-          
-    function initializeReactGA() {
-      ReactGA.initialize('UA-61815763-1');
-      ReactGA.pageview(state.router.link);
-    }
-    initializeReactGA();
-  */
+  if (state.theme.config.devMode) {
+    // console.log("@index: data", data);
+    console.log("@index: display", display);
+  }
 
   return (
     <>
@@ -109,7 +101,7 @@ const Theme = ({ state }) => {
 
       {display.global.showSocial && <GlobalSocial />}
 
-      { /* ??? global sections promo + social stuff - implement conditional slots/fills ??? data.isHome && <Promo /> */}
+      { /* ??? global sections promo + social stuff - conditional slots/fills ??? data.isHome && <Promo /> */}
       { /* display.showPromo && <Slot name="slot-1" /> */}
 
       <Footer />

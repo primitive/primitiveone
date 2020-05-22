@@ -12,24 +12,29 @@ import DiscoPreload from "../scenes/preload-disco";
 
 const Post = ({ state, actions, libraries }) => {
 
-  // Get info of current post.
+  // get skeletal data model for current post.
   const data = state.source.get(state.router.link);
-  // Get the the post.
+
+  // get the the post.
   const post = state.source[data.type][data.id];
-  // Get the author.
-  const author = state.source.author[post.author];
-  // Get a date for humans.
+
+  // get date in human friendly format
   const date = new Date(post.date);
 
-  const postType = data.type;
-  const postId = data.id;
+  // get the post type, id, author.
+  const postType = data.type,
+  postId = data.id,
+  author = state.source.author[post.author];
 
   // Prefetch home posts and the list component.
   useEffect(() => {
     actions.source.fetch("/");
     List.preload();
 
-    console.log("@post: state", state );
+    if (state.theme.config.devMode) {
+      console.log("@post: state", state );
+    }
+
   }, []);
 
   // not sure this will work here?

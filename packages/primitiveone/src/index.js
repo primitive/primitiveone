@@ -24,6 +24,7 @@ const primitiveOne = {
       // showAllContentOnArchive: false,
 
       config: {
+        devMode: process.env.NODE_ENV === 'development' ? true : false,
         breakpoints: {
           sm: "",
           md: "",

@@ -17,7 +17,7 @@ const PostStrip = ({ state, actions, props }) => {
   const subtitle = props.subtitle ? props.subtitle : "From our Blog";
   const icon = props.icon ? props.icon : null;
 
-  // get the data of the posttype or default cpt 'works'.
+  // get skeletal data model for posttype or default cpt 'works'.
   const data = state.source.get("/works/");
   //const data = state.source.get("/" + posttype + "/");
 
@@ -26,7 +26,10 @@ const PostStrip = ({ state, actions, props }) => {
     //actions.source.fetch(`/${posttype}/`);
     //actions.source.fetch("/"+posttype+"/");
 
-    console.log("@post-strip: data", data);
+    if (state.theme.config.devMode) {
+      console.log("@post-strip: data", data);
+    }
+
   }, []);
 
   if (!data.isReady) return <Loading><DiscoPreload message="loading works..." /></Loading>;

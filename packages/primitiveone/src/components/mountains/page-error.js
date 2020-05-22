@@ -4,7 +4,13 @@ import { Container, Row, Col } from "react-bootstrap";
 
 // The Error page component
 const ErrorPage = ({ state }) => {
+
+  // get skeletal data model
   const data = state.source.get(state.router.link);
+
+  if (state.theme.config.devMode) {
+    console.log("@page-error: data", data);
+  }
 
   const title = "Oops, something bad happened";
   const title404 = "Oops! 404";
@@ -21,9 +27,7 @@ const ErrorPage = ({ state }) => {
 
   const description = (
     <p>
-      Don&apos;t panic! Seems like you encountered an error. If this persists,
-      <a href="https://community.frontity.org"> let us know </a> or try refreshing
-        your browser.
+      Do panic! If this persists, sit down, try drinking tea or <a href="./contact"> let us know </a>.
     </p>
   );
 

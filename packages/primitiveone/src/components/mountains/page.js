@@ -9,17 +9,21 @@ import DiscoPreload from "../scenes/preload-disco"
 
 const Page = ({ state, actions, libraries }) => {
 
-  // Get skelton data.
+  // get skeletal data model
   const data = state.source.get(state.router.link);
 
-  // Get the the full data.
+  // get full skeleton data
   const page = state.source[data.type][data.id];
   const pageId = data.id;
 
-  // Prefetch page
+  // 
   useEffect(() => {
     actions.source.fetch(state.router.link);
-    console.log("@page: data", data);
+    
+    if (state.theme.config.devMode) {
+      console.log("@page: data", data);
+    }
+    
   }, []);
 
   if (!data.isReady) return <Loading><DiscoPreload message="loading page..." /></Loading>;

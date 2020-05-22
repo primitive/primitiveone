@@ -16,12 +16,13 @@ import Bronze from "../rocks/page-home-bronze";
 
 const PageHome = ({ state }) => {
 
-  // Get the theme config from state
+  // get the theme config from state
   const display = state.theme.config.homepage;
 
-  // console.log("@page-home: state", state );
-  // console.log("@page-home: display", display );
- 
+  if (state.theme.config.devMode) {
+    console.log("@page-home: display", display );
+  }
+
   return (
     <HomePage className="page-home">
 
