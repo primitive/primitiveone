@@ -57,6 +57,10 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## History
 
+**1.1.3 > Update (May 22, 2020):**
+- [x] Update gsap to v3
+
+
 **1.1.2 > Update (May 19, 2020):**
 - [x] Update Frontity / packages
 - [x] Added Google Analytics package (May 10th): [@frontity/google-analytics](https://www.npmjs.com/package/@frontity/google-analytics)
@@ -64,7 +68,7 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 **1.1.1 > Update (April 29, 2020):**
 - [x] Develop base theming and config
-- [x] Minimise Bootrap use / create shoelace implimentation 
+- [x] Minimise Bootrap use / create shoelace implementation
 - [x] Apply custom styling/theme to CF7 components
 
 **1.1.0 > MAJOR Update (April 01, 2020):**
