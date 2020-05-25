@@ -93,6 +93,7 @@ export default connect(TemporalEvent);
 
 const StyledBlock = styled.article`
   margin: 1rem;
+  z-index: ${ props => props.z };
 
   .card-img-top {
     height: 100%;

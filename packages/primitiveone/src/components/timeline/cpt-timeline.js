@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import { connect, styled } from "frontity";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Item from "./cpt-item";
+//import Item from "./cpt-item-marker";
+import Marker from "./cpt-item-marker";
 import PostMagic from "../scenes/postmagic";
 import Pagination from "../pebbles/pagination";
-import {sortBy} from "../sand/utils"
+import { sortBy } from "../sand/utils"
 
 // a connected Frontity component to display custom post types:
 const Timeline = ({ state, actions }) => {
@@ -37,7 +38,8 @@ const Timeline = ({ state, actions }) => {
   //console.log(data.input_data['price-row_122']); 
 
   //console.log("@cpt-timeline: data.items", data.items);
-  
+
+  // sk-dev: fe hack / can't filter and sort 
   data.items.sort(sortBy("year"));
 
   // render your content
@@ -65,19 +67,29 @@ const Timeline = ({ state, actions }) => {
           )}
 
           {/* Sort available data items */}
-          
 
-          {/* Regular display - iterate over the items of the list. */}
+
+          {/* PostMagic display - iterate over the items of the list. */}
           <PostMagic items={data.items} />
 
           {/* Regular display - iterate over the items of the list. */}
-          {data.items.map(({ type, id }) => {
-            const item = state.source[type][id];
-            //console.log(item);
+          {
+            /*
+            data.items.map(({ type, id }) => {
+              const item = state.source[type][id];
+              return <Item key={item.id} item={item} />;
+            })
+            */
+          }
 
-            // Render one Item component for each one.
-            return <Item key={item.id} item={item} />;
-          })}
+          <Midground>
+            {/* relative marker display - iterate over items of the list. */}
+            {data.items.map(({ type, id }) => {
+              const item = state.source[type][id];
+              // render one Marker component for each item.
+              return <Marker key={item.id} item={item} />;
+            })}
+          </Midground>
 
         </Container>
 
@@ -140,6 +152,8 @@ const PageHeader = styled.header`
 `;
 
 const PageBody = styled.section`
-  max-width: 80%;
-  margin: auto;
+  
+`;
+const Midground = styled.div`
+  z-index: -10;
 `;
