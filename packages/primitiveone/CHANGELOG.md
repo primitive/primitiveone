@@ -16,6 +16,8 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 ## Dev Notes
 
 * dependency errors, depreciation errors
+* frontity.settings is dominant over package/index
+* review licencing
 
 *Noted Issues / already resolved:*
 * arrays in settings have duplicated values
@@ -35,11 +37,11 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 - [ ] [SEO: Frontity Blog](https://frontity.org/blog/seo-for-headless-wordpress-themes/)
 - [ ] [WP Theme Bridge](https://community.frontity.org/t/theme-bridge/1432/12)
 
-- [ ] FIX or FEAT: author list view / profile
-- [ ] FIX: menu collapse / routing
-
 
 ## WIP / TODO
+
+- [ ] FIX or FEAT: author list view / profile
+- [ ] FIX: menu collapse / routing
 
 - [ ] Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
 - [ ] Fade in lazy loaded images?
@@ -49,7 +51,10 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 - [ ] Split primitiverocks package
 - [ ] Split primitivescenes package
 - [ ] Split theme / dev staging
+- [ ] Setup wp theme repo
+- [ ] Research modify functions.php (addFilters), add options.php or expose settings cpt
 - [ ] Research create a UI/cf7 theme builder vs cli
+- [ ] Research add comments / cf7 / fe content submission
 
 - Q: useEffect vs self-invoking
 - Q: imports / conditional / slots?  
@@ -59,6 +64,7 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 **1.1.3 > Update (May 22, 2020):**
 - [x] Update gsap to v3
+- [x] Add dev mode only logging
 
 
 **1.1.2 > Update (May 19, 2020):**
