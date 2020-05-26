@@ -7,12 +7,16 @@ import Image from "@frontity/components/image";
 import { Row, Col, Card } from 'react-bootstrap';
 
 
-const TemporalEvent = ({ state, item }) => {
+const TemporalEvent = ({ state, item, layer, headerBg, headerColor }) => {
 
-  //console.log("@cpt-item: item", item);
-  
+  //console.log("@cpt-item: colors", state.theme.colors);
+
   return (
-    <StyledBlock className="card">
+    <StyledBlock
+      className="card"
+      layer={layer}
+      headerBg={headerBg}
+    >
 
       <Card.Header>
 
@@ -20,7 +24,10 @@ const TemporalEvent = ({ state, item }) => {
           <b>{item.acf.year}</b>
         </EventDate>
 
-        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+        <Title
+          headerColor={headerColor}
+          dangerouslySetInnerHTML={{ __html: item.title.rendered }}
+        />
 
       </Card.Header>
 
@@ -29,7 +36,7 @@ const TemporalEvent = ({ state, item }) => {
         <Col>
           {item.acf.image && (
             <Link link={item.acf.source}>
-              <Card.Img variant="top" src={item.acf.image} />
+              <Card.Img src={item.acf.image} />
             </Link>
           )}
         </Col>
@@ -38,17 +45,15 @@ const TemporalEvent = ({ state, item }) => {
           <Card.Body>
 
             {item.excerpt && (
-              <div>
-                <div>Excerpt:</div>
-                <div dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
-              </div>
+              <h3 dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
             )}
 
             {item.acf.info && (
-              <div>
-                <div>What:</div>
-                <div dangerouslySetInnerHTML={{ __html: item.acf.info }} />
-              </div>
+
+              <Row className="form-group">
+                <label>What:</label>
+                <Col dangerouslySetInnerHTML={{ __html: item.acf.info }} />
+              </Row>
             )}
 
             {item.acf.significance && (
@@ -59,12 +64,16 @@ const TemporalEvent = ({ state, item }) => {
             )}
 
             {item.acf.who && (
-              <div>
-                <div>Kudos to:</div>
+              <Row className="form-group">
+                <Col>
+                <label>Accredited to:</label>
+                </Col>
+                <Col>
                 <Link link={item.acf.who_link}>
-                  <div dangerouslySetInnerHTML={{ __html: item.acf.who }} />
+                  <p dangerouslySetInnerHTML={{ __html: item.acf.who }} />
                 </Link>
-              </div>
+                </Col>
+              </Row>
             )}
 
 
@@ -78,7 +87,7 @@ const TemporalEvent = ({ state, item }) => {
             {item.acf.further_info && (
               <Link link={item.acf.further_info}>
                 A
-                </Link>
+              </Link>
             )}
 
           </Card.Body>
@@ -91,32 +100,76 @@ const TemporalEvent = ({ state, item }) => {
 
 export default connect(TemporalEvent);
 
+/*
+// sk-dev: test alternate styling
+// https://emotion.sh/docs/styled
+const StyledBlock = styled.article({
+  margin: '1rem',
+  minWidth: '180px'
+  },
+  props => ({ zIndex: props.layer })
+);
+*/
+
+//const StyledBlock = props => styled.article`
+
 const StyledBlock = styled.article`
   margin: 1rem;
-  z-index: ${ props => props.z };
+  min-width: 180px;
+  z-index: ${ props => props.layer};
+  color: ${ props => props.headerBg};
+  border: 2px solid white;
+  border-radius: .6rem;
+  box-shadow: 0 8px 8px -12px rgba(0, 0, 0, 0.3), 0 15px 18px -6px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  
+  .card-header {
+    background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.738) 19%, rgba(0, 0, 0, 0.541) 34%, rgba(0, 0, 0, 0.382) 47%, rgba(0, 0, 0, 0.278) 56.5%, rgba(0, 0, 0, 0.194) 65%, rgba(0, 0, 0, 0.126) 73%, rgba(0, 0, 0, 0.075) 80.2%, rgba(0, 0, 0, 0.042) 86.1%, rgba(0, 0, 0, 0.021) 91%, rgba(0, 0, 0, 0.008) 95.2%, rgba(0, 0, 0, 0.002) 98.2%, transparent 100%),
+    ${ props => props.headerBg};
+  }
 
-  .card-img-top {
+  .card-img {
     height: 100%;
     width: 100%;
+    max-height: 400px;
     object-fit: cover;
+    border-radius: 0;
   }
 
 `;
 
 const EventDate = styled.div`
-  margin: -12px auto 12px;
-  padding: 3px 9px;
-  background: rgba(12, 17, 43, 0.9);
+  margin: -.8rem auto 1.5rem;
+  padding: 0 1rem;
+  background: #d0f0dd;
+  border-radius: 0 0 .3rem .3rem;
   color: white;
-  font-size: 0.9rem;
+  font-size: 2rem;
+  font-family: 'Slabo 27px';
+
+  box-shadow: 0px 0px 0 #40ff22,
+  0px 0px 4px #30ff1f,
+  0px 0px 8px #20ff1b,
+  0px 0px 16px #10ff18;
+
+  b {
+    padding: 1.5rem;
+    text-shadow: 1px 1px 0 #ddd;
+    background: #d0f0dd;
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 0 #40ff22,
+    0px 0px 4px #30ff1f,
+    0px 0px 8px #20ff1b,
+    0px 0px 16px #10ff18;
+  }
 `;
 
 const Title = styled.h2`
-  color: rgba(12, 17, 43);
-  margin: 0;
-  padding-top: 24px;
-  padding-bottom: 8px;
-  box-sizing: border-box;
+  padding: 1.5rem;
+  color: ${ props => props.headerColor};
+  text-align: center;
+  text-shadow: 1px 1px 0 black;
 `;
 
 const StyledImage = styled(Image)`

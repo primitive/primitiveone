@@ -32,50 +32,52 @@ const PostMagic = ({ state, items }) => {
             wrapper={<div id="postmagic" />}
           >
             <Tween
-              from={{ scale: '2', x: '-150px', y: '0px', opacity: 0 }}
+              from={{ scale: '2', x: '-150px', y: '0px', opacity: 0, duration: 2 }}
               to={{ scale: '1', x: '38vw', y: '0px', opacity: 1 }}
             >
               <Delorean />
             </Tween>
 
-            <Tween
 
-              to={{ y: '150px', opacity: 1 }}
-              //duration={.5}
-              >
-
-              <div>
                 {/* iterate over items */}
-                {items.map(({ type, id, index }) => {
+                {items.map(({ type, id }, i) => {
                   const item = state.source[type][id];
 
                   // render one [xyz] component for each one.
                   return (
                     <Tween
-                      from={{
-                        left: '90%',
-                        opacity: '1.0',
-                        width: '10%',
-                      }}
-                      to={{
-                        left: '-120%',
-                        //opacity: '1.0',
-                        height: '100%',
-                        width: '100%'
-                      }}
-
-                      
+                    
+                    from={{
+                      left: '100vw',
+                      //opacity: '0.0',
+                      //width: '10%',
+                      //height: '10%',
+                      ease: "slow(0.7, 0.7, false)"
+                    }}
+                    to={{
+                      left: '-100vw',
+                      //opacity: '1.0',
+                      //height: '80vh',
+                      //width: '100%'
+                      ease: "slow(0.7, 0.7, false)"
+                    }}
                       key={item.id}
                     >
                       <Post>
-                        <Item key={item.id} item={item} z={`-${index}`} />
+                        <Item
+                          item={item}
+                          layer={i}
+                          key={item.id} 
+                          color='blue'
+                          headerBg={state.theme.colors.coal}
+                          headerColor={state.theme.colors.white}
+                        />
                       </Post>
                     </Tween>
                   )
 
                 })}
-              </div>
-            </Tween>
+
 
           </Timeline>
         </Scene>
@@ -116,5 +118,4 @@ const Post = styled.div`
   max-height: 100%;
   position: absolute;
   margin: 0;
-  opacity: 0;
 `;

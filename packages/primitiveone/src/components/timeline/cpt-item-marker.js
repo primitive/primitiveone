@@ -1,10 +1,10 @@
 import React from "react";
 import { connect, styled } from "frontity";
-import Link from "../pebbles/link";
+//import Link from "../pebbles/link";
 
-import Image from "@frontity/components/image";
-import { Row, Col, Card } from 'react-bootstrap';
-import convert from 'color-convert';
+//import Image from "@frontity/components/image";
+//import { Row, Col, Card } from 'react-bootstrap';
+//import convert from 'color-convert';
 
 
 const TemporalEventMarker = ({ state, item }) => {
@@ -40,7 +40,7 @@ const EventDate = styled.div`
   font-family: 'Slabo 27px';
   font-size: 6rem;
   color: ${ props => props.highlight };
-  opacity: .6;
+  opacity: .5;
 
   &:before {
     content: '☞';
@@ -49,9 +49,9 @@ const EventDate = styled.div`
     width: 10rem;
     height:10rem;
     z-index: -3;
-    top: -6rem;
-    left: -5rem;
-    translate: rotate(90deg);
+    top: 1rem;
+    left: -10rem;
+    opacity: .5;
   }
 
   &:after {
@@ -74,5 +74,6 @@ const EventDate = styled.div`
 
 const Title = styled.h3`
   font-size: 6rem;
-  color: rgba(${ convert.hex.rgb(props => props.color).join()}, .1);
+  color: ${ props => props.color };
+  opacity: .1;
 `;
