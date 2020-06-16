@@ -2,7 +2,7 @@ const settings = {
   name: "primitiveone",
   state: {
     frontity: {
-      url: "https://primitivedigital.uk",
+      url: "https://primitivedigital.co.uk",
       title: "Want a Website?",
       description: "WordPress Web Sites and Apps",
       name: "Primitive Digital"
@@ -23,7 +23,8 @@ const settings = {
           ],
           featured: {
             showOnList: true,
-            showOnPost: true
+            showOnPost: true,
+            showOnPage: true
           }
         }
       }
