@@ -1,0 +1,7 @@
+# allow everything for now
+User-agent: *
+
+# wp default below
+# User-agent: *
+# Disallow: /wp-admin/
+# Allow: /wp-admin/admin-ajax.php
