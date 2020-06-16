@@ -5,7 +5,7 @@ A Headless WordPress (REST API) Theme for Frontity
 
 Created with a little Node.js and React magic. 
 
-Built on the awesome new, itty bitty, Frontity framework: https://frontity.org/ 
+Built on the awesome, itty bitty, Frontity framework: https://frontity.org/ 
 
 With little help from our friends: Bootstrap 4, GSAP and ScrollMagic. 
 
@@ -22,7 +22,9 @@ See [changelog](packages/primitiveone/CHANGELOG.md) for release notes.
 
 ## Performance Comparrison Testing (WIP)
 
+[GTMetrix Report: 1st June](https://gtmetrix.com/reports/primitivedigital.co.uk/fJDiD3ui)
 [GTMetrix Report: 29th April](https://gtmetrix.com/reports/primitivedigital.co.uk/tyY4ZsWo)
+
 
 Check back for links to compare the performance of various deployments.  
 

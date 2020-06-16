@@ -24,8 +24,10 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 * vercel(zeit) deployment failure .gitignore, .nowignore - build folder issue with github setup.
 * Some CSS-IN-JS gets messed up on prod build. this could have been an extra '}'?
 
-- [ ] WIP: sort/filters: modify the wp theme funtions.php or use a plugin?
-- [ ] base and custom cpt/taxonomy components (recent, random, related)
+## WIP
+
+- [ ] sort/filters: modify the wp theme funtions.php or use a plugin?
+- [ ] post and custom cpt/taxonomy content components (recent, random, related)
 - [ ] Random content errors
 
 - [ ] BS emotion warnings
@@ -33,28 +35,32 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 - [ ] TBC. Some Google Fonts gets messed up converting to .woff/.woff2
 - [ ] TBC. Some Fonts gets messed up on prod build?
 
-- [ ] [SEO: Add Site maps](https://community.frontity.org/t/xml-sitemaps-landing-in-wordpress-core/1153)
-- [ ] [SEO: Frontity Blog](https://frontity.org/blog/seo-for-headless-wordpress-themes/)
-- [ ] [WP Theme Bridge](https://community.frontity.org/t/theme-bridge/1432/12)
-
-
-## WIP / TODO
-
-- [ ] FIX or FEAT: author list view / profile
 - [ ] FIX: menu collapse / routing
+- [ ] FIX: preloading
+- [ ] Refine: Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
+- [ ] FIX or FEAT: author list view / profile
+- [ ] FEAT: Fade in lazy loaded images?
+- [ ] Create *shoelace* theme (grid, size, color, breakpoints) + fragments
 
-- [ ] Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
-- [ ] Fade in lazy loaded images?
-- [ ] Research conditional loading of UI cores + theme
-- [ ] Create *shoelace* theme vars (color, breakpoints)
-- [ ] Set base CSS to use none/twentytwenty/bootstrap (grid, classes, --modifiers-size/transparency/darken/lighten)
 - [ ] Split primitiverocks package
 - [ ] Split primitivescenes package
 - [ ] Split theme / dev staging
 - [ ] Setup wp theme repo
+- [ ] Publish to npm
+
+- [ ] [SEO: Add Site maps](https://community.frontity.org/t/xml-sitemaps-landing-in-wordpress-core/1153)
+- [ ] [SEO: Frontity Blog](https://frontity.org/blog/seo-for-headless-wordpress-themes/)
+- [ ] [Theme: WP Theme Bridge](https://community.frontity.org/t/theme-bridge/1432/12)
+
+
+## TODO
+
 - [ ] Research modify functions.php (addFilters), add options.php or expose settings cpt
+- [ ] Research conditional loading of UI cores + theme
+- [ ] Set base CSS to use none/twentytwenty/bootstrap (grid, classes, --modifiers-size/transparency/darken/lighten)
 - [ ] Research create a UI/cf7 theme builder vs cli
 - [ ] Research add comments / cf7 / fe content submission
+- [ ] Add post social share
 
 - Q: useEffect vs self-invoking
 - Q: imports / conditional / slots?  
