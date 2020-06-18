@@ -16,7 +16,7 @@
       }
     },
     {
-      "src": "/redirect",
+      "src": "/302-test",
       "dest": "https://primitivedigital.co.uk/stats"
     },
     {
@@ -27,16 +27,8 @@
       }
     },
     {
-      "src": "/wp-admin/",
-      "dest": "https://wp.primitivedigital.uk/wp-admin/"
-    },
-    {
-      "src": "/wp-login.php",
-      "dest": "https://wp.primitivedigital.uk/wp-login.php"
-    },
-    {
       "src": "/sitemap_index.xml",
-      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
+      "dest": "https://api.primitivedigital.uk/sitemap_index.xml"
     }
 
     

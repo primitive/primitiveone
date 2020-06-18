@@ -68,6 +68,10 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## History
 
+**1.1.4 > Update (April, 2020):**
+- [x] Testing of config and plugins.
+- [x] 
+
 **1.1.3 > Update (May 22, 2020):**
 - [x] Update gsap to v3
 - [x] Add dev mode only logging
