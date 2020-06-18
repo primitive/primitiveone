@@ -12,7 +12,7 @@
       "src": "/page301",
       "status": 301,
       "headers": {
-        "Location": "https://primitivedigital.co.uk/blog/"
+        "Location": "https://primitivedigital.co.uk/blog/primitiveone"
       }
     },
     {
@@ -20,14 +20,10 @@
       "dest": "https://primitivedigital.co.uk/stats"
     },
     {
-      "src": "/sitemap-test.xml",
-      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
-    },
-    {
       "src": "/sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://wp.primitivedigital.uk/sitemap_index.xml"
+        "Location": "https://primitivedigital.co.uk/sitemap_index.xml"
       }
     },
     {
@@ -37,6 +33,10 @@
     {
       "src": "/wp-login.php",
       "dest": "https://wp.primitivedigital.uk/wp-login.php"
+    },
+    {
+      "src": "/sitemap_index.xml",
+      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
     }
 
     
