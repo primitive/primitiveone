@@ -1,30 +1,38 @@
 {
-    "version": 2,
-    "alias": "primitivedigital.co.uk",
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@frontity/now"
+  "version": 2,
+  "alias": "primitivedigital.co.uk",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@frontity/now"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/page301",
+      "status": 301,
+      "headers": {
+        "Location": "https://primitivedigital.co.uk/blog/"
       }
-    ],
-    "routes": [	
-      {
-        "src": "/301",
-        "status": 301,
-        "headers": { "Location": "https://primitivedigital.co.uk/blog/" }
-      },
-      {
-        "src": "/redirect",
-        "dest": "https://primitivedigital.co.uk/stats"
-      },
-      {
-        "src": "/sitemap.xml",
-        "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
-      },
-      {
-        "src": "/sitemap2.xml",
-        "status": 301,
-        "headers": { "Location": "https://wp.primitivedigital.uk/sitemap_index.xml" }
+    },
+    {
+      "src": "/redirect",
+      "dest": "https://primitivedigital.co.uk/stats"
+    },
+    {
+      "src": "/sitemap-test.xml",
+      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
+    },
+    {
+      "src": "/sitemap.xml",
+      "status": 301,
+      "headers": {
+        "Location": "https://wp.primitivedigital.uk/sitemap_index.xml"
       }
-      ]
-  }
+    },
+    {
+      "src": "/wp-admin/",
+      "dest": "https://wp.primitivedigital.uk"
+    }
+  ]
+}
