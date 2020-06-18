@@ -32,7 +32,13 @@
     },
     {
       "src": "/wp-admin/",
-      "dest": "https://wp.primitivedigital.uk"
+      "dest": "https://wp.primitivedigital.uk/wp-admin/"
+    },
+    {
+      "src": "/wp-login.php",
+      "dest": "https://wp.primitivedigital.uk/wp-login.php"
     }
+
+    
   ]
 }
