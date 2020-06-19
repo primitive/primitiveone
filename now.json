@@ -41,6 +41,10 @@
     {
       "src": "/wp-login.php",
       "dest": "https://wp.primitivedigital.uk/wp-login.php"
+    },
+    {
+      "src": "/wp-admin/",
+      "dest": "https://wp.primitivedigital.uk/wp-admin/"
     }
   ]
 }
