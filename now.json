@@ -28,9 +28,15 @@
     },
     {
       "src": "/sitemap_index.xml",
-      "dest": "https://api.primitivedigital.uk/sitemap_index.xml"
+      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
+    },
+    {
+      "src": "/wp-includes/",
+      "dest": "https://wp.primitivedigital.uk/wp-includes/"
+    },
+    {
+      "src": "/wp-content/",
+      "dest": "https://wp.primitivedigital.uk/wp-content/"
     }
-
-    
   ]
 }
