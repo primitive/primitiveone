@@ -30,12 +30,12 @@
       "src": "/sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://wp.primitivedigital.co.uk/sitemap_index.xml"
+        "Location": "https://primitive.press/sitemap_index.xml"
       }
     },
     {
       "src": "/sitemap_index.xml",
-      "dest": "https://wp.primitivedigital.uk/sitemap_index.xml"
+      "dest": "https://primitive.press/sitemap_index.xml"
     }
   ]
 }
