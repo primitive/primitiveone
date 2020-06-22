@@ -41,7 +41,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          api: "https://wp.primitivedigital.uk/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
+          api: "https://primitive.press/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
           homepage: "/home/", // optional: set when using a page as the site homepage
           postsPage: "/blog/", // optional: set when using a page as the site homepage
           postTypes: [

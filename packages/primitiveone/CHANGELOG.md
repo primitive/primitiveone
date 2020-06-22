@@ -68,9 +68,14 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## History
 
-**1.1.4 > Update (April, 2020):**
-- [x] Testing of config and plugins.
-- [x] 
+**1.1.4 > Update (June 22, 2020):**
+- [x] New backend WP server setup
+
+**1.1.4 > Update (June 21, 2020):**
+- [x] Define CORS, SSL and sitemap issues
+- [x] Apply updates / test styles
+- [x] Plan new congig / re-deployment
+- [x] Tested Vercel/DNS/WP config and plugins (Yoast/Redirect).
 
 **1.1.3 > Update (May 22, 2020):**
 - [x] Update gsap to v3
