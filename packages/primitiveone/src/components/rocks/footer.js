@@ -33,7 +33,7 @@ const Footer = ({ state }) => {
           <Row>
             <Col>
               <Image
-                src={"https://wp.primitivedigital.uk/wp-content/uploads/promo/topbanana1.png"}
+                src={"https://primitive.press/wp-content/uploads/promo/topbanana1.png"}
                 alt="Top Banana Web Design and Development"
               />
             </Col>

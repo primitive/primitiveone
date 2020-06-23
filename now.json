@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": "primitivedigital.co.uk",
+  "alias": "primitivedigital.uk",
   "builds": [
     {
       "src": "package.json",
@@ -12,19 +12,19 @@
       "src": "/page301",
       "status": 301,
       "headers": {
-        "Location": "https://primitivedigital.co.uk/stats"
+        "Location": "https://primitivedigital.uk/stats"
       }
     },
     {
       "src": "/page302",
       "status": 302,
       "headers": {
-        "Location": "https://primitivedigital.co.uk/stats"
+        "Location": "https://primitivedigital.uk/stats"
       }
     },
     {
       "src": "/redirect",
-      "dest": "https://primitivedigital.co.uk/stats"
+      "dest": "https://primitivedigital.uk/stats"
     },
     {
       "src": "/sitemap.xml",
@@ -40,6 +40,10 @@
     {
       "src": "/post-sitemap.xml",
       "dest": "https://primitive.press/post-sitemap.xml"
+    },
+    {
+      "src": "/page-sitemap.xml",
+      "dest": "https://primitive.press/page-sitemap.xml"
     }
   ]
 }

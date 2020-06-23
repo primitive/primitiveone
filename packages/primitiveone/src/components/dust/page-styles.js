@@ -12,19 +12,19 @@ const jungleDiscoBG = colors => {
       linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
       linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
       linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-      url(https://wp.primitivedigital.uk/wp-content/uploads/stone/aztec-300x300.png) repeat fixed;`,
+      url(https://primitive.press/wp-content/uploads/stone/aztec-300x300.png) repeat fixed;`,
       oldrock: css`background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
         background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
         linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
         linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
         linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-        url(https://wp.primitivedigital.uk/wp-content/uploads/stone/junglerock-300x261.png) repeat fixed;`,
+        url(https://primitive.press/wp-content/uploads/stone/junglerock-300x261.png) repeat fixed;`,
       wallrock: css`background-color: rgb(${ convert.hex.rgb(colors.bs.dark).join()});
         background: linear-gradient(to bottom, rgba(${ convert.hex.rgb(colors.coal).join()}, 0) 0%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
         linear-gradient(to top, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 95%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.3) 100%),
         linear-gradient(to right, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
         linear-gradient(to left, rgba(${ convert.hex.rgb(colors.bs.dark).join()}, 0.2) 0%, rgba(${convert.hex.rgb(colors.bs.dark).join()}, 0.2) 90%, rgba(${convert.hex.rgb(colors.coal).join()}, 0.5) 100%),
-        url(https://wp.primitivedigital.uk/wp-content/uploads/stone/rockwall-300x300.png) repeat fixed;`
+        url(https://primitive.press/wp-content/uploads/stone/rockwall-300x300.png) repeat fixed;`
     }
   }
 }
@@ -283,7 +283,7 @@ const pageall = colors => css`
     list-style-type: none;
     
     background-color: ${colors.coal};
-    background: url(https://wp.primitivedigital.uk/wp-content/uploads/stone/grayrock-300x300.png);
+    background: url(https://primitive.press/wp-content/uploads/stone/grayrock-300x300.png);
     
     box-shadow: 0 0 3px rgba(0,0,0,0.6),
                 0 19px 38px rgba(0,0,0,0.30),
