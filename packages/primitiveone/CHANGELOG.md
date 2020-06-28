@@ -18,17 +18,22 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 * dependency errors, depreciation errors
 * frontity.settings is dominant over package/index
 * review licencing
+* ooooh, bootstrap 5...
 
 *Noted Issues / already resolved:*
 * arrays in settings have duplicated values
 * vercel(zeit) deployment failure .gitignore, .nowignore - build folder issue with github setup.
 * Some CSS-IN-JS gets messed up on prod build. this could have been an extra '}'?
 
-## WIP
+## Issues
 
 - [ ] sort/filters: modify the wp theme funtions.php or use a plugin?
-- [ ] post and custom cpt/taxonomy content components (recent, random, related)
+- [ ] sort/filters subtimeline component: custom cpt/taxonomy content (I can't seem to sort if using WP REST Filter plugin)
+- [ ] sort/filters poststrip component: post and custom cpt/taxonomy content (recent, random, related)
 - [ ] Random content errors
+- [ ] FEAT: Fade in lazy loaded images?
+
+## WIP
 
 - [ ] BS emotion warnings
 - [ ] WebFonts: Tested as per docs. Implementation works but some google fonts don't convert well
@@ -39,13 +44,12 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 - [ ] FIX: preloading
 - [ ] Refine: Optimise for Mobile: Don't serve some animations on mobile, handle click/hover
 - [ ] FIX or FEAT: author list view / profile
-- [ ] FEAT: Fade in lazy loaded images?
 - [ ] Create *shoelace* theme (grid, size, color, breakpoints) + fragments
 
 - [ ] Split primitiverocks package
 - [ ] Split primitivescenes package
 - [ ] Split theme / dev staging
-- [ ] Setup wp theme repo
+
 - [ ] Publish to npm
 
 - [ ] [SEO: Add Site maps](https://community.frontity.org/t/xml-sitemaps-landing-in-wordpress-core/1153)
@@ -55,7 +59,7 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## TODO
 
-- [ ] Research modify functions.php (addFilters), add options.php or expose settings cpt
+
 - [ ] Research conditional loading of UI cores + theme
 - [ ] Set base CSS to use none/twentytwenty/bootstrap (grid, classes, --modifiers-size/transparency/darken/lighten)
 - [ ] Research create a UI/cf7 theme builder vs cli
@@ -68,7 +72,13 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## History
 
-**1.1.4 > Update (June 22, 2020):**
+**1.1.6 > Update (June 28, 2020):**
+- [x] Created bedrock wp twentytwenty child theme 
+- [x] Setup wp theme repo
+- [x] Researched modify functions.php (addFilters), add options.php or expose settings cpt
+- [x] Updated primary domain
+
+**1.1.5 > Update (June 22, 2020):**
 - [x] New backend WP server setup
 
 **1.1.4 > Update (June 21, 2020):**
