@@ -193,6 +193,16 @@ const h3Style = colors => `
 // p2102: data
 // p2128: marketing
 // p2136: housekeeping
+// p
+// p37638: darwin
+
+// sk-dev: tests
+// ::first-letter = ok
+// ::first-line = no-k
+
+// sk-dev: to check
+// https://css-tricks.com/almanac/selectors/g/general-sibling/
+// https://css-tricks.com/almanac/selectors/a/adjacent-sibling/
 
 const pageall = colors => css`
 
@@ -203,7 +213,17 @@ const pageall = colors => css`
     text-align: center;
     text-shadow: .15rem .15rem rgba(${ convert.hex.rgb(colors.fluff).join()}, .5);
   }
-  
+
+  p.fsletter::first-letter {
+    font-weight: bold;
+    color: red;
+  }
+
+  p.fsline::first-line
+    font-weight: bold;
+    color: green;
+  }
+
   .intro {
     font-family: 'Comfortaa', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     padding: 3px 5%;
