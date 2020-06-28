@@ -65,7 +65,7 @@ const Theme = ({ state }) => {
         />
         <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Amatic+SC|Comfortaa|Hepta+Slab|Pacifico|Playfair+Display:700|Slabo+27px&display=swap" rel="stylesheet" />
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-        <link rel="canonical" href="https://primitivedigital.co.uk" />
+        <link rel="canonical" href="https://primitivedigital.uk" />
         <link rel="dns-prefetch" SameSite="None" Secure href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" SameSite="None" Secure href="http://doubleclick.net" />
       </Head>
