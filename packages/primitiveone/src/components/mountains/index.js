@@ -1,23 +1,27 @@
 import React from "react";
 import { connect, Global, Head, styled, Slot } from "frontity";
 import Switch from "@frontity/components/switch";
+
 import Loading from "../pebbles/loading";
 import MetaTitle from "../pebbles/meta-title";
+
 import Header from "../rocks/header";
 import Nav from "../rocks/nav";
 import Footer from "../rocks/footer";
-import Home from './page-home';
-import Post from "./post";
-import Page from "./page";
-import Posts from "./post-list";
 
+import Home from './page-home';
 //import Page404 from "./page404";
 import PageError from "./page-error";
+import Page from "./page";
 
-// check best method of conditional loading / imports
+import Posts from "./post-list";
+import Post from "./post";
+
+// sk-dev:TESTING check best method of conditional loading / imports of sitewide blocks
 import GlobalPromo from "../rocks/global-promo";
 import GlobalSocial from "../rocks/social/social-section";
 
+// custom post types / tax layouts
 import Timelines from "../timeline/ct-timelines";
 import Timeline from "../timeline";
 import SubTimeline from "../timeline/cpt-subtimeline";
@@ -35,7 +39,7 @@ const Theme = ({ state }) => {
   const display = state.theme.config;
 
   if (state.theme.config.devMode) {
-    // console.log("@index: data", data);
+    console.log("@index: data", data);
     console.log("@index: display", display);
   }
 
@@ -45,13 +49,17 @@ const Theme = ({ state }) => {
         /*
           Add global styles for the whole site, like body or a's or font-faces. 
           Not classes here because we use CSS-in-JS. Only global HTML tags.
+
+          sk-dev:TESTING. I'm also adding some classes as I want the wp user to be able to apply a pre-defined set of styles to content.
+          - may split this to be post/page specific. that may cause duplicates - not sure of lesser evil.
+          - these will be made availble via the wysiwyg ui by the wp theme
         */
       }
       <Global styles={globalStyles(state.theme.colors)} />
 
-      {/* sk-dev: TESTING <FontFaces /> */}
+      {/* sk-dev: <FontFaces /> */}
 
-      {/* Add some metatags to the <head> of the HTML. */}
+      {/* Add metatags to the <head> of the HTML. */}
       <MetaTitle />
       <Head>
         <meta name="description" content={state.frontity.description} />
@@ -111,6 +119,7 @@ const Theme = ({ state }) => {
 
 export default connect(Theme);
 
+// sk-dev: review/update @media
 const HeadWrapper = styled.div`
 
   display: block;
@@ -161,10 +170,6 @@ const HeadWrapper = styled.div`
 `;
 
 const BodyWrapper = styled.div`
-  margin:0;
-  padding: 0;
-  display: block;
-
   background-image: linear-gradient(
     180deg,
     rgba(66, 174, 228, 0.1),
