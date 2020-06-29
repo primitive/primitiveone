@@ -35,15 +35,24 @@
     },
     {
       "src": "/sitemap_index.xml",
-      "dest": "https://primitive.press/sitemap_index.xml"
+      "status": 301,
+      "headers": {
+        "Location": "https://primitive.press/sitemap_index.xml"
+      }
     },
     {
       "src": "/post-sitemap.xml",
-      "dest": "https://primitive.press/post-sitemap.xml"
+      "status": 301,
+      "headers": {
+        "Location": "https://primitive.press/post-sitemap.xml"
+      }
     },
     {
       "src": "/page-sitemap.xml",
-      "dest": "https://primitive.press/page-sitemap.xml"
+      "status": 301,
+      "headers": {
+        "Location": "https://primitive.press/page-sitemap.xml"
+      }
     }
   ]
 }
