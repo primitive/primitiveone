@@ -2,7 +2,7 @@ const settings = {
   name: "primitiveone",
   state: {
     frontity: {
-      url: "https://primitivedigital.co.uk",
+      url: "https://primitivedigital.uk",
       title: "Want a Website?",
       description: "WordPress Web Sites and Apps",
       name: "Primitive Digital"
@@ -48,12 +48,17 @@ const settings = {
             {
               type: "works", // custom post type slug
               endpoint: "works", // REST API endpoint
-              archive: "/works" // link where this custom posts are listed
+              archive: "/works" // DO I NEED THIS???
             },
             {
               type: "temporal_events", // custom post type slug
               endpoint: "temporal_events", // REST API endpoint
               archive: "/evolution-of-digital-stuff" // link where this custom posts are listed
+            },
+            {
+              type: "things", // custom post type slug
+              endpoint: "things", // REST API endpoint
+              archive: "/things" // link where this custom posts are listed
             }
           ],
           taxonomies: [
@@ -68,7 +73,8 @@ const settings = {
     },
     "frontity-contact-form-7",
     "@frontity/tiny-router",
-    "@frontity/html2react"
+    "@frontity/html2react",
+    "@frontity/head-tags"
   ]
 };
 
