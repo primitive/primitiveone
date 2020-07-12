@@ -24,7 +24,7 @@ See [Frontity Component Library changelog](packages/primitiverocks/CHANGELOG.md)
 
 ## Performance Comparrison Testing (WIP)
 
-[GTMetrix Report: 12st July - pre core update](https://gtmetrix.com/reports/primitivedigital.uk/5YFwBmce)
+[GTMetrix Report: 12st July - post core update](https://gtmetrix.com/reports/primitivedigital.uk/5YFwBmce)
 [GTMetrix Report: 12st July - pre core update](https://gtmetrix.com/reports/primitivedigital.uk/5YFwBmce)
 [GTMetrix Report: 1st June](https://gtmetrix.com/reports/primitivedigital.co.uk/fJDiD3ui)
 [GTMetrix Report: 29th April](https://gtmetrix.com/reports/primitivedigital.co.uk/tyY4ZsWo)
@@ -35,10 +35,9 @@ Links to compare the performance of various deployments:
 PRIMARY: https://now.primitivedigital.uk 
 
 Vercel: https://now.primitivedigital.uk  
-Static: Pending review
+Static: Pending testing
 Google: TBC  
 AWS: TBC  
-
 
 
 ## [Crafted by Primitive Digital](https://primitivedigital.uk)

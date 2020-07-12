@@ -72,6 +72,10 @@ Commit messages are loosly following [Conventional Commits](https://conventional
 
 ## History
 
+**1.1.6 > Frontity updated (July 12, 2020):**
+- [x] Check serch console after domain migration /home/ is the main error url?
+
+
 **1.1.6 > Update (June 28, 2020):**
 - [x] Created bedrock wp twentytwenty child theme 
 - [x] Setup wp theme repo
