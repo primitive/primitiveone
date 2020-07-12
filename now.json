@@ -55,13 +55,6 @@
       }
     },
     {
-      "src": "/page-sitemap.xml",
-      "status": 301,
-      "headers": {
-        "Location": "https://primitive.press/page-sitemap.xml"
-      }
-    },
-    {
       "src": "/timelines-sitemap.xml",
       "status": 301,
       "headers": {
