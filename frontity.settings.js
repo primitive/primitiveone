@@ -10,26 +10,6 @@ const settings = {
   },
   packages: [
     {
-      name: "@primitvedigital/primitiveone",
-      state: {
-        theme: {
-          menu: [
-            ["Home", "/"],
-            ["Design", "/web-design"],
-            ["Development", "/web-development"],
-            ["Data", "/data-insights"],
-            ["Marketing", "/marketing"],
-            ["A Nice Log", "/blog"]
-          ],
-          featured: {
-            showOnList: true,
-            showOnPost: true,
-            showOnPage: true
-          }
-        }
-      }
-    },
-    {
       name: "primitive-theme",
       state: {
         theme: {
