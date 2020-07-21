@@ -11,6 +11,7 @@
 node_modules
 build
 dist
+cave
 #packages/contact-form-7
 
 # Unoptimised / Optimised Image Folders
