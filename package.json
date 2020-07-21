@@ -26,7 +26,7 @@
     "@frontity/tiny-router": "^1.2.1",
     "@frontity/wp-source": "^1.8.0",
     "frontity": "^1.10.0",
-    "frontity-contact-form-7": "^0.1.6",
-    "primitive-theme": "./packages/primitive-theme"
+    "primitive-theme": "./packages/primitive-theme",
+    "frontity-contact-form-7": "^0.1.6"
   }
 }

@@ -1,5 +1,9 @@
-# allow everything for now
+# allow everything
 User-agent: *
+Disallow: /wp-admin/
+
+# sk-dev: whats the purpose of this?
+# Allow: /wp-admin/admin-ajax.php
 
 # wp default below
 # User-agent: *
