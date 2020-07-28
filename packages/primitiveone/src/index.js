@@ -1,4 +1,4 @@
-import Theme from "./components/mountains";
+import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import CustomPageHandlers from "./components/sand/handlers.js";
 import { colortheme } from "./components/dust/_colors.js";
