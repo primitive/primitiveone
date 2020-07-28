@@ -2,6 +2,27 @@
 import React, { useEffect } from "react";
 import { connect } from "frontity";
 
+/*
+import facepaint from 'facepaint'
+
+const mq = facepaint([
+    '@media(min-width: 420px)',
+    '@media(min-width: 720px)'
+  ])
+
+  const Link = styled.a(props =>
+    mq({
+      display: 'block',
+      margin: 18,
+      padding: 24,
+      color: props.blue
+        ? ['powderblue', 'blue', 'midnightblue']
+        : ['lightgray', 'gray', 'slategray'],
+      backgroundColor: 'currentColor'
+    })
+  )
+  */
+
 
 const Link = ({ state, actions, link, className, children, rel, "aria-current": ariaCurrent, onClick: onClickProp }) => {
 
