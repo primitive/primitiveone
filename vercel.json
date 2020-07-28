@@ -1,6 +1,12 @@
 {
   "version": 2,
   "alias": "primitivedigital.uk",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@frontity/now"
+    }
+  ],
   "routes": [
     {
       "src": "/page301",
