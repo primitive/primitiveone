@@ -30,35 +30,35 @@
       "src": "/sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://primitive.press/sitemap_index.xml"
+        "Location": "https://api.primitivedigital.uk/sitemap_index.xml"
       }
     },
     {
       "src": "/sitemap_index.xml",
       "status": 301,
       "headers": {
-        "Location": "https://primitive.press/sitemap_index.xml"
+        "Location": "https://api.primitivedigital.uk/sitemap_index.xml"
       }
     },
     {
       "src": "/post-sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://primitive.press/post-sitemap.xml"
+        "Location": "https://api.primitivedigital.uk/post-sitemap.xml"
       }
     },
     {
       "src": "/page-sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://primitive.press/page-sitemap.xml"
+        "Location": "https://api.primitivedigital.uk/page-sitemap.xml"
       }
     },
     {
       "src": "/timelines-sitemap.xml",
       "status": 301,
       "headers": {
-        "Location": "https://primitive.press/timelines-sitemap.xml"
+        "Location": "https://api.primitivedigital.uk/timelines-sitemap.xml"
       }
     }
   ]
