@@ -25,7 +25,11 @@ const settings = {
             "showOnList": true,
             "showOnPost": true,
             "showOnPage": true,
-          }
+          },
+          // tbc
+          "archive": {
+            "showExcerpt": false
+          }  
         }
       }
     },
@@ -41,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://primitive.press/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
+          "api": "https://api.primitivedigital.uk/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
           "homepage": "/home/", // optional: set when using a page as the site homepage
           "postsPage": "/blog/", // optional: set when using a page as the site homepage
 
@@ -55,12 +59,15 @@ const settings = {
               "type": "temporal_events", // custom post type slug
               "endpoint": "temporal_events", // REST API endpoint
               "archive": "/evolution-of-digital-stuff" // link where this custom posts are listed
-            },
+            }
+            
+            /*,
             {
               "type": "things", // custom post type slug
               "endpoint": "things", // REST API endpoint
               "archive": "/things" // link where this custom posts are listed
             }
+            */
           ],
           "taxonomies": [
             {
