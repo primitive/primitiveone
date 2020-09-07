@@ -19,15 +19,14 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.7.3",
+    "@frontity/core": "^1.8.0",
     "@frontity/google-analytics": "^1.2.0",
     "@frontity/head-tags": "^1.0.5",
     "@frontity/html2react": "^1.3.5",
     "@frontity/tiny-router": "^1.2.1",
     "@frontity/wp-source": "^1.8.1",
-    "frontity": "^1.10.1",
+    "frontity": "^1.11.0",
     "frontity-contact-form-7": "^0.1.7",
-    "primitive-theme": "^1.0.7",
-    "primitiveone": "./packages/primitiveone"
+    "primitive-theme": "^1.0.7"
   }
 }
