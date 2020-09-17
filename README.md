@@ -34,9 +34,13 @@ With little help from our friends: Bootstrap 5, GSAP and ScrollMagic.
 
 [GTMetrix Report: 29th April](https://gtmetrix.com/reports/primitivedigital.co.uk/tyY4ZsWo)
 
-
+*Client*
 Vercel: https://now.primitivedigital.uk  
 AWS: TBC  
+
+*Server*
+Dedicated WP: https://api.primitivedigital.uk  
+AWS: TBC 
 
 
 ## [Crafted by Primitive Digital](https://primitivedigital.uk)
