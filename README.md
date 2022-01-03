@@ -6,11 +6,10 @@ Prime Deployment of the Primitive Theme for Frontity + WordPress as a Headless C
 **LIVE SITE**
 Live demo 👉  [Primitive Digital](https://primitivedigital.uk)
 
-**NEW NPM PACKAGES**
-New NPM package 🎉  ~  👉  [primitive-theme (v1.0.x)](https://www.npmjs.com/package/primitive-theme)
+**NPM PACKAGES**
+NPM package 🎉  ~  👉  [primitive-theme (v1.0.x)](https://www.npmjs.com/package/primitive-theme)
 
-GitHub repo 👉  [primitivestuff](https://github.com/primitiveshaun/primitivestuff)
-
+GitHub theme repo 👉  [primitivestuff](https://github.com/primitiveshaun/primitivestuff)
 
 
 **NB. This is a test / concept deployment. Codebase will be opensource, it's made available on AS-IS basis with the exclusion of graphics while I remove licenced/branded elements, please don't use them.**
@@ -35,12 +34,14 @@ With little help from our friends: Bootstrap 5, GSAP and ScrollMagic.
 [GTMetrix Report: 29th April](https://gtmetrix.com/reports/primitivedigital.co.uk/tyY4ZsWo)
 
 *Client*
-Vercel: https://now.primitivedigital.uk  
-AWS: TBC  
+Vercel: Depreciated
+VPS:  
+Heroku:
+AWS: 
+
 
 *Server*
-Dedicated WP: https://api.primitivedigital.uk  
-AWS: TBC 
+PH Dedicated WP: https://api.primitivedigital.uk  
 
 
 ## [Crafted by Primitive Digital](https://primitivedigital.uk)
