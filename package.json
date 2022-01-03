@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "frontity dev",
     "build": "frontity build",
-    "serve": "frontity serve"
+    "serve": "frontity serve",
+    "serve pd": "frontity serve --port 3001 --https"
   },
   "prettier": {},
   "dependencies": {
