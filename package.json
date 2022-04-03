@@ -20,14 +20,15 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.14.3",
+    "@frontity/core": "^1.15.1",
     "@frontity/google-analytics": "^2.1.0",
     "@frontity/html2react": "^1.7.0",
     "@frontity/tiny-router": "^1.4.4",
     "@frontity/wp-source": "^1.11.7",
     "@frontity/yoast": "^2.1.1",
-    "frontity": "^1.17.1",
-    "frontity-contact-form-7": "^0.1.7",
+    "frontity": "^1.17.2",
+
+    "@aamodtgroup/frontity-contact-form-7": "^0.2.14",
     "primitive-theme": "^1.0.14",
     "primitivepebbles": "^1.0.5",
     "primitiverocks": "^1.0.9",
