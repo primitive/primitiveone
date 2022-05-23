@@ -1,5 +1,5 @@
 const settings = {
-  name: "primitiveone",
+  name: "primitivedigital",
   state: {
   frontity: {
       url: "https://primitivedigital.uk",
@@ -10,7 +10,7 @@ const settings = {
   },
   packages: [
     {
-      name: "primitive-theme",
+      name: "frontstrap",
       state: {
         theme: {
           menu: [
@@ -36,7 +36,7 @@ const settings = {
           },
           // tbc
           archive: {
-            "showExcerpt": false
+            "showExcerpt": true
           }  
         }
       }
@@ -53,7 +53,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          api: "https://api.primitivedigital.uk/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
+          api: "https://primitivedigital.uk/wp-json", // required: Your WP REST API EndPoint (no trailing slash)
           
           homepage: "/home", // optional: set when using a page as the site homepage (wp hp settings ignored)
           postsPage: "/blog", // optional: set when using a page as the site homepage
@@ -89,7 +89,7 @@ const settings = {
     "@frontity/tiny-router",
     "@frontity/html2react",
     "@frontity/yoast",
-    "frontity-contact-form-7"
+    "@aamodtgroup/frontity-contact-form-7"
   ]
 };
 
