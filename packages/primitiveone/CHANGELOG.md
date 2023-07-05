@@ -1,4 +1,4 @@
-# @primitivedigital/primitiveone
+# primitiveone
 
 ***The Log of Change***
 
