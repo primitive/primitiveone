@@ -1,22 +1,33 @@
 {
-  "name": "@primitvedigital/primitiveone",
-  "version": "1.2.16",
-  "private": true,
+  "name": "primitiveone",
+  "version": "1.3.0",
+  "private": false,
   "description": "Primitive One: Crafted for WordPress + Frontity",
   "keywords": [
-    "frontity",
-    "wordpress",
-    "primitivedigital",
-    "primitive-theme",
-    "primitiverocks",
+    "@primitive",
+    "@primitive/rocks",
     "bedrock",
+    "frontity",
+    "headless",
+    "wordpress",
     "theme"
   ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
   "scripts": {
     "dev": "frontity dev",
     "build": "frontity build",
     "serve": "frontity serve",
     "serve pd": "frontity serve --port 3001 --https"
+  },
+  "homepage": "https://codewithnode.online/",
+  "author": "Shaun Knowles <hi@primitivedigital.uk> (https://sknow.it)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/primitive/primitiveone.git"
   },
   "prettier": {},
   "dependencies": {
@@ -27,11 +38,10 @@
     "@frontity/wp-source": "^1.11.7",
     "@frontity/yoast": "^2.1.1",
     "frontity": "^1.17.2",
-
-    "@aamodtgroup/frontity-contact-form-7": "^0.2.14",
-    "primitive-theme": "^1.0.14",
-    "primitivepebbles": "^1.0.5",
-    "primitiverocks": "^1.0.9",
-    "primitivescenes": "^1.0.5"
+    "frontstrap": "0.0.7",
+    "@primitive/pebbles": "^0.0.7",
+    "@primitive/rocks": "^0.0.7",
+    "@primitive/scenes": "^0.0.7",
+    "@aamodtgroup/frontity-contact-form-7": "^0.2.14"
   }
 }
